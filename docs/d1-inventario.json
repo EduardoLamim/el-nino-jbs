@@ -1,0 +1,1012 @@
+{
+  "scope": "Tracked files before D1 report/manifest addition; report and manifest separately reviewed",
+  "files": [
+    {
+      "file": ".env.example",
+      "bytes": 231,
+      "sha256": "9d81d54f9b7677eaba1a195ef14890625beb7ba59947496e09118cd5252b51da"
+    },
+    {
+      "file": ".gitattributes",
+      "bytes": 179,
+      "sha256": "c4bd8026ded478ae0366b4cd42d82cb00f33895b16aeb382a00b03a9100975de"
+    },
+    {
+      "file": ".github/workflows/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": ".github/workflows/ci.yml",
+      "bytes": 595,
+      "sha256": "55d52bb76edc4d610afa9e6c81999a9d0ce0477ba06a2b667fe0b0f5540ec9fe"
+    },
+    {
+      "file": ".github/workflows/deploy-pages.yml",
+      "bytes": 3742,
+      "sha256": "316eb4c7261dfa8f9976364c5a6de9743c00c30efa7de575306dc5bd925db89d"
+    },
+    {
+      "file": ".github/workflows/teams-prd.yml",
+      "bytes": 1305,
+      "sha256": "852e3d6ec5f1165b73ba7009af113c30f413dc9ab317c8a05b14e810660b2947"
+    },
+    {
+      "file": ".gitignore",
+      "bytes": 189,
+      "sha256": "f8dffe4c2165a7399200a32c99e627337fbc50479e984fc39a6c633ed3f60770"
+    },
+    {
+      "file": "Plano-de-Contingencia-de-Inundacao-ALTERADO-EM-22-12-25.pdf",
+      "bytes": 1393330,
+      "sha256": "60d4a9dbebafbfd54a8c167af513e61d6e0775681f59863b4ad6588774d871e9"
+    },
+    {
+      "file": "README.md",
+      "bytes": 1277,
+      "sha256": "3bca13d36c9111a34277eec765464cd7641e7066d7c54477cf95364171bb01e3"
+    },
+    {
+      "file": "docs/adaptacoes-baseline.diff",
+      "bytes": 49974,
+      "sha256": "50650a71d4943b38d9a8f6dba5c5e391449ce5881eaddbb952c7ef71403ce364"
+    },
+    {
+      "file": "docs/baseline-export.json",
+      "bytes": 47558,
+      "sha256": "28fd86dd03073ac10d545569835136bea1c4ca893e3fb373d8fcbd7e8f5396e4"
+    },
+    {
+      "file": "docs/fase-04-consultas.json",
+      "bytes": 270619,
+      "sha256": "90971885b8c0f366371f6b82bb3f06d1153ebfa8ae838b5425eb9b8b6c704238"
+    },
+    {
+      "file": "docs/fase-04-validacao-geometrica.json",
+      "bytes": 359,
+      "sha256": "1e97afa59e8cc82ff1e95b563ed943d1fcfbfec26d43124016d8d93862c5f2be"
+    },
+    {
+      "file": "docs/local-review.json",
+      "bytes": 5069,
+      "sha256": "0039c5a44882b0e9c229b7a4137d5c7408968a358fecd17a15a5480105af527f"
+    },
+    {
+      "file": "docs/prd-runbook.md",
+      "bytes": 12188,
+      "sha256": "b6248277a286488f5ff8b240f145c1923055133c0a2e1d05cf291c6fc83f811a"
+    },
+    {
+      "file": "docs/validacao-etapa-c.md",
+      "bytes": 2189,
+      "sha256": "eff69900a698415e5898741a083e05c11bdfa7f434a88459d0017bfff716458a"
+    },
+    {
+      "file": "eslint.config.js",
+      "bytes": 246,
+      "sha256": "d53fd1ed62e7f195c11cc79ca9c42601e82625f46e8d56f4a1e2d737c77aa427"
+    },
+    {
+      "file": "index.html",
+      "bytes": 729,
+      "sha256": "772bd695f79613df6a72f6762a4d2ec0087af91d6e8c1f10a7746edcce1eb0fa"
+    },
+    {
+      "file": "package-lock.json",
+      "bytes": 183780,
+      "sha256": "dcd8cb304acae8a5c86db8cdfcaa18f924cda4a7144b6d2aee771242108fcdb8"
+    },
+    {
+      "file": "package.json",
+      "bytes": 1867,
+      "sha256": "2a4d83387cd9f725b89c5f95d94d7e97b5753f6258af963aedd3a92313ad7237"
+    },
+    {
+      "file": "public/assets/alarm_level_1.mp3",
+      "bytes": 164160,
+      "sha256": "26d44000c611d597da9fd8c3562c7bb5fcd81d58da96cfa0daca8455bb4f5181"
+    },
+    {
+      "file": "public/assets/alarm_level_2.mp3",
+      "bytes": 472320,
+      "sha256": "f49454680f4e220c71c63b9e2ab2a5e5d4b50aa2dbd2643acfc2933a5861bc45"
+    },
+    {
+      "file": "public/assets/alarm_level_3.mp3",
+      "bytes": 321600,
+      "sha256": "990e4c0b8c8c2d54b5c40d4a761317fa2a6ea48acf893e66fc2cfae0f33bec2d"
+    },
+    {
+      "file": "public/assets/mapa-decisoes-terminal.png",
+      "bytes": 1630238,
+      "sha256": "751250020d37527d5b75630251768afd6365ff71541a03dbd0840d1c007c8db4"
+    },
+    {
+      "file": "public/data/bairros.geojson",
+      "bytes": 168545,
+      "sha256": "60018b85b6bdd3b8711905f679bcc6c49ce138fd13610d0dab753519612480fa"
+    },
+    {
+      "file": "public/data/historico/historico-0-8376c16e7dcbef81915f7447330ee92e5825fb092d4df526084416a4d5578166.geojson",
+      "bytes": 45304,
+      "sha256": "8376c16e7dcbef81915f7447330ee92e5825fb092d4df526084416a4d5578166"
+    },
+    {
+      "file": "public/data/historico/historico-1-027f148526a7362edbc69d1d6e691cf5ef670748e25072e3f4c92a9e3189096a.geojson",
+      "bytes": 225521,
+      "sha256": "027f148526a7362edbc69d1d6e691cf5ef670748e25072e3f4c92a9e3189096a"
+    },
+    {
+      "file": "public/data/historico/historico-2-f05e60f09c31fefe9ebf540ed41a922bd72a52398e9010779be34d5737ab4d66.geojson",
+      "bytes": 33708,
+      "sha256": "f05e60f09c31fefe9ebf540ed41a922bd72a52398e9010779be34d5737ab4d66"
+    },
+    {
+      "file": "public/data/historico/historico-3-10c1ba584a8df92bc4e1251e951490c2dff4be29e207170f5e33255be1dcab1a.geojson",
+      "bytes": 836531,
+      "sha256": "10c1ba584a8df92bc4e1251e951490c2dff4be29e207170f5e33255be1dcab1a"
+    },
+    {
+      "file": "public/data/historico/historico-4-797c260d658bfedb53f92284c60871d2fc120a5fb3aff8d7fc826b9f321d2122.geojson",
+      "bytes": 123208,
+      "sha256": "797c260d658bfedb53f92284c60871d2fc120a5fb3aff8d7fc826b9f321d2122"
+    },
+    {
+      "file": "public/data/historico/historico-5-3b40244ee961a40101c0800087abf3a89c95cdfd8c3a1cd06bc01468c5321b0c.geojson",
+      "bytes": 558053,
+      "sha256": "3b40244ee961a40101c0800087abf3a89c95cdfd8c3a1cd06bc01468c5321b0c"
+    },
+    {
+      "file": "public/data/historico/historico-6-c328356856c267e7044009dcf25bc11f4e615146cadb9ac56be0487a966be785.geojson",
+      "bytes": 22237,
+      "sha256": "c328356856c267e7044009dcf25bc11f4e615146cadb9ac56be0487a966be785"
+    },
+    {
+      "file": "public/data/historico/historico-7-86f92e79732d1c3aa08476e75cdb344af6bbc2db77a0b5f6aea96521f53e3a59.geojson",
+      "bytes": 25596,
+      "sha256": "86f92e79732d1c3aa08476e75cdb344af6bbc2db77a0b5f6aea96521f53e3a59"
+    },
+    {
+      "file": "public/data/historico/historico-8-9d77935cda5182404582e82a8b4a654bccff543ec7b9eb8a7b16605c806c3b29.geojson",
+      "bytes": 27461,
+      "sha256": "9d77935cda5182404582e82a8b4a654bccff543ec7b9eb8a7b16605c806c3b29"
+    },
+    {
+      "file": "public/data/historico/historico-9-723e06a82eafb7ff94c539d97cd5d0664e1dfffa1d460ee4dc4b5ad2e5c5f606.geojson",
+      "bytes": 57311,
+      "sha256": "723e06a82eafb7ff94c539d97cd5d0664e1dfffa1d460ee4dc4b5ad2e5c5f606"
+    },
+    {
+      "file": "public/data/historico/manifesto.json",
+      "bytes": 6823,
+      "sha256": "b8770b8f9dbe81642ec396253cd7d8ad18f96f9f84a416bac75411fb607daacb"
+    },
+    {
+      "file": "public/data/historico/vias-historicas-fd550bacdf987b6a80a80f3a114a6d317e14eaf087e719870910df17edeb4b83.geojson",
+      "bytes": 132226,
+      "sha256": "fd550bacdf987b6a80a80f3a114a6d317e14eaf087e719870910df17edeb4b83"
+    },
+    {
+      "file": "public/data/territorio.json",
+      "bytes": 97643,
+      "sha256": "9d1fdf8d86b04c4bab56209efd889ffde05202ecc09362f1b866e91bd47de222"
+    },
+    {
+      "file": "scripts/automation/activate-prd-cron.sql",
+      "bytes": 883,
+      "sha256": "7b82c66377cbfd5282424b73953f9bdd12e6f71ee22e1985b6e77da469c4bc55"
+    },
+    {
+      "file": "scripts/automation/pages-config.ts",
+      "bytes": 612,
+      "sha256": "edde13a8a4bc5231bc0399256aaee09f895c3b2ae86f890092a48ade3ce7d91d"
+    },
+    {
+      "file": "scripts/automation/push-snapshot.ts",
+      "bytes": 3038,
+      "sha256": "2568a97dc48a128707a5b83b7933c04e25c94e794c59f5b913f613a5150f1a15"
+    },
+    {
+      "file": "scripts/automation/simulation-config.ts",
+      "bytes": 659,
+      "sha256": "b80d71ed1c62d72a94104b79a18cf0ebe70b5bbb89c82e74285ecb06787fdf3b"
+    },
+    {
+      "file": "scripts/automation/smoke.ts",
+      "bytes": 7692,
+      "sha256": "09e6a09efcadfbcc8f5c1248272c02e3198257b8552e9934e67740de96fa2ca8"
+    },
+    {
+      "file": "scripts/automation/status.ts",
+      "bytes": 1884,
+      "sha256": "532c2ea496677450acca252d79ea7f950aaa7208e3d4e24c9e7f1bde8a12e555"
+    },
+    {
+      "file": "scripts/automation/update.ts",
+      "bytes": 2813,
+      "sha256": "85458ceb808c87c6bfe0f0c8e7fa41d4f4f763084a69bbc9dc651d9440e8184a"
+    },
+    {
+      "file": "scripts/automation/validate.ts",
+      "bytes": 5904,
+      "sha256": "5d7b4407655d4d27d4f61db8599559637eff5cab3d6ec7e0c32acaf27c51f4f6"
+    },
+    {
+      "file": "scripts/collectors/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "scripts/collectors/blumenau-transport.ts",
+      "bytes": 1906,
+      "sha256": "721a1e2945e4c7d8cc0862a5c2308c9074c6470c0f3ea376b4a03c2da4056fa2"
+    },
+    {
+      "file": "scripts/collectors/blumenau.ts",
+      "bytes": 3315,
+      "sha256": "25366d33407094177411913640edb3adf4f708c930a27a38c1a797e67ae28e8f"
+    },
+    {
+      "file": "scripts/collectors/certificates/README.md",
+      "bytes": 1312,
+      "sha256": "c4402283b0acd0f54c79638ca6d06b8e72c879c75d6a0d8eecaf22c287ee6196"
+    },
+    {
+      "file": "scripts/collectors/certificates/blumenau-intermediates.pem",
+      "bytes": 4587,
+      "sha256": "d1ceb02b0c390afc7aeaf94e499a2079db68fad0bd2cfa1506940b6fe06d2429"
+    },
+    {
+      "file": "scripts/collectors/collect.ts",
+      "bytes": 1858,
+      "sha256": "065e284b358435adaa90321a07e3b7eef0299bb26c1e42c469fccfe2acb50199"
+    },
+    {
+      "file": "scripts/collectors/epagri.ts",
+      "bytes": 4415,
+      "sha256": "8f972dc77ec586d433074b716a2d6f19ae007874541cc6d3a55a4537cb37406d"
+    },
+    {
+      "file": "scripts/collectors/http.ts",
+      "bytes": 2199,
+      "sha256": "77ecdf3f0e06ac6a85e26a914c99677bbe74adb1e653553873098cd72b056ba8"
+    },
+    {
+      "file": "scripts/collectors/normalize.ts",
+      "bytes": 6423,
+      "sha256": "0e8c7ce04860ad6962a402137fefbbd9f8c8c20255fc075169e4068945c91464"
+    },
+    {
+      "file": "scripts/collectors/pipeline.ts",
+      "bytes": 5650,
+      "sha256": "b22b1f8e64f4c2cf01a2a175af27e4c6759dbfeab699bb0d6481b795bfa9aa91"
+    },
+    {
+      "file": "scripts/collectors/previous-status.ts",
+      "bytes": 507,
+      "sha256": "bf2a844ebb6cfc00e4af75b113d1b0177babdae4c725f41b5722f5a2904c2a10"
+    },
+    {
+      "file": "scripts/collectors/sources.ts",
+      "bytes": 894,
+      "sha256": "4cf4b43eb4209aa6b96888c98424d103ace0ff72756b5cbb44d9deec3dbef9ed"
+    },
+    {
+      "file": "scripts/collectors/structured.ts",
+      "bytes": 978,
+      "sha256": "3d8e1ad09a626ab2fe9e223d600c69d6643f453b190a8acbd04646511680ee66"
+    },
+    {
+      "file": "scripts/map/collect.ts",
+      "bytes": 5624,
+      "sha256": "2bb77dd444f0faf0f8755fd29fd63166aaf05d70fa1d2bd2963da59a466f35c7"
+    },
+    {
+      "file": "scripts/plans/import_plan.py",
+      "bytes": 5118,
+      "sha256": "c613ef7a157f8a95f347d74c7fa52fff077890bd5869e863c3d77c51b4f1f550"
+    },
+    {
+      "file": "scripts/prd/baseline-payload.ts",
+      "bytes": 1237,
+      "sha256": "da43c247a9175ec7dcd35ea56e68dbf99dc392d1e207d7af339b600988f15e4a"
+    },
+    {
+      "file": "scripts/prd/bootstrap.ts",
+      "bytes": 1406,
+      "sha256": "ca5baa3fcef475dc0d303ca0940cd4ce4606d1a3248569599452e133c9ce0337"
+    },
+    {
+      "file": "scripts/prd/configure-core.ts",
+      "bytes": 3522,
+      "sha256": "d78a56ef25f40053dfe0d48c90d3593b9620833bb2a16d8d8a1ce66748c6efe8"
+    },
+    {
+      "file": "scripts/prd/configure-prd.ps1",
+      "bytes": 1576,
+      "sha256": "9b8dd754d9b8c6db012f2f67fedff668413480258b6d823a77fd0134c9b52085"
+    },
+    {
+      "file": "scripts/prd/configure.ts",
+      "bytes": 971,
+      "sha256": "62b05339a216c5eb4680ddadf3ee8003cfeb7f6d49cfa280bde04cd63167cec9"
+    },
+    {
+      "file": "scripts/prd/cron-prd.ps1",
+      "bytes": 1676,
+      "sha256": "ab6802f2b61138aa46068ec46ef729686aa1b024ec1fdfe4719269129a4ca7cf"
+    },
+    {
+      "file": "scripts/prd/fixture.ts",
+      "bytes": 1556,
+      "sha256": "6837ad04aead13440912a2ae9141bd7d5c08b4155a86be7d5a44dd460ddf20e6"
+    },
+    {
+      "file": "scripts/prd/provision-prd.ps1",
+      "bytes": 1676,
+      "sha256": "e88f7d052bba94288a053e9bb758333dba479ef0b790d185370e76f19771a11d"
+    },
+    {
+      "file": "scripts/prd/verify-local.ts",
+      "bytes": 2200,
+      "sha256": "3599d3c48b77e8760f098381ce872e099b483a26a322aa1a6b6033b7e641a82a"
+    },
+    {
+      "file": "scripts/teams/admin-prd.ps1",
+      "bytes": 3924,
+      "sha256": "1a3bf139d1cbabca4b4c859533edf3c43f44afa4eee37db233a4a0b323affb43"
+    },
+    {
+      "file": "scripts/teams/provision-safety.ts",
+      "bytes": 2780,
+      "sha256": "b6a46a02c0f177cdb52bd19b520b921d357ed6e158aef5479583ec6427813b9d"
+    },
+    {
+      "file": "scripts/teams/reconcile.ts",
+      "bytes": 6159,
+      "sha256": "b4d4260d96bfaff5111dc6ea3cb886aff38830c0cb8c6cb2d0729fcb4dcb4a4e"
+    },
+    {
+      "file": "scripts/territorial/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "scripts/territory/config.ts",
+      "bytes": 2120,
+      "sha256": "7ec297574e8c2ced3ea09a4a332ccf180c4523a57671e931ee931709b6236753"
+    },
+    {
+      "file": "scripts/territory/generate.ts",
+      "bytes": 10160,
+      "sha256": "05445406e4fd114908b6a459fc287c38ef5183c0cab19f9fdcc7681aef35ef10"
+    },
+    {
+      "file": "scripts/territory/geometry.ts",
+      "bytes": 636,
+      "sha256": "cb1c8cc3b1ee731ea369478a46c4dbc96f0d87184b858eb01b0cd065eb67c16c"
+    },
+    {
+      "file": "scripts/territory/validate_geometry.py",
+      "bytes": 1668,
+      "sha256": "f7b912b552174d90d3f3df882106f953a713d14ef77d4f122d7973d3073f3df7"
+    },
+    {
+      "file": "scripts/validation/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "src/App.tsx",
+      "bytes": 5082,
+      "sha256": "c4a7e07d1ca48791d73ba2a309b271f34b503ab23df54a8d0aca78b37b80fa08"
+    },
+    {
+      "file": "src/assets/defesa-civil.svg",
+      "bytes": 1521,
+      "sha256": "cbba249d320798ae0498728c6b2f1b85f108c7a2dc3113074e52959011a54269"
+    },
+    {
+      "file": "src/assets/jbs-terminais-branco.png",
+      "bytes": 6296,
+      "sha256": "a84ae44cfacaab728eb98f07e9c8832c606db929d8312a2a57fc7b4939f9661e"
+    },
+    {
+      "file": "src/components/CompactOperational.tsx",
+      "bytes": 1595,
+      "sha256": "6fdcf56c5457bf725c02d07341b7850420fd22ff646d7d91cce74b4270c333ea"
+    },
+    {
+      "file": "src/components/DecisionMap.tsx",
+      "bytes": 2243,
+      "sha256": "19b752d6f009d3821d167a9c4539576e14356aa72fa5ddf0cfc70c2aebc8bbc5"
+    },
+    {
+      "file": "src/components/HmlAlertSimulator.tsx",
+      "bytes": 2861,
+      "sha256": "2b587e2f33cfc0d905ce79a91596e2489362688c2c49ee2b66ba7704a46279fb"
+    },
+    {
+      "file": "src/components/ImpactoJbs.tsx",
+      "bytes": 5565,
+      "sha256": "a2deb225479db83a199a9f6f2191f00f1146cc9b538678943d11c748f4faea44"
+    },
+    {
+      "file": "src/components/LevelAlert.tsx",
+      "bytes": 5159,
+      "sha256": "8e7697bbe6474628e925510814cada353f29964ba8ae5d649775ded1f80ceada"
+    },
+    {
+      "file": "src/components/MapDetails.tsx",
+      "bytes": 3310,
+      "sha256": "0a08efd0955a0cff0777c334db771182b5c6771f1d952027bd29d532d51b3a44"
+    },
+    {
+      "file": "src/components/NavIcon.tsx",
+      "bytes": 640,
+      "sha256": "31a59484e9eb09be7349b7a34d9d3833d5f022a682f17a8ced1b3a795d6273fc"
+    },
+    {
+      "file": "src/components/Navegacao.tsx",
+      "bytes": 428,
+      "sha256": "481018becab0e396fed3289268eb0c057890cb3c98218f3478588a14ecca6c64"
+    },
+    {
+      "file": "src/components/Operational.tsx",
+      "bytes": 2760,
+      "sha256": "eb2aa92c8a28c5d2490b2810af4c1e812eddc9b526377ccf655882b4c13ec7fc"
+    },
+    {
+      "file": "src/components/RiverChart.tsx",
+      "bytes": 2879,
+      "sha256": "3aafaad5fb1c297b5d10a0f4e70f87db314ce3ad7817fcc5a8153cbec3c11a2e"
+    },
+    {
+      "file": "src/components/ThemeToggle.tsx",
+      "bytes": 1478,
+      "sha256": "8def719fa1e85b58c41d426274bc377a7ca2feb74e33992d3f5fda73058303b7"
+    },
+    {
+      "file": "src/components/Weather.tsx",
+      "bytes": 3374,
+      "sha256": "ad0388dac0b2b7880ba425f091e23cca64d6a7d2db72f0ec7956cd17231c176c"
+    },
+    {
+      "file": "src/components/WeatherIcon.tsx",
+      "bytes": 1281,
+      "sha256": "a6e9ca515eba438e66430b1f826fb856f4259a9f9b440024d264207398d62519"
+    },
+    {
+      "file": "src/config/environment.ts",
+      "bytes": 1281,
+      "sha256": "7b66035f50eec2f430ee98d1df1333e103b42d704d2ee4cb5fcc6dec5e884f65"
+    },
+    {
+      "file": "src/content/action-plans.ts",
+      "bytes": 3744,
+      "sha256": "a1bc234363a31a6a30b1f7cb3124b6a02d2c47b15db614a1634e7f5acae2f346"
+    },
+    {
+      "file": "src/content/area-plans.ts",
+      "bytes": 1781,
+      "sha256": "cef7f852f13ccc138c7c74de03053aa22ac38f382179c4b3e98fe8314cd2b4c2"
+    },
+    {
+      "file": "src/content/plans/ti.json",
+      "bytes": 4789,
+      "sha256": "7e74ccf564e2505d858bf04e4f2c8e4eda364c2e91a55038c3d5b9a775ca74e6"
+    },
+    {
+      "file": "src/domain/alert-engine.ts",
+      "bytes": 8213,
+      "sha256": "f62b29d1ffd848fabe6ace588261d79666efc30a8d82a5d72d5f94c6da46ba57"
+    },
+    {
+      "file": "src/domain/blumenau.ts",
+      "bytes": 1403,
+      "sha256": "bf0d5d649a9d9220e5b2a0608355b8d6ab4b894579c7c22b32e1e0fbae190da6"
+    },
+    {
+      "file": "src/domain/contracts.ts",
+      "bytes": 13481,
+      "sha256": "e699533b18b72cb304bed513cda515ba81ffe73f54d50bea5558d6d9ca355f4b"
+    },
+    {
+      "file": "src/domain/hydrology.ts",
+      "bytes": 9434,
+      "sha256": "400a43f297f43e7b670e06074c83a04a1bbf90194f2e69bd36dc706654428b9e"
+    },
+    {
+      "file": "src/domain/impact.ts",
+      "bytes": 2970,
+      "sha256": "8e65e8b09b0690ad5ca6b18d3d374feae9869f9492e26da92598a363a73e4e02"
+    },
+    {
+      "file": "src/domain/map-layers.ts",
+      "bytes": 3983,
+      "sha256": "b6d75c9ac7a3e4e53b4b9c6a6c1f8205eefb0a2d48b53abd869e91d90c328484"
+    },
+    {
+      "file": "src/domain/territory.ts",
+      "bytes": 6209,
+      "sha256": "b0586061c1499c143bf891f30056b88ab8a65b6d9fb53460146a530fdf21b49a"
+    },
+    {
+      "file": "src/env.d.ts",
+      "bytes": 122,
+      "sha256": "ab102b310345a2756d76e70e2a59e93974857d52dadb797ca04c9bdfa843a9b7"
+    },
+    {
+      "file": "src/hooks/useDados.ts",
+      "bytes": 1915,
+      "sha256": "a1d13e6983a4d32c0020a2a2c5d8198b00692fad85ca45a331665e018b09ed84"
+    },
+    {
+      "file": "src/hooks/useHistoryLayer.ts",
+      "bytes": 1668,
+      "sha256": "46555945021bef91c67961fb6d475c43c00be42998a7c1811b64b8d8e2e2f827"
+    },
+    {
+      "file": "src/main.tsx",
+      "bytes": 241,
+      "sha256": "a139066ca9b6348e98cca85cc672640863e395036afda0abf51a90a1d7f1ad37"
+    },
+    {
+      "file": "src/map/basemaps.ts",
+      "bytes": 1992,
+      "sha256": "5d8c7783aea517901a1dab088ba6772c8b32f92e02abc3801a7d9b1a92f5650f"
+    },
+    {
+      "file": "src/map/engine.ts",
+      "bytes": 8751,
+      "sha256": "669f214126f9481d6401c9f39bf7ef76564de27512d06d73b5aed1823524683b"
+    },
+    {
+      "file": "src/map/neighborhood-labels.ts",
+      "bytes": 991,
+      "sha256": "d043b1347c23ef7bbeeb65cf00b723abf05331fbcac83bc2e7ebeb341bfa1b34"
+    },
+    {
+      "file": "src/pages/ActionPlan.tsx",
+      "bytes": 4596,
+      "sha256": "804f4a903ec7ac9034d5537810c15ef8ef0edd49db0704ec9e8af135260917b1"
+    },
+    {
+      "file": "src/pages/Dashboard.tsx",
+      "bytes": 3467,
+      "sha256": "71f70e451a0462c0f06ba5aa424d58f197a8d9758ae13a0772e281ecb0d06355"
+    },
+    {
+      "file": "src/pages/Monitoramento.tsx",
+      "bytes": 6661,
+      "sha256": "22a4d872aa954c5559c48ecd05952f20667a9a1e45ab97377e6f5ab1758cbc60"
+    },
+    {
+      "file": "src/pages/Placeholder.tsx",
+      "bytes": 796,
+      "sha256": "9e93d7f213729897f5410378ba85b733783bbbedd3e3113ba1202b57287993bf"
+    },
+    {
+      "file": "src/pages/PlansCenter.tsx",
+      "bytes": 4154,
+      "sha256": "e02d0631b1f25f4e8fbdd8972b0ef70755899e6a1ca37dc549bd0d8130405864"
+    },
+    {
+      "file": "src/pages/TerritoryMap.tsx",
+      "bytes": 12110,
+      "sha256": "f8b9efa4505c07e94a3496ac476fabf7bcbb21b42cc5bb24568d2e8b40225f8c"
+    },
+    {
+      "file": "src/services/alertAudio.ts",
+      "bytes": 2738,
+      "sha256": "0ccf6ec612324953529faeb15af274c5ca206adfed3458da2eefa0f0e736a376"
+    },
+    {
+      "file": "src/services/data.ts",
+      "bytes": 742,
+      "sha256": "c74a121e42eec324a68dab1d1109ce59b5e77fca38e7cd5f90a8f8a4d8a6f193"
+    },
+    {
+      "file": "src/services/history-data.ts",
+      "bytes": 1251,
+      "sha256": "0ca826eb8b925c6ac9ee3fb16ce0d96ab1fb43c1f8142d016ee20eb48d756f01"
+    },
+    {
+      "file": "src/services/impact.ts",
+      "bytes": 6229,
+      "sha256": "5a47f77a495f9016035176729880d462f4243ac7c76fd3a631a0a0ef169e4e1c"
+    },
+    {
+      "file": "src/services/map-data.ts",
+      "bytes": 628,
+      "sha256": "67c3fd9020471cf25a8e4e1ae4c672c32cdc3c5b97b452911b0ea97e8bf8c893"
+    },
+    {
+      "file": "src/styles.css",
+      "bytes": 36554,
+      "sha256": "7aab2e154ba8626d0eecbda0928f37a288054a48001aa2efca9841b9d527733a"
+    },
+    {
+      "file": "src/theme.css",
+      "bytes": 7126,
+      "sha256": "a18737e8be5b58f52ae40a1449f645269d31f90a49590295666e63d969b89338"
+    },
+    {
+      "file": "src/utils/format.ts",
+      "bytes": 451,
+      "sha256": "9b01c3bd95acc35e33c903596486a5d80fe4b7332142c11750db6632b669cdf0"
+    },
+    {
+      "file": "src/utils/presentation.ts",
+      "bytes": 2350,
+      "sha256": "d4e5a3f9dbbf2494960172dd74efc0e0667be9d8dcb43f2ea26c350f92c5027d"
+    },
+    {
+      "file": "supabase/config.toml",
+      "bytes": 456,
+      "sha256": "9db2b2ee26d7dff7467a2971a600f7473125f74991a54d055849832c84eaab8a"
+    },
+    {
+      "file": "supabase/functions/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "supabase/functions/_shared/environment.ts",
+      "bytes": 248,
+      "sha256": "bb3f6589d8922796c85f8153c221a0d3e929ae70d733ab3a7fc2ac92892f22c0"
+    },
+    {
+      "file": "supabase/functions/deno.d.ts",
+      "bytes": 229,
+      "sha256": "ee89628086f1927837f1f65ad86c1238b415101b1733d56f284d56554f532556"
+    },
+    {
+      "file": "supabase/functions/impacto-jbs/handler.ts",
+      "bytes": 5117,
+      "sha256": "b2fff411c1b97005f7a3f55f4e5fb71a9ec99ffe7fb00c66f1b2f776763248ad"
+    },
+    {
+      "file": "supabase/functions/impacto-jbs/index.ts",
+      "bytes": 1255,
+      "sha256": "c95c199eb87a0c00962dbf17c950ecb3f78333ea35d37cae2131c076af5e9894"
+    },
+    {
+      "file": "supabase/functions/teams-notifications/handler.ts",
+      "bytes": 10008,
+      "sha256": "9551642a438307ade27979a05ab1ea048071319089f0a3d05b76849a20d34901"
+    },
+    {
+      "file": "supabase/functions/teams-notifications/index.ts",
+      "bytes": 1339,
+      "sha256": "3128ba10462d6b91c9c342a64295d3bfc715ca0d9857f7a1ea17b370b6d1d266"
+    },
+    {
+      "file": "supabase/functions/trigger-monitoramento/handler.ts",
+      "bytes": 3026,
+      "sha256": "7d69a86f4943280985f76efd5ef2085dcc94f0802612315633d14f7decfd119f"
+    },
+    {
+      "file": "supabase/functions/trigger-monitoramento/index.ts",
+      "bytes": 418,
+      "sha256": "d89d5e76ca603463c040eea79e8ac0097907db7c1f02eb61a9427afd7c003c41"
+    },
+    {
+      "file": "supabase/migrations/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "supabase/migrations/202610020001_impactos_jbs.sql",
+      "bytes": 7266,
+      "sha256": "63c21557486db2ae05f77209511e3b355cdfe499b236fbf5036c331cbc84a438"
+    },
+    {
+      "file": "supabase/migrations/202610050001_monitoramento_cron.sql",
+      "bytes": 2312,
+      "sha256": "0a1b76b00d74fc5bc7000f94be763129388db4e088b8c8e5feca8301cc351c1e"
+    },
+    {
+      "file": "supabase/migrations/202610130001_teams_notifications.sql",
+      "bytes": 17836,
+      "sha256": "a989d7aeb0c711caa96677a40c5df8979955c6db71197cadf450b88a71b00d65"
+    },
+    {
+      "file": "supabase/migrations/202610140001_teams_operational.sql",
+      "bytes": 17714,
+      "sha256": "290e4fe7ab0a97b0cf14a8c4256c01a24cd9dc56fc49600e3a9f403e0c460f85"
+    },
+    {
+      "file": "supabase/tsconfig.json",
+      "bytes": 368,
+      "sha256": "15ee7c5b7c0ae8245f94ac74ecc050dcebe37a7148374ebaa6781378ff69501e"
+    },
+    {
+      "file": "tests/alert-engine.test.ts",
+      "bytes": 21813,
+      "sha256": "68fbbcca04303a1215cf8096acf9ada1715c06aef7cea397be12f3c63b74d042"
+    },
+    {
+      "file": "tests/alert-popup-impact.test.tsx",
+      "bytes": 4215,
+      "sha256": "850232ccf6f34290eca8da9efc3348fe9faf1d4e9d9e746779a50489a3986666"
+    },
+    {
+      "file": "tests/blumenau-tls.test.ts",
+      "bytes": 1509,
+      "sha256": "6aa8f906d181b68c5434071096f03fa3c75467cdde738f86cb142b7c4998efde"
+    },
+    {
+      "file": "tests/blumenau.test.ts",
+      "bytes": 2876,
+      "sha256": "8d11d0fd08649bd0428f0eafe552d00d27cbf6cc141cef5c1916705e04ad9494"
+    },
+    {
+      "file": "tests/collectors.test.ts",
+      "bytes": 11102,
+      "sha256": "1a31728a9201ac15e05705ff049b49e90d975422c74eb2f2289c968b9e873353"
+    },
+    {
+      "file": "tests/contracts.test.ts",
+      "bytes": 4184,
+      "sha256": "2533826eee4246214249548d17e9bc35201544477b9241cb2df86f5edffa5bf2"
+    },
+    {
+      "file": "tests/epagri.test.ts",
+      "bytes": 4125,
+      "sha256": "519d99d1c7c87c5e29f3c48b720fa80476b8ac21d34bee34162863a3eaa4117c"
+    },
+    {
+      "file": "tests/fixtures/README.md",
+      "bytes": 1384,
+      "sha256": "376419c46c67756d31331a25de18714bcd5a8a33f9bcf03b6a7f8f559ca85f0d"
+    },
+    {
+      "file": "tests/fixtures/alertas-null.json",
+      "bytes": 13,
+      "sha256": "ba5f3ea40e95f49bce11942f375ebd3882eb837976eda5c0cb78b9b99ca7b485"
+    },
+    {
+      "file": "tests/fixtures/barragens.json",
+      "bytes": 3172,
+      "sha256": "9c70d72cd43a91aa59053fa8fc5f57723d4e5a8b5752c541bf721c7394f88f3f"
+    },
+    {
+      "file": "tests/fixtures/blumenau-oficial-recorte.html",
+      "bytes": 1857,
+      "sha256": "09519e42f6ffdc9695bc981a703515e6e6e948fad783a58e2d690acb20aa3aa5"
+    },
+    {
+      "file": "tests/fixtures/chuvas.json",
+      "bytes": 113876,
+      "sha256": "bce2d23a798309f6f798e3996a2aebbc85e431b5a35a37f86eccad801b6dacac"
+    },
+    {
+      "file": "tests/fixtures/epagri-itajai.json",
+      "bytes": 1732,
+      "sha256": "7d3f8b42c9244a7f531fd9567e6c5d44608aeca3e5efb59c0d4f92f101491483"
+    },
+    {
+      "file": "tests/fixtures/epagri-municipio.json",
+      "bytes": 59,
+      "sha256": "a6b79fcc2f4aa046d1cb36679c6bbd844e11fcb74f5016b9d684766ac1bea706"
+    },
+    {
+      "file": "tests/fixtures/rios.json",
+      "bytes": 103210,
+      "sha256": "02ca8b4ffdbe3b774dbd0788d09fb574a7aab43ea301e0d161c8f1e05d91b23f"
+    },
+    {
+      "file": "tests/fixtures/situacao-atencao.json",
+      "bytes": 768,
+      "sha256": "c4f71f7f72ffb7cbd41df92a6c92465f1b5122e334d8e74de7f492767b610d1f"
+    },
+    {
+      "file": "tests/fixtures/status-operacional.json",
+      "bytes": 271054,
+      "sha256": "81f61dfb20c82480656be5936c77822e7bfe2bcb32ab478ac0811e0f7ae00b88"
+    },
+    {
+      "file": "tests/hml-simulation.test.tsx",
+      "bytes": 4610,
+      "sha256": "41099c08e58148861032c7209f689e31ffa1a358665e2d358500c27af4cf1793"
+    },
+    {
+      "file": "tests/impact-db.test.ts",
+      "bytes": 4988,
+      "sha256": "a3ce0779a2254d327136e4e1e9980d2ea0f07a693493b2d7091345e4c1039b25"
+    },
+    {
+      "file": "tests/impact-edge.test.ts",
+      "bytes": 4058,
+      "sha256": "ae69b6bd3d3aa8cec6641b428a5e6d30f7116ee5054883d31ab7df70495c653b"
+    },
+    {
+      "file": "tests/impact-integration.test.ts",
+      "bytes": 2996,
+      "sha256": "b3c5851d412944c7bba2170dc4f85ca88ff51be60d43902746ee2c310aeddbb5"
+    },
+    {
+      "file": "tests/impact-ui.test.tsx",
+      "bytes": 3776,
+      "sha256": "db35811dcaa0d388b624cc5658bc3c4f2f99f384501a1651b819bcc6d440db55"
+    },
+    {
+      "file": "tests/impact.test.ts",
+      "bytes": 7794,
+      "sha256": "dcae7084569b2bad1ec06a6ef62b10445503b0ebcba75b90e0d14598cf3fe485"
+    },
+    {
+      "file": "tests/phase06.test.tsx",
+      "bytes": 15283,
+      "sha256": "2f0ed0784547caa7db3b89efad7e06415fcc684e162f0c98798e2095314aa1d2"
+    },
+    {
+      "file": "tests/phase07.test.tsx",
+      "bytes": 16934,
+      "sha256": "34ccc94c43cbf7bb0c936ba63ca42751ba747fa510e2cfc94e16cecf51294d6c"
+    },
+    {
+      "file": "tests/phase071-data.test.ts",
+      "bytes": 5705,
+      "sha256": "768ad92b139a5b772342ea55cd407712a957a1b65b21b4ebd2146dd7e70143bf"
+    },
+    {
+      "file": "tests/phase071-engine.test.ts",
+      "bytes": 6293,
+      "sha256": "cf02f0698f9c9bcbc44e64cfe17ea339b51641e19b67d3f8f1ded7ecadc3d486"
+    },
+    {
+      "file": "tests/phase071-ui.test.tsx",
+      "bytes": 5929,
+      "sha256": "8fdd1a71f611779d24f065807e8c7a94b325edc5530d13d49741e6df4e30e206"
+    },
+    {
+      "file": "tests/phase08.test.ts",
+      "bytes": 9439,
+      "sha256": "8b009224310291f777297f9572beb7d62cee11bc41ad5ab30384dfdb50ceafac"
+    },
+    {
+      "file": "tests/phase09.test.ts",
+      "bytes": 5346,
+      "sha256": "57e015e5cd3e1578db1a582159bcefe3dbaf8df3b6b17da7926f0599ad5cdd72"
+    },
+    {
+      "file": "tests/phase10-adjustments.test.tsx",
+      "bytes": 5274,
+      "sha256": "e87383996e421ab2e732d3c5d35d440c7e8110ce986279052d5304057ee16edb"
+    },
+    {
+      "file": "tests/phase10-cadence.test.ts",
+      "bytes": 2106,
+      "sha256": "da5717e3d8e37ec8f298299e9a8b67eb88247171d095e6d0292f92452f9feb5c"
+    },
+    {
+      "file": "tests/phase10-cron.test.ts",
+      "bytes": 4152,
+      "sha256": "f99c6c7455213e6c801318f332945085f0f28bf96346fd43beb1bcfdf6b536e5"
+    },
+    {
+      "file": "tests/phase10-final-ui.test.tsx",
+      "bytes": 1324,
+      "sha256": "3b25c152b5042e4d7f9f91c05086b9e92f35bebb4aba3a67eefc6d0050ccc95b"
+    },
+    {
+      "file": "tests/phase10-map.test.ts",
+      "bytes": 5221,
+      "sha256": "24901284d81650ea5bf08e185c886bfa7f1cdfda68b2fdc842a3fa48664cf239"
+    },
+    {
+      "file": "tests/phase10-refresh.test.tsx",
+      "bytes": 2997,
+      "sha256": "aa418a34ea2a8f57bfa4b7a151e3aef97be70796bdd1228982dda877823d3496"
+    },
+    {
+      "file": "tests/phase10-ui.test.tsx",
+      "bytes": 4038,
+      "sha256": "2161eebdf8ad5144884582015b0b9fc04b44513a496e2eb9d4485b824d04084a"
+    },
+    {
+      "file": "tests/plan_import_test.py",
+      "bytes": 4511,
+      "sha256": "89156c7ce2cf49cfb196063bb74a0703f30b12d16d27f008ad56af363b8869ed"
+    },
+    {
+      "file": "tests/plans-import.test.ts",
+      "bytes": 365,
+      "sha256": "77dec8b164995e67cacca9954745ec0a672f89dc46ca02830c443bc270507599"
+    },
+    {
+      "file": "tests/prd-build-isolation.test.ts",
+      "bytes": 640,
+      "sha256": "e8ac67343e9095f10074078cb670c8a0bdd9ee2343a156f331befe42db17a8c3"
+    },
+    {
+      "file": "tests/prd-configuration.test.ts",
+      "bytes": 1752,
+      "sha256": "a6519cef7dab4776ae1c22d169ae728b086b77e55163321eb752171779c82820"
+    },
+    {
+      "file": "tests/prd-cron.test.ts",
+      "bytes": 1617,
+      "sha256": "e5ef3fccae774f775038ec1a4c794163f897a2668e4b08c1d3f818e0ce06c456"
+    },
+    {
+      "file": "tests/prd-environment.test.ts",
+      "bytes": 2932,
+      "sha256": "d3786fb9dadbac9ebf244d684f5194fd2eee7a39aca32b2a9c2c10e7ec05786a"
+    },
+    {
+      "file": "tests/previous-status.test.ts",
+      "bytes": 1021,
+      "sha256": "aeda1f19fbc1899986a246e84d6decc2d178fcb9672d656ef0e92db34de5c413"
+    },
+    {
+      "file": "tests/push-snapshot.test.ts",
+      "bytes": 3019,
+      "sha256": "0eb11bd7fd05b867934b52e1e599200a1f70b121b331485d37d731250e0373ce"
+    },
+    {
+      "file": "tests/teams-card.test.ts",
+      "bytes": 5071,
+      "sha256": "76acc0bc3f956ee3e74cb076541111c341d286d7e13f65e86bf80cc5f47e05a9"
+    },
+    {
+      "file": "tests/teams-db.test.ts",
+      "bytes": 17166,
+      "sha256": "aee40aa4ebe3c6f8063768c53b712c2da4ce1dd71adb18f7787ea9845ac1be61"
+    },
+    {
+      "file": "tests/teams-operational-admin.test.ts",
+      "bytes": 1071,
+      "sha256": "b8d8dc0b13d56e54da391697739070904e5bf717ab9beb9febccd06457b3d304"
+    },
+    {
+      "file": "tests/teams-provision.test.ts",
+      "bytes": 5212,
+      "sha256": "c51d82fc17a16e234b4b6e21dbc2d9d28965003892843190d3d0afb579b00f82"
+    },
+    {
+      "file": "tests/teams-reconcile.test.ts",
+      "bytes": 1877,
+      "sha256": "0afa6eb0c4d91f15bc6cdaaa59595b9496e4456818b6d305ff78f2e886422032"
+    },
+    {
+      "file": "tests/teams-worker.test.ts",
+      "bytes": 7369,
+      "sha256": "a254abaf59132997799c01ac2b352ec06b61a4f5c39396f3e53c5843f37e3a40"
+    },
+    {
+      "file": "tests/territory.test.ts",
+      "bytes": 8235,
+      "sha256": "ae171dc399447c5135fb9d80425433d749104a2c1887e8578b174b9d5a0fc157"
+    },
+    {
+      "file": "tests/v1-alert-audio.test.ts",
+      "bytes": 2945,
+      "sha256": "729dbd66bf282402fe0e546273c60f2f48d37739e71d89a17a17702cd68e4aeb"
+    },
+    {
+      "file": "tests/v1-alert-map.test.tsx",
+      "bytes": 9035,
+      "sha256": "c5a4d793731c89a0dd64782bcbcd6b6c511f7da314dd38a61d0505b0ae60f8d2"
+    },
+    {
+      "file": "tests/v1-closure.test.tsx",
+      "bytes": 5680,
+      "sha256": "f861ce0b7a6761c18097c4aecbd19b05a8fee43e0c368b893421acc502a788a9"
+    },
+    {
+      "file": "tsconfig.json",
+      "bytes": 505,
+      "sha256": "8fac3339bdec0b7f0c2b9d7843aa6cc8ced9109790a4ed5bad764ccac03a3763"
+    },
+    {
+      "file": "vite.config.ts",
+      "bytes": 1077,
+      "sha256": "465321d159978f2899607db898f70d086e8b22348281d5338ba5a20818dcb821"
+    }
+  ],
+  "findings": [],
+  "remoteActions": 0
+}
