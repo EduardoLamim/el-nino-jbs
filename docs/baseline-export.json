@@ -1,0 +1,1107 @@
+{
+  "baseline": "f398d948a0929034c063a608722ad88101c3ac37",
+  "files": [
+    {
+      "path": ".env.example",
+      "sha256": "723eb82f05e0adbb258db50bf94fbecf04850ed2e74109c1259d17d7248c142f"
+    },
+    {
+      "path": ".gitattributes",
+      "sha256": "c4bd8026ded478ae0366b4cd42d82cb00f33895b16aeb382a00b03a9100975de"
+    },
+    {
+      "path": ".github/workflows/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "sha256": "f47ed6090d809d3c15b32a570d91591f3783f4f9c920f3de5a08ee0a6ec0ddff"
+    },
+    {
+      "path": ".github/workflows/deploy-pages.yml",
+      "sha256": "34659b035495a7c1b8f5dcaf7953b45560f5207547d6d6c04f00baba5c6ec78b"
+    },
+    {
+      "path": ".github/workflows/teams-hml.yml",
+      "sha256": "4736a6ea03360273f338431fcb6697d176d7aaf7e31a0032113f000d3665733f"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "cae106d765b6bd63f378cadc185cd0b09ad876fad07433914f6490d395cdba9a"
+    },
+    {
+      "path": "Plano-de-Contingencia-de-Inundacao-ALTERADO-EM-22-12-25.pdf",
+      "sha256": "60d4a9dbebafbfd54a8c167af513e61d6e0775681f59863b4ad6588774d871e9"
+    },
+    {
+      "path": "eslint.config.js",
+      "sha256": "45989d7862562071ae22cb9221fe6796ea95b4551299259cfe3af57c574698ea"
+    },
+    {
+      "path": "index.html",
+      "sha256": "772bd695f79613df6a72f6762a4d2ec0087af91d6e8c1f10a7746edcce1eb0fa"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "dcd8cb304acae8a5c86db8cdfcaa18f924cda4a7144b6d2aee771242108fcdb8"
+    },
+    {
+      "path": "package.json",
+      "sha256": "26c9c56a4de0cf8e083ced00aa8dbdea770f6fb76cdda59741f54ce2fe201ec9"
+    },
+    {
+      "path": "public/assets/alarm_level_1.mp3",
+      "sha256": "26d44000c611d597da9fd8c3562c7bb5fcd81d58da96cfa0daca8455bb4f5181"
+    },
+    {
+      "path": "public/assets/alarm_level_2.mp3",
+      "sha256": "f49454680f4e220c71c63b9e2ab2a5e5d4b50aa2dbd2643acfc2933a5861bc45"
+    },
+    {
+      "path": "public/assets/alarm_level_3.mp3",
+      "sha256": "990e4c0b8c8c2d54b5c40d4a761317fa2a6ea48acf893e66fc2cfae0f33bec2d"
+    },
+    {
+      "path": "public/assets/mapa-decisoes-terminal.png",
+      "sha256": "751250020d37527d5b75630251768afd6365ff71541a03dbd0840d1c007c8db4"
+    },
+    {
+      "path": "public/data/bairros.geojson",
+      "sha256": "60018b85b6bdd3b8711905f679bcc6c49ce138fd13610d0dab753519612480fa"
+    },
+    {
+      "path": "public/data/historico/historico-0-8376c16e7dcbef81915f7447330ee92e5825fb092d4df526084416a4d5578166.geojson",
+      "sha256": "8376c16e7dcbef81915f7447330ee92e5825fb092d4df526084416a4d5578166"
+    },
+    {
+      "path": "public/data/historico/historico-1-027f148526a7362edbc69d1d6e691cf5ef670748e25072e3f4c92a9e3189096a.geojson",
+      "sha256": "027f148526a7362edbc69d1d6e691cf5ef670748e25072e3f4c92a9e3189096a"
+    },
+    {
+      "path": "public/data/historico/historico-2-f05e60f09c31fefe9ebf540ed41a922bd72a52398e9010779be34d5737ab4d66.geojson",
+      "sha256": "f05e60f09c31fefe9ebf540ed41a922bd72a52398e9010779be34d5737ab4d66"
+    },
+    {
+      "path": "public/data/historico/historico-3-10c1ba584a8df92bc4e1251e951490c2dff4be29e207170f5e33255be1dcab1a.geojson",
+      "sha256": "10c1ba584a8df92bc4e1251e951490c2dff4be29e207170f5e33255be1dcab1a"
+    },
+    {
+      "path": "public/data/historico/historico-4-797c260d658bfedb53f92284c60871d2fc120a5fb3aff8d7fc826b9f321d2122.geojson",
+      "sha256": "797c260d658bfedb53f92284c60871d2fc120a5fb3aff8d7fc826b9f321d2122"
+    },
+    {
+      "path": "public/data/historico/historico-5-3b40244ee961a40101c0800087abf3a89c95cdfd8c3a1cd06bc01468c5321b0c.geojson",
+      "sha256": "3b40244ee961a40101c0800087abf3a89c95cdfd8c3a1cd06bc01468c5321b0c"
+    },
+    {
+      "path": "public/data/historico/historico-6-c328356856c267e7044009dcf25bc11f4e615146cadb9ac56be0487a966be785.geojson",
+      "sha256": "c328356856c267e7044009dcf25bc11f4e615146cadb9ac56be0487a966be785"
+    },
+    {
+      "path": "public/data/historico/historico-7-86f92e79732d1c3aa08476e75cdb344af6bbc2db77a0b5f6aea96521f53e3a59.geojson",
+      "sha256": "86f92e79732d1c3aa08476e75cdb344af6bbc2db77a0b5f6aea96521f53e3a59"
+    },
+    {
+      "path": "public/data/historico/historico-8-9d77935cda5182404582e82a8b4a654bccff543ec7b9eb8a7b16605c806c3b29.geojson",
+      "sha256": "9d77935cda5182404582e82a8b4a654bccff543ec7b9eb8a7b16605c806c3b29"
+    },
+    {
+      "path": "public/data/historico/historico-9-723e06a82eafb7ff94c539d97cd5d0664e1dfffa1d460ee4dc4b5ad2e5c5f606.geojson",
+      "sha256": "723e06a82eafb7ff94c539d97cd5d0664e1dfffa1d460ee4dc4b5ad2e5c5f606"
+    },
+    {
+      "path": "public/data/historico/manifesto.json",
+      "sha256": "b8770b8f9dbe81642ec396253cd7d8ad18f96f9f84a416bac75411fb607daacb"
+    },
+    {
+      "path": "public/data/historico/vias-historicas-fd550bacdf987b6a80a80f3a114a6d317e14eaf087e719870910df17edeb4b83.geojson",
+      "sha256": "fd550bacdf987b6a80a80f3a114a6d317e14eaf087e719870910df17edeb4b83"
+    },
+    {
+      "path": "public/data/territorio.json",
+      "sha256": "9d1fdf8d86b04c4bab56209efd889ffde05202ecc09362f1b866e91bd47de222"
+    },
+    {
+      "path": "scripts/automation/activate-hml-cron.sql",
+      "sha256": "dd6ff3f0d489e33f4069097e328043f0404c8b89b343d30d895a5c19ae204b9f"
+    },
+    {
+      "path": "scripts/automation/inspect-hml-cron.sql",
+      "sha256": "4fb9ec236b9edf8e790acc9c2c35e8a7cae2210a47108fdbe2dc7a55acb706f8"
+    },
+    {
+      "path": "scripts/automation/pages-config.ts",
+      "sha256": "d5e5948a6d8f098213f46200ba9fca4db9d26684d06a2f9e7167b4ba949c6562"
+    },
+    {
+      "path": "scripts/automation/push-snapshot.ts",
+      "sha256": "2568a97dc48a128707a5b83b7933c04e25c94e794c59f5b913f613a5150f1a15"
+    },
+    {
+      "path": "scripts/automation/simulation-config.ts",
+      "sha256": "b80d71ed1c62d72a94104b79a18cf0ebe70b5bbb89c82e74285ecb06787fdf3b"
+    },
+    {
+      "path": "scripts/automation/smoke.ts",
+      "sha256": "09e6a09efcadfbcc8f5c1248272c02e3198257b8552e9934e67740de96fa2ca8"
+    },
+    {
+      "path": "scripts/automation/status.ts",
+      "sha256": "532c2ea496677450acca252d79ea7f950aaa7208e3d4e24c9e7f1bde8a12e555"
+    },
+    {
+      "path": "scripts/automation/update.ts",
+      "sha256": "85458ceb808c87c6bfe0f0c8e7fa41d4f4f763084a69bbc9dc651d9440e8184a"
+    },
+    {
+      "path": "scripts/automation/validate.ts",
+      "sha256": "5d7b4407655d4d27d4f61db8599559637eff5cab3d6ec7e0c32acaf27c51f4f6"
+    },
+    {
+      "path": "scripts/collectors/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "scripts/collectors/blumenau-transport.ts",
+      "sha256": "721a1e2945e4c7d8cc0862a5c2308c9074c6470c0f3ea376b4a03c2da4056fa2"
+    },
+    {
+      "path": "scripts/collectors/blumenau.ts",
+      "sha256": "25366d33407094177411913640edb3adf4f708c930a27a38c1a797e67ae28e8f"
+    },
+    {
+      "path": "scripts/collectors/certificates/README.md",
+      "sha256": "c4402283b0acd0f54c79638ca6d06b8e72c879c75d6a0d8eecaf22c287ee6196"
+    },
+    {
+      "path": "scripts/collectors/certificates/blumenau-intermediates.pem",
+      "sha256": "d1ceb02b0c390afc7aeaf94e499a2079db68fad0bd2cfa1506940b6fe06d2429"
+    },
+    {
+      "path": "scripts/collectors/collect.ts",
+      "sha256": "065e284b358435adaa90321a07e3b7eef0299bb26c1e42c469fccfe2acb50199"
+    },
+    {
+      "path": "scripts/collectors/epagri.ts",
+      "sha256": "8f972dc77ec586d433074b716a2d6f19ae007874541cc6d3a55a4537cb37406d"
+    },
+    {
+      "path": "scripts/collectors/http.ts",
+      "sha256": "77ecdf3f0e06ac6a85e26a914c99677bbe74adb1e653553873098cd72b056ba8"
+    },
+    {
+      "path": "scripts/collectors/normalize.ts",
+      "sha256": "0e8c7ce04860ad6962a402137fefbbd9f8c8c20255fc075169e4068945c91464"
+    },
+    {
+      "path": "scripts/collectors/pipeline.ts",
+      "sha256": "b22b1f8e64f4c2cf01a2a175af27e4c6759dbfeab699bb0d6481b795bfa9aa91"
+    },
+    {
+      "path": "scripts/collectors/previous-status.ts",
+      "sha256": "bf2a844ebb6cfc00e4af75b113d1b0177babdae4c725f41b5722f5a2904c2a10"
+    },
+    {
+      "path": "scripts/collectors/sources.ts",
+      "sha256": "4cf4b43eb4209aa6b96888c98424d103ace0ff72756b5cbb44d9deec3dbef9ed"
+    },
+    {
+      "path": "scripts/collectors/structured.ts",
+      "sha256": "3d8e1ad09a626ab2fe9e223d600c69d6643f453b190a8acbd04646511680ee66"
+    },
+    {
+      "path": "scripts/map/collect.ts",
+      "sha256": "2bb77dd444f0faf0f8755fd29fd63166aaf05d70fa1d2bd2963da59a466f35c7"
+    },
+    {
+      "path": "scripts/plans/import_plan.py",
+      "sha256": "c613ef7a157f8a95f347d74c7fa52fff077890bd5869e863c3d77c51b4f1f550"
+    },
+    {
+      "path": "scripts/teams/admin-hml.ps1",
+      "sha256": "aa20ffcac95b96247b29dd3d5ba47aa7663a7383911e169e897fbb90ad9b093c"
+    },
+    {
+      "path": "scripts/teams/provision-hml.ps1",
+      "sha256": "30f99a5d2923292da2477bcf8bb6dd79ec36aecc41c8fa4fd9130394a5995db7"
+    },
+    {
+      "path": "scripts/teams/provision-safety.ts",
+      "sha256": "1c4c9780e3662425ae1845bb7b24d0d323b32929aaecad7a628ac5e9240de80c"
+    },
+    {
+      "path": "scripts/teams/provision.ts",
+      "sha256": "5807c358b3bc0594fc6d3d7d90ef1ab671847bf7dd6ff55162e87c7369af616a"
+    },
+    {
+      "path": "scripts/teams/reconcile.ts",
+      "sha256": "634912b176601021d287132cf38e3be7a382fa6105955ea35861849295ed1c13"
+    },
+    {
+      "path": "scripts/territorial/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "scripts/territory/config.ts",
+      "sha256": "7ec297574e8c2ced3ea09a4a332ccf180c4523a57671e931ee931709b6236753"
+    },
+    {
+      "path": "scripts/territory/generate.ts",
+      "sha256": "05445406e4fd114908b6a459fc287c38ef5183c0cab19f9fdcc7681aef35ef10"
+    },
+    {
+      "path": "scripts/territory/geometry.ts",
+      "sha256": "cb1c8cc3b1ee731ea369478a46c4dbc96f0d87184b858eb01b0cd065eb67c16c"
+    },
+    {
+      "path": "scripts/territory/validate_geometry.py",
+      "sha256": "f7b912b552174d90d3f3df882106f953a713d14ef77d4f122d7973d3073f3df7"
+    },
+    {
+      "path": "scripts/validation/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/App.tsx",
+      "sha256": "c4a7e07d1ca48791d73ba2a309b271f34b503ab23df54a8d0aca78b37b80fa08"
+    },
+    {
+      "path": "src/assets/defesa-civil.svg",
+      "sha256": "cbba249d320798ae0498728c6b2f1b85f108c7a2dc3113074e52959011a54269"
+    },
+    {
+      "path": "src/assets/jbs-terminais-branco.png",
+      "sha256": "a84ae44cfacaab728eb98f07e9c8832c606db929d8312a2a57fc7b4939f9661e"
+    },
+    {
+      "path": "src/components/CompactOperational.tsx",
+      "sha256": "6fdcf56c5457bf725c02d07341b7850420fd22ff646d7d91cce74b4270c333ea"
+    },
+    {
+      "path": "src/components/DecisionMap.tsx",
+      "sha256": "19b752d6f009d3821d167a9c4539576e14356aa72fa5ddf0cfc70c2aebc8bbc5"
+    },
+    {
+      "path": "src/components/HmlAlertSimulator.tsx",
+      "sha256": "2b587e2f33cfc0d905ce79a91596e2489362688c2c49ee2b66ba7704a46279fb"
+    },
+    {
+      "path": "src/components/ImpactoJbs.tsx",
+      "sha256": "a2deb225479db83a199a9f6f2191f00f1146cc9b538678943d11c748f4faea44"
+    },
+    {
+      "path": "src/components/LevelAlert.tsx",
+      "sha256": "8e7697bbe6474628e925510814cada353f29964ba8ae5d649775ded1f80ceada"
+    },
+    {
+      "path": "src/components/MapDetails.tsx",
+      "sha256": "0a08efd0955a0cff0777c334db771182b5c6771f1d952027bd29d532d51b3a44"
+    },
+    {
+      "path": "src/components/NavIcon.tsx",
+      "sha256": "31a59484e9eb09be7349b7a34d9d3833d5f022a682f17a8ced1b3a795d6273fc"
+    },
+    {
+      "path": "src/components/Navegacao.tsx",
+      "sha256": "481018becab0e396fed3289268eb0c057890cb3c98218f3478588a14ecca6c64"
+    },
+    {
+      "path": "src/components/Operational.tsx",
+      "sha256": "eb2aa92c8a28c5d2490b2810af4c1e812eddc9b526377ccf655882b4c13ec7fc"
+    },
+    {
+      "path": "src/components/RiverChart.tsx",
+      "sha256": "3aafaad5fb1c297b5d10a0f4e70f87db314ce3ad7817fcc5a8153cbec3c11a2e"
+    },
+    {
+      "path": "src/components/ThemeToggle.tsx",
+      "sha256": "c77ae34dfd7936e50796e6d6e12e067f8a613f8a5aa6a7793ce9ac9a2002646d"
+    },
+    {
+      "path": "src/components/Weather.tsx",
+      "sha256": "ad0388dac0b2b7880ba425f091e23cca64d6a7d2db72f0ec7956cd17231c176c"
+    },
+    {
+      "path": "src/components/WeatherIcon.tsx",
+      "sha256": "a6e9ca515eba438e66430b1f826fb856f4259a9f9b440024d264207398d62519"
+    },
+    {
+      "path": "src/content/action-plans.ts",
+      "sha256": "a1bc234363a31a6a30b1f7cb3124b6a02d2c47b15db614a1634e7f5acae2f346"
+    },
+    {
+      "path": "src/content/area-plans.ts",
+      "sha256": "cef7f852f13ccc138c7c74de03053aa22ac38f382179c4b3e98fe8314cd2b4c2"
+    },
+    {
+      "path": "src/content/plans/ti.json",
+      "sha256": "7e74ccf564e2505d858bf04e4f2c8e4eda364c2e91a55038c3d5b9a775ca74e6"
+    },
+    {
+      "path": "src/domain/alert-engine.ts",
+      "sha256": "f62b29d1ffd848fabe6ace588261d79666efc30a8d82a5d72d5f94c6da46ba57"
+    },
+    {
+      "path": "src/domain/blumenau.ts",
+      "sha256": "bf0d5d649a9d9220e5b2a0608355b8d6ab4b894579c7c22b32e1e0fbae190da6"
+    },
+    {
+      "path": "src/domain/contracts.ts",
+      "sha256": "e699533b18b72cb304bed513cda515ba81ffe73f54d50bea5558d6d9ca355f4b"
+    },
+    {
+      "path": "src/domain/hydrology.ts",
+      "sha256": "400a43f297f43e7b670e06074c83a04a1bbf90194f2e69bd36dc706654428b9e"
+    },
+    {
+      "path": "src/domain/impact.ts",
+      "sha256": "8e65e8b09b0690ad5ca6b18d3d374feae9869f9492e26da92598a363a73e4e02"
+    },
+    {
+      "path": "src/domain/map-layers.ts",
+      "sha256": "b6d75c9ac7a3e4e53b4b9c6a6c1f8205eefb0a2d48b53abd869e91d90c328484"
+    },
+    {
+      "path": "src/domain/territory.ts",
+      "sha256": "b0586061c1499c143bf891f30056b88ab8a65b6d9fb53460146a530fdf21b49a"
+    },
+    {
+      "path": "src/env.d.ts",
+      "sha256": "25da2afe2a8d90613b27c98e44945afca232ff068b7a603986ba7e96c4fdc382"
+    },
+    {
+      "path": "src/hooks/useDados.ts",
+      "sha256": "a1d13e6983a4d32c0020a2a2c5d8198b00692fad85ca45a331665e018b09ed84"
+    },
+    {
+      "path": "src/hooks/useHistoryLayer.ts",
+      "sha256": "46555945021bef91c67961fb6d475c43c00be42998a7c1811b64b8d8e2e2f827"
+    },
+    {
+      "path": "src/main.tsx",
+      "sha256": "a139066ca9b6348e98cca85cc672640863e395036afda0abf51a90a1d7f1ad37"
+    },
+    {
+      "path": "src/map/basemaps.ts",
+      "sha256": "5d8c7783aea517901a1dab088ba6772c8b32f92e02abc3801a7d9b1a92f5650f"
+    },
+    {
+      "path": "src/map/engine.ts",
+      "sha256": "669f214126f9481d6401c9f39bf7ef76564de27512d06d73b5aed1823524683b"
+    },
+    {
+      "path": "src/map/neighborhood-labels.ts",
+      "sha256": "d043b1347c23ef7bbeeb65cf00b723abf05331fbcac83bc2e7ebeb341bfa1b34"
+    },
+    {
+      "path": "src/pages/ActionPlan.tsx",
+      "sha256": "804f4a903ec7ac9034d5537810c15ef8ef0edd49db0704ec9e8af135260917b1"
+    },
+    {
+      "path": "src/pages/Dashboard.tsx",
+      "sha256": "71f70e451a0462c0f06ba5aa424d58f197a8d9758ae13a0772e281ecb0d06355"
+    },
+    {
+      "path": "src/pages/Monitoramento.tsx",
+      "sha256": "22a4d872aa954c5559c48ecd05952f20667a9a1e45ab97377e6f5ab1758cbc60"
+    },
+    {
+      "path": "src/pages/Placeholder.tsx",
+      "sha256": "9e93d7f213729897f5410378ba85b733783bbbedd3e3113ba1202b57287993bf"
+    },
+    {
+      "path": "src/pages/PlansCenter.tsx",
+      "sha256": "e02d0631b1f25f4e8fbdd8972b0ef70755899e6a1ca37dc549bd0d8130405864"
+    },
+    {
+      "path": "src/pages/TerritoryMap.tsx",
+      "sha256": "f8b9efa4505c07e94a3496ac476fabf7bcbb21b42cc5bb24568d2e8b40225f8c"
+    },
+    {
+      "path": "src/services/alertAudio.ts",
+      "sha256": "0ccf6ec612324953529faeb15af274c5ca206adfed3458da2eefa0f0e736a376"
+    },
+    {
+      "path": "src/services/data.ts",
+      "sha256": "c74a121e42eec324a68dab1d1109ce59b5e77fca38e7cd5f90a8f8a4d8a6f193"
+    },
+    {
+      "path": "src/services/history-data.ts",
+      "sha256": "0ca826eb8b925c6ac9ee3fb16ce0d96ab1fb43c1f8142d016ee20eb48d756f01"
+    },
+    {
+      "path": "src/services/impact.ts",
+      "sha256": "013213d08db5211601dc16eaa3275228a01daa18e4491759845e6f98c7e481e6"
+    },
+    {
+      "path": "src/services/map-data.ts",
+      "sha256": "67c3fd9020471cf25a8e4e1ae4c672c32cdc3c5b97b452911b0ea97e8bf8c893"
+    },
+    {
+      "path": "src/styles.css",
+      "sha256": "7aab2e154ba8626d0eecbda0928f37a288054a48001aa2efca9841b9d527733a"
+    },
+    {
+      "path": "src/theme.css",
+      "sha256": "a18737e8be5b58f52ae40a1449f645269d31f90a49590295666e63d969b89338"
+    },
+    {
+      "path": "src/utils/format.ts",
+      "sha256": "9b01c3bd95acc35e33c903596486a5d80fe4b7332142c11750db6632b669cdf0"
+    },
+    {
+      "path": "src/utils/presentation.ts",
+      "sha256": "d4e5a3f9dbbf2494960172dd74efc0e0667be9d8dcb43f2ea26c350f92c5027d"
+    },
+    {
+      "path": "supabase/config.toml",
+      "sha256": "b29e3b351792f1c9b559774401ead0c53e148a5814f9a49fbb5d33ed12452fd5"
+    },
+    {
+      "path": "supabase/functions/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "supabase/functions/deno.d.ts",
+      "sha256": "ee89628086f1927837f1f65ad86c1238b415101b1733d56f284d56554f532556"
+    },
+    {
+      "path": "supabase/functions/impacto-jbs/handler.ts",
+      "sha256": "b2fff411c1b97005f7a3f55f4e5fb71a9ec99ffe7fb00c66f1b2f776763248ad"
+    },
+    {
+      "path": "supabase/functions/impacto-jbs/index.ts",
+      "sha256": "c6bd8c16dae67292ffbb509360a9707f1c3cecc4e8099887d0a2e13d8a16bd62"
+    },
+    {
+      "path": "supabase/functions/teams-notifications/handler.ts",
+      "sha256": "9f2de8f159a785fd661753c83cdef2c6686ce48203e85d94a14365e7da018cb7"
+    },
+    {
+      "path": "supabase/functions/teams-notifications/index.ts",
+      "sha256": "6268b84c1ae79eeafe78a6d74a9dc26ec965053b066e5ebb0d98817910da0646"
+    },
+    {
+      "path": "supabase/functions/trigger-monitoramento/handler.ts",
+      "sha256": "0b2a0c95ec7273af495a3bf701cf1600428962c66f0d2ae269094e79fd92cec8"
+    },
+    {
+      "path": "supabase/functions/trigger-monitoramento/index.ts",
+      "sha256": "10b57607dac488d164313fdbf9b264639944f391bdb23ed3c9626184de67438f"
+    },
+    {
+      "path": "supabase/migrations/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "supabase/migrations/202610020001_impactos_jbs.sql",
+      "sha256": "63c21557486db2ae05f77209511e3b355cdfe499b236fbf5036c331cbc84a438"
+    },
+    {
+      "path": "supabase/migrations/202610050001_monitoramento_cron.sql",
+      "sha256": "7d48e0a0c1749ac6b80f7ebc27848ac6f5b10ad2c2a45946e0568f30271a6f1d"
+    },
+    {
+      "path": "supabase/migrations/202610130001_teams_notifications.sql",
+      "sha256": "364353649ad1e0c7917535e783a1e97a7b0140a418f0da8be964e3fd3efd78e9"
+    },
+    {
+      "path": "supabase/migrations/202610140001_teams_operational.sql",
+      "sha256": "281828c909bc191bafe4456802c0bfc46856676211d6a032cb488113fa897ee4"
+    },
+    {
+      "path": "supabase/tsconfig.json",
+      "sha256": "15ee7c5b7c0ae8245f94ac74ecc050dcebe37a7148374ebaa6781378ff69501e"
+    },
+    {
+      "path": "tests/alert-engine.test.ts",
+      "sha256": "68fbbcca04303a1215cf8096acf9ada1715c06aef7cea397be12f3c63b74d042"
+    },
+    {
+      "path": "tests/alert-popup-impact.test.tsx",
+      "sha256": "850232ccf6f34290eca8da9efc3348fe9faf1d4e9d9e746779a50489a3986666"
+    },
+    {
+      "path": "tests/blumenau-tls.test.ts",
+      "sha256": "6aa8f906d181b68c5434071096f03fa3c75467cdde738f86cb142b7c4998efde"
+    },
+    {
+      "path": "tests/blumenau.test.ts",
+      "sha256": "8d11d0fd08649bd0428f0eafe552d00d27cbf6cc141cef5c1916705e04ad9494"
+    },
+    {
+      "path": "tests/collectors.test.ts",
+      "sha256": "1a31728a9201ac15e05705ff049b49e90d975422c74eb2f2289c968b9e873353"
+    },
+    {
+      "path": "tests/contracts.test.ts",
+      "sha256": "b09663256d09342939e502486b14699c53d6ed7b72b0b60ad17269e3246ba832"
+    },
+    {
+      "path": "tests/epagri.test.ts",
+      "sha256": "519d99d1c7c87c5e29f3c48b720fa80476b8ac21d34bee34162863a3eaa4117c"
+    },
+    {
+      "path": "tests/fixtures/README.md",
+      "sha256": "376419c46c67756d31331a25de18714bcd5a8a33f9bcf03b6a7f8f559ca85f0d"
+    },
+    {
+      "path": "tests/fixtures/alertas-null.json",
+      "sha256": "ba5f3ea40e95f49bce11942f375ebd3882eb837976eda5c0cb78b9b99ca7b485"
+    },
+    {
+      "path": "tests/fixtures/barragens.json",
+      "sha256": "9c70d72cd43a91aa59053fa8fc5f57723d4e5a8b5752c541bf721c7394f88f3f"
+    },
+    {
+      "path": "tests/fixtures/blumenau-oficial-recorte.html",
+      "sha256": "09519e42f6ffdc9695bc981a703515e6e6e948fad783a58e2d690acb20aa3aa5"
+    },
+    {
+      "path": "tests/fixtures/chuvas.json",
+      "sha256": "bce2d23a798309f6f798e3996a2aebbc85e431b5a35a37f86eccad801b6dacac"
+    },
+    {
+      "path": "tests/fixtures/epagri-itajai.json",
+      "sha256": "7d3f8b42c9244a7f531fd9567e6c5d44608aeca3e5efb59c0d4f92f101491483"
+    },
+    {
+      "path": "tests/fixtures/epagri-municipio.json",
+      "sha256": "a6b79fcc2f4aa046d1cb36679c6bbd844e11fcb74f5016b9d684766ac1bea706"
+    },
+    {
+      "path": "tests/fixtures/rios.json",
+      "sha256": "02ca8b4ffdbe3b774dbd0788d09fb574a7aab43ea301e0d161c8f1e05d91b23f"
+    },
+    {
+      "path": "tests/fixtures/situacao-atencao.json",
+      "sha256": "c4f71f7f72ffb7cbd41df92a6c92465f1b5122e334d8e74de7f492767b610d1f"
+    },
+    {
+      "path": "tests/hml-simulation.test.tsx",
+      "sha256": "41099c08e58148861032c7209f689e31ffa1a358665e2d358500c27af4cf1793"
+    },
+    {
+      "path": "tests/impact-db.test.ts",
+      "sha256": "a3ce0779a2254d327136e4e1e9980d2ea0f07a693493b2d7091345e4c1039b25"
+    },
+    {
+      "path": "tests/impact-edge.test.ts",
+      "sha256": "ae69b6bd3d3aa8cec6641b428a5e6d30f7116ee5054883d31ab7df70495c653b"
+    },
+    {
+      "path": "tests/impact-integration.test.ts",
+      "sha256": "b3c5851d412944c7bba2170dc4f85ca88ff51be60d43902746ee2c310aeddbb5"
+    },
+    {
+      "path": "tests/impact-ui.test.tsx",
+      "sha256": "db35811dcaa0d388b624cc5658bc3c4f2f99f384501a1651b819bcc6d440db55"
+    },
+    {
+      "path": "tests/impact.test.ts",
+      "sha256": "dcae7084569b2bad1ec06a6ef62b10445503b0ebcba75b90e0d14598cf3fe485"
+    },
+    {
+      "path": "tests/phase06.test.tsx",
+      "sha256": "2f0ed0784547caa7db3b89efad7e06415fcc684e162f0c98798e2095314aa1d2"
+    },
+    {
+      "path": "tests/phase07.test.tsx",
+      "sha256": "f27ff92bf4f71df79451b2a4cfb3d179e4c5d16c660e4827b78592cfde03b761"
+    },
+    {
+      "path": "tests/phase071-data.test.ts",
+      "sha256": "768ad92b139a5b772342ea55cd407712a957a1b65b21b4ebd2146dd7e70143bf"
+    },
+    {
+      "path": "tests/phase071-engine.test.ts",
+      "sha256": "cf02f0698f9c9bcbc44e64cfe17ea339b51641e19b67d3f8f1ded7ecadc3d486"
+    },
+    {
+      "path": "tests/phase071-ui.test.tsx",
+      "sha256": "8fdd1a71f611779d24f065807e8c7a94b325edc5530d13d49741e6df4e30e206"
+    },
+    {
+      "path": "tests/phase08.test.ts",
+      "sha256": "45a86ad6d4701ab7ecad469273197ef326e7713f603dbaec65945a4d6bf08a2f"
+    },
+    {
+      "path": "tests/phase09.test.ts",
+      "sha256": "57e015e5cd3e1578db1a582159bcefe3dbaf8df3b6b17da7926f0599ad5cdd72"
+    },
+    {
+      "path": "tests/phase10-adjustments.test.tsx",
+      "sha256": "e87383996e421ab2e732d3c5d35d440c7e8110ce986279052d5304057ee16edb"
+    },
+    {
+      "path": "tests/phase10-cadence.test.ts",
+      "sha256": "5b3db1f5eafe0616341cdcf2e03f130d8bb1385f3d164a3e6385f8cb033b6908"
+    },
+    {
+      "path": "tests/phase10-cron.test.ts",
+      "sha256": "46153ae644b5ea0e5109211ef9dffa0394a4382b64aa2bb91111ef060b0886ff"
+    },
+    {
+      "path": "tests/phase10-final-ui.test.tsx",
+      "sha256": "3b25c152b5042e4d7f9f91c05086b9e92f35bebb4aba3a67eefc6d0050ccc95b"
+    },
+    {
+      "path": "tests/phase10-map.test.ts",
+      "sha256": "24901284d81650ea5bf08e185c886bfa7f1cdfda68b2fdc842a3fa48664cf239"
+    },
+    {
+      "path": "tests/phase10-refresh.test.tsx",
+      "sha256": "aa418a34ea2a8f57bfa4b7a151e3aef97be70796bdd1228982dda877823d3496"
+    },
+    {
+      "path": "tests/phase10-ui.test.tsx",
+      "sha256": "2161eebdf8ad5144884582015b0b9fc04b44513a496e2eb9d4485b824d04084a"
+    },
+    {
+      "path": "tests/plan_import_test.py",
+      "sha256": "89156c7ce2cf49cfb196063bb74a0703f30b12d16d27f008ad56af363b8869ed"
+    },
+    {
+      "path": "tests/plans-import.test.ts",
+      "sha256": "77dec8b164995e67cacca9954745ec0a672f89dc46ca02830c443bc270507599"
+    },
+    {
+      "path": "tests/previous-status.test.ts",
+      "sha256": "aeda1f19fbc1899986a246e84d6decc2d178fcb9672d656ef0e92db34de5c413"
+    },
+    {
+      "path": "tests/push-snapshot.test.ts",
+      "sha256": "0eb11bd7fd05b867934b52e1e599200a1f70b121b331485d37d731250e0373ce"
+    },
+    {
+      "path": "tests/teams-card.test.ts",
+      "sha256": "76acc0bc3f956ee3e74cb076541111c341d286d7e13f65e86bf80cc5f47e05a9"
+    },
+    {
+      "path": "tests/teams-db.test.ts",
+      "sha256": "17a1ce7c4988c349bf397e0293a2f1da1abae3a3e9a3f961203800fffa531727"
+    },
+    {
+      "path": "tests/teams-operational-admin.test.ts",
+      "sha256": "7d313fef35772dc020f66df06931a11fa26b6effcc6f696631b5f843b59c1bed"
+    },
+    {
+      "path": "tests/teams-provision.test.ts",
+      "sha256": "6fcdd3b6d9c7997371ecf8cc719cbe8099f11a1e0fb58631ab50bd7bde09827b"
+    },
+    {
+      "path": "tests/teams-reconcile.test.ts",
+      "sha256": "0afa6eb0c4d91f15bc6cdaaa59595b9496e4456818b6d305ff78f2e886422032"
+    },
+    {
+      "path": "tests/teams-worker.test.ts",
+      "sha256": "d71e74dca58caecd24df75e9ca27e8199e6deef3a0ba16c86bc4ef1a9ab837be"
+    },
+    {
+      "path": "tests/territory.test.ts",
+      "sha256": "9d71fca2dd013e8511ed7f71d65b5f478dab4dbaf551bf815ac6e55f63cecaf0"
+    },
+    {
+      "path": "tests/v1-alert-audio.test.ts",
+      "sha256": "729dbd66bf282402fe0e546273c60f2f48d37739e71d89a17a17702cd68e4aeb"
+    },
+    {
+      "path": "tests/v1-alert-map.test.tsx",
+      "sha256": "c5a4d793731c89a0dd64782bcbcd6b6c511f7da314dd38a61d0505b0ae60f8d2"
+    },
+    {
+      "path": "tests/v1-closure.test.tsx",
+      "sha256": "158421f3e4eb0ed7291931be5de6430a4e3e600237ed229a087b1ee5bd5827bc"
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "8fac3339bdec0b7f0c2b9d7843aa6cc8ced9109790a4ed5bad764ccac03a3763"
+    },
+    {
+      "path": "vite.config.ts",
+      "sha256": "1c180c8f2a3890e8d90703ecb97d255c32dbe2e3e0d030b4a68f0133385fb7e6"
+    },
+    {
+      "path": "docs/fase-04-validacao-geometrica.json",
+      "sha256": "1e97afa59e8cc82ff1e95b563ed943d1fcfbfec26d43124016d8d93862c5f2be"
+    },
+    {
+      "path": "docs/fase-04-consultas.json",
+      "sha256": "90971885b8c0f366371f6b82bb3f06d1153ebfa8ae838b5425eb9b8b6c704238"
+    }
+  ],
+  "excluded": [
+    "README.md",
+    "docs/fase-02.md",
+    "docs/fase-03.md",
+    "docs/fase-04-1-mobilidade-atual-descoberta.md",
+    "docs/fase-04-comparacao-bases.json",
+    "docs/fase-04-descoberta-tecnica.md",
+    "docs/fase-04.md",
+    "docs/fase-05.md",
+    "docs/fase-06-integridade.json",
+    "docs/fase-06.md",
+    "docs/fase-07-1-browser.json",
+    "docs/fase-07-1-discovery.md",
+    "docs/fase-07-1-evidencias.json",
+    "docs/fase-07-1-implementacao.md",
+    "docs/fase-07-1-integridade.json",
+    "docs/fase-07-integridade.json",
+    "docs/fase-07.md",
+    "docs/fase-08-browser.json",
+    "docs/fase-08-implementacao.md",
+    "docs/fase-08-integridade.json",
+    "docs/fase-09-browser.json",
+    "docs/fase-09-evidencias.json",
+    "docs/fase-09-homologacao.md",
+    "docs/fase-09-integridade.json",
+    "docs/fase-10-atualizacao/actions-antes.json",
+    "docs/fase-10-atualizacao/actions-ultimo-anterior.json",
+    "docs/fase-10-atualizacao/browser-hml.json",
+    "docs/fase-10-atualizacao/browser-local.json",
+    "docs/fase-10-atualizacao/ci.json",
+    "docs/fase-10-atualizacao/coletor.json",
+    "docs/fase-10-atualizacao/comparacao-antes.json",
+    "docs/fase-10-atualizacao/comparacao-depois.json",
+    "docs/fase-10-atualizacao/comparacao-schedule.json",
+    "docs/fase-10-atualizacao/deploy.json",
+    "docs/fase-10-atualizacao/fonte-rios.json",
+    "docs/fase-10-atualizacao/frontend-antes.json",
+    "docs/fase-10-atualizacao/frontend-depois.json",
+    "docs/fase-10-atualizacao/git-pages-schedule.json",
+    "docs/fase-10-atualizacao/git-pages.json",
+    "docs/fase-10-atualizacao/integridade.json",
+    "docs/fase-10-atualizacao/nomes-hml.json",
+    "docs/fase-10-atualizacao/nomes-local.json",
+    "docs/fase-10-atualizacao/portal.png",
+    "docs/fase-10-atualizacao/refresh-browser.json",
+    "docs/fase-10-atualizacao/schedule-jobs.json",
+    "docs/fase-10-atualizacao/schedule.json",
+    "docs/fase-10-atualizacao/supabase.json",
+    "docs/fase-10-browser-hml.json",
+    "docs/fase-10-browser-local.json",
+    "docs/fase-10-ci.json",
+    "docs/fase-10-correcoes-finais-hml.md",
+    "docs/fase-10-correcoes-visuais/desktop-claro.png",
+    "docs/fase-10-correcoes-visuais/desktop-escuro.png",
+    "docs/fase-10-correcoes-visuais/mobile-claro.png",
+    "docs/fase-10-correcoes-visuais/mobile-escuro.png",
+    "docs/fase-10-cron-evidencias/browser-hml.json",
+    "docs/fase-10-cron-evidencias/browser-local.json",
+    "docs/fase-10-cron-evidencias/ci.json",
+    "docs/fase-10-cron-evidencias/ciclos.md",
+    "docs/fase-10-cron-evidencias/cron.json",
+    "docs/fase-10-cron-evidencias/cycles.json",
+    "docs/fase-10-cron-evidencias/database-permissions.json",
+    "docs/fase-10-cron-evidencias/integrity.json",
+    "docs/fase-10-cron-evidencias/nomes-hml.json",
+    "docs/fase-10-cron-evidencias/nomes-local.json",
+    "docs/fase-10-cron-evidencias/security.json",
+    "docs/fase-10-cron-evidencias/supabase-readonly.json",
+    "docs/fase-10-deploy.json",
+    "docs/fase-10-fechamento-funcional.md",
+    "docs/fase-10-finalizacao.md",
+    "docs/fase-10-header-hml/desktop-claro.png",
+    "docs/fase-10-header-hml/desktop-escuro.png",
+    "docs/fase-10-header-hml/mobile-claro.png",
+    "docs/fase-10-header-hml/mobile-escuro.png",
+    "docs/fase-10-homologacao-v1-hml.md",
+    "docs/fase-10-integridade.json",
+    "docs/fase-10-investigacao-atualizacao.md",
+    "docs/fase-10-performance.json",
+    "docs/fase-10-smoke-hml.json",
+    "docs/fase-10-smoke-local.json",
+    "docs/fase-10-supabase-cron.md",
+    "docs/fase-10-supabase.json",
+    "docs/fase-10-visual/ajustes-hml/base-1440.png",
+    "docs/fase-10-visual/ajustes-hml/base-320.png",
+    "docs/fase-10-visual/ajustes-hml/base-390.png",
+    "docs/fase-10-visual/ajustes-hml/base-768.png",
+    "docs/fase-10-visual/ajustes-hml/checks.json",
+    "docs/fase-10-visual/ajustes-hml/chuva-1440.png",
+    "docs/fase-10-visual/ajustes-hml/chuva-320.png",
+    "docs/fase-10-visual/ajustes-hml/chuva-390.png",
+    "docs/fase-10-visual/ajustes-hml/chuva-768.png",
+    "docs/fase-10-visual/ajustes-hml/dashboard-1440.png",
+    "docs/fase-10-visual/ajustes-hml/dashboard-320.png",
+    "docs/fase-10-visual/ajustes-hml/dashboard-390.png",
+    "docs/fase-10-visual/ajustes-hml/dashboard-768.png",
+    "docs/fase-10-visual/ajustes-hml/defesa-civil-1440.png",
+    "docs/fase-10-visual/ajustes-hml/defesa-civil-320.png",
+    "docs/fase-10-visual/ajustes-hml/defesa-civil-390.png",
+    "docs/fase-10-visual/ajustes-hml/defesa-civil-768.png",
+    "docs/fase-10-visual/ajustes-hml/mapa-1440.png",
+    "docs/fase-10-visual/ajustes-hml/mapa-320.png",
+    "docs/fase-10-visual/ajustes-hml/mapa-390.png",
+    "docs/fase-10-visual/ajustes-hml/mapa-768.png",
+    "docs/fase-10-visual/ajustes-hml/monitoramento-barragens-1440.png",
+    "docs/fase-10-visual/ajustes-hml/monitoramento-barragens-320.png",
+    "docs/fase-10-visual/ajustes-hml/monitoramento-barragens-390.png",
+    "docs/fase-10-visual/ajustes-hml/monitoramento-barragens-768.png",
+    "docs/fase-10-visual/ajustes-hml/monitoramento-chuva-1440.png",
+    "docs/fase-10-visual/ajustes-hml/monitoramento-chuva-320.png",
+    "docs/fase-10-visual/ajustes-hml/monitoramento-chuva-390.png",
+    "docs/fase-10-visual/ajustes-hml/monitoramento-chuva-768.png",
+    "docs/fase-10-visual/ajustes-hml/monitoramento-previsao-1440.png",
+    "docs/fase-10-visual/ajustes-hml/monitoramento-previsao-320.png",
+    "docs/fase-10-visual/ajustes-hml/monitoramento-previsao-390.png",
+    "docs/fase-10-visual/ajustes-hml/monitoramento-previsao-768.png",
+    "docs/fase-10-visual/ajustes-hml/monitoramento-rios-1440.png",
+    "docs/fase-10-visual/ajustes-hml/monitoramento-rios-320.png",
+    "docs/fase-10-visual/ajustes-hml/monitoramento-rios-390.png",
+    "docs/fase-10-visual/ajustes-hml/monitoramento-rios-768.png",
+    "docs/fase-10-visual/ajustes-hml/plano-de-acao-1440.png",
+    "docs/fase-10-visual/ajustes-hml/plano-de-acao-320.png",
+    "docs/fase-10-visual/ajustes-hml/plano-de-acao-390.png",
+    "docs/fase-10-visual/ajustes-hml/plano-de-acao-768.png",
+    "docs/fase-10-visual/ajustes-hml/previsao-1440.png",
+    "docs/fase-10-visual/ajustes-hml/previsao-320.png",
+    "docs/fase-10-visual/ajustes-hml/previsao-390.png",
+    "docs/fase-10-visual/ajustes-hml/previsao-768.png",
+    "docs/fase-10-visual/ajustes-hml/rio-serie-1440.png",
+    "docs/fase-10-visual/ajustes-hml/rio-serie-320.png",
+    "docs/fase-10-visual/ajustes-hml/rio-serie-390.png",
+    "docs/fase-10-visual/ajustes-hml/rio-serie-768.png",
+    "docs/fase-10-visual/ajustes-hml/territorio-1440.png",
+    "docs/fase-10-visual/ajustes-hml/territorio-320.png",
+    "docs/fase-10-visual/ajustes-hml/territorio-390.png",
+    "docs/fase-10-visual/ajustes-hml/territorio-768.png",
+    "docs/fase-10-visual/ajustes-local/base-1440.png",
+    "docs/fase-10-visual/ajustes-local/base-320.png",
+    "docs/fase-10-visual/ajustes-local/base-390.png",
+    "docs/fase-10-visual/ajustes-local/base-768.png",
+    "docs/fase-10-visual/ajustes-local/checks.json",
+    "docs/fase-10-visual/ajustes-local/chuva-1440.png",
+    "docs/fase-10-visual/ajustes-local/chuva-320.png",
+    "docs/fase-10-visual/ajustes-local/chuva-390.png",
+    "docs/fase-10-visual/ajustes-local/chuva-768.png",
+    "docs/fase-10-visual/ajustes-local/dashboard-1440.png",
+    "docs/fase-10-visual/ajustes-local/dashboard-320.png",
+    "docs/fase-10-visual/ajustes-local/dashboard-390.png",
+    "docs/fase-10-visual/ajustes-local/dashboard-768.png",
+    "docs/fase-10-visual/ajustes-local/defesa-civil-1440.png",
+    "docs/fase-10-visual/ajustes-local/defesa-civil-320.png",
+    "docs/fase-10-visual/ajustes-local/defesa-civil-390.png",
+    "docs/fase-10-visual/ajustes-local/defesa-civil-768.png",
+    "docs/fase-10-visual/ajustes-local/mapa-1440.png",
+    "docs/fase-10-visual/ajustes-local/mapa-320.png",
+    "docs/fase-10-visual/ajustes-local/mapa-390.png",
+    "docs/fase-10-visual/ajustes-local/mapa-768.png",
+    "docs/fase-10-visual/ajustes-local/monitoramento-barragens-1440.png",
+    "docs/fase-10-visual/ajustes-local/monitoramento-barragens-320.png",
+    "docs/fase-10-visual/ajustes-local/monitoramento-barragens-390.png",
+    "docs/fase-10-visual/ajustes-local/monitoramento-barragens-768.png",
+    "docs/fase-10-visual/ajustes-local/monitoramento-chuva-1440.png",
+    "docs/fase-10-visual/ajustes-local/monitoramento-chuva-320.png",
+    "docs/fase-10-visual/ajustes-local/monitoramento-chuva-390.png",
+    "docs/fase-10-visual/ajustes-local/monitoramento-chuva-768.png",
+    "docs/fase-10-visual/ajustes-local/monitoramento-previsao-1440.png",
+    "docs/fase-10-visual/ajustes-local/monitoramento-previsao-320.png",
+    "docs/fase-10-visual/ajustes-local/monitoramento-previsao-390.png",
+    "docs/fase-10-visual/ajustes-local/monitoramento-previsao-768.png",
+    "docs/fase-10-visual/ajustes-local/monitoramento-rios-1440.png",
+    "docs/fase-10-visual/ajustes-local/monitoramento-rios-320.png",
+    "docs/fase-10-visual/ajustes-local/monitoramento-rios-390.png",
+    "docs/fase-10-visual/ajustes-local/monitoramento-rios-768.png",
+    "docs/fase-10-visual/ajustes-local/plano-de-acao-1440.png",
+    "docs/fase-10-visual/ajustes-local/plano-de-acao-320.png",
+    "docs/fase-10-visual/ajustes-local/plano-de-acao-390.png",
+    "docs/fase-10-visual/ajustes-local/plano-de-acao-768.png",
+    "docs/fase-10-visual/ajustes-local/previsao-1440.png",
+    "docs/fase-10-visual/ajustes-local/previsao-320.png",
+    "docs/fase-10-visual/ajustes-local/previsao-390.png",
+    "docs/fase-10-visual/ajustes-local/previsao-768.png",
+    "docs/fase-10-visual/ajustes-local/rio-serie-1440.png",
+    "docs/fase-10-visual/ajustes-local/rio-serie-320.png",
+    "docs/fase-10-visual/ajustes-local/rio-serie-390.png",
+    "docs/fase-10-visual/ajustes-local/rio-serie-768.png",
+    "docs/fase-10-visual/ajustes-local/territorio-1440.png",
+    "docs/fase-10-visual/ajustes-local/territorio-320.png",
+    "docs/fase-10-visual/ajustes-local/territorio-390.png",
+    "docs/fase-10-visual/ajustes-local/territorio-768.png",
+    "docs/fase-10-visual/antes/checks.json",
+    "docs/fase-10-visual/antes/dashboard-1440.png",
+    "docs/fase-10-visual/antes/dashboard-320.png",
+    "docs/fase-10-visual/antes/dashboard-390.png",
+    "docs/fase-10-visual/antes/dashboard-768.png",
+    "docs/fase-10-visual/antes/mapa-1440.png",
+    "docs/fase-10-visual/antes/mapa-320.png",
+    "docs/fase-10-visual/antes/mapa-390.png",
+    "docs/fase-10-visual/antes/mapa-768.png",
+    "docs/fase-10-visual/antes/monitoramento-rios-1440.png",
+    "docs/fase-10-visual/antes/monitoramento-rios-320.png",
+    "docs/fase-10-visual/antes/monitoramento-rios-390.png",
+    "docs/fase-10-visual/antes/monitoramento-rios-768.png",
+    "docs/fase-10-visual/antes/plano-de-acao-1440.png",
+    "docs/fase-10-visual/antes/plano-de-acao-320.png",
+    "docs/fase-10-visual/antes/plano-de-acao-390.png",
+    "docs/fase-10-visual/antes/plano-de-acao-768.png",
+    "docs/fase-10-visual/depois/checks.json",
+    "docs/fase-10-visual/depois/dashboard-1440.png",
+    "docs/fase-10-visual/depois/dashboard-320.png",
+    "docs/fase-10-visual/depois/dashboard-390.png",
+    "docs/fase-10-visual/depois/dashboard-768.png",
+    "docs/fase-10-visual/depois/mapa-1440.png",
+    "docs/fase-10-visual/depois/mapa-320.png",
+    "docs/fase-10-visual/depois/mapa-390.png",
+    "docs/fase-10-visual/depois/mapa-768.png",
+    "docs/fase-10-visual/depois/monitoramento-rios-1440.png",
+    "docs/fase-10-visual/depois/monitoramento-rios-320.png",
+    "docs/fase-10-visual/depois/monitoramento-rios-390.png",
+    "docs/fase-10-visual/depois/monitoramento-rios-768.png",
+    "docs/fase-10-visual/depois/plano-de-acao-1440.png",
+    "docs/fase-10-visual/depois/plano-de-acao-320.png",
+    "docs/fase-10-visual/depois/plano-de-acao-390.png",
+    "docs/fase-10-visual/depois/plano-de-acao-768.png",
+    "docs/fase-10-visual/fechamento-hml/base-1440.png",
+    "docs/fase-10-visual/fechamento-hml/base-320.png",
+    "docs/fase-10-visual/fechamento-hml/base-390.png",
+    "docs/fase-10-visual/fechamento-hml/base-768.png",
+    "docs/fase-10-visual/fechamento-hml/checks.json",
+    "docs/fase-10-visual/fechamento-hml/chuva-1440.png",
+    "docs/fase-10-visual/fechamento-hml/chuva-320.png",
+    "docs/fase-10-visual/fechamento-hml/chuva-390.png",
+    "docs/fase-10-visual/fechamento-hml/chuva-768.png",
+    "docs/fase-10-visual/fechamento-hml/dashboard-1440.png",
+    "docs/fase-10-visual/fechamento-hml/dashboard-320.png",
+    "docs/fase-10-visual/fechamento-hml/dashboard-390.png",
+    "docs/fase-10-visual/fechamento-hml/dashboard-768.png",
+    "docs/fase-10-visual/fechamento-hml/defesa-civil-1440.png",
+    "docs/fase-10-visual/fechamento-hml/defesa-civil-320.png",
+    "docs/fase-10-visual/fechamento-hml/defesa-civil-390.png",
+    "docs/fase-10-visual/fechamento-hml/defesa-civil-768.png",
+    "docs/fase-10-visual/fechamento-hml/mapa-1440.png",
+    "docs/fase-10-visual/fechamento-hml/mapa-320.png",
+    "docs/fase-10-visual/fechamento-hml/mapa-390.png",
+    "docs/fase-10-visual/fechamento-hml/mapa-768.png",
+    "docs/fase-10-visual/fechamento-hml/monitoramento-barragens-1440.png",
+    "docs/fase-10-visual/fechamento-hml/monitoramento-barragens-320.png",
+    "docs/fase-10-visual/fechamento-hml/monitoramento-barragens-390.png",
+    "docs/fase-10-visual/fechamento-hml/monitoramento-barragens-768.png",
+    "docs/fase-10-visual/fechamento-hml/monitoramento-chuva-1440.png",
+    "docs/fase-10-visual/fechamento-hml/monitoramento-chuva-320.png",
+    "docs/fase-10-visual/fechamento-hml/monitoramento-chuva-390.png",
+    "docs/fase-10-visual/fechamento-hml/monitoramento-chuva-768.png",
+    "docs/fase-10-visual/fechamento-hml/monitoramento-previsao-1440.png",
+    "docs/fase-10-visual/fechamento-hml/monitoramento-previsao-320.png",
+    "docs/fase-10-visual/fechamento-hml/monitoramento-previsao-390.png",
+    "docs/fase-10-visual/fechamento-hml/monitoramento-previsao-768.png",
+    "docs/fase-10-visual/fechamento-hml/monitoramento-rios-1440.png",
+    "docs/fase-10-visual/fechamento-hml/monitoramento-rios-320.png",
+    "docs/fase-10-visual/fechamento-hml/monitoramento-rios-390.png",
+    "docs/fase-10-visual/fechamento-hml/monitoramento-rios-768.png",
+    "docs/fase-10-visual/fechamento-hml/plano-de-acao-1440.png",
+    "docs/fase-10-visual/fechamento-hml/plano-de-acao-320.png",
+    "docs/fase-10-visual/fechamento-hml/plano-de-acao-390.png",
+    "docs/fase-10-visual/fechamento-hml/plano-de-acao-768.png",
+    "docs/fase-10-visual/fechamento-hml/previsao-1440.png",
+    "docs/fase-10-visual/fechamento-hml/previsao-320.png",
+    "docs/fase-10-visual/fechamento-hml/previsao-390.png",
+    "docs/fase-10-visual/fechamento-hml/previsao-768.png",
+    "docs/fase-10-visual/fechamento-hml/rio-serie-1440.png",
+    "docs/fase-10-visual/fechamento-hml/rio-serie-320.png",
+    "docs/fase-10-visual/fechamento-hml/rio-serie-390.png",
+    "docs/fase-10-visual/fechamento-hml/rio-serie-768.png",
+    "docs/fase-10-visual/fechamento-hml/territorio-1440.png",
+    "docs/fase-10-visual/fechamento-hml/territorio-320.png",
+    "docs/fase-10-visual/fechamento-hml/territorio-390.png",
+    "docs/fase-10-visual/fechamento-hml/territorio-768.png",
+    "docs/fase-10-visual/fechamento-local/base-1440.png",
+    "docs/fase-10-visual/fechamento-local/base-320.png",
+    "docs/fase-10-visual/fechamento-local/base-390.png",
+    "docs/fase-10-visual/fechamento-local/base-768.png",
+    "docs/fase-10-visual/fechamento-local/checks.json",
+    "docs/fase-10-visual/fechamento-local/chuva-1440.png",
+    "docs/fase-10-visual/fechamento-local/chuva-320.png",
+    "docs/fase-10-visual/fechamento-local/chuva-390.png",
+    "docs/fase-10-visual/fechamento-local/chuva-768.png",
+    "docs/fase-10-visual/fechamento-local/dashboard-1440.png",
+    "docs/fase-10-visual/fechamento-local/dashboard-320.png",
+    "docs/fase-10-visual/fechamento-local/dashboard-390.png",
+    "docs/fase-10-visual/fechamento-local/dashboard-768.png",
+    "docs/fase-10-visual/fechamento-local/defesa-civil-1440.png",
+    "docs/fase-10-visual/fechamento-local/defesa-civil-320.png",
+    "docs/fase-10-visual/fechamento-local/defesa-civil-390.png",
+    "docs/fase-10-visual/fechamento-local/defesa-civil-768.png",
+    "docs/fase-10-visual/fechamento-local/mapa-1440.png",
+    "docs/fase-10-visual/fechamento-local/mapa-320.png",
+    "docs/fase-10-visual/fechamento-local/mapa-390.png",
+    "docs/fase-10-visual/fechamento-local/mapa-768.png",
+    "docs/fase-10-visual/fechamento-local/monitoramento-barragens-1440.png",
+    "docs/fase-10-visual/fechamento-local/monitoramento-barragens-320.png",
+    "docs/fase-10-visual/fechamento-local/monitoramento-barragens-390.png",
+    "docs/fase-10-visual/fechamento-local/monitoramento-barragens-768.png",
+    "docs/fase-10-visual/fechamento-local/monitoramento-chuva-1440.png",
+    "docs/fase-10-visual/fechamento-local/monitoramento-chuva-320.png",
+    "docs/fase-10-visual/fechamento-local/monitoramento-chuva-390.png",
+    "docs/fase-10-visual/fechamento-local/monitoramento-chuva-768.png",
+    "docs/fase-10-visual/fechamento-local/monitoramento-previsao-1440.png",
+    "docs/fase-10-visual/fechamento-local/monitoramento-previsao-320.png",
+    "docs/fase-10-visual/fechamento-local/monitoramento-previsao-390.png",
+    "docs/fase-10-visual/fechamento-local/monitoramento-previsao-768.png",
+    "docs/fase-10-visual/fechamento-local/monitoramento-rios-1440.png",
+    "docs/fase-10-visual/fechamento-local/monitoramento-rios-320.png",
+    "docs/fase-10-visual/fechamento-local/monitoramento-rios-390.png",
+    "docs/fase-10-visual/fechamento-local/monitoramento-rios-768.png",
+    "docs/fase-10-visual/fechamento-local/plano-de-acao-1440.png",
+    "docs/fase-10-visual/fechamento-local/plano-de-acao-320.png",
+    "docs/fase-10-visual/fechamento-local/plano-de-acao-390.png",
+    "docs/fase-10-visual/fechamento-local/plano-de-acao-768.png",
+    "docs/fase-10-visual/fechamento-local/previsao-1440.png",
+    "docs/fase-10-visual/fechamento-local/previsao-320.png",
+    "docs/fase-10-visual/fechamento-local/previsao-390.png",
+    "docs/fase-10-visual/fechamento-local/previsao-768.png",
+    "docs/fase-10-visual/fechamento-local/rio-serie-1440.png",
+    "docs/fase-10-visual/fechamento-local/rio-serie-320.png",
+    "docs/fase-10-visual/fechamento-local/rio-serie-390.png",
+    "docs/fase-10-visual/fechamento-local/rio-serie-768.png",
+    "docs/fase-10-visual/fechamento-local/territorio-1440.png",
+    "docs/fase-10-visual/fechamento-local/territorio-320.png",
+    "docs/fase-10-visual/fechamento-local/territorio-390.png",
+    "docs/fase-10-visual/fechamento-local/territorio-768.png",
+    "docs/fase-10-visual/hml/checks.json",
+    "docs/fase-10-visual/hml/dashboard-1440.png",
+    "docs/fase-10-visual/hml/dashboard-320.png",
+    "docs/fase-10-visual/hml/dashboard-390.png",
+    "docs/fase-10-visual/hml/dashboard-768.png",
+    "docs/fase-10-visual/hml/mapa-1440.png",
+    "docs/fase-10-visual/hml/mapa-320.png",
+    "docs/fase-10-visual/hml/mapa-390.png",
+    "docs/fase-10-visual/hml/mapa-768.png",
+    "docs/fase-10-visual/hml/monitoramento-rios-1440.png",
+    "docs/fase-10-visual/hml/monitoramento-rios-320.png",
+    "docs/fase-10-visual/hml/monitoramento-rios-390.png",
+    "docs/fase-10-visual/hml/monitoramento-rios-768.png",
+    "docs/fase-10-visual/hml/plano-de-acao-1440.png",
+    "docs/fase-10-visual/hml/plano-de-acao-320.png",
+    "docs/fase-10-visual/hml/plano-de-acao-390.png",
+    "docs/fase-10-visual/hml/plano-de-acao-768.png",
+    "docs/fase-10-visual/nomes/impacto-fixture.png",
+    "docs/fase-10-visual/nomes/nomes-320.png",
+    "docs/fase-10-visual/nomes/nomes-390.png",
+    "docs/fase-10-visual/nomes/nomes-768.png",
+    "docs/fase-10-visual/nomes/nomes-Aérea.png",
+    "docs/fase-10-visual/nomes/nomes-Cartográfica.png",
+    "docs/fase-10-visual/nomes/nomes-Simplificada.png",
+    "docs/fase-10-visual/nomes/nomes-proximo.png",
+    "docs/hml-simulacao-alertas.md",
+    "docs/integracao-teams-cards-hml.md",
+    "docs/integracao-teams-implementacao-hml.md",
+    "docs/integracao-teams-inspecao-hml.md",
+    "docs/integracao-teams-layout-definitivo-hml.md",
+    "docs/integracao-teams-matriz-eventos.md",
+    "docs/integracao-teams-operacional-hml.md",
+    "docs/integracao-teams-revisao-provisionamento.md",
+    "docs/operacao.md",
+    "docs/v1-alertas-mapa-decisoes.md",
+    "public/data/status.json",
+    "scripts/qa/blumenau-diagnostic.ts",
+    "scripts/qa/header-audio-smoke.ts",
+    "scripts/qa/phase10-adjustments-smoke.ts",
+    "scripts/qa/phase10-smoke.ts",
+    "scripts/qa/plan-table-smoke.ts",
+    "scripts/qa/v1-closure-smoke.ts",
+    "scripts/qa/validate-cron-evidence.ts",
+    "tests/fixtures/status-operacional.json"
+  ]
+}

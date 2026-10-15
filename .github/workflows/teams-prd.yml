@@ -1,0 +1,40 @@
+name: Reconciliar notificacoes Teams PRD
+on:
+  workflow_run:
+    workflows: [Atualizar estado operacional e preparar Pages]
+    types: [completed]
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: teams-notifications-prd
+  cancel-in-progress: false
+jobs:
+  reconcile:
+    if: >-
+      github.repository == 'EduardoLamim/el-nino-jbs' &&
+      vars.TEAMS_PRD_ENABLED == 'true' &&
+      (github.event_name == 'workflow_run' && github.event.workflow_run.head_repository.full_name == github.repository ||
+       github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main')
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - name: Reconciliar snapshots e historico privado; drenar conforme autorização administrativa
+        run: npx tsx scripts/teams/reconcile.ts
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          TEAMS_WAKE_TOKEN_PRD: ${{ secrets.TEAMS_WAKE_TOKEN_PRD }}
+
+          PRD_SUPABASE_PROJECT_REF: ${{ vars.PRD_SUPABASE_PROJECT_REF }}

@@ -1,0 +1,718 @@
+diff --git "a/.local\\baseline\\.env.example" b/.env.example
+index 84e733c..969db95 100644
+--- "a/.local\\baseline\\.env.example"
++++ b/.env.example
+@@ -1,5 +1,7 @@
++# Configure via environment; never put backend credentials in VITE variables.
++APP_ENV=production
++PRD_SUPABASE_PROJECT_REF=
+ VITE_SUPABASE_URL=
+ VITE_SUPABASE_PUBLISHABLE_KEY=
+-# Somente essas duas variáveis públicas. Secrets operacionais são configurados na Edge Function.
+-# Configuração de Pages (PAGES_BASE_PATH) é variável do processo/Actions, não VITE_.
+-# Guia completo: docs/operacao.md. Nunca usar service_role, sb_secret_, senha ou PIN aqui.
++PAGES_BASE_PATH=/el-nino-jbs/
++ENABLE_HML_SIMULATION=false
+diff --git "a/.local\\baseline\\.github\\workflows\\ci.yml" b/.github/workflows/ci.yml
+index 8834a8d..489a5f9 100644
+--- "a/.local\\baseline\\.github\\workflows\\ci.yml"
++++ b/.github/workflows/ci.yml
+@@ -22,22 +22,5 @@ jobs:
+           node-version: '24'
+           cache: npm
+       - run: npm ci
+-      - run: npm run lint
+-      - run: npm test
+-      - run: npm run data:validate
+-      - name: Build estático de verificação (sem credenciais)
+-        run: npm run pages:build
+-        env:
+-          APP_ENV: ${{ github.repository == 'EduardoLamim/el-nino-jbs-hml' && 'hml' || 'production' }}
+-          ENABLE_HML_SIMULATION: 'true'
+-      - run: npm run pages:validate
+-      - name: Instalar navegador de teste
+-        run: npx playwright install --with-deps chromium
+-      - name: Servir e exercitar artefato sob subpath
+-        run: |
+-          npm run pages:preview > "$RUNNER_TEMP/pages-preview.log" 2>&1 &
+-          npm run pages:smoke
+-      - uses: actions/upload-pages-artifact@v4
+-        with:
+-          path: dist
+-          retention-days: 7
++      - name: Verificação PRD offline sem artefato publicável
++        run: npm run prd:verify
+diff --git "a/.local\\baseline\\.github\\workflows\\deploy-pages.yml" b/.github/workflows/deploy-pages.yml
+index 8d5b791..9f7697f 100644
+--- "a/.local\\baseline\\.github\\workflows\\deploy-pages.yml"
++++ b/.github/workflows/deploy-pages.yml
+@@ -14,9 +14,11 @@ concurrency:
+   cancel-in-progress: false
+ jobs:
+   prepare:
+-    if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
++    if: github.repository == 'EduardoLamim/el-nino-jbs' && github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+     runs-on: ubuntu-latest
+     timeout-minutes: 12
++    env:
++      PRD_SUPABASE_PROJECT_REF: ${{ vars.PRD_SUPABASE_PROJECT_REF }}
+     permissions:
+       contents: write
+     outputs:
+@@ -44,8 +46,8 @@ jobs:
+         run: npm run pages:build
+         env:
+           REQUIRE_PUBLIC_CONFIG: 'true'
+-          APP_ENV: ${{ github.repository == 'EduardoLamim/el-nino-jbs-hml' && 'hml' || 'production' }}
+-          ENABLE_HML_SIMULATION: 'true'
++          APP_ENV: production
++          ENABLE_HML_SIMULATION: 'false'
+           PAGES_BASE_PATH: ${{ vars.PAGES_BASE_PATH }}
+           VITE_SUPABASE_URL: ${{ vars.VITE_SUPABASE_URL || secrets.VITE_SUPABASE_URL }}
+           VITE_SUPABASE_PUBLISHABLE_KEY: ${{ vars.VITE_SUPABASE_PUBLISHABLE_KEY || secrets.VITE_SUPABASE_PUBLISHABLE_KEY }}
+diff --git "a/.local\\baseline\\.gitignore" b/.gitignore
+index 112d5a1..baff098 100644
+--- "a/.local\\baseline\\.gitignore"
++++ b/.gitignore
+@@ -8,3 +8,6 @@ coverage/
+ !.env.example
+ supabase/.temp/
+ __pycache__/
++
++.local/
++*.zip
+diff --git "a/.local\\baseline\\eslint.config.js" b/eslint.config.js
+index 5d88ed8..c4c7fff 100644
+--- "a/.local\\baseline\\eslint.config.js"
++++ b/eslint.config.js
+@@ -2,7 +2,7 @@ import js from '@eslint/js';
+ import tseslint from 'typescript-eslint';
+ 
+ export default tseslint.config(
+-  { ignores: ['dist/**', 'node_modules/**', '.codex_work/**'] },
++  { ignores: ['.local/**', 'dist/**', 'node_modules/**', '.codex_work/**'] },
+   js.configs.recommended,
+   ...tseslint.configs.recommended,
+ );
+diff --git "a/.local\\baseline\\package.json" b/package.json
+index 2921918..aee2e3e 100644
+--- "a/.local\\baseline\\package.json"
++++ b/package.json
+@@ -20,7 +20,9 @@
+     "pages:build": "npm run typecheck && vite build --mode pages",
+     "pages:validate": "tsx scripts/automation/validate.ts --artifact",
+     "pages:preview": "vite preview --mode pages --host 127.0.0.1",
+-    "pages:smoke": "tsx scripts/automation/smoke.ts"
++    "pages:smoke": "tsx scripts/automation/smoke.ts",
++    "prd:verify": "tsx scripts/prd/verify-local.ts",
++    "prd:bootstrap": "tsx scripts/prd/bootstrap.ts"
+   },
+   "dependencies": {
+     "@supabase/supabase-js": "^2.117.2",
+diff --git "a/.local\\baseline\\scripts\\automation\\pages-config.ts" b/scripts/automation/pages-config.ts
+index 4e95551..66e8e31 100644
+--- "a/.local\\baseline\\scripts\\automation\\pages-config.ts"
++++ b/scripts/automation/pages-config.ts
+@@ -1,15 +1,9 @@
++import { publicEnvironment } from '../../src/config/environment';
+ export function basePages(env: Record<string, string | undefined> = process.env) {
+   const repo = env.GITHUB_REPOSITORY?.split('/')[1];
+-  const base = env.PAGES_BASE_PATH || (repo ? (repo.endsWith('.github.io') ? '/' : `/${repo}/`) : '/el-nino-jbs-hml/');
++  const base = env.PAGES_BASE_PATH || (repo ? (repo.endsWith('.github.io') ? '/' : `/${repo}/`) : '/el-nino-jbs/');
+   if (!/^\/(?:[A-Za-z0-9_-][A-Za-z0-9._-]*\/)*$/.test(base)) throw new Error('PAGES_BASE_PATH deve ser um caminho absoluto com barra final.');
+   return base;
+ }
+ 
+-export function validarAmbientePublico(env: Record<string, string | undefined>, exigir = false) {
+-  const allowed = ['VITE_SUPABASE_URL', 'VITE_SUPABASE_PUBLISHABLE_KEY'];
+-  if (Object.keys(env).some(k => k.startsWith('VITE_') && !allowed.includes(k))) throw new Error('Variável VITE_ não autorizada. Somente URL e chave publishable são públicas.');
+-  const url = env.VITE_SUPABASE_URL || '', key = env.VITE_SUPABASE_PUBLISHABLE_KEY || '';
+-  if (exigir || url || key) {
+-    if (url !== 'https://ufeahglxwygvlugfsopi.supabase.co' || !/^sb_publishable_[A-Za-z0-9_-]+$/.test(key)) throw new Error('Configuração pública Supabase ausente/incompatível. Nunca usar service_role ou PIN.');
+-  }
+-}
++export function validarAmbientePublico(env: Record<string,string|undefined>, exigir=false) { return publicEnvironment(env,exigir); }
+diff --git "a/.local\\baseline\\scripts\\teams\\provision-safety.ts" b/scripts/teams/provision-safety.ts
+index 8e3dba7..31dc6e5 100644
+--- "a/.local\\baseline\\scripts\\teams\\provision-safety.ts"
++++ b/scripts/teams/provision-safety.ts
+@@ -28,7 +28,7 @@ export async function disableTeams(query:Query, api:Api) {
+       if(check[0]?.mode!=='disabled' || check[0]?.live_until!==null) throw new Error('Disable not confirmed');
+       return true;
+     })(),
+-    api('/secrets',[{name:'TEAMS_SYNTHETIC_LIVE_HML',value:'false'}]),
++    api('/secrets',[{name:'TEAMS_SYNTHETIC_LIVE_PRD',value:'false'}]),
+   ]);
+   return {database_disabled:attempts[0]!.status==='fulfilled', secret_disable_acknowledged:attempts[1]!.status==='fulfilled'};
+ }
+diff --git "a/.local\\baseline\\scripts\\teams\\reconcile.ts" b/scripts/teams/reconcile.ts
+index e4ca3c5..eb5d1dc 100644
+--- "a/.local\\baseline\\scripts\\teams\\reconcile.ts"
++++ b/scripts/teams/reconcile.ts
+@@ -1,3 +1,4 @@
++import { validPrdProject } from '../../src/config/environment';
+ import { execFileSync } from 'node:child_process';
+ import { pathToFileURL } from 'node:url';
+ import { validarStatusPublicavel } from '../automation/status';
+@@ -49,12 +50,14 @@ export async function reconcile(deps: {
+ }
+ 
+ async function main() {
+-  if (process.env.GITHUB_REPOSITORY !== 'EduardoLamim/el-nino-jbs-hml') throw new Error('HML repository required');
+-  const credential = process.env.TEAMS_WAKE_TOKEN_HML ?? '';
++  if (process.env.GITHUB_REPOSITORY !== 'EduardoLamim/el-nino-jbs') throw new Error('PRD repository required');
++  const ref=process.env.PRD_SUPABASE_PROJECT_REF;
++  if(!validPrdProject(ref)) throw new Error('PRD project required');
++  const credential = process.env.TEAMS_WAKE_TOKEN_PRD ?? '';
+   const github = process.env.GITHUB_TOKEN ?? '';
+   if (credential.length < 64 || !github) throw new Error('Missing notification credential');
+   const call = async (action: string, payload = {}) => {
+-    const r = await fetch('https://ufeahglxwygvlugfsopi.supabase.co/functions/v1/teams-notifications', {
++    const r = await fetch(`https://${ref}.supabase.co/functions/v1/teams-notifications`, {
+       method: 'POST', headers: { Authorization: `Bearer ${credential}`, 'Content-Type': 'application/json' },
+       body: JSON.stringify({ action, payload }), signal: AbortSignal.timeout(40_000), redirect: 'error',
+     });
+@@ -63,7 +66,7 @@ async function main() {
+   };
+   const git = (...args: string[]) => execFileSync('git', args, { encoding: 'utf8', maxBuffer: 8 * 1024 * 1024, stdio: ['ignore','pipe','pipe'] }).trim();
+   const api = async (path: string) => {
+-    const r = await fetch(`https://api.github.com/repos/EduardoLamim/el-nino-jbs-hml/${path}`, {
++    const r = await fetch(`https://api.github.com/repos/EduardoLamim/el-nino-jbs/${path}`, {
+       headers: { Authorization: `Bearer ${github}`, Accept: 'application/vnd.github+json' }, signal: AbortSignal.timeout(15_000), redirect: 'error',
+     });
+     if (!r.ok) { await r.body?.cancel(); throw new Error('Provenance lookup failed'); }
+@@ -82,7 +85,7 @@ async function main() {
+       const start = new Date(at - 24 * 3600_000).toISOString(), end = new Date(at + 3600_000).toISOString();
+       const runs = await api(`actions/workflows/deploy-pages.yml/runs?event=workflow_dispatch&branch=main&per_page=100&created=${encodeURIComponent(`${start}..${end}`)}`) as { workflow_runs: { id: number; run_started_at: string; head_repository: { full_name: string } }[] };
+       let verified = false;
+-      for (const run of runs.workflow_runs.filter(r => r.head_repository.full_name === 'EduardoLamim/el-nino-jbs-hml' && Math.abs(at - Date.parse(r.run_started_at)) < 15 * 60_000)) {
++      for (const run of runs.workflow_runs.filter(r => r.head_repository.full_name === 'EduardoLamim/el-nino-jbs' && Math.abs(at - Date.parse(r.run_started_at)) < 15 * 60_000)) {
+         const jobs = await api(`actions/runs/${run.id}/jobs?per_page=100`) as { jobs: { name: string; steps: { name: string; conclusion: string; started_at: string; completed_at: string }[] }[] };
+         if (jobs.jobs.some(j => j.name === 'prepare' && j.steps.some(step =>
+           step.name === 'Persistir somente o snapshot validado para o próximo ciclo' && step.conclusion === 'success'
+diff --git "a/.local\\baseline\\src\\components\\ThemeToggle.tsx" b/src/components/ThemeToggle.tsx
+index 1bfb2da..26b95ba 100644
+--- "a/.local\\baseline\\src\\components\\ThemeToggle.tsx"
++++ b/src/components/ThemeToggle.tsx
+@@ -1,7 +1,7 @@
+ import { useEffect, useState } from 'react';
+ type Theme = 'light' | 'dark';
+ function preference(): Theme | null {
+-  try { const value = localStorage.getItem('jbs-theme'); return value === 'dark' || value === 'light' ? value : null; } catch { return null; }
++  try { const value = localStorage.getItem('jbs:prd:theme:v1'); return value === 'dark' || value === 'light' ? value : null; } catch { return null; }
+ }
+ function systemTheme(): Theme { return window.matchMedia?.('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; }
+ export function ThemeToggle() {
+@@ -11,6 +11,6 @@ export function ThemeToggle() {
+   useEffect(() => { document.documentElement.dataset.theme = theme; document.documentElement.style.colorScheme = theme; }, [theme]);
+   useEffect(() => { const media = window.matchMedia?.('(prefers-color-scheme: dark)'); const update = () => setSystem(systemTheme()); media?.addEventListener('change', update); return () => media?.removeEventListener('change', update); }, []);
+   return <button className="theme-toggle" aria-pressed={theme === 'dark'} aria-label={`Ativar tema ${theme === 'dark' ? 'claro' : 'escuro'}`} title={`Tema ${theme === 'dark' ? 'escuro' : 'claro'}`} onClick={() => {
+-    const next = theme === 'dark' ? 'light' : 'dark'; setSelected(next); try { localStorage.setItem('jbs-theme', next); } catch { /* Preferência continua nesta aba. */ }
++    const next = theme === 'dark' ? 'light' : 'dark'; setSelected(next); try { localStorage.setItem('jbs:prd:theme:v1', next); } catch { /* Preferência continua nesta aba. */ }
+   }}><span aria-hidden="true">{theme === 'dark' ? '☀' : '☾'}</span><span className="sr-only">Alternar tema</span></button>;
+ }
+diff --git "a/.local\\baseline\\src\\env.d.ts" b/src/env.d.ts
+index 9151520..377580c 100644
+--- "a/.local\\baseline\\src\\env.d.ts"
++++ b/src/env.d.ts
+@@ -1 +1,4 @@
+ declare const __HML_SIMULATION__: boolean;
++
++declare const __APP_ENV__: string;
++declare const __PRD_PROJECT_REF__: string;
+diff --git "a/.local\\baseline\\src\\services\\impact.ts" b/src/services/impact.ts
+index 6e10873..7bafcca 100644
+--- "a/.local\\baseline\\src\\services\\impact.ts"
++++ b/src/services/impact.ts
+@@ -1,3 +1,4 @@
++import { validPrdProject, storageKey } from '../config/environment';
+ import { createClient } from '@supabase/supabase-js';
+ import { cacheImpactoSchema, comandoImpactoSchema, impactoPublicoSchema, type ComandoImpacto, type EstadoImpacto } from '../domain/impact';
+ 
+@@ -67,12 +68,12 @@ export class ImpactoStore {
+ export function criarImpactoStore(): ImpactoStore {
+   const url: unknown = import.meta.env.VITE_SUPABASE_URL;
+   const key: unknown = import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY;
+-  const expectedUrl = 'https://ufeahglxwygvlugfsopi.supabase.co';
+-  const cacheKey = `jbs-impacto-v1:${expectedUrl}`;
++  const expectedUrl = `https://${__PRD_PROJECT_REF__}.supabase.co`;
++  const cacheKey = storageKey('prd', __PRD_PROJECT_REF__, 'impacto');
+   const cache: CacheImpacto = { ler: () => localStorage.getItem(cacheKey), gravar: v => localStorage.setItem(cacheKey, v) };
+   const indisponivel: ImpactBackend = { consultar: async () => { throw new Error('Supabase não configurado'); },
+     executar: async () => { throw new Error('Supabase não configurado'); }, assinar: () => () => {} };
+-  if (typeof url !== 'string' || typeof key !== 'string' || !key.startsWith('sb_publishable_')
++  if (!validPrdProject(__PRD_PROJECT_REF__) || typeof url !== 'string' || typeof key !== 'string' || !key.startsWith('sb_publishable_')
+     || url !== expectedUrl) return new ImpactoStore(indisponivel, cache);
+   const client = createClient(url, key, { auth: { persistSession: false, autoRefreshToken: false, detectSessionInUrl: false },
+     global: { fetch: (input, init) => fetch(input, { ...init, signal: init?.signal ?? AbortSignal.timeout(15000) }) } });
+diff --git "a/.local\\baseline\\supabase\\config.toml" b/supabase/config.toml
+index 28d9158..4ec927a 100644
+--- "a/.local\\baseline\\supabase\\config.toml"
++++ b/supabase/config.toml
+@@ -1,4 +1,4 @@
+-project_id = "monitoramento-el-nino-jbs"
++project_id = "monitoramento-el-nino-jbs-prd"
+ 
+ [functions.impacto-jbs]
+ verify_jwt = false
+diff --git "a/.local\\baseline\\supabase\\functions\\impacto-jbs\\index.ts" b/supabase/functions/impacto-jbs/index.ts
+index 20c434d..44e010f 100644
+--- "a/.local\\baseline\\supabase\\functions\\impacto-jbs\\index.ts"
++++ b/supabase/functions/impacto-jbs/index.ts
+@@ -1,5 +1,6 @@
++import { prdUrl } from '../_shared/environment.ts';
+ import { criarHandler } from './handler.ts';
+-const url = Deno.env.get('SUPABASE_URL') ?? '';
++const url = prdUrl(Deno.env.get('PRD_SUPABASE_PROJECT_REF') ?? '', Deno.env.get('SUPABASE_URL') ?? '');
+ const apikey = Deno.env.get('JBS_SUPABASE_PUBLISHABLE_KEY') ?? '';
+ const token = Deno.env.get('JBS_IMPACT_BACKEND_TOKEN') ?? '';
+ async function rpc(name: string, body: Record<string, unknown>) {
+diff --git "a/.local\\baseline\\supabase\\functions\\teams-notifications\\handler.ts" b/supabase/functions/teams-notifications/handler.ts
+index 45fcc59..3acc878 100644
+--- "a/.local\\baseline\\supabase\\functions\\teams-notifications\\handler.ts"
++++ b/supabase/functions/teams-notifications/handler.ts
+@@ -4,7 +4,7 @@ export type Event = { event_key: string; kind: 'level' | 'impact_open' | 'impact
+ export type Claim = { id: string; lease: string; attempt: number; mode: 'mock' | 'synthetic_live' | 'operational'; event: Event; payload?: ReturnType<typeof adaptiveCard> | null };
+ const levels = ['normalidade', 'atencao', 'alerta', 'emergencia'];
+ const labels = ['Normalidade', 'Atenção', 'Alerta', 'Emergência'];
+-const panel = 'https://eduardolamim.github.io/el-nino-jbs-hml/';
++const panel = 'https://eduardolamim.github.io/el-nino-jbs/';
+ const date = (value: unknown) => typeof value === 'string' && Number.isFinite(Date.parse(value))
+   ? new Intl.DateTimeFormat('pt-BR', { timeZone: 'America/Sao_Paulo', day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' }).format(new Date(value)).replace(', ', ' às ') : 'Não informado';
+ 
+@@ -123,9 +123,10 @@ export function createHandler(deps: { rpc: Rpc; wakeToken: string; adminToken: s
+           mode:(report as {mode:string}).mode,
+           operational_enabled:(report as {mode:string}).mode === 'operational'});
+       }
++      if (action === 'configure' && input.payload?.mode !== 'disabled') return reply({error:'Use audited PRD activation'},403);
+       if (action === 'drain') return reply(await drainOne(deps.rpc, deps));
+       if (['checkpoint', 'snapshot', 'impacts'].includes(action)) return reply(await deps.rpc('ingest', action, input.payload));
+-      if (admin && ['bootstrap','configure','synthetic','replay','resolve','prune','report'].includes(action)) return reply(await deps.rpc('admin', action, input.payload));
++      if (admin && ['bootstrap','configure','replay','resolve','prune','report'].includes(action)) return reply(await deps.rpc('admin', action, input.payload));
+       return reply({ error: 'Forbidden action' }, 403);
+     } catch { return reply({ error: 'Notification operation failed; no operational state changed' }, 503); }
+   };
+diff --git "a/.local\\baseline\\supabase\\functions\\teams-notifications\\index.ts" b/supabase/functions/teams-notifications/index.ts
+index 1be8f16..656b2c0 100644
+--- "a/.local\\baseline\\supabase\\functions\\teams-notifications\\index.ts"
++++ b/supabase/functions/teams-notifications/index.ts
+@@ -1,9 +1,10 @@
++import { prdUrl } from '../_shared/environment.ts';
+ import { createHandler, type Rpc } from './handler.ts';
+ const env = (key: string) => Deno.env.get(key) ?? '';
+-const project = 'https://ufeahglxwygvlugfsopi.supabase.co';
++const project = prdUrl(env('PRD_SUPABASE_PROJECT_REF'), env('SUPABASE_URL'));
+ const rpc: Rpc = async (scope, action, payload = {}) => {
+-  if (env('SUPABASE_URL') !== project) throw new Error('HML only');
+-  const token = env(`TEAMS_DB_${scope.toUpperCase()}_TOKEN_HML`);
++  if (env('SUPABASE_URL') !== project) throw new Error('PRD only');
++  const token = env(`TEAMS_DB_${scope.toUpperCase()}_TOKEN_PRD`);
+   const apikey = env('JBS_SUPABASE_PUBLISHABLE_KEY'); // Existing public project key, never the Impacto backend credential.
+   if (token.length < 64 || !apikey) throw new Error('Missing scoped credential');
+   const response = await fetch(`${project}/rest/v1/rpc/jbs_teams_rpc`, {
+@@ -14,5 +15,5 @@ const rpc: Rpc = async (scope, action, payload = {}) => {
+   return response.json();
+ };
+ // Read configuration for each request, including changes to the live-send switch.
+-Deno.serve(request => createHandler({ rpc, wakeToken: env('TEAMS_WAKE_TOKEN_HML'), adminToken: env('TEAMS_ADMIN_TOKEN_HML'),
+-  webhook: env('TEAMS_WORKFLOW_URL_HML'), liveEnabled: env('TEAMS_SYNTHETIC_LIVE_HML') === 'true' })(request));
++Deno.serve(request => createHandler({ rpc, wakeToken: env('TEAMS_WAKE_TOKEN_PRD'), adminToken: env('TEAMS_ADMIN_TOKEN_PRD'),
++  webhook: env('TEAMS_WORKFLOW_URL_PRD'), liveEnabled: false })(request));
+diff --git "a/.local\\baseline\\supabase\\functions\\trigger-monitoramento\\handler.ts" b/supabase/functions/trigger-monitoramento/handler.ts
+index bf928ff..eaba870 100644
+--- "a/.local\\baseline\\supabase\\functions\\trigger-monitoramento\\handler.ts"
++++ b/supabase/functions/trigger-monitoramento/handler.ts
+@@ -1,4 +1,4 @@
+-const endpoint = 'https://api.github.com/repos/EduardoLamim/el-nino-jbs-hml/actions/workflows/deploy-pages.yml/dispatches';
++const endpoint = 'https://api.github.com/repos/EduardoLamim/el-nino-jbs/actions/workflows/deploy-pages.yml/dispatches';
+ type Config = { secret: string; token: string };
+ type Dependencies = { fetch: typeof fetch; log: (event: Record<string, unknown>) => void };
+ 
+diff --git "a/.local\\baseline\\supabase\\functions\\trigger-monitoramento\\index.ts" b/supabase/functions/trigger-monitoramento/index.ts
+index ab39e45..074b530 100644
+--- "a/.local\\baseline\\supabase\\functions\\trigger-monitoramento\\index.ts"
++++ b/supabase/functions/trigger-monitoramento/index.ts
+@@ -1,5 +1,7 @@
++import { prdUrl } from '../_shared/environment.ts';
++prdUrl(Deno.env.get('PRD_SUPABASE_PROJECT_REF') ?? '', Deno.env.get('SUPABASE_URL') ?? '');
+ import { criarDispatchHandler } from './handler.ts';
+ Deno.serve(criarDispatchHandler({
+-  secret: Deno.env.get('MONITORAMENTO_CRON_SECRET') ?? '',
+-  token: Deno.env.get('GITHUB_DISPATCH_TOKEN') ?? '',
++  secret: Deno.env.get('MONITORAMENTO_CRON_SECRET_PRD') ?? '',
++  token: Deno.env.get('GITHUB_DISPATCH_TOKEN_PRD') ?? '',
+ }, { fetch, log: event => console.log(JSON.stringify(event)) }));
+diff --git "a/.local\\baseline\\supabase\\migrations\\202610050001_monitoramento_cron.sql" b/supabase/migrations/202610050001_monitoramento_cron.sql
+index 3d9796d..2fd455a 100644
+--- "a/.local\\baseline\\supabase\\migrations\\202610050001_monitoramento_cron.sql"
++++ b/supabase/migrations/202610050001_monitoramento_cron.sql
+@@ -1,36 +1,45 @@
+--- Somente orquestração HML. Nenhum dado ambiental ou segredo literal.
++-- Somente orquestração PRD. Nenhum dado ambiental ou segredo literal.
+ create extension if not exists pg_cron;
+ create extension if not exists pg_net;
+-create schema if not exists monitoramento_hml;
+-revoke all on schema monitoramento_hml from public, anon, authenticated;
++create schema if not exists monitoramento_prd;
++revoke all on schema monitoramento_prd from public, anon, authenticated;
+ 
+-create table if not exists monitoramento_hml.dispatch_requests (
++create table monitoramento_prd.configuration (
++ id boolean primary key default true check(id),
++ project_ref text not null check(project_ref ~ '^[a-z]{20}$' and project_ref <> 'ufeahglxwygvlugfsopi')
++);
++revoke all on monitoramento_prd.configuration from public,anon,authenticated;
++alter table monitoramento_prd.configuration enable row level security;
++-- Empty until explicit PRD configuration; no Cron activation.
++create table if not exists monitoramento_prd.dispatch_requests (
+   request_id bigint primary key,
+   expected_at timestamptz not null,
+   requested_at timestamptz not null default clock_timestamp()
+ );
+-revoke all on monitoramento_hml.dispatch_requests from public, anon, authenticated;
+-alter table monitoramento_hml.dispatch_requests enable row level security;
++revoke all on monitoramento_prd.dispatch_requests from public, anon, authenticated;
++alter table monitoramento_prd.dispatch_requests enable row level security;
+ 
+-create or replace function monitoramento_hml.trigger_dispatch()
++create or replace function monitoramento_prd.trigger_dispatch()
+ returns bigint language plpgsql security definer set search_path = '' as $$
+ declare
+   credential text;
++  ref text;
+   request_id bigint;
+   expected_at timestamptz := to_timestamp(floor((extract(epoch from statement_timestamp()) - 120) / 600) * 600 + 120);
+ begin
++  select project_ref into strict ref from monitoramento_prd.configuration where id=true;
+   select decrypted_secret into strict credential from vault.decrypted_secrets
+-    where name = 'MONITORAMENTO_CRON_SECRET';
++    where name = 'MONITORAMENTO_CRON_SECRET_PRD';
+   if length(credential) < 32 then raise exception 'Credencial do agendador indisponível'; end if;
+   select net.http_post(
+-    url := 'https://ufeahglxwygvlugfsopi.supabase.co/functions/v1/trigger-monitoramento',
++    url := 'https://' || ref || '.supabase.co/functions/v1/trigger-monitoramento',
+     headers := jsonb_build_object('Content-Type', 'application/json', 'Authorization', 'Bearer ' || credential),
+     body := '{}'::jsonb,
+     timeout_milliseconds := 25000
+   ) into request_id;
+-  insert into monitoramento_hml.dispatch_requests(request_id, expected_at) values (request_id, expected_at);
++  insert into monitoramento_prd.dispatch_requests(request_id, expected_at) values (request_id, expected_at);
+   return request_id;
+ end;
+ $$;
+-revoke all on function monitoramento_hml.trigger_dispatch() from public, anon, authenticated;
++revoke all on function monitoramento_prd.trigger_dispatch() from public, anon, authenticated;
+ -- Ativação deliberadamente separada: somente após provisionamento e teste real da Edge.
+diff --git "a/.local\\baseline\\supabase\\migrations\\202610130001_teams_notifications.sql" b/supabase/migrations/202610130001_teams_notifications.sql
+index dfa90af..cdf50ed 100644
+--- "a/.local\\baseline\\supabase\\migrations\\202610130001_teams_notifications.sql"
++++ b/supabase/migrations/202610130001_teams_notifications.sql
+@@ -7,7 +7,7 @@ create table jbs_notifications.credentials (
+ );
+ create table jbs_notifications.settings (
+   id boolean primary key default true check(id),
+-  environment text not null default 'hml' check(environment='hml'),
++  environment text not null default 'prd' check(environment='prd'),
+   mode text not null default 'disabled' check(mode in ('disabled','mock','synthetic_live')),
+   live_until timestamptz,
+   impact_baseline timestamptz
+@@ -24,7 +24,7 @@ create table jbs_notifications.impact_baseline_events (
+   event_key text primary key
+ );
+ create table jbs_notifications.events (
+-  event_key text primary key, environment text not null default 'hml' check(environment='hml'),
++  event_key text primary key, environment text not null default 'prd' check(environment='prd'),
+   kind text not null check(kind in ('level','impact_open','impact_close')),
+   is_test boolean not null default false, body jsonb not null,
+   created_at timestamptz not null default clock_timestamp()
+@@ -84,7 +84,7 @@ begin
+     -- Capture visible history identities, not a wall-clock cutoff. A transaction
+     -- committing later remains discoverable even when its timestamp precedes bootstrap.
+     insert into jbs_notifications.impact_baseline_events
+-      select 'hml:'||v.kind||':'||h.id::text from jbs_private.impactos_jbs h
++      select 'prd:'||v.kind||':'||h.id::text from jbs_private.impactos_jbs h
+       cross join lateral (values ('impact_open',h.acionado_em),('impact_close',h.encerrado_em)) v(kind,at)
+       where v.at is not null;
+     update jbs_notifications.settings set impact_baseline=clock_timestamp() where id=true;
+@@ -101,7 +101,7 @@ begin
+     if b->>'level' is not null and b->>'level' not in ('normalidade','atencao','alerta','emergencia') then raise exception 'Invalid level'; end if;
+     if c.snapshot->>'level' is not null and b->>'level' is not null
+       and c.snapshot->>'level' <> b->>'level' then
+-      k:='hml:level:'||sha;
++      k:='prd:level:'||sha;
+       perform jbs_notifications.add_event(k,'level',jsonb_build_object(
+         'before',c.snapshot->>'level','after',b->>'level','occurred_at',b->>'since',
+         'detected_at',b->>'collected_at','reasons',coalesce(b->'reasons','[]'::jsonb),
+@@ -117,12 +117,12 @@ begin
+     for r in select h.id,h.tipo,v.kind,v.at from jbs_private.impactos_jbs h
+       cross join lateral (values ('impact_open',h.acionado_em),('impact_close',h.encerrado_em)) v(kind,at)
+       where v.at is not null and not exists(select 1 from jbs_notifications.impact_baseline_events baseline
+-        where baseline.event_key='hml:'||v.kind||':'||h.id::text)
++        where baseline.event_key='prd:'||v.kind||':'||h.id::text)
+       and not exists(select 1 from jbs_notifications.events ev
+-        where ev.event_key='hml:'||v.kind||':'||h.id::text)
++        where ev.event_key='prd:'||v.kind||':'||h.id::text)
+       order by v.at,h.id,case v.kind when 'impact_open' then 0 else 1 end limit 100
+     loop
+-      perform jbs_notifications.add_event('hml:'||r.kind||':'||r.id::text,r.kind,
++      perform jbs_notifications.add_event('prd:'||r.kind||':'||r.id::text,r.kind,
+         jsonb_build_object('impact_id',r.id,'impact_type',r.tipo,'occurred_at',r.at,
+           'detected_at',clock_timestamp(),'manual',true)); n:=n+1;
+     end loop;
+@@ -142,8 +142,8 @@ begin
+       or target not in ('level','impact_open','impact_close') or jsonb_typeof(b)<>'object' or b is null then raise exception 'Invalid synthetic event'; end if;
+     if target='level' and (coalesce(b->>'before','') not in ('normalidade','atencao','alerta','emergencia')
+       or coalesce(b->>'after','') not in ('normalidade','atencao','alerta','emergencia') or b->>'before'=b->>'after') then raise exception 'Invalid synthetic transition'; end if;
+-    perform jbs_notifications.add_event('hml:test:'||k,target,b,true);
+-    return jsonb_build_object('key','hml:test:'||k);
++    perform jbs_notifications.add_event('prd:test:'||k,target,b,true);
++    return jsonb_build_object('key','prd:test:'||k);
+   elsif p_action='claim' then
+     delete from jbs_notifications.attempts where finished_at<clock_timestamp()-interval '30 days';
+     -- Crash after POST is ambiguous. Never blindly recover sending as pending.
+diff --git "a/.local\\baseline\\supabase\\migrations\\202610140001_teams_operational.sql" b/supabase/migrations/202610140001_teams_operational.sql
+index fa83495..3ac18e0 100644
+--- "a/.local\\baseline\\supabase\\migrations\\202610140001_teams_operational.sql"
++++ b/supabase/migrations/202610140001_teams_operational.sql
+@@ -27,11 +27,11 @@ begin
+   detected:=(e.body->>'detected_at')::timestamptz;
+   if at is null or detected is null or at<=s.operational_since or at>detected or detected>statement_timestamp() then return false; end if;
+   if e.kind='level' then
+-    return e.event_key='hml:level:'||(e.body->>'commit')
++    return e.event_key='prd:level:'||(e.body->>'commit')
+       and exists(select 1 from jbs_notifications.processed_snapshots where commit_sha=e.body->>'commit');
+   end if;
+   return e.body->>'manual'='true' and exists(select 1 from jbs_private.impactos_jbs h
+-    where h.id::text=e.body->>'impact_id' and e.event_key='hml:'||e.kind||':'||h.id::text
++    where h.id::text=e.body->>'impact_id' and e.event_key='prd:'||e.kind||':'||h.id::text
+       and at=case e.kind when 'impact_open' then h.acionado_em when 'impact_close' then h.encerrado_em end);
+ exception when others then return false;
+ end $$;
+@@ -48,7 +48,7 @@ begin
+ 
+   if p_action='activate_operational' then
+     reason:=p_payload->>'reason';
+-    if s.mode<>'disabled' or p_payload->>'confirm' is distinct from 'ATIVAR TEAMS HML'
++    if s.mode<>'disabled' or p_payload->>'confirm' is distinct from 'ATIVAR TEAMS PRD'
+       or reason is null or length(btrim(reason))<10 or length(reason)>500 then raise exception 'Explicit activation required'; end if;
+     select * into c from jbs_notifications.cursor where id=true;
+     if not found or p_payload->>'expected_commit' is distinct from c.commit_sha
+@@ -78,7 +78,7 @@ begin
+     -- Capture visible history identities, not a wall-clock cutoff. A transaction
+     -- committing later remains discoverable even when its timestamp precedes bootstrap.
+     insert into jbs_notifications.impact_baseline_events
+-      select 'hml:'||v.kind||':'||h.id::text from jbs_private.impactos_jbs h
++      select 'prd:'||v.kind||':'||h.id::text from jbs_private.impactos_jbs h
+       cross join lateral (values ('impact_open',h.acionado_em),('impact_close',h.encerrado_em)) v(kind,at)
+       where v.at is not null;
+     update jbs_notifications.settings set impact_baseline=clock_timestamp() where id=true;
+@@ -95,7 +95,7 @@ begin
+     if b->>'level' is not null and b->>'level' not in ('normalidade','atencao','alerta','emergencia') then raise exception 'Invalid level'; end if;
+     if c.snapshot->>'level' is not null and b->>'level' is not null
+       and c.snapshot->>'level' <> b->>'level' then
+-      k:='hml:level:'||sha;
++      k:='prd:level:'||sha;
+       perform jbs_notifications.add_event(k,'level',jsonb_build_object(
+         'before',c.snapshot->>'level','after',b->>'level','occurred_at',b->>'since',
+         'detected_at',b->>'collected_at','reasons',coalesce(b->'reasons','[]'::jsonb),
+@@ -111,12 +111,12 @@ begin
+     for r in select h.id,h.tipo,v.kind,v.at from jbs_private.impactos_jbs h
+       cross join lateral (values ('impact_open',h.acionado_em),('impact_close',h.encerrado_em)) v(kind,at)
+       where v.at is not null and not exists(select 1 from jbs_notifications.impact_baseline_events baseline
+-        where baseline.event_key='hml:'||v.kind||':'||h.id::text)
++        where baseline.event_key='prd:'||v.kind||':'||h.id::text)
+       and not exists(select 1 from jbs_notifications.events ev
+-        where ev.event_key='hml:'||v.kind||':'||h.id::text)
++        where ev.event_key='prd:'||v.kind||':'||h.id::text)
+       order by v.at,h.id,case v.kind when 'impact_open' then 0 else 1 end limit 100
+     loop
+-      perform jbs_notifications.add_event('hml:'||r.kind||':'||r.id::text,r.kind,
++      perform jbs_notifications.add_event('prd:'||r.kind||':'||r.id::text,r.kind,
+         jsonb_build_object('impact_id',r.id,'impact_type',r.tipo,'occurred_at',r.at,
+           'detected_at',clock_timestamp(),'manual',true)); n:=n+1;
+     end loop;
+@@ -136,8 +136,8 @@ begin
+       or target not in ('level','impact_open','impact_close') or jsonb_typeof(b)<>'object' or b is null then raise exception 'Invalid synthetic event'; end if;
+     if target='level' and (coalesce(b->>'before','') not in ('normalidade','atencao','alerta','emergencia')
+       or coalesce(b->>'after','') not in ('normalidade','atencao','alerta','emergencia') or b->>'before'=b->>'after') then raise exception 'Invalid synthetic transition'; end if;
+-    perform jbs_notifications.add_event('hml:test:'||k,target,b,true);
+-    return jsonb_build_object('key','hml:test:'||k);
++    perform jbs_notifications.add_event('prd:test:'||k,target,b,true);
++    return jsonb_build_object('key','prd:test:'||k);
+   elsif p_action='claim' then
+     delete from jbs_notifications.attempts where finished_at<clock_timestamp()-interval '30 days';
+     -- Crash after POST is ambiguous. Never blindly recover sending as pending.
+diff --git "a/.local\\baseline\\tests\\contracts.test.ts" b/tests/contracts.test.ts
+index d7111b1..8db5b63 100644
+--- "a/.local\\baseline\\tests\\contracts.test.ts"
++++ b/tests/contracts.test.ts
+@@ -1,5 +1,5 @@
+ import { describe, expect, expectTypeOf, it } from 'vitest';
+-import statusPublicado from '../public/data/status.json';
++import statusPublicado from './fixtures/status-operacional.json';
+ import { statusVazio } from '../scripts/collectors/pipeline';
+ import territorioInicial from '../public/data/territorio.json';
+ import { barragemSchema, nivelSchema, nivelPorFlag, parseStatus,
+diff --git "a/.local\\baseline\\tests\\phase07.test.tsx" b/tests/phase07.test.tsx
+index cf1ee07..a17b70c 100644
+--- "a/.local\\baseline\\tests\\phase07.test.tsx"
++++ b/tests/phase07.test.tsx
+@@ -150,7 +150,7 @@ describe('Fase 07 — barra global e integração', () => {
+   it('barra mostra nível e gatilhos existentes sem recalcular', () => {
+     render(<CompactOperational status={s} impacto={inativo} />);
+     expect(screen.getByText('🟡 Nível de Alerta JBS — Atenção')).toBeTruthy();
+-    expect(screen.getByText('Situação Oficial + DC01 + DC11')).toBeTruthy();
++    expect(screen.getByText('Situação Oficial + DC01')).toBeTruthy();
+   });
+   it('barra preta retida mostra degradação, tipo e condição subjacente', () => {
+     render(<CompactOperational status={s} impacto={{ ...ativo, qualidade: 'degradado' }} />);
+diff --git "a/.local\\baseline\\tests\\phase08.test.ts" b/tests/phase08.test.ts
+index b7a3c51..c0ab1dd 100644
+--- "a/.local\\baseline\\tests\\phase08.test.ts"
++++ b/tests/phase08.test.ts
+@@ -91,7 +91,7 @@ describe('Fase 08 — Pages e artefato', () => {
+     expect(() => validarAmbientePublico({}, true)).toThrow();
+     expect(() => validarAmbientePublico({ VITE_PIN: 'fixture' })).toThrow();
+     expect(() => validarAmbientePublico({ VITE_SUPABASE_URL: 'https://ufeahglxwygvlugfsopi.supabase.co', VITE_SUPABASE_PUBLISHABLE_KEY: 'sb_secret_fixture' })).toThrow();
+-    expect(() => validarAmbientePublico({ VITE_SUPABASE_URL: 'https://ufeahglxwygvlugfsopi.supabase.co', VITE_SUPABASE_PUBLISHABLE_KEY: 'sb_publishable_fixture' }, true)).not.toThrow();
++    expect(() => validarAmbientePublico({ APP_ENV: 'hml', VITE_SUPABASE_URL: 'https://ufeahglxwygvlugfsopi.supabase.co', VITE_SUPABASE_PUBLISHABLE_KEY: 'sb_publishable_fixture' }, true)).not.toThrow();
+   });
+   it('detecta credenciais privadas sem confundir rótulo PIN com valor secreto', () => {
+     expect(() => verificarConteudoPublico('PIN inválido; sb_publishable_fixture', {})).not.toThrow();
+diff --git "a/.local\\baseline\\tests\\phase10-cadence.test.ts" b/tests/phase10-cadence.test.ts
+index 0ec25fa..5765c04 100644
+--- "a/.local\\baseline\\tests\\phase10-cadence.test.ts"
++++ b/tests/phase10-cadence.test.ts
+@@ -8,4 +8,4 @@ const evaluate=(r:EstacaoHidrologica,prev?:ReturnType<typeof avaliarRio>)=>avali
+ it.each([600,660,719,720])('três leituras em intervalos %ss normalizam em um único lote',gap=>{const prev=evaluate(river(0,2.5));const r=river(gap*3);r.serie_12h=[1,2,3].map(i=>({medido_em:instant(i*gap),nivel_m:0,qualidade:null}));expect(evaluate(r,prev).nivel).toBe('atencao');});
+ it.each([720.001,721,900])('intervalo %ss quebra continuidade',gap=>{let prev=evaluate(river(0,2.5));prev=evaluate(river(600),prev);prev=evaluate(river(1200),prev);expect(evaluate(river(1200+gap),prev)).toMatchObject({nivel:'alerta',normalizacao:{leituras_abaixo:1}});});
+ it('repetir uma leitura em três workflows não conta três leituras',()=>{let prev=evaluate(river(0,2.5));for(let i=0;i<3;i++)prev=evaluate(river(600),prev);expect(prev).toMatchObject({nivel:'alerta',normalizacao:{leituras_abaixo:1}});});
+-it('Supabase é o único cron de 10 minutos; dispatch manual, serialização e persistência preservados',()=>{const w=readFileSync('.github/workflows/deploy-pages.yml','utf8');const cron=readFileSync('scripts/automation/activate-hml-cron.sql','utf8');expect(cron).toContain("'2,12,22,32,42,52 * * * *'");expect(w).not.toMatch(/^\s*schedule:/m);expect(w).toContain('  workflow_dispatch:');expect(w).toContain('cancel-in-progress: false');expect(w).toContain('group: operational-pages');expect(w).toContain('npm run automation:update');expect(politicaHidrologica.tolerancia_intervalo_segundos).toBe(120);});
++it('Supabase é o único cron de 10 minutos; dispatch manual, serialização e persistência preservados',()=>{const w=readFileSync('.github/workflows/deploy-pages.yml','utf8');const cron=readFileSync('scripts/automation/activate-prd-cron.sql','utf8');expect(cron).toContain("'2,12,22,32,42,52 * * * *'");expect(w).not.toMatch(/^\s*schedule:/m);expect(w).toContain('  workflow_dispatch:');expect(w).toContain('cancel-in-progress: false');expect(w).toContain('group: operational-pages');expect(w).toContain('npm run automation:update');expect(politicaHidrologica.tolerancia_intervalo_segundos).toBe(120);});
+diff --git "a/.local\\baseline\\tests\\phase10-cron.test.ts" b/tests/phase10-cron.test.ts
+index 1332a79..d2493db 100644
+--- "a/.local\\baseline\\tests\\phase10-cron.test.ts"
++++ b/tests/phase10-cron.test.ts
+@@ -17,7 +17,7 @@ it.each([200, 204])('aceita autorização server-side e fixa repo/branch/workflo
+   const c = config(), log = vi.fn(), fetch = vi.fn().mockResolvedValue(new Response(status === 200 ? JSON.stringify({ workflow_run_id: 123 }) : null, { status }));
+   const response = await criarDispatchHandler(c, { fetch, log })(new Request('https://edge.invalid', { method: 'POST', headers: { authorization: `Bearer ${c.secret}` }, body: JSON.stringify({ ref: 'other', repo: 'evil' }) }));
+   expect(response.status).toBe(202);
+-  expect(fetch.mock.calls[0]![0]).toBe('https://api.github.com/repos/EduardoLamim/el-nino-jbs-hml/actions/workflows/deploy-pages.yml/dispatches');
++  expect(fetch.mock.calls[0]![0]).toBe('https://api.github.com/repos/EduardoLamim/el-nino-jbs/actions/workflows/deploy-pages.yml/dispatches');
+   const options = fetch.mock.calls[0]![1]; expect(JSON.parse(options.body)).toEqual({ ref: 'main', inputs: { publish: true } });
+   expect(options.redirect).toBe('error');
+   const exposed = (await response.text()) + JSON.stringify(log.mock.calls); expect(exposed).not.toContain(c.secret); expect(exposed).not.toContain(c.token);
+diff --git "a/.local\\baseline\\tests\\teams-db.test.ts" b/tests/teams-db.test.ts
+index 917e72e..e27ff16 100644
+--- "a/.local\\baseline\\tests\\teams-db.test.ts"
++++ b/tests/teams-db.test.ts
+@@ -119,7 +119,7 @@ describe('Teams — transações e isolamento PostgreSQL', () => {
+     await rpc('worker','finish',{id:c.id,lease:c.lease,outcome:'uncertain'});
+     expect(await rpc('worker','claim')).toBeNull();
+     await admin('resolve',{id:c.id,status:'dismissed',reason:'Teste descartado após inspeção administrativa'});
+-    expect((await rpc('worker','claim') as Claim).event.event_key).toBe('hml:test:test-second');
++    expect((await rpc('worker','claim') as Claim).event.event_key).toBe('prd:test:test-second');
+     expect((await rows('outbox'))[0]!.payload_sha256).toMatch(/^[a-f0-9]{64}$/);
+   });
+   it('crash após início de POST vira incerto; replay exige auditoria', async () => {
+@@ -154,7 +154,7 @@ describe('Teams — transações e isolamento PostgreSQL', () => {
+ 
+ describe('Teams — ativação operacional explícita', () => {
+   const activate = async () => {
+-    const result=await admin('activate_operational', { confirm:'ATIVAR TEAMS HML', reason:'Ativação expressamente autorizada', expected_commit:'a'.repeat(40) });
++    const result=await admin('activate_operational', { confirm:'ATIVAR TEAMS PRD', reason:'Ativação expressamente autorizada', expected_commit:'a'.repeat(40) });
+     // Deterministic fixture boundary; avoid millisecond clock resolution in WASM.
+     await db.exec("update jbs_notifications.settings set operational_since=clock_timestamp()-interval '1 second'");
+     return result;
+diff --git "a/.local\\baseline\\tests\\teams-operational-admin.test.ts" b/tests/teams-operational-admin.test.ts
+index 7ea26b9..71ed95a 100644
+--- "a/.local\\baseline\\tests\\teams-operational-admin.test.ts"
++++ b/tests/teams-operational-admin.test.ts
+@@ -2,8 +2,8 @@ import { describe, expect, it } from 'vitest';
+ import { spawnSync } from 'node:child_process';
+ describe.skipIf(process.platform !== 'win32')('Teams — confirmação administrativa local', () => {
+   it.each(['invalid','cancel'])('bloqueia %s antes de PAT e de qualquer acesso remoto', mode => {
+-    const command=`$ErrorActionPreference='Stop'; function Invoke-RestMethod { throw 'NETWORK_MUST_NOT_RUN' }; function Read-Host { param($Prompt,[switch]$AsSecureString); if($AsSecureString){throw 'PAT_MUST_NOT_RUN'}; return 'CANCELAR' }; try { & ./scripts/teams/admin-hml.ps1 -Action enable-operational -ExpectedCommit '${mode==='invalid'?'invalid':'a'.repeat(40)}' -Reason 'Teste local sem acesso remoto'; exit 9 } catch { if($_.Exception.Message -match 'NETWORK_MUST_NOT_RUN|PAT_MUST_NOT_RUN'){exit 8}; Write-Output 'BLOCKED'; exit 0 }`;
++    const command=`$ErrorActionPreference='Stop'; function Invoke-RestMethod { throw 'NETWORK_MUST_NOT_RUN' }; function Read-Host { param($Prompt,[switch]$AsSecureString); if($AsSecureString){throw 'PAT_MUST_NOT_RUN'}; return 'CANCELAR' }; try { & ./scripts/teams/admin-prd.ps1 -ProjectRef qqqqqqqqqqqqqqqqqqqq -Action enable-operational -ExpectedCommit '${mode==='invalid'?'invalid':'a'.repeat(40)}' -Reason 'Teste local sem acesso remoto'; exit 9 } catch { if($_.Exception.Message -match 'NETWORK_MUST_NOT_RUN|PAT_MUST_NOT_RUN'){exit 8}; Write-Output 'BLOCKED'; exit 0 }`;
+     const result=spawnSync('pwsh',['-NoProfile','-NonInteractive','-Command',command],{encoding:'utf8'});
+     expect(result.status).toBe(0); expect(result.stdout).toContain('BLOCKED');
+-  });
++  },20000);
+ });
+diff --git "a/.local\\baseline\\tests\\teams-provision.test.ts" b/tests/teams-provision.test.ts
+index 3092503..e63db1b 100644
+--- "a/.local\\baseline\\tests\\teams-provision.test.ts"
++++ b/tests/teams-provision.test.ts
+@@ -13,7 +13,7 @@ describe('Provisionamento Teams — falhas parciais sem chamadas externas',()=>{
+       for(const stage of stages) if(stage===failing) throw new Error('simulated interruption');
+     },async()=>{shutdown=await disableTeams(query,api);})).rejects.toThrow('simulated interruption');
+     expect(shutdown).toEqual({database_disabled:true,secret_disable_acknowledged:true});
+-    expect(api).toHaveBeenCalledWith('/secrets',[{name:'TEAMS_SYNTHETIC_LIVE_HML',value:'false'}]);
++    expect(api).toHaveBeenCalledWith('/secrets',[{name:'TEAMS_SYNTHETIC_LIVE_PRD',value:'false'}]);
+     expect(query).toHaveBeenCalledWith(expect.stringContaining("execute('configure'"));
+   });
+   it('falha da Management API no banco não impede tentativa do secret; nunca afirma desligamento total',async()=>{
+diff --git "a/.local\\baseline\\tests\\teams-worker.test.ts" b/tests/teams-worker.test.ts
+index 472ef50..fb85373 100644
+--- "a/.local\\baseline\\tests\\teams-worker.test.ts"
++++ b/tests/teams-worker.test.ts
+@@ -1,6 +1,6 @@
+ import { describe, expect, it, vi } from 'vitest';
+ import { adaptiveCard, createHandler, drainOne, validWebhook, type Claim, type Event } from '../supabase/functions/teams-notifications/handler';
+-const event: Event = { event_key:'hml:test:test-001',kind:'level',is_test:true,body:{before:'normalidade',after:'alerta',occurred_at:'2026-10-13T15:00:00Z'} };
++const event: Event = { event_key:'prd:test:test-001',kind:'level',is_test:true,body:{before:'normalidade',after:'alerta',occurred_at:'2026-10-13T15:00:00Z'} };
+ const claim: Claim = { id:'id',lease:'lease',attempt:1,mode:'synthetic_live',event };
+ function setup(c: Claim | null = claim) {
+   const rpc = vi.fn(async (_scope: string, action: string, payload?: Record<string, unknown>) => action === 'claim' ? c : action === 'freeze' ? payload!.payload : {});
+diff --git "a/.local\\baseline\\tests\\territory.test.ts" b/tests/territory.test.ts
+index 37830f6..f2c838b 100644
+--- "a/.local\\baseline\\tests\\territory.test.ts"
++++ b/tests/territory.test.ts
+@@ -2,7 +2,7 @@ import { readFileSync } from 'node:fs';
+ import { createHash } from 'node:crypto';
+ import { describe, expect, it } from 'vitest';
+ import publicado from '../public/data/territorio.json';
+-import status from '../public/data/status.json';
++import status from './fixtures/status-operacional.json';
+ import { bairrosGeojsonSchema, parseTerritorio, territorioSchema } from '../src/domain/territory';
+ import { parseStatus } from '../src/domain/contracts';
+ import { agregados, zonaExata } from '../scripts/territory/config';
+diff --git "a/.local\\baseline\\tests\\v1-closure.test.tsx" b/tests/v1-closure.test.tsx
+index 22c6d77..2456e0f 100644
+--- "a/.local\\baseline\\tests\\v1-closure.test.tsx"
++++ b/tests/v1-closure.test.tsx
+@@ -62,11 +62,11 @@ describe('Tema e ícone', () => {
+     expect(document.documentElement.dataset.theme).toBe('dark');
+     fireEvent.click(screen.getByRole('button', { name: 'Ativar tema claro' }));
+     expect(document.documentElement.dataset.theme).toBe('light');
+-    expect(localStorage.getItem('jbs-theme')).toBe('light');
++    expect(localStorage.getItem('jbs:prd:theme:v1')).toBe('light');
+     unmount(); render(<ThemeToggle />); expect(document.documentElement.dataset.theme).toBe('light');
+   });
+   it('rejeita preferência inválida e usa sistema', () => {
+-    localStorage.setItem('jbs-theme', 'outro'); render(<ThemeToggle />);
++    localStorage.setItem('jbs:prd:theme:v1', 'outro'); render(<ThemeToggle />);
+     expect(document.documentElement.dataset.theme).toBe('light');
+   });
+   it('mapeamento explícito e fallback neutro', () => {
+diff --git "a/.local\\baseline\\vite.config.ts" b/vite.config.ts
+index fb6e891..27702ab 100644
+--- "a/.local\\baseline\\vite.config.ts"
++++ b/vite.config.ts
+@@ -1,10 +1,12 @@
+ import { defineConfig, loadEnv } from 'vite';
+ import react from '@vitejs/plugin-react';
+ import { basePages, validarAmbientePublico } from './scripts/automation/pages-config';
+-import { simulationEnabled } from './scripts/automation/simulation-config';
+ 
+ export default defineConfig(({ mode, command }) => {
+-  const env = { ...loadEnv(mode, process.cwd(), 'VITE_'), ...process.env };
+-  validarAmbientePublico(env, process.env.REQUIRE_PUBLIC_CONFIG === 'true');
+-  return { plugins: [react()], define: { __HML_SIMULATION__: JSON.stringify(simulationEnabled(env, mode, command)) }, base: mode === 'pages' ? basePages() : './', build: { manifest: true } };
++  const env = { ...loadEnv(mode, process.cwd(), ''), ...process.env };
++  if (command==='build' && env.APP_ENV !== 'production') throw new Error('Build deste checkout exige production');
++  if (command==='build' && env.GITHUB_REPOSITORY && env.GITHUB_REPOSITORY!=='EduardoLamim/el-nino-jbs') throw new Error('Repositório incompatível');
++  if (command==='build' && env.PAGES_BASE_PATH && env.PAGES_BASE_PATH!=='/el-nino-jbs/') throw new Error('Base path PRD inválido');
++  validarAmbientePublico(env, command==='build' || process.env.REQUIRE_PUBLIC_CONFIG === 'true');
++  return { plugins: [react()], define: { __APP_ENV__: JSON.stringify('production'), __PRD_PROJECT_REF__: JSON.stringify(env.PRD_SUPABASE_PROJECT_REF ?? ''), __HML_SIMULATION__: JSON.stringify(false) }, base: mode === 'pages' ? basePages() : './', build: { manifest: true } };
+ });

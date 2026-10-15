@@ -1,0 +1,59 @@
+import { lazy, Suspense, useCallback, useEffect, useState } from 'react';
+import { Navegacao } from './components/Navegacao';
+import { paginas, type Pagina } from './pages/Placeholder';
+import { useDados } from './hooks/useDados';
+import { PainelOperacional } from './components/Operational';
+import { Dashboard } from './pages/Dashboard';
+import { Monitoramento, secoes, type SecaoMonitoramento } from './pages/Monitoramento';
+import { CompactOperational } from './components/CompactOperational';
+import { PlansCenter } from './pages/PlansCenter';
+import { ThemeToggle } from './components/ThemeToggle';
+import { findAreaPlan } from './content/area-plans';
+import { LevelAlert } from './components/LevelAlert';
+import { HmlAlertSimulator } from './components/HmlAlertSimulator';
+const TerritoryMapPage = lazy(() => import('./pages/TerritoryMap').then(m => ({ default: m.TerritoryMapPage })));
+import type { EstadoImpacto } from './domain/impact';
+import logo from './assets/jbs-terminais-branco.png';
+
+function rotaAtual() {
+  const [pagina = 'dashboard', secao, ...resto] = (window.location.hash.replace(/^#\/?/, '') || 'dashboard').split('/');
+  const valida = Object.hasOwn(paginas, pagina) && resto.length === 0 && (!secao || (pagina === 'monitoramento' && Object.hasOwn(secoes, secao)) || (pagina === 'plano-de-acao' && (['geral', 'areas'].includes(secao) || !!findAreaPlan(secao))));
+  return { pagina: valida ? pagina as Pagina : null, secao: secao ?? (pagina === 'plano-de-acao' ? 'geral' : 'rios') };
+}
+export default function App() {
+  const [rota, setRota] = useState(rotaAtual);
+  const dados = useDados();
+  const [audioHost, setAudioHost] = useState<HTMLDivElement | null>(null);
+  const [simulationActive, setSimulationActive] = useState(false);
+  const [impactEvent, setImpactEvent] = useState(0);
+  const onImpactActivation = useCallback(() => setImpactEvent(n => n + 1), []);
+  const [impacto, setImpacto] = useState<EstadoImpacto>({ dado: null, qualidade: 'desconhecido', confirmado_em: null, realtime: 'reconectando' });
+  useEffect(() => {
+    const atualizar = () => setRota(rotaAtual());
+    window.addEventListener('hashchange', atualizar);
+    return () => window.removeEventListener('hashchange', atualizar);
+  }, []);
+  const carregado = dados.estado === 'carregado' ? dados.dados : null;
+  return <>
+    <a className="skip-link" href="#conteudo" onClick={e => { e.preventDefault(); document.getElementById('conteudo')?.focus(); }}>Ir para o conteúdo</a>
+    <header className="app-header"><div className="brand"><img className="brand-logo" src={logo} alt="JBS Terminais" width="120" height="69" /><div><p className="eyebrow">Itajaí · Santa Catarina</p><h1>Monitoramento El Niño</h1></div></div><Navegacao atual={rota.pagina} /><div className="header-tools"><div className="header-audio" ref={setAudioHost} /><ThemeToggle /></div></header>
+    <main id="conteudo" tabIndex={-1}>
+      {__HML_SIMULATION__ ? <HmlAlertSimulator nivel={carregado?.status.nivel_jbs.nivel ?? null} impactoAtivo={impacto.qualidade === 'confirmado' ? impacto.dado?.ativo ?? null : null} impactEvent={impactEvent} audioHost={audioHost} onActiveChange={setSimulationActive} />
+        : <LevelAlert nivel={carregado?.status.nivel_jbs.nivel ?? null} impactoAtivo={impacto.qualidade === 'confirmado' ? impacto.dado?.ativo ?? null : null} impactEvent={impactEvent} audioHost={audioHost} />}
+      <div hidden={simulationActive}>
+      {rota.pagina && rota.pagina !== 'dashboard' && <CompactOperational status={carregado?.status} impacto={impacto} />}
+      <p className="snapshot-note">Retrato da última coleta disponível. Consulte os horários das leituras e da coleta JBS.</p>
+      {dados.estado === 'carregando' && <p role="status">Carregando dados…</p>}
+      {dados.estado === 'erro' && <p className="card" role="alert">{dados.mensagem}</p>}
+      {dados.estado === 'carregado' && dados.aviso && <p className="snapshot-note" role="status">{dados.aviso}</p>}
+      {/* Mantém a mesma assinatura/instância de Impacto JBS ao navegar. */}
+      <div hidden={rota.pagina !== 'dashboard'}><PainelOperacional status={carregado?.status} onEstado={setImpacto} onAtivacao={onImpactActivation} />
+        {carregado && <Dashboard status={carregado.status} territorio={carregado.territorio} />}</div>
+      {rota.pagina === 'monitoramento' && carregado && <Monitoramento status={carregado.status} secao={rota.secao as SecaoMonitoramento} />}
+      {rota.pagina === 'mapa' && carregado && <Suspense fallback={<p role="status">Carregando mapa…</p>}><TerritoryMapPage status={carregado.status} territorio={carregado.territorio} /></Suspense>}
+      {rota.pagina === 'plano-de-acao' && <PlansCenter status={carregado?.status} territorio={carregado?.territorio} impacto={impacto} secao={rota.secao} />}
+      {!rota.pagina && <section className="card"><h2>Página não encontrada</h2><a href="#/dashboard">Voltar ao Dashboard</a></section>}
+      </div>
+    </main><footer>JBS Terminais · Apoio à decisão do Comitê El Niño <span>Horários de Brasília</span></footer>
+  </>;
+}
