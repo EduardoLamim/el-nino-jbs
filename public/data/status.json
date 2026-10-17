@@ -1,6 +1,6 @@
 {
   "versao": 1,
-  "atualizado_em": "2026-10-17T22:32:29.857Z",
+  "atualizado_em": "2026-10-17T22:42:18.355Z",
   "nivel_jbs": {
     "nivel": "atencao",
     "desde": "2026-10-17T13:51:52.586000+00:00",
@@ -10,13 +10,13 @@
         "origem": "DC01",
         "severidade": "atencao",
         "descricao": "DC01 — Rio Itajaí-Açu - ICMBio/CEPSUL: estado hidrológico Atenção.",
-        "atualizado_em": "2026-10-17T22:11:36.035000+00:00",
-        "stale": true,
-        "motivo": "Estação ausente na coleta.",
+        "atualizado_em": "2026-10-17T22:32:13.689000+00:00",
+        "stale": false,
+        "motivo": "Lacuna temporal interrompeu a sequência.",
         "nome": "Rio Itajaí-Açu - ICMBio/CEPSUL",
-        "nivel_observado_m": 1.34,
+        "nivel_observado_m": 1.27,
         "limite_responsavel_m": 1.21,
-        "tendencia": "subindo",
+        "tendencia": "descendo",
         "normalizacao": {
           "leituras_abaixo": 0,
           "necessarias": 3
@@ -26,7 +26,7 @@
   },
   "motor": {
     "versao": 1,
-    "avaliado_em": "2026-10-17T22:32:29.857Z",
+    "avaliado_em": "2026-10-17T22:42:18.355Z",
     "situacao_oficial": {
       "nivel": "normalidade",
       "desde": "2026-10-16T21:20:10-03:00",
@@ -45,19 +45,19 @@
         "nome": "Rio Itajaí-Açu - ICMBio/CEPSUL",
         "nivel": "atencao",
         "desde": "2026-10-17T13:51:52.586000+00:00",
-        "stale": true,
-        "motivo": "Estação ausente na coleta.",
+        "stale": false,
+        "motivo": "Lacuna temporal interrompeu a sequência.",
         "ultima_valida": {
-          "nivel_m": 1.34,
-          "medido_em": "2026-10-17T22:11:36.035000+00:00",
+          "nivel_m": 1.27,
+          "medido_em": "2026-10-17T22:32:13.689000+00:00",
           "limites": {
             "atencao_m": 1.21,
             "alerta_m": 1.61,
             "emergencia_m": 1.75
           },
-          "tendencia": "subindo"
+          "tendencia": "descendo"
         },
-        "ultima_amostra_em": "2026-10-17T22:11:36.035000+00:00",
+        "ultima_amostra_em": "2026-10-17T22:32:13.689000+00:00",
         "normalizacao": {
           "leituras_abaixo": 0,
           "necessarias": 3,
@@ -70,11 +70,11 @@
         "nome": "Rio Itajaí-Açu - Praça Celso Pereira da Silva",
         "nivel": "normalidade",
         "desde": null,
-        "stale": true,
-        "motivo": "Estação ausente na coleta.",
+        "stale": false,
+        "motivo": "Lacuna temporal interrompeu a sequência.",
         "ultima_valida": {
           "nivel_m": 1.51,
-          "medido_em": "2026-10-17T22:11:22.206000+00:00",
+          "medido_em": "2026-10-17T22:42:10.370000+00:00",
           "limites": {
             "atencao_m": 1.6,
             "alerta_m": 2,
@@ -82,7 +82,7 @@
           },
           "tendencia": "estavel"
         },
-        "ultima_amostra_em": "2026-10-17T22:11:22.206000+00:00",
+        "ultima_amostra_em": "2026-10-17T22:42:10.370000+00:00",
         "normalizacao": {
           "leituras_abaixo": 0,
           "necessarias": 3,
@@ -95,19 +95,19 @@
         "nome": "Rio Itajaí-Mirim (canal retificado) - Captação SEMASA",
         "nivel": "normalidade",
         "desde": null,
-        "stale": true,
-        "motivo": "Estação ausente na coleta.",
+        "stale": false,
+        "motivo": "Lacuna temporal interrompeu a sequência.",
         "ultima_valida": {
-          "nivel_m": 0.65,
-          "medido_em": "2026-10-17T22:20:01.199000+00:00",
+          "nivel_m": 0.69,
+          "medido_em": "2026-10-17T22:40:05.575000+00:00",
           "limites": {
             "atencao_m": 1.48,
             "alerta_m": 1.85,
             "emergencia_m": 2.5
           },
-          "tendencia": "descendo"
+          "tendencia": "subindo"
         },
-        "ultima_amostra_em": "2026-10-17T22:20:01.199000+00:00",
+        "ultima_amostra_em": "2026-10-17T22:40:05.575000+00:00",
         "normalizacao": {
           "leituras_abaixo": 0,
           "necessarias": 3,
@@ -120,11 +120,11 @@
         "nome": "Rio Itajaí-Mirim (canal retificado e curso antigo) - Vitalmar Pescados",
         "nivel": "normalidade",
         "desde": null,
-        "stale": true,
-        "motivo": "Estação ausente na coleta.",
+        "stale": false,
+        "motivo": "Lacuna temporal interrompeu a sequência.",
         "ultima_valida": {
-          "nivel_m": 1.24,
-          "medido_em": "2026-10-17T22:11:13.614000+00:00",
+          "nivel_m": 1.26,
+          "medido_em": "2026-10-17T22:42:01.661000+00:00",
           "limites": {
             "atencao_m": 1.5,
             "alerta_m": 1.85,
@@ -132,7 +132,7 @@
           },
           "tendencia": "estavel"
         },
-        "ultima_amostra_em": "2026-10-17T22:11:13.614000+00:00",
+        "ultima_amostra_em": "2026-10-17T22:42:01.661000+00:00",
         "normalizacao": {
           "leituras_abaixo": 0,
           "necessarias": 3,
@@ -145,11 +145,11 @@
         "nome": "Rio Itajaí-Mirim (curso antigo) - Propriedade privada",
         "nivel": "normalidade",
         "desde": null,
-        "stale": true,
-        "motivo": "Estação ausente na coleta.",
+        "stale": false,
+        "motivo": "Lacuna temporal interrompeu a sequência.",
         "ultima_valida": {
           "nivel_m": 1.2,
-          "medido_em": "2026-10-17T22:11:06.671000+00:00",
+          "medido_em": "2026-10-17T22:41:54.753000+00:00",
           "limites": {
             "atencao_m": 1.6,
             "alerta_m": 2.2,
@@ -157,7 +157,7 @@
           },
           "tendencia": "estavel"
         },
-        "ultima_amostra_em": "2026-10-17T22:11:06.671000+00:00",
+        "ultima_amostra_em": "2026-10-17T22:41:54.753000+00:00",
         "normalizacao": {
           "leituras_abaixo": 0,
           "necessarias": 3,
@@ -170,19 +170,19 @@
         "nome": "Rio Itajaí-Mirim (curso antigo) - Itamirim Clube de Campo",
         "nivel": "normalidade",
         "desde": null,
-        "stale": true,
-        "motivo": "Estação ausente na coleta.",
+        "stale": false,
+        "motivo": "Lacuna temporal interrompeu a sequência.",
         "ultima_valida": {
-          "nivel_m": 0.88,
-          "medido_em": "2026-10-17T22:10:56.167000+00:00",
+          "nivel_m": 0.84,
+          "medido_em": "2026-10-17T22:41:44.341000+00:00",
           "limites": {
             "atencao_m": 1.5,
             "alerta_m": 1.85,
             "emergencia_m": 2.55
           },
-          "tendencia": "subindo"
+          "tendencia": "descendo"
         },
-        "ultima_amostra_em": "2026-10-17T22:10:56.167000+00:00",
+        "ultima_amostra_em": "2026-10-17T22:41:44.341000+00:00",
         "normalizacao": {
           "leituras_abaixo": 0,
           "necessarias": 3,
@@ -195,11 +195,11 @@
         "nome": "Ribeirão da Murta - Portal",
         "nivel": "normalidade",
         "desde": null,
-        "stale": true,
-        "motivo": "Estação ausente na coleta.",
+        "stale": false,
+        "motivo": "Lacuna temporal interrompeu a sequência.",
         "ultima_valida": {
           "nivel_m": 0.33,
-          "medido_em": "2026-10-17T22:10:35.234000+00:00",
+          "medido_em": "2026-10-17T22:41:06.420000+00:00",
           "limites": {
             "atencao_m": 1,
             "alerta_m": 1.4,
@@ -207,7 +207,7 @@
           },
           "tendencia": "estavel"
         },
-        "ultima_amostra_em": "2026-10-17T22:10:35.234000+00:00",
+        "ultima_amostra_em": "2026-10-17T22:41:06.420000+00:00",
         "normalizacao": {
           "leituras_abaixo": 0,
           "necessarias": 3,
@@ -220,11 +220,11 @@
         "nome": "Ribeirão Canhanduba - Rua Benjamin Dagnoni",
         "nivel": "normalidade",
         "desde": null,
-        "stale": true,
-        "motivo": "Estação ausente na coleta.",
+        "stale": false,
+        "motivo": "Lacuna temporal interrompeu a sequência.",
         "ultima_valida": {
           "nivel_m": 1.15,
-          "medido_em": "2026-10-17T22:10:21.508000+00:00",
+          "medido_em": "2026-10-17T22:40:35.266000+00:00",
           "limites": {
             "atencao_m": 1.7,
             "alerta_m": 2.3,
@@ -232,7 +232,7 @@
           },
           "tendencia": "estavel"
         },
-        "ultima_amostra_em": "2026-10-17T22:10:21.508000+00:00",
+        "ultima_amostra_em": "2026-10-17T22:40:35.266000+00:00",
         "normalizacao": {
           "leituras_abaixo": 0,
           "necessarias": 3,
@@ -245,19 +245,19 @@
         "nome": "Ribeirão da Murta - Ponte da Rua Lidia Puel Peixer",
         "nivel": "normalidade",
         "desde": "2026-10-17T19:00:01.560000+00:00",
-        "stale": true,
-        "motivo": "Estação ausente na coleta.",
+        "stale": false,
+        "motivo": "Lacuna temporal interrompeu a sequência.",
         "ultima_valida": {
-          "nivel_m": 1.13,
-          "medido_em": "2026-10-17T22:20:00.983000+00:00",
+          "nivel_m": 1.15,
+          "medido_em": "2026-10-17T22:40:04.793000+00:00",
           "limites": {
             "atencao_m": 1.22,
             "alerta_m": 1.42,
             "emergencia_m": 1.62
           },
-          "tendencia": "descendo"
+          "tendencia": "subindo"
         },
-        "ultima_amostra_em": "2026-10-17T22:20:00.983000+00:00",
+        "ultima_amostra_em": "2026-10-17T22:40:04.793000+00:00",
         "normalizacao": {
           "leituras_abaixo": 0,
           "necessarias": 3,
@@ -270,19 +270,19 @@
         "nome": "Rio Itajaí-Mirim – Bairro Limoeiro",
         "nivel": "normalidade",
         "desde": null,
-        "stale": true,
-        "motivo": "Estação ausente na coleta.",
+        "stale": false,
+        "motivo": "Lacuna temporal interrompeu a sequência.",
         "ultima_valida": {
           "nivel_m": 3.71,
-          "medido_em": "2026-10-17T22:20:01.751000+00:00",
+          "medido_em": "2026-10-17T22:40:07.248000+00:00",
           "limites": {
             "atencao_m": 8,
             "alerta_m": 9,
             "emergencia_m": 10
           },
-          "tendencia": "descendo"
+          "tendencia": "subindo"
         },
-        "ultima_amostra_em": "2026-10-17T22:20:01.751000+00:00",
+        "ultima_amostra_em": "2026-10-17T22:40:07.248000+00:00",
         "normalizacao": {
           "leituras_abaixo": 0,
           "necessarias": 3,
@@ -295,19 +295,19 @@
         "nome": "Rio Itajaí-Açú – Santa Regina (Volta de Cima)",
         "nivel": "normalidade",
         "desde": null,
-        "stale": true,
-        "motivo": "Estação ausente na coleta.",
+        "stale": false,
+        "motivo": "Lacuna temporal interrompeu a sequência.",
         "ultima_valida": {
           "nivel_m": 2.78,
-          "medido_em": "2026-10-17T22:20:05.507000+00:00",
+          "medido_em": "2026-10-17T22:40:06.032000+00:00",
           "limites": {
             "atencao_m": 3,
             "alerta_m": 4,
             "emergencia_m": 5
           },
-          "tendencia": "subindo"
+          "tendencia": "estavel"
         },
-        "ultima_amostra_em": "2026-10-17T22:20:05.507000+00:00",
+        "ultima_amostra_em": "2026-10-17T22:40:06.032000+00:00",
         "normalizacao": {
           "leituras_abaixo": 0,
           "necessarias": 3,
@@ -324,7 +324,4208 @@
     "qualidade": null
   },
   "alertas_oficiais": null,
-  "rios": {},
+  "rios": {
+    "DC01": {
+      "codigo": "DC01",
+      "nome": "Rio Itajaí-Açu - ICMBio/CEPSUL",
+      "latitude": -26.90923,
+      "longitude": -48.6516,
+      "nivel_m": 1.27,
+      "tendencia": "descendo",
+      "limites": {
+        "atencao_m": 1.21,
+        "alerta_m": 1.61,
+        "emergencia_m": 1.75
+      },
+      "qualidade": "atualizado",
+      "medido_em": "2026-10-17T22:32:13.689000+00:00",
+      "atualizacao_esperada_segundos": 600,
+      "serie_12h": [
+        {
+          "medido_em": "2026-10-17T10:41:35.751000+00:00",
+          "nivel_m": 1.25,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T10:52:06.962000+00:00",
+          "nivel_m": 1.24,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:01:56.853000+00:00",
+          "nivel_m": 1.13,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:12:06.991000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:21:35.821000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:31:35.584000+00:00",
+          "nivel_m": 1.13,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:41:35.586000+00:00",
+          "nivel_m": 1.17,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:52:09.800000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T12:01:59.548000+00:00",
+          "nivel_m": 1.17,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T12:11:35.995000+00:00",
+          "nivel_m": 1.15,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T12:21:35.687000+00:00",
+          "nivel_m": 1.17,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T12:31:43.016000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T12:41:35.763000+00:00",
+          "nivel_m": 1.19,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T12:51:36.187000+00:00",
+          "nivel_m": 1.12,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:01:35.968000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:11:35.858000+00:00",
+          "nivel_m": 1.12,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:21:53.056000+00:00",
+          "nivel_m": 1.13,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:31:35.638000+00:00",
+          "nivel_m": 1.19,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:41:42.745000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:51:52.586000+00:00",
+          "nivel_m": 1.27,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:01:42.525000+00:00",
+          "nivel_m": 1.32,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:11:35.854000+00:00",
+          "nivel_m": 1.3,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:21:42.852000+00:00",
+          "nivel_m": 1.35,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:31:35.353000+00:00",
+          "nivel_m": 1.39,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:41:42.960000+00:00",
+          "nivel_m": 1.32,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:51:42.632000+00:00",
+          "nivel_m": 1.39,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T15:02:05.157000+00:00",
+          "nivel_m": 1.35,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T15:11:35.851000+00:00",
+          "nivel_m": 1.4,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T15:22:12.045000+00:00",
+          "nivel_m": 1.39,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T15:32:25.571000+00:00",
+          "nivel_m": 1.36,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T15:41:35.818000+00:00",
+          "nivel_m": 1.41,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T15:51:42.655000+00:00",
+          "nivel_m": 1.4,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T16:02:06.700000+00:00",
+          "nivel_m": 1.4,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T16:11:35.814000+00:00",
+          "nivel_m": 1.42,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T16:21:43.103000+00:00",
+          "nivel_m": 1.35,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T16:31:45.727000+00:00",
+          "nivel_m": 1.39,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T16:41:35.628000+00:00",
+          "nivel_m": 1.44,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T16:52:15.880000+00:00",
+          "nivel_m": 1.44,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T17:01:35.611000+00:00",
+          "nivel_m": 1.47,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T17:12:02.990000+00:00",
+          "nivel_m": 1.46,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T17:21:42.607000+00:00",
+          "nivel_m": 1.47,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T17:31:50.010000+00:00",
+          "nivel_m": 1.46,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T17:42:15.578000+00:00",
+          "nivel_m": 1.35,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T17:52:06.682000+00:00",
+          "nivel_m": 1.42,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:02:02.412000+00:00",
+          "nivel_m": 1.34,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:11:53.088000+00:00",
+          "nivel_m": 1.34,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:21:53.158000+00:00",
+          "nivel_m": 1.34,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:32:42.415000+00:00",
+          "nivel_m": 1.29,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:41:35.715000+00:00",
+          "nivel_m": 1.29,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:51:43.027000+00:00",
+          "nivel_m": 1.27,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T19:01:45.604000+00:00",
+          "nivel_m": 1.32,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T19:12:09.492000+00:00",
+          "nivel_m": 1.27,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T19:22:06.762000+00:00",
+          "nivel_m": 1.29,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T19:31:56.091000+00:00",
+          "nivel_m": 1.27,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T19:41:35.605000+00:00",
+          "nivel_m": 1.3,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T19:52:32.153000+00:00",
+          "nivel_m": 1.27,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T20:01:45.851000+00:00",
+          "nivel_m": 1.19,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T20:11:35.548000+00:00",
+          "nivel_m": 1.27,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T20:21:42.620000+00:00",
+          "nivel_m": 1.3,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T20:31:35.796000+00:00",
+          "nivel_m": 1.34,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T20:42:22.338000+00:00",
+          "nivel_m": 1.29,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T20:51:35.879000+00:00",
+          "nivel_m": 1.29,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T21:02:23.584000+00:00",
+          "nivel_m": 1.27,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T21:12:10.115000+00:00",
+          "nivel_m": 1.34,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T21:22:53.652000+00:00",
+          "nivel_m": 1.32,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T21:32:30.244000+00:00",
+          "nivel_m": 1.32,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T21:43:07.106000+00:00",
+          "nivel_m": 1.32,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T21:52:23.891000+00:00",
+          "nivel_m": 1.32,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:02:07.049000+00:00",
+          "nivel_m": 1.27,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:11:36.035000+00:00",
+          "nivel_m": 1.34,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:21:53.312000+00:00",
+          "nivel_m": 1.32,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:32:13.689000+00:00",
+          "nivel_m": 1.27,
+          "qualidade": null
+        }
+      ],
+      "qualidade_fonte": {
+        "nivel_rio_m": {
+          "estado": "atual",
+          "medido_em": "2026-10-17T22:32:13.689000+00:00"
+        }
+      },
+      "situacao_fonte": "atencao"
+    },
+    "DC02": {
+      "codigo": "DC02",
+      "nome": "Rio Itajaí-Açu - Praça Celso Pereira da Silva",
+      "latitude": -26.875683,
+      "longitude": -48.710217,
+      "nivel_m": 1.51,
+      "tendencia": "estavel",
+      "limites": {
+        "atencao_m": 1.6,
+        "alerta_m": 2,
+        "emergencia_m": 2.5
+      },
+      "qualidade": "atualizado",
+      "medido_em": "2026-10-17T22:42:10.370000+00:00",
+      "atualizacao_esperada_segundos": 600,
+      "serie_12h": [
+        {
+          "medido_em": "2026-10-17T10:51:53.045000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:01:43.072000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:11:53.173000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:21:21.887000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:31:21.738000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:41:21.886000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:51:56.101000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T12:01:45.849000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T12:11:22.513000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T12:21:22.118000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T12:31:29.052000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T12:41:22.106000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T12:51:22.409000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:01:22.190000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:11:22.080000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:21:39.356000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:31:21.860000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:41:29.076000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:51:38.808000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:01:28.857000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:11:22.076000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:21:29.074000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:31:21.419000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:41:29.339000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:51:28.635000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T15:01:51.489000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T15:11:22.073000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T15:21:58.158000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T15:32:11.974000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T15:41:22.007000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T15:51:28.927000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T16:01:52.634000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T16:11:22.017000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T16:21:29.325000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T16:31:32.110000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T16:41:21.863000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T16:52:02.044000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T17:01:21.747000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T17:11:49.233000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T17:21:28.790000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T17:31:36.230000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T17:42:01.994000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T17:51:52.752000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:01:48.713000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:11:39.352000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:21:39.347000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:32:28.676000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:41:21.950000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:51:29.194000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T19:01:31.773000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T19:11:55.757000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T19:21:53.048000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T19:31:42.403000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T19:41:21.784000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T19:52:18.312000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T20:01:32.101000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T20:11:21.777000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T20:21:28.855000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T20:31:22.031000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T20:42:08.585000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T20:51:22.044000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T21:02:09.909000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T21:11:56.346000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T21:22:40.083000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T21:32:16.428000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T21:42:53.388000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T21:52:10.047000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:01:53.149000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:11:22.206000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:21:39.628000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:31:59.504000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:42:10.370000+00:00",
+          "nivel_m": 1.51,
+          "qualidade": null
+        }
+      ],
+      "qualidade_fonte": {
+        "nivel_rio_m": {
+          "estado": "atual",
+          "medido_em": "2026-10-17T22:42:10.370000+00:00"
+        }
+      },
+      "situacao_fonte": "monitoramento"
+    },
+    "DC03": {
+      "codigo": "DC03",
+      "nome": "Rio Itajaí-Mirim (canal retificado) - Captação SEMASA",
+      "latitude": -26.91182,
+      "longitude": -48.71922,
+      "nivel_m": 0.69,
+      "tendencia": "subindo",
+      "limites": {
+        "atencao_m": 1.48,
+        "alerta_m": 1.85,
+        "emergencia_m": 2.5
+      },
+      "qualidade": "atualizado",
+      "medido_em": "2026-10-17T22:40:05.575000+00:00",
+      "atualizacao_esperada_segundos": 600,
+      "serie_12h": [
+        {
+          "medido_em": "2026-10-17T10:40:06.440000+00:00",
+          "nivel_m": 0.67,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T10:50:01.149000+00:00",
+          "nivel_m": 0.7,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:00:10.509000+00:00",
+          "nivel_m": 0.68,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:10:15.676000+00:00",
+          "nivel_m": 0.67,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:20:09.720000+00:00",
+          "nivel_m": 0.62,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:30:03.593000+00:00",
+          "nivel_m": 0.61,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:40:13.175000+00:00",
+          "nivel_m": 0.62,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:50:07.516000+00:00",
+          "nivel_m": 0.61,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T12:00:12.618000+00:00",
+          "nivel_m": 0.57,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T12:10:06.004000+00:00",
+          "nivel_m": 0.59,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T12:20:01.355000+00:00",
+          "nivel_m": 0.62,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T12:30:11.957000+00:00",
+          "nivel_m": 0.58,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T12:40:02.588000+00:00",
+          "nivel_m": 0.56,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T12:50:09.332000+00:00",
+          "nivel_m": 0.58,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:00:01.349000+00:00",
+          "nivel_m": 0.61,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:10:13.487000+00:00",
+          "nivel_m": 0.59,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:20:21.250000+00:00",
+          "nivel_m": 0.55,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:30:02.660000+00:00",
+          "nivel_m": 0.65,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:40:14.578000+00:00",
+          "nivel_m": 0.52,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:50:11.625000+00:00",
+          "nivel_m": 0.53,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:00:07.798000+00:00",
+          "nivel_m": 0.56,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:10:10.421000+00:00",
+          "nivel_m": 0.61,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:20:07.031000+00:00",
+          "nivel_m": 0.69,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:30:03.313000+00:00",
+          "nivel_m": 0.72,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:40:15.231000+00:00",
+          "nivel_m": 0.68,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:50:11.731000+00:00",
+          "nivel_m": 0.77,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T15:00:08.013000+00:00",
+          "nivel_m": 0.74,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T15:10:04.623000+00:00",
+          "nivel_m": 0.74,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T15:20:00.904000+00:00",
+          "nivel_m": 0.77,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T15:30:10.986000+00:00",
+          "nivel_m": 0.78,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T15:40:05.102000+00:00",
+          "nivel_m": 0.8,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T15:50:14.674000+00:00",
+          "nivel_m": 0.75,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T16:00:08.808000+00:00",
+          "nivel_m": 0.8,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T16:10:03.056000+00:00",
+          "nivel_m": 0.77,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T16:20:12.452000+00:00",
+          "nivel_m": 0.8,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T16:30:06.405000+00:00",
+          "nivel_m": 0.79,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T16:40:01.284000+00:00",
+          "nivel_m": 0.78,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T16:50:11.745000+00:00",
+          "nivel_m": 0.75,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T17:00:06.049000+00:00",
+          "nivel_m": 0.79,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T17:10:01.107000+00:00",
+          "nivel_m": 0.81,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T17:20:11.173000+00:00",
+          "nivel_m": 0.8,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T17:30:05.388000+00:00",
+          "nivel_m": 0.85,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T17:40:15.593000+00:00",
+          "nivel_m": 0.83,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T17:50:09.714000+00:00",
+          "nivel_m": 0.85,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:00:16.058000+00:00",
+          "nivel_m": 0.79,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:10:05.684000+00:00",
+          "nivel_m": 0.78,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:20:14.917000+00:00",
+          "nivel_m": 0.78,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:30:08.852000+00:00",
+          "nivel_m": 0.74,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:40:02.897000+00:00",
+          "nivel_m": 0.74,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:50:12.411000+00:00",
+          "nivel_m": 0.7,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T19:00:07.270000+00:00",
+          "nivel_m": 0.69,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T19:10:01.556000+00:00",
+          "nivel_m": 0.66,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T19:20:11.344000+00:00",
+          "nivel_m": 0.65,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T19:30:05.494000+00:00",
+          "nivel_m": 0.67,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T19:40:15.544000+00:00",
+          "nivel_m": 0.63,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T19:50:09.666000+00:00",
+          "nivel_m": 0.67,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T20:00:04.432000+00:00",
+          "nivel_m": 0.64,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T20:10:13.610000+00:00",
+          "nivel_m": 0.65,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T20:20:07.566000+00:00",
+          "nivel_m": 0.61,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T20:30:00.964000+00:00",
+          "nivel_m": 0.59,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T20:40:10.856000+00:00",
+          "nivel_m": 0.66,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T20:50:05.008000+00:00",
+          "nivel_m": 0.69,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T21:00:14.277000+00:00",
+          "nivel_m": 0.69,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T21:10:09.093000+00:00",
+          "nivel_m": 0.65,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T21:20:03.326000+00:00",
+          "nivel_m": 0.64,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T21:30:13.235000+00:00",
+          "nivel_m": 0.67,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T21:40:07.717000+00:00",
+          "nivel_m": 0.66,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T21:50:02.600000+00:00",
+          "nivel_m": 0.68,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:00:11.825000+00:00",
+          "nivel_m": 0.67,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:10:06.107000+00:00",
+          "nivel_m": 0.68,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:20:01.199000+00:00",
+          "nivel_m": 0.65,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:30:11.277000+00:00",
+          "nivel_m": 0.65,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:40:05.575000+00:00",
+          "nivel_m": 0.69,
+          "qualidade": null
+        }
+      ],
+      "qualidade_fonte": {
+        "nivel_rio_m": {
+          "estado": "atual",
+          "medido_em": "2026-10-17T22:40:05.575000+00:00"
+        }
+      },
+      "situacao_fonte": "monitoramento"
+    },
+    "DC04": {
+      "codigo": "DC04",
+      "nome": "Rio Itajaí-Mirim (canal retificado e curso antigo) - Vitalmar Pescados",
+      "latitude": -26.8941,
+      "longitude": -48.68838,
+      "nivel_m": 1.26,
+      "tendencia": "estavel",
+      "limites": {
+        "atencao_m": 1.5,
+        "alerta_m": 1.85,
+        "emergencia_m": 2.25
+      },
+      "qualidade": "atualizado",
+      "medido_em": "2026-10-17T22:42:01.661000+00:00",
+      "atualizacao_esperada_segundos": 600,
+      "serie_12h": [
+        {
+          "medido_em": "2026-10-17T10:51:44.408000+00:00",
+          "nivel_m": 1.24,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:01:34.501000+00:00",
+          "nivel_m": 1.24,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:11:44.466000+00:00",
+          "nivel_m": 1.19,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:21:13.132000+00:00",
+          "nivel_m": 1.18,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:31:13.167000+00:00",
+          "nivel_m": 1.18,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:41:13.133000+00:00",
+          "nivel_m": 1.17,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:51:47.564000+00:00",
+          "nivel_m": 1.14,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T12:01:37.079000+00:00",
+          "nivel_m": 1.16,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T12:11:13.445000+00:00",
+          "nivel_m": 1.18,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T12:21:13.380000+00:00",
+          "nivel_m": 1.16,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T12:31:20.482000+00:00",
+          "nivel_m": 1.16,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T12:41:13.410000+00:00",
+          "nivel_m": 1.16,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T12:51:13.661000+00:00",
+          "nivel_m": 1.18,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:01:13.442000+00:00",
+          "nivel_m": 1.16,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:11:13.332000+00:00",
+          "nivel_m": 1.14,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:21:30.608000+00:00",
+          "nivel_m": 1.18,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:31:13.221000+00:00",
+          "nivel_m": 1.11,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:41:20.438000+00:00",
+          "nivel_m": 1.1,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:51:30.060000+00:00",
+          "nivel_m": 1.11,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:01:20.140000+00:00",
+          "nivel_m": 1.13,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:11:13.219000+00:00",
+          "nivel_m": 1.17,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:21:20.358000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:31:12.671000+00:00",
+          "nivel_m": 1.21,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:41:20.544000+00:00",
+          "nivel_m": 1.24,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:51:19.997000+00:00",
+          "nivel_m": 1.24,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T15:01:42.741000+00:00",
+          "nivel_m": 1.24,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T15:11:13.325000+00:00",
+          "nivel_m": 1.25,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T15:21:49.519000+00:00",
+          "nivel_m": 1.26,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T15:32:03.160000+00:00",
+          "nivel_m": 1.27,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T15:41:13.281000+00:00",
+          "nivel_m": 1.26,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T15:51:20.195000+00:00",
+          "nivel_m": 1.26,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T16:01:43.868000+00:00",
+          "nivel_m": 1.25,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T16:11:13.335000+00:00",
+          "nivel_m": 1.26,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T16:21:20.660000+00:00",
+          "nivel_m": 1.26,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T16:31:23.440000+00:00",
+          "nivel_m": 1.26,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T16:41:13.120000+00:00",
+          "nivel_m": 1.24,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T16:51:53.364000+00:00",
+          "nivel_m": 1.25,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T17:01:13.101000+00:00",
+          "nivel_m": 1.26,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T17:11:40.528000+00:00",
+          "nivel_m": 1.26,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T17:21:20.191000+00:00",
+          "nivel_m": 1.28,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T17:31:27.547000+00:00",
+          "nivel_m": 1.29,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T17:41:53.128000+00:00",
+          "nivel_m": 1.29,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T17:51:44.019000+00:00",
+          "nivel_m": 1.27,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:01:39.942000+00:00",
+          "nivel_m": 1.26,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:11:30.626000+00:00",
+          "nivel_m": 1.26,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:21:30.634000+00:00",
+          "nivel_m": 1.22,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:32:19.870000+00:00",
+          "nivel_m": 1.21,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:41:13.280000+00:00",
+          "nivel_m": 1.19,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:51:20.496000+00:00",
+          "nivel_m": 1.18,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T19:01:23.456000+00:00",
+          "nivel_m": 1.16,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T19:11:47.133000+00:00",
+          "nivel_m": 1.14,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T19:21:44.376000+00:00",
+          "nivel_m": 1.15,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T19:31:33.697000+00:00",
+          "nivel_m": 1.14,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T19:41:13.104000+00:00",
+          "nivel_m": 1.14,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T19:52:09.632000+00:00",
+          "nivel_m": 1.13,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T20:01:23.409000+00:00",
+          "nivel_m": 1.14,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T20:11:13.065000+00:00",
+          "nivel_m": 1.11,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T20:21:20.214000+00:00",
+          "nivel_m": 1.1,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T20:31:13.335000+00:00",
+          "nivel_m": 1.13,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T20:41:59.894000+00:00",
+          "nivel_m": 1.16,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T20:51:13.411000+00:00",
+          "nivel_m": 1.18,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T21:02:01.166000+00:00",
+          "nivel_m": 1.19,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T21:11:47.584000+00:00",
+          "nivel_m": 1.19,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T21:22:31.418000+00:00",
+          "nivel_m": 1.21,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T21:32:07.632000+00:00",
+          "nivel_m": 1.21,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T21:42:44.724000+00:00",
+          "nivel_m": 1.22,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T21:52:01.373000+00:00",
+          "nivel_m": 1.23,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:01:44.471000+00:00",
+          "nivel_m": 1.24,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:11:13.614000+00:00",
+          "nivel_m": 1.24,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:21:30.898000+00:00",
+          "nivel_m": 1.24,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:31:50.742000+00:00",
+          "nivel_m": 1.26,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:42:01.661000+00:00",
+          "nivel_m": 1.26,
+          "qualidade": null
+        }
+      ],
+      "qualidade_fonte": {
+        "nivel_rio_m": {
+          "estado": "atual",
+          "medido_em": "2026-10-17T22:42:01.661000+00:00"
+        }
+      },
+      "situacao_fonte": "monitoramento"
+    },
+    "DC05": {
+      "codigo": "DC05",
+      "nome": "Rio Itajaí-Mirim (curso antigo) - Propriedade privada",
+      "latitude": -26.93336,
+      "longitude": -48.74776,
+      "nivel_m": 1.2,
+      "tendencia": "estavel",
+      "limites": {
+        "atencao_m": 1.6,
+        "alerta_m": 2.2,
+        "emergencia_m": 3
+      },
+      "qualidade": "atualizado",
+      "medido_em": "2026-10-17T22:41:54.753000+00:00",
+      "atualizacao_esperada_segundos": 600,
+      "serie_12h": [
+        {
+          "medido_em": "2026-10-17T10:51:37.643000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:01:27.402000+00:00",
+          "nivel_m": 1.21,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:11:37.608000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:21:06.306000+00:00",
+          "nivel_m": 1.21,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:31:06.135000+00:00",
+          "nivel_m": 1.21,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:41:06.302000+00:00",
+          "nivel_m": 1.21,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:51:40.483000+00:00",
+          "nivel_m": 1.21,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T12:01:30.202000+00:00",
+          "nivel_m": 1.21,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T12:11:06.959000+00:00",
+          "nivel_m": 1.21,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T12:21:06.546000+00:00",
+          "nivel_m": 1.21,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T12:31:13.385000+00:00",
+          "nivel_m": 1.21,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T12:41:06.459000+00:00",
+          "nivel_m": 1.21,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T12:51:06.663000+00:00",
+          "nivel_m": 1.21,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:01:06.553000+00:00",
+          "nivel_m": 1.21,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:11:06.443000+00:00",
+          "nivel_m": 1.21,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:21:23.610000+00:00",
+          "nivel_m": 1.22,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:31:06.332000+00:00",
+          "nivel_m": 1.22,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:41:13.549000+00:00",
+          "nivel_m": 1.21,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:51:23.468000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:01:13.220000+00:00",
+          "nivel_m": 1.21,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:11:06.221000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:21:13.453000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:31:05.782000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:41:13.655000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:51:13.248000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T15:01:35.961000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T15:11:06.467000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T15:21:42.630000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T15:31:56.147000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T15:41:06.260000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T15:51:13.321000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T16:01:37.015000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T16:11:06.402000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T16:21:13.672000+00:00",
+          "nivel_m": 1.21,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T16:31:16.513000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T16:41:06.287000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T16:51:46.472000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T17:01:06.349000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T17:11:33.474000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T17:21:13.302000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T17:31:20.543000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T17:41:46.317000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T17:51:37.206000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:01:33.109000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:11:23.653000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:21:23.760000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:32:13.101000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:41:06.278000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:51:13.513000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T19:01:16.262000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T19:11:40.323000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T19:21:37.593000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T19:31:26.891000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T19:41:06.269000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T19:52:02.725000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T20:01:16.497000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T20:11:06.110000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T20:21:13.182000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T20:31:06.547000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T20:41:53.042000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T20:51:06.536000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T21:01:54.291000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T21:11:40.545000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T21:22:24.459000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T21:32:00.730000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T21:42:37.868000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T21:51:54.586000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:01:37.517000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:11:06.671000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:21:23.940000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:31:43.722000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:41:54.753000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        }
+      ],
+      "qualidade_fonte": {
+        "nivel_rio_m": {
+          "estado": "atual",
+          "medido_em": "2026-10-17T22:41:54.753000+00:00"
+        }
+      },
+      "situacao_fonte": "monitoramento"
+    },
+    "DC06": {
+      "codigo": "DC06",
+      "nome": "Rio Itajaí-Mirim (curso antigo) - Itamirim Clube de Campo",
+      "latitude": -26.92442,
+      "longitude": -48.68576,
+      "nivel_m": 0.84,
+      "tendencia": "descendo",
+      "limites": {
+        "atencao_m": 1.5,
+        "alerta_m": 1.85,
+        "emergencia_m": 2.55
+      },
+      "qualidade": "atualizado",
+      "medido_em": "2026-10-17T22:41:44.341000+00:00",
+      "atualizacao_esperada_segundos": 600,
+      "serie_12h": [
+        {
+          "medido_em": "2026-10-17T10:51:27.271000+00:00",
+          "nivel_m": 0.87,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:01:09.949000+00:00",
+          "nivel_m": 0.88,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:11:27.262000+00:00",
+          "nivel_m": 0.84,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:20:56.027000+00:00",
+          "nivel_m": 0.82,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:30:55.925000+00:00",
+          "nivel_m": 0.81,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:40:55.912000+00:00",
+          "nivel_m": 0.75,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:51:30.240000+00:00",
+          "nivel_m": 0.78,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T12:01:19.907000+00:00",
+          "nivel_m": 0.77,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T12:10:56.253000+00:00",
+          "nivel_m": 0.75,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T12:20:56.153000+00:00",
+          "nivel_m": 0.72,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T12:31:03.026000+00:00",
+          "nivel_m": 0.75,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T12:40:56.081000+00:00",
+          "nivel_m": 0.74,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T12:50:56.274000+00:00",
+          "nivel_m": 0.7,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:00:56.274000+00:00",
+          "nivel_m": 0.71,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:10:56.164000+00:00",
+          "nivel_m": 0.71,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:21:13.113000+00:00",
+          "nivel_m": 0.73,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:30:56.054000+00:00",
+          "nivel_m": 0.68,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:41:03.379000+00:00",
+          "nivel_m": 0.72,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:51:12.923000+00:00",
+          "nivel_m": 0.73,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:01:02.941000+00:00",
+          "nivel_m": 0.65,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:10:55.958000+00:00",
+          "nivel_m": 0.71,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:21:02.940000+00:00",
+          "nivel_m": 0.72,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:30:55.503000+00:00",
+          "nivel_m": 0.77,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:41:03.267000+00:00",
+          "nivel_m": 0.79,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:51:02.938000+00:00",
+          "nivel_m": 0.8,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T15:01:25.682000+00:00",
+          "nivel_m": 0.8,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T15:10:56.048000+00:00",
+          "nivel_m": 0.84,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T15:21:32.351000+00:00",
+          "nivel_m": 0.84,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T15:31:45.944000+00:00",
+          "nivel_m": 0.88,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T15:40:55.786000+00:00",
+          "nivel_m": 0.89,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T15:51:03.117000+00:00",
+          "nivel_m": 0.94,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T16:01:26.730000+00:00",
+          "nivel_m": 0.92,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T16:10:56.097000+00:00",
+          "nivel_m": 0.92,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T16:21:03.283000+00:00",
+          "nivel_m": 0.95,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T16:31:06.207000+00:00",
+          "nivel_m": 0.92,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T16:40:55.763000+00:00",
+          "nivel_m": 0.94,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T16:51:36.128000+00:00",
+          "nivel_m": 0.95,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T17:00:55.993000+00:00",
+          "nivel_m": 0.91,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T17:11:23.358000+00:00",
+          "nivel_m": 0.94,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T17:21:02.966000+00:00",
+          "nivel_m": 0.95,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T17:31:10.192000+00:00",
+          "nivel_m": 0.95,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T17:41:35.933000+00:00",
+          "nivel_m": 0.98,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T17:51:26.883000+00:00",
+          "nivel_m": 0.97,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:01:22.869000+00:00",
+          "nivel_m": 0.97,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:11:13.434000+00:00",
+          "nivel_m": 0.95,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:21:13.393000+00:00",
+          "nivel_m": 0.92,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:32:02.694000+00:00",
+          "nivel_m": 0.95,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:40:55.916000+00:00",
+          "nivel_m": 0.93,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:51:03.030000+00:00",
+          "nivel_m": 0.92,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T19:01:05.915000+00:00",
+          "nivel_m": 0.92,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T19:11:29.983000+00:00",
+          "nivel_m": 0.89,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T19:21:27.142000+00:00",
+          "nivel_m": 0.88,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T19:31:16.503000+00:00",
+          "nivel_m": 0.88,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T19:40:55.957000+00:00",
+          "nivel_m": 0.86,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T19:51:52.473000+00:00",
+          "nivel_m": 0.86,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T20:01:06.046000+00:00",
+          "nivel_m": 0.84,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T20:10:55.880000+00:00",
+          "nivel_m": 0.83,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T20:21:02.856000+00:00",
+          "nivel_m": 0.84,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T20:30:56.012000+00:00",
+          "nivel_m": 0.81,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T20:41:42.809000+00:00",
+          "nivel_m": 0.79,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T20:50:56.107000+00:00",
+          "nivel_m": 0.81,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T21:01:43.938000+00:00",
+          "nivel_m": 0.83,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T21:11:30.190000+00:00",
+          "nivel_m": 0.84,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T21:22:14.152000+00:00",
+          "nivel_m": 0.83,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T21:31:50.189000+00:00",
+          "nivel_m": 0.82,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T21:42:13.538000+00:00",
+          "nivel_m": 0.81,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T21:51:44.288000+00:00",
+          "nivel_m": 0.84,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:01:27.061000+00:00",
+          "nivel_m": 0.86,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:10:56.167000+00:00",
+          "nivel_m": 0.88,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:21:13.666000+00:00",
+          "nivel_m": 0.88,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:31:33.383000+00:00",
+          "nivel_m": 0.86,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:41:44.341000+00:00",
+          "nivel_m": 0.84,
+          "qualidade": null
+        }
+      ],
+      "qualidade_fonte": {
+        "nivel_rio_m": {
+          "estado": "atual",
+          "medido_em": "2026-10-17T22:41:44.341000+00:00"
+        }
+      },
+      "situacao_fonte": "monitoramento"
+    },
+    "DC07": {
+      "codigo": "DC07",
+      "nome": "Ribeirão da Murta - Portal",
+      "latitude": -26.892699,
+      "longitude": -48.735573,
+      "nivel_m": 0.33,
+      "tendencia": "estavel",
+      "limites": {
+        "atencao_m": 1,
+        "alerta_m": 1.4,
+        "emergencia_m": 1.5
+      },
+      "qualidade": "atualizado",
+      "medido_em": "2026-10-17T22:41:06.420000+00:00",
+      "atualizacao_esperada_segundos": 600,
+      "serie_12h": [
+        {
+          "medido_em": "2026-10-17T10:50:59.345000+00:00",
+          "nivel_m": 0.15,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:00:42.119000+00:00",
+          "nivel_m": 0.17,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:10:59.465000+00:00",
+          "nivel_m": 0.09,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:20:34.925000+00:00",
+          "nivel_m": 0.16,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:30:35.028000+00:00",
+          "nivel_m": 0.15,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:40:35.034000+00:00",
+          "nivel_m": 0.09,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:50:55.337000+00:00",
+          "nivel_m": 0.1,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T12:10:35.324000+00:00",
+          "nivel_m": 0.15,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T12:20:35.112000+00:00",
+          "nivel_m": 0.17,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T12:30:35.069000+00:00",
+          "nivel_m": 0.17,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T12:40:35.231000+00:00",
+          "nivel_m": 0.17,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T12:50:35.279000+00:00",
+          "nivel_m": 0.18,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:00:35.279000+00:00",
+          "nivel_m": 0.18,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:10:35.060000+00:00",
+          "nivel_m": 0.18,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:20:42.417000+00:00",
+          "nivel_m": 0.19,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:30:35.402000+00:00",
+          "nivel_m": 0.19,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:40:42.384000+00:00",
+          "nivel_m": 0.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:50:41.946000+00:00",
+          "nivel_m": 0.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:00:35.057000+00:00",
+          "nivel_m": 0.21,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:10:34.947000+00:00",
+          "nivel_m": 0.21,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:20:42.054000+00:00",
+          "nivel_m": 0.21,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:30:34.836000+00:00",
+          "nivel_m": 0.22,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:40:42.490000+00:00",
+          "nivel_m": 0.22,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:50:35.163000+00:00",
+          "nivel_m": 0.22,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T15:00:34.944000+00:00",
+          "nivel_m": 0.23,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T15:10:35.209000+00:00",
+          "nivel_m": 0.23,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T15:40:35.053000+00:00",
+          "nivel_m": 0.24,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T15:50:42.255000+00:00",
+          "nivel_m": 0.25,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T16:00:58.918000+00:00",
+          "nivel_m": 0.25,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T16:10:35.276000+00:00",
+          "nivel_m": 0.25,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T16:20:42.366000+00:00",
+          "nivel_m": 0.26,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T16:30:45.279000+00:00",
+          "nivel_m": 0.26,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T16:40:34.880000+00:00",
+          "nivel_m": 0.26,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T17:00:35.051000+00:00",
+          "nivel_m": 0.27,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T17:10:35.224000+00:00",
+          "nivel_m": 0.27,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T17:20:35.146000+00:00",
+          "nivel_m": 0.27,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T17:30:42.200000+00:00",
+          "nivel_m": 0.28,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T17:50:48.891000+00:00",
+          "nivel_m": 0.28,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:00:41.995000+00:00",
+          "nivel_m": 0.28,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:10:52.313000+00:00",
+          "nivel_m": 0.29,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:20:52.375000+00:00",
+          "nivel_m": 0.29,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:31:12.010000+00:00",
+          "nivel_m": 0.29,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:40:34.817000+00:00",
+          "nivel_m": 0.29,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:50:42.207000+00:00",
+          "nivel_m": 0.3,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T19:00:45.206000+00:00",
+          "nivel_m": 0.3,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T19:10:41.986000+00:00",
+          "nivel_m": 0.3,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T19:20:49.249000+00:00",
+          "nivel_m": 0.31,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T19:30:35.223000+00:00",
+          "nivel_m": 0.31,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T19:40:35.053000+00:00",
+          "nivel_m": 0.31,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T20:00:35.122000+00:00",
+          "nivel_m": 0.31,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T20:10:34.957000+00:00",
+          "nivel_m": 0.31,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T20:20:42.211000+00:00",
+          "nivel_m": 0.32,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T20:30:35.135000+00:00",
+          "nivel_m": 0.32,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T20:41:22.081000+00:00",
+          "nivel_m": 0.32,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T20:50:35.206000+00:00",
+          "nivel_m": 0.32,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T21:10:42.341000+00:00",
+          "nivel_m": 0.32,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T21:21:26.301000+00:00",
+          "nivel_m": 0.32,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T21:51:13.043000+00:00",
+          "nivel_m": 0.33,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:00:52.077000+00:00",
+          "nivel_m": 0.33,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:10:35.234000+00:00",
+          "nivel_m": 0.33,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:20:35.343000+00:00",
+          "nivel_m": 0.33,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:41:06.420000+00:00",
+          "nivel_m": 0.33,
+          "qualidade": null
+        }
+      ],
+      "qualidade_fonte": {
+        "nivel_rio_m": {
+          "estado": "atual",
+          "medido_em": "2026-10-17T22:41:06.420000+00:00"
+        }
+      },
+      "situacao_fonte": "monitoramento"
+    },
+    "DC08": {
+      "codigo": "DC08",
+      "nome": "Ribeirão Canhanduba - Rua Benjamin Dagnoni",
+      "latitude": -26.979694,
+      "longitude": -48.711948,
+      "nivel_m": 1.15,
+      "tendencia": "estavel",
+      "limites": {
+        "atencao_m": 1.7,
+        "alerta_m": 2.3,
+        "emergencia_m": 2.89
+      },
+      "qualidade": "atualizado",
+      "medido_em": "2026-10-17T22:40:35.266000+00:00",
+      "atualizacao_esperada_segundos": 600,
+      "serie_12h": [
+        {
+          "medido_em": "2026-10-17T10:50:21.387000+00:00",
+          "nivel_m": 1.23,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:00:21.166000+00:00",
+          "nivel_m": 1.23,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:10:21.316000+00:00",
+          "nivel_m": 1.23,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:20:21.180000+00:00",
+          "nivel_m": 1.23,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:30:21.119000+00:00",
+          "nivel_m": 1.23,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:40:21.232000+00:00",
+          "nivel_m": 1.22,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:50:21.365000+00:00",
+          "nivel_m": 1.22,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T12:00:20.967000+00:00",
+          "nivel_m": 1.22,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T12:10:21.491000+00:00",
+          "nivel_m": 1.22,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T12:20:21.234000+00:00",
+          "nivel_m": 1.21,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T12:30:21.131000+00:00",
+          "nivel_m": 1.21,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T12:40:21.185000+00:00",
+          "nivel_m": 1.21,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T12:50:21.392000+00:00",
+          "nivel_m": 1.21,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:00:21.392000+00:00",
+          "nivel_m": 1.21,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:10:21.172000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:20:21.390000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:30:21.499000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:40:21.389000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:50:21.061000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:00:21.279000+00:00",
+          "nivel_m": 1.18,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:10:21.169000+00:00",
+          "nivel_m": 1.18,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:20:21.387000+00:00",
+          "nivel_m": 1.18,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:30:21.058000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:40:21.495000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:50:21.167000+00:00",
+          "nivel_m": 1.21,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T15:00:21.057000+00:00",
+          "nivel_m": 1.21,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T15:10:21.166000+00:00",
+          "nivel_m": 1.21,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T15:20:21.165000+00:00",
+          "nivel_m": 1.21,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T15:30:21.274000+00:00",
+          "nivel_m": 1.21,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T15:40:21.096000+00:00",
+          "nivel_m": 1.21,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T15:50:21.351000+00:00",
+          "nivel_m": 1.21,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T16:00:21.214000+00:00",
+          "nivel_m": 1.21,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T16:10:21.147000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T16:20:21.209000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T16:30:21.164000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T16:40:21.048000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T16:50:21.242000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T17:00:20.973000+00:00",
+          "nivel_m": 1.18,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T17:10:21.415000+00:00",
+          "nivel_m": 1.18,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T17:20:21.289000+00:00",
+          "nivel_m": 1.18,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T17:30:28.316000+00:00",
+          "nivel_m": 1.18,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T17:40:21.208000+00:00",
+          "nivel_m": 1.17,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T17:50:20.880000+00:00",
+          "nivel_m": 1.17,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:00:21.128000+00:00",
+          "nivel_m": 1.17,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:10:21.410000+00:00",
+          "nivel_m": 1.17,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:20:21.311000+00:00",
+          "nivel_m": 1.17,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:30:31.499000+00:00",
+          "nivel_m": 1.16,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:40:20.888000+00:00",
+          "nivel_m": 1.16,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:50:21.172000+00:00",
+          "nivel_m": 1.16,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T19:00:21.169000+00:00",
+          "nivel_m": 1.16,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T19:10:21.060000+00:00",
+          "nivel_m": 1.16,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T19:20:21.389000+00:00",
+          "nivel_m": 1.16,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T19:30:21.330000+00:00",
+          "nivel_m": 1.16,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T19:40:21.128000+00:00",
+          "nivel_m": 1.16,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T19:50:21.248000+00:00",
+          "nivel_m": 1.16,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T20:00:21.227000+00:00",
+          "nivel_m": 1.16,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T20:10:21.222000+00:00",
+          "nivel_m": 1.16,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T20:20:21.394000+00:00",
+          "nivel_m": 1.15,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T20:30:21.262000+00:00",
+          "nivel_m": 1.15,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T20:50:21.387000+00:00",
+          "nivel_m": 1.15,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T21:00:28.374000+00:00",
+          "nivel_m": 1.15,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T21:10:21.401000+00:00",
+          "nivel_m": 1.15,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T21:20:45.587000+00:00",
+          "nivel_m": 1.15,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T21:30:38.328000+00:00",
+          "nivel_m": 1.15,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T21:40:42.127000+00:00",
+          "nivel_m": 1.15,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T21:50:35.334000+00:00",
+          "nivel_m": 1.15,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:00:21.204000+00:00",
+          "nivel_m": 1.15,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:10:21.508000+00:00",
+          "nivel_m": 1.15,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:20:21.310000+00:00",
+          "nivel_m": 1.15,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:30:21.196000+00:00",
+          "nivel_m": 1.15,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:40:35.266000+00:00",
+          "nivel_m": 1.15,
+          "qualidade": null
+        }
+      ],
+      "qualidade_fonte": {
+        "nivel_rio_m": {
+          "estado": "atual",
+          "medido_em": "2026-10-17T22:40:35.266000+00:00"
+        }
+      },
+      "situacao_fonte": "monitoramento"
+    },
+    "DC09": {
+      "codigo": "DC09",
+      "nome": "Ribeirão da Murta - Ponte da Rua Lidia Puel Peixer",
+      "latitude": -26.879777,
+      "longitude": -48.700308,
+      "nivel_m": 1.15,
+      "tendencia": "subindo",
+      "limites": {
+        "atencao_m": 1.22,
+        "alerta_m": 1.42,
+        "emergencia_m": 1.62
+      },
+      "qualidade": "atualizado",
+      "medido_em": "2026-10-17T22:40:04.793000+00:00",
+      "atualizacao_esperada_segundos": 600,
+      "serie_12h": [
+        {
+          "medido_em": "2026-10-17T10:40:11.935000+00:00",
+          "nivel_m": 1.13,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T10:50:06.134000+00:00",
+          "nivel_m": 1.12,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:00:16.021000+00:00",
+          "nivel_m": 1.11,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:10:11.638000+00:00",
+          "nivel_m": 1.1,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:20:06.594000+00:00",
+          "nivel_m": 1.08,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:30:12.530000+00:00",
+          "nivel_m": 1.06,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:40:06.888000+00:00",
+          "nivel_m": 1.05,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:50:01.398000+00:00",
+          "nivel_m": 1.05,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T12:00:11.243000+00:00",
+          "nivel_m": 1.02,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T12:10:05.596000+00:00",
+          "nivel_m": 1.03,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T12:20:00.909000+00:00",
+          "nivel_m": 1.04,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T12:30:11.509000+00:00",
+          "nivel_m": 1.02,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T12:40:06.526000+00:00",
+          "nivel_m": 1.01,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T12:50:02.662000+00:00",
+          "nivel_m": 1.01,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:00:14.362000+00:00",
+          "nivel_m": 1.03,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:10:11.300000+00:00",
+          "nivel_m": 1.02,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:20:08.237000+00:00",
+          "nivel_m": 1,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:30:04.847000+00:00",
+          "nivel_m": 1.05,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:40:01.456000+00:00",
+          "nivel_m": 1.01,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:50:13.594000+00:00",
+          "nivel_m": 0.99,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:00:10.203000+00:00",
+          "nivel_m": 1,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:10:07.141000+00:00",
+          "nivel_m": 1.03,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:20:03.751000+00:00",
+          "nivel_m": 1.06,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:30:15.997000+00:00",
+          "nivel_m": 1.09,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:40:13.044000+00:00",
+          "nivel_m": 1.09,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:50:09.763000+00:00",
+          "nivel_m": 1.14,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T15:00:06.263000+00:00",
+          "nivel_m": 1.15,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T15:10:02.982000+00:00",
+          "nivel_m": 1.16,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T15:20:14.901000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T15:30:09.992000+00:00",
+          "nivel_m": 1.21,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T15:40:04.881000+00:00",
+          "nivel_m": 1.22,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T15:50:15.006000+00:00",
+          "nivel_m": 1.21,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T16:00:09.696000+00:00",
+          "nivel_m": 1.23,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T16:10:04.272000+00:00",
+          "nivel_m": 1.23,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T16:20:14.506000+00:00",
+          "nivel_m": 1.25,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T16:30:09.354000+00:00",
+          "nivel_m": 1.25,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T16:40:03.299000+00:00",
+          "nivel_m": 1.24,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T16:50:13.507000+00:00",
+          "nivel_m": 1.23,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T17:00:08.037000+00:00",
+          "nivel_m": 1.24,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T17:10:02.432000+00:00",
+          "nivel_m": 1.27,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T17:20:11.836000+00:00",
+          "nivel_m": 1.26,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T17:30:05.737000+00:00",
+          "nivel_m": 1.28,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T17:40:15.940000+00:00",
+          "nivel_m": 1.3,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T17:50:10.061000+00:00",
+          "nivel_m": 1.3,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:00:06.470000+00:00",
+          "nivel_m": 1.28,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:10:15.874000+00:00",
+          "nivel_m": 1.26,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:20:10.904000+00:00",
+          "nivel_m": 1.25,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:30:05.289000+00:00",
+          "nivel_m": 1.23,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:40:11.453000+00:00",
+          "nivel_m": 1.21,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:50:06.134000+00:00",
+          "nivel_m": 1.2,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T19:00:01.560000+00:00",
+          "nivel_m": 1.17,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T19:10:11.570000+00:00",
+          "nivel_m": 1.15,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T19:20:06.007000+00:00",
+          "nivel_m": 1.13,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T19:30:01.277000+00:00",
+          "nivel_m": 1.13,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T19:40:10.682000+00:00",
+          "nivel_m": 1.11,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T19:50:04.851000+00:00",
+          "nivel_m": 1.12,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T20:00:14.458000+00:00",
+          "nivel_m": 1.11,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T20:10:09.197000+00:00",
+          "nivel_m": 1.11,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T20:20:04.173000+00:00",
+          "nivel_m": 1.1,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T20:30:13.800000+00:00",
+          "nivel_m": 1.08,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T20:40:08.423000+00:00",
+          "nivel_m": 1.11,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T20:50:02.818000+00:00",
+          "nivel_m": 1.13,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T21:00:13.714000+00:00",
+          "nivel_m": 1.13,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T21:10:08.877000+00:00",
+          "nivel_m": 1.12,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T21:20:02.994000+00:00",
+          "nivel_m": 1.11,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T21:30:12.922000+00:00",
+          "nivel_m": 1.13,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T21:40:07.372000+00:00",
+          "nivel_m": 1.12,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T21:50:01.483000+00:00",
+          "nivel_m": 1.14,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:00:11.162000+00:00",
+          "nivel_m": 1.13,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:10:05.664000+00:00",
+          "nivel_m": 1.14,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:20:00.983000+00:00",
+          "nivel_m": 1.13,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:30:10.925000+00:00",
+          "nivel_m": 1.13,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:40:04.793000+00:00",
+          "nivel_m": 1.15,
+          "qualidade": null
+        }
+      ],
+      "qualidade_fonte": {
+        "nivel_rio_m": {
+          "estado": "atual",
+          "medido_em": "2026-10-17T22:40:04.793000+00:00"
+        }
+      },
+      "situacao_fonte": "monitoramento"
+    },
+    "DC10": {
+      "codigo": "DC10",
+      "nome": "Rio Itajaí-Mirim – Bairro Limoeiro",
+      "latitude": -27.03353,
+      "longitude": -48.861419,
+      "nivel_m": 3.71,
+      "tendencia": "subindo",
+      "limites": {
+        "atencao_m": 8,
+        "alerta_m": 9,
+        "emergencia_m": 10
+      },
+      "qualidade": "atualizado",
+      "medido_em": "2026-10-17T22:40:07.248000+00:00",
+      "atualizacao_esperada_segundos": 600,
+      "serie_12h": [
+        {
+          "medido_em": "2026-10-17T10:40:19.360000+00:00",
+          "nivel_m": 4.27,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T10:50:13.492000+00:00",
+          "nivel_m": 4.24,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:00:03.069000+00:00",
+          "nivel_m": 4.24,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:10:12.084000+00:00",
+          "nivel_m": 4.21,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:20:03.318000+00:00",
+          "nivel_m": 4.21,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:30:13.110000+00:00",
+          "nivel_m": 4.18,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:40:07.234000+00:00",
+          "nivel_m": 4.18,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:50:01.726000+00:00",
+          "nivel_m": 4.16,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T12:00:11.706000+00:00",
+          "nivel_m": 4.14,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T12:10:05.974000+00:00",
+          "nivel_m": 4.13,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T12:20:15.058000+00:00",
+          "nivel_m": 4.11,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T12:30:09.175000+00:00",
+          "nivel_m": 4.12,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T12:40:03.283000+00:00",
+          "nivel_m": 4.1,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T12:50:14.144000+00:00",
+          "nivel_m": 4.08,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:00:10.972000+00:00",
+          "nivel_m": 4.08,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:10:07.691000+00:00",
+          "nivel_m": 4.08,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:20:04.301000+00:00",
+          "nivel_m": 4.05,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:30:01.020000+00:00",
+          "nivel_m": 4.03,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:40:25.295000+00:00",
+          "nivel_m": 4.04,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:50:06.814000+00:00",
+          "nivel_m": 4.04,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:00:03.533000+00:00",
+          "nivel_m": 3.99,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:10:15.342000+00:00",
+          "nivel_m": 4,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:20:12.389000+00:00",
+          "nivel_m": 4,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:30:09.108000+00:00",
+          "nivel_m": 4,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:40:06.046000+00:00",
+          "nivel_m": 3.97,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:50:02.765000+00:00",
+          "nivel_m": 3.97,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T15:00:10.309000+00:00",
+          "nivel_m": 3.96,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T15:10:06.919000+00:00",
+          "nivel_m": 3.96,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T15:20:03.857000+00:00",
+          "nivel_m": 3.91,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T15:30:13.957000+00:00",
+          "nivel_m": 3.94,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T15:40:04.664000+00:00",
+          "nivel_m": 3.94,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T15:50:14.228000+00:00",
+          "nivel_m": 3.92,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T16:00:04.138000+00:00",
+          "nivel_m": 3.92,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T16:10:14.402000+00:00",
+          "nivel_m": 3.9,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T16:20:08.753000+00:00",
+          "nivel_m": 3.92,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T16:30:03.542000+00:00",
+          "nivel_m": 3.89,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T16:40:13.464000+00:00",
+          "nivel_m": 3.89,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T16:50:08.507000+00:00",
+          "nivel_m": 3.87,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T17:00:14.037000+00:00",
+          "nivel_m": 3.88,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T17:10:09.115000+00:00",
+          "nivel_m": 3.86,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T17:20:03.798000+00:00",
+          "nivel_m": 3.88,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T17:30:14.322000+00:00",
+          "nivel_m": 3.86,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T17:40:08.441000+00:00",
+          "nivel_m": 3.83,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T17:50:03.110000+00:00",
+          "nivel_m": 3.84,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:00:12.600000+00:00",
+          "nivel_m": 3.84,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:10:03.425000+00:00",
+          "nivel_m": 3.84,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:20:13.115000+00:00",
+          "nivel_m": 3.84,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:30:07.361000+00:00",
+          "nivel_m": 3.84,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:40:02.554000+00:00",
+          "nivel_m": 3.8,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:50:12.062000+00:00",
+          "nivel_m": 3.83,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T19:00:06.725000+00:00",
+          "nivel_m": 3.82,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T19:10:01.184000+00:00",
+          "nivel_m": 3.78,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T19:20:11.010000+00:00",
+          "nivel_m": 3.8,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T19:30:06.052000+00:00",
+          "nivel_m": 3.81,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T19:40:15.984000+00:00",
+          "nivel_m": 3.8,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T19:50:10.186000+00:00",
+          "nivel_m": 3.78,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T20:00:04.682000+00:00",
+          "nivel_m": 3.77,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T20:10:10.075000+00:00",
+          "nivel_m": 3.76,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T20:20:05.683000+00:00",
+          "nivel_m": 3.76,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T20:30:15.979000+00:00",
+          "nivel_m": 3.77,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T20:40:06.137000+00:00",
+          "nivel_m": 3.73,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T20:50:15.399000+00:00",
+          "nivel_m": 3.74,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T21:00:05.644000+00:00",
+          "nivel_m": 3.74,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T21:10:10.011000+00:00",
+          "nivel_m": 3.74,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T21:20:04.341000+00:00",
+          "nivel_m": 3.73,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T21:30:13.847000+00:00",
+          "nivel_m": 3.74,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T21:40:07.935000+00:00",
+          "nivel_m": 3.73,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T21:50:02.004000+00:00",
+          "nivel_m": 3.74,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:00:12.602000+00:00",
+          "nivel_m": 3.72,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:10:06.770000+00:00",
+          "nivel_m": 3.73,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:20:01.751000+00:00",
+          "nivel_m": 3.71,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:30:12.046000+00:00",
+          "nivel_m": 3.69,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:40:07.248000+00:00",
+          "nivel_m": 3.71,
+          "qualidade": null
+        }
+      ],
+      "qualidade_fonte": {
+        "nivel_rio_m": {
+          "estado": "atual",
+          "medido_em": "2026-10-17T22:40:07.248000+00:00"
+        }
+      },
+      "situacao_fonte": "monitoramento"
+    },
+    "DC11": {
+      "codigo": "DC11",
+      "nome": "Rio Itajaí-Açú – Santa Regina (Volta de Cima)",
+      "latitude": -26.879641,
+      "longitude": -48.761549,
+      "nivel_m": 2.78,
+      "tendencia": "estavel",
+      "limites": {
+        "atencao_m": 3,
+        "alerta_m": 4,
+        "emergencia_m": 5
+      },
+      "qualidade": "atualizado",
+      "medido_em": "2026-10-17T22:40:06.032000+00:00",
+      "atualizacao_esperada_segundos": 600,
+      "serie_12h": [
+        {
+          "medido_em": "2026-10-17T10:40:10.923000+00:00",
+          "nivel_m": 2.85,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T10:50:05.141000+00:00",
+          "nivel_m": 2.89,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:00:14.665000+00:00",
+          "nivel_m": 2.78,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:10:09.155000+00:00",
+          "nivel_m": 2.76,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:20:02.987000+00:00",
+          "nivel_m": 2.78,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:30:12.298000+00:00",
+          "nivel_m": 2.77,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:40:06.340000+00:00",
+          "nivel_m": 2.77,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T11:50:01.067000+00:00",
+          "nivel_m": 2.73,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T12:00:10.349000+00:00",
+          "nivel_m": 2.7,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T12:10:04.440000+00:00",
+          "nivel_m": 2.72,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T12:20:09.945000+00:00",
+          "nivel_m": 2.69,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T12:30:04.475000+00:00",
+          "nivel_m": 2.67,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T12:40:14.103000+00:00",
+          "nivel_m": 2.69,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T12:50:11.082000+00:00",
+          "nivel_m": 2.7,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:00:07.582000+00:00",
+          "nivel_m": 2.67,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:10:15.127000+00:00",
+          "nivel_m": 2.65,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:20:11.736000+00:00",
+          "nivel_m": 2.67,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:30:07.909000+00:00",
+          "nivel_m": 2.68,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:40:04.628000+00:00",
+          "nivel_m": 2.68,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T13:50:01.128000+00:00",
+          "nivel_m": 2.64,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:00:13.156000+00:00",
+          "nivel_m": 2.73,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:10:10.093000+00:00",
+          "nivel_m": 2.61,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:20:06.703000+00:00",
+          "nivel_m": 2.62,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:30:02.985000+00:00",
+          "nivel_m": 2.65,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:40:14.903000+00:00",
+          "nivel_m": 2.68,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T14:50:11.403000+00:00",
+          "nivel_m": 2.75,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T15:00:08.341000+00:00",
+          "nivel_m": 2.77,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T15:10:04.951000+00:00",
+          "nivel_m": 2.73,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T15:20:01.232000+00:00",
+          "nivel_m": 2.81,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T15:30:06.678000+00:00",
+          "nivel_m": 2.78,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T15:40:11.223000+00:00",
+          "nivel_m": 2.79,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T15:50:04.733000+00:00",
+          "nivel_m": 2.83,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T16:00:14.883000+00:00",
+          "nivel_m": 2.83,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T16:10:09.713000+00:00",
+          "nivel_m": 2.84,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T16:20:04.368000+00:00",
+          "nivel_m": 2.81,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T16:30:10.463000+00:00",
+          "nivel_m": 2.86,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T16:40:05.106000+00:00",
+          "nivel_m": 2.82,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T16:50:13.838000+00:00",
+          "nivel_m": 2.86,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T17:00:08.368000+00:00",
+          "nivel_m": 2.86,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T17:10:03.786000+00:00",
+          "nivel_m": 2.83,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T17:20:13.930000+00:00",
+          "nivel_m": 2.83,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T17:30:07.741000+00:00",
+          "nivel_m": 2.86,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T17:40:03.009000+00:00",
+          "nivel_m": 2.87,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T17:50:12.257000+00:00",
+          "nivel_m": 2.86,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:00:07.901000+00:00",
+          "nivel_m": 2.9,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:10:01.667000+00:00",
+          "nivel_m": 2.88,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:20:11.265000+00:00",
+          "nivel_m": 2.9,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:30:05.653000+00:00",
+          "nivel_m": 2.83,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:40:15.862000+00:00",
+          "nivel_m": 2.84,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T18:50:09.495000+00:00",
+          "nivel_m": 2.83,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T19:00:04.288000+00:00",
+          "nivel_m": 2.78,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T19:10:14.603000+00:00",
+          "nivel_m": 2.8,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T19:20:08.028000+00:00",
+          "nivel_m": 2.76,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T19:30:12.678000+00:00",
+          "nivel_m": 2.77,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T19:40:07.731000+00:00",
+          "nivel_m": 2.74,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T19:50:01.653000+00:00",
+          "nivel_m": 2.72,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T20:00:11.339000+00:00",
+          "nivel_m": 2.77,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T20:10:05.820000+00:00",
+          "nivel_m": 2.72,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T20:20:11.573000+00:00",
+          "nivel_m": 2.77,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T20:30:05.676000+00:00",
+          "nivel_m": 2.74,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T20:40:15.382000+00:00",
+          "nivel_m": 2.74,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T20:50:01.434000+00:00",
+          "nivel_m": 2.72,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T21:00:10.084000+00:00",
+          "nivel_m": 2.71,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T21:10:04.454000+00:00",
+          "nivel_m": 2.75,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T21:20:14.836000+00:00",
+          "nivel_m": 2.77,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T21:30:04.858000+00:00",
+          "nivel_m": 2.78,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T21:40:14.656000+00:00",
+          "nivel_m": 2.76,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T21:50:09.543000+00:00",
+          "nivel_m": 2.74,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:00:02.141000+00:00",
+          "nivel_m": 2.77,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:10:11.771000+00:00",
+          "nivel_m": 2.76,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:20:05.507000+00:00",
+          "nivel_m": 2.78,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:30:11.714000+00:00",
+          "nivel_m": 2.78,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:40:06.032000+00:00",
+          "nivel_m": 2.78,
+          "qualidade": null
+        }
+      ],
+      "qualidade_fonte": {
+        "nivel_rio_m": {
+          "estado": "atual",
+          "medido_em": "2026-10-17T22:40:06.032000+00:00"
+        }
+      },
+      "situacao_fonte": "monitoramento"
+    }
+  },
   "chuvas": {
     "DC00": {
       "codigo": "DC00",
@@ -339,36 +4540,31 @@
       "chuva_24_h_mm": 0.2,
       "chuva_48_h_mm": 12.2,
       "qualidade": "atualizado",
-      "medido_em": "2026-10-17T22:30:21.324000+00:00",
+      "medido_em": "2026-10-17T22:40:38.133000+00:00",
       "atualizacao_esperada_segundos": 600,
       "qualidade_fonte": {
         "chuva_10_min_mm": {
           "estado": "atual",
-          "medido_em": "2026-10-17T22:30:21.324000+00:00"
+          "medido_em": "2026-10-17T22:40:38.133000+00:00"
         },
         "chuva_1_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-10-17T22:30:21.324000+00:00"
+          "medido_em": "2026-10-17T22:40:38.133000+00:00"
         },
         "chuva_12_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-10-17T22:30:21.324000+00:00"
+          "medido_em": "2026-10-17T22:40:38.133000+00:00"
         },
         "chuva_24_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-10-17T22:30:21.324000+00:00"
+          "medido_em": "2026-10-17T22:40:38.133000+00:00"
         },
         "chuva_48_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-10-17T22:30:21.324000+00:00"
+          "medido_em": "2026-10-17T22:40:38.133000+00:00"
         }
       },
       "serie_12h": [
-        {
-          "medido_em": "2026-10-17T10:40:16.286000+00:00",
-          "chuva_mm": 0,
-          "qualidade": null
-        },
         {
           "medido_em": "2026-10-17T10:50:23.374000+00:00",
           "chuva_mm": 0,
@@ -723,6 +4919,11 @@
           "medido_em": "2026-10-17T22:30:21.324000+00:00",
           "chuva_mm": 0,
           "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:40:38.133000+00:00",
+          "chuva_mm": 0,
+          "qualidade": null
         }
       ]
     },
@@ -739,36 +4940,31 @@
       "chuva_24_h_mm": 0,
       "chuva_48_h_mm": 10.8,
       "qualidade": "atualizado",
-      "medido_em": "2026-10-17T22:21:53.312000+00:00",
+      "medido_em": "2026-10-17T22:32:13.689000+00:00",
       "atualizacao_esperada_segundos": 600,
       "qualidade_fonte": {
         "chuva_10_min_mm": {
           "estado": "atual",
-          "medido_em": "2026-10-17T22:21:53.312000+00:00"
+          "medido_em": "2026-10-17T22:32:13.689000+00:00"
         },
         "chuva_1_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-10-17T22:21:53.312000+00:00"
+          "medido_em": "2026-10-17T22:32:13.689000+00:00"
         },
         "chuva_12_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-10-17T22:21:53.312000+00:00"
+          "medido_em": "2026-10-17T22:32:13.689000+00:00"
         },
         "chuva_24_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-10-17T22:21:53.312000+00:00"
+          "medido_em": "2026-10-17T22:32:13.689000+00:00"
         },
         "chuva_48_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-10-17T22:21:53.312000+00:00"
+          "medido_em": "2026-10-17T22:32:13.689000+00:00"
         }
       },
       "serie_12h": [
-        {
-          "medido_em": "2026-10-17T10:31:35.233000+00:00",
-          "chuva_mm": 0,
-          "qualidade": null
-        },
         {
           "medido_em": "2026-10-17T10:41:35.751000+00:00",
           "chuva_mm": 0,
@@ -1123,6 +5319,11 @@
           "medido_em": "2026-10-17T22:21:53.312000+00:00",
           "chuva_mm": 0,
           "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:32:13.689000+00:00",
+          "chuva_mm": 0,
+          "qualidade": null
         }
       ]
     },
@@ -1139,41 +5340,31 @@
       "chuva_24_h_mm": 0.2,
       "chuva_48_h_mm": 16.2,
       "qualidade": "atualizado",
-      "medido_em": "2026-10-17T22:21:39.628000+00:00",
+      "medido_em": "2026-10-17T22:42:10.370000+00:00",
       "atualizacao_esperada_segundos": 600,
       "qualidade_fonte": {
         "chuva_10_min_mm": {
           "estado": "atual",
-          "medido_em": "2026-10-17T22:21:39.628000+00:00"
+          "medido_em": "2026-10-17T22:42:10.370000+00:00"
         },
         "chuva_1_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-10-17T22:21:39.628000+00:00"
+          "medido_em": "2026-10-17T22:42:10.370000+00:00"
         },
         "chuva_12_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-10-17T22:21:39.628000+00:00"
+          "medido_em": "2026-10-17T22:42:10.370000+00:00"
         },
         "chuva_24_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-10-17T22:21:39.628000+00:00"
+          "medido_em": "2026-10-17T22:42:10.370000+00:00"
         },
         "chuva_48_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-10-17T22:21:39.628000+00:00"
+          "medido_em": "2026-10-17T22:42:10.370000+00:00"
         }
       },
       "serie_12h": [
-        {
-          "medido_em": "2026-10-17T10:31:21.621000+00:00",
-          "chuva_mm": 0,
-          "qualidade": null
-        },
-        {
-          "medido_em": "2026-10-17T10:41:21.772000+00:00",
-          "chuva_mm": 0,
-          "qualidade": null
-        },
         {
           "medido_em": "2026-10-17T10:51:53.045000+00:00",
           "chuva_mm": 0,
@@ -1523,6 +5714,16 @@
           "medido_em": "2026-10-17T22:21:39.628000+00:00",
           "chuva_mm": 0,
           "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:31:59.504000+00:00",
+          "chuva_mm": 0,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:42:10.370000+00:00",
+          "chuva_mm": 0,
+          "qualidade": null
         }
       ]
     },
@@ -1539,36 +5740,31 @@
       "chuva_24_h_mm": 0.2,
       "chuva_48_h_mm": 12.8,
       "qualidade": "atualizado",
-      "medido_em": "2026-10-17T22:30:11.277000+00:00",
+      "medido_em": "2026-10-17T22:40:05.575000+00:00",
       "atualizacao_esperada_segundos": 600,
       "qualidade_fonte": {
         "chuva_10_min_mm": {
           "estado": "atual",
-          "medido_em": "2026-10-17T22:30:11.277000+00:00"
+          "medido_em": "2026-10-17T22:40:05.575000+00:00"
         },
         "chuva_1_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-10-17T22:30:11.277000+00:00"
+          "medido_em": "2026-10-17T22:40:05.575000+00:00"
         },
         "chuva_12_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-10-17T22:30:11.277000+00:00"
+          "medido_em": "2026-10-17T22:40:05.575000+00:00"
         },
         "chuva_24_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-10-17T22:30:11.277000+00:00"
+          "medido_em": "2026-10-17T22:40:05.575000+00:00"
         },
         "chuva_48_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-10-17T22:30:11.277000+00:00"
+          "medido_em": "2026-10-17T22:40:05.575000+00:00"
         }
       },
       "serie_12h": [
-        {
-          "medido_em": "2026-10-17T10:30:11.828000+00:00",
-          "chuva_mm": 0,
-          "qualidade": null
-        },
         {
           "medido_em": "2026-10-17T10:40:06.440000+00:00",
           "chuva_mm": 0,
@@ -1928,6 +6124,11 @@
           "medido_em": "2026-10-17T22:30:11.277000+00:00",
           "chuva_mm": 0,
           "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:40:05.575000+00:00",
+          "chuva_mm": 0,
+          "qualidade": null
         }
       ]
     },
@@ -1944,41 +6145,31 @@
       "chuva_24_h_mm": 0,
       "chuva_48_h_mm": 11,
       "qualidade": "atualizado",
-      "medido_em": "2026-10-17T22:21:30.898000+00:00",
+      "medido_em": "2026-10-17T22:42:01.661000+00:00",
       "atualizacao_esperada_segundos": 600,
       "qualidade_fonte": {
         "chuva_10_min_mm": {
           "estado": "atual",
-          "medido_em": "2026-10-17T22:21:30.898000+00:00"
+          "medido_em": "2026-10-17T22:42:01.661000+00:00"
         },
         "chuva_1_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-10-17T22:21:30.898000+00:00"
+          "medido_em": "2026-10-17T22:42:01.661000+00:00"
         },
         "chuva_12_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-10-17T22:21:30.898000+00:00"
+          "medido_em": "2026-10-17T22:42:01.661000+00:00"
         },
         "chuva_24_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-10-17T22:21:30.898000+00:00"
+          "medido_em": "2026-10-17T22:42:01.661000+00:00"
         },
         "chuva_48_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-10-17T22:21:30.898000+00:00"
+          "medido_em": "2026-10-17T22:42:01.661000+00:00"
         }
       },
       "serie_12h": [
-        {
-          "medido_em": "2026-10-17T10:31:12.864000+00:00",
-          "chuva_mm": 0,
-          "qualidade": null
-        },
-        {
-          "medido_em": "2026-10-17T10:41:13.161000+00:00",
-          "chuva_mm": 0,
-          "qualidade": null
-        },
         {
           "medido_em": "2026-10-17T10:51:44.408000+00:00",
           "chuva_mm": 0,
@@ -2328,6 +6519,16 @@
           "medido_em": "2026-10-17T22:21:30.898000+00:00",
           "chuva_mm": 0,
           "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:31:50.742000+00:00",
+          "chuva_mm": 0,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:42:01.661000+00:00",
+          "chuva_mm": 0,
+          "qualidade": null
         }
       ]
     },
@@ -2344,41 +6545,31 @@
       "chuva_24_h_mm": 0.4,
       "chuva_48_h_mm": 9.8,
       "qualidade": "atualizado",
-      "medido_em": "2026-10-17T22:21:23.940000+00:00",
+      "medido_em": "2026-10-17T22:41:54.753000+00:00",
       "atualizacao_esperada_segundos": 600,
       "qualidade_fonte": {
         "chuva_10_min_mm": {
           "estado": "atual",
-          "medido_em": "2026-10-17T22:21:23.940000+00:00"
+          "medido_em": "2026-10-17T22:41:54.753000+00:00"
         },
         "chuva_1_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-10-17T22:21:23.940000+00:00"
+          "medido_em": "2026-10-17T22:41:54.753000+00:00"
         },
         "chuva_12_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-10-17T22:21:23.940000+00:00"
+          "medido_em": "2026-10-17T22:41:54.753000+00:00"
         },
         "chuva_24_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-10-17T22:21:23.940000+00:00"
+          "medido_em": "2026-10-17T22:41:54.753000+00:00"
         },
         "chuva_48_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-10-17T22:21:23.940000+00:00"
+          "medido_em": "2026-10-17T22:41:54.753000+00:00"
         }
       },
       "serie_12h": [
-        {
-          "medido_em": "2026-10-17T10:31:06.030000+00:00",
-          "chuva_mm": 0,
-          "qualidade": null
-        },
-        {
-          "medido_em": "2026-10-17T10:41:06.322000+00:00",
-          "chuva_mm": 0,
-          "qualidade": null
-        },
         {
           "medido_em": "2026-10-17T10:51:37.643000+00:00",
           "chuva_mm": 0,
@@ -2728,6 +6919,16 @@
           "medido_em": "2026-10-17T22:21:23.940000+00:00",
           "chuva_mm": 0,
           "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:31:43.722000+00:00",
+          "chuva_mm": 0,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:41:54.753000+00:00",
+          "chuva_mm": 0,
+          "qualidade": null
         }
       ]
     },
@@ -2744,41 +6945,31 @@
       "chuva_24_h_mm": 0,
       "chuva_48_h_mm": 10.8,
       "qualidade": "atualizado",
-      "medido_em": "2026-10-17T22:21:13.666000+00:00",
+      "medido_em": "2026-10-17T22:41:44.341000+00:00",
       "atualizacao_esperada_segundos": 600,
       "qualidade_fonte": {
         "chuva_10_min_mm": {
           "estado": "atual",
-          "medido_em": "2026-10-17T22:21:13.666000+00:00"
+          "medido_em": "2026-10-17T22:41:44.341000+00:00"
         },
         "chuva_1_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-10-17T22:21:13.666000+00:00"
+          "medido_em": "2026-10-17T22:41:44.341000+00:00"
         },
         "chuva_12_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-10-17T22:21:13.666000+00:00"
+          "medido_em": "2026-10-17T22:41:44.341000+00:00"
         },
         "chuva_24_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-10-17T22:21:13.666000+00:00"
+          "medido_em": "2026-10-17T22:41:44.341000+00:00"
         },
         "chuva_48_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-10-17T22:21:13.666000+00:00"
+          "medido_em": "2026-10-17T22:41:44.341000+00:00"
         }
       },
       "serie_12h": [
-        {
-          "medido_em": "2026-10-17T10:30:55.671000+00:00",
-          "chuva_mm": 0,
-          "qualidade": null
-        },
-        {
-          "medido_em": "2026-10-17T10:40:55.923000+00:00",
-          "chuva_mm": 0,
-          "qualidade": null
-        },
         {
           "medido_em": "2026-10-17T10:51:27.271000+00:00",
           "chuva_mm": 0,
@@ -3128,6 +7319,16 @@
           "medido_em": "2026-10-17T22:21:13.666000+00:00",
           "chuva_mm": 0,
           "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:31:33.383000+00:00",
+          "chuva_mm": 0,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:41:44.341000+00:00",
+          "chuva_mm": 0,
+          "qualidade": null
         }
       ]
     },
@@ -3144,41 +7345,31 @@
       "chuva_24_h_mm": 0.2,
       "chuva_48_h_mm": 11.8,
       "qualidade": "atualizado",
-      "medido_em": "2026-10-17T22:20:35.343000+00:00",
+      "medido_em": "2026-10-17T22:41:06.420000+00:00",
       "atualizacao_esperada_segundos": 600,
       "qualidade_fonte": {
         "chuva_10_min_mm": {
           "estado": "atual",
-          "medido_em": "2026-10-17T22:20:35.343000+00:00"
+          "medido_em": "2026-10-17T22:41:06.420000+00:00"
         },
         "chuva_1_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-10-17T22:20:35.343000+00:00"
+          "medido_em": "2026-10-17T22:41:06.420000+00:00"
         },
         "chuva_12_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-10-17T22:20:35.343000+00:00"
+          "medido_em": "2026-10-17T22:41:06.420000+00:00"
         },
         "chuva_24_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-10-17T22:20:35.343000+00:00"
+          "medido_em": "2026-10-17T22:41:06.420000+00:00"
         },
         "chuva_48_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-10-17T22:20:35.343000+00:00"
+          "medido_em": "2026-10-17T22:41:06.420000+00:00"
         }
       },
       "serie_12h": [
-        {
-          "medido_em": "2026-10-17T10:30:34.879000+00:00",
-          "chuva_mm": 0,
-          "qualidade": null
-        },
-        {
-          "medido_em": "2026-10-17T10:40:35.010000+00:00",
-          "chuva_mm": 0,
-          "qualidade": null
-        },
         {
           "medido_em": "2026-10-17T10:50:59.345000+00:00",
           "chuva_mm": 0,
@@ -3483,6 +7674,11 @@
           "medido_em": "2026-10-17T22:20:35.343000+00:00",
           "chuva_mm": 0,
           "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:41:06.420000+00:00",
+          "chuva_mm": 0,
+          "qualidade": null
         }
       ]
     },
@@ -3499,36 +7695,31 @@
       "chuva_24_h_mm": 0.2,
       "chuva_48_h_mm": 11.8,
       "qualidade": "atualizado",
-      "medido_em": "2026-10-17T22:30:21.196000+00:00",
+      "medido_em": "2026-10-17T22:40:35.266000+00:00",
       "atualizacao_esperada_segundos": 600,
       "qualidade_fonte": {
         "chuva_10_min_mm": {
           "estado": "atual",
-          "medido_em": "2026-10-17T22:30:21.196000+00:00"
+          "medido_em": "2026-10-17T22:40:35.266000+00:00"
         },
         "chuva_1_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-10-17T22:30:21.196000+00:00"
+          "medido_em": "2026-10-17T22:40:35.266000+00:00"
         },
         "chuva_12_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-10-17T22:30:21.196000+00:00"
+          "medido_em": "2026-10-17T22:40:35.266000+00:00"
         },
         "chuva_24_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-10-17T22:30:21.196000+00:00"
+          "medido_em": "2026-10-17T22:40:35.266000+00:00"
         },
         "chuva_48_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-10-17T22:30:21.196000+00:00"
+          "medido_em": "2026-10-17T22:40:35.266000+00:00"
         }
       },
       "serie_12h": [
-        {
-          "medido_em": "2026-10-17T10:40:21.182000+00:00",
-          "chuva_mm": 0,
-          "qualidade": null
-        },
         {
           "medido_em": "2026-10-17T10:50:21.387000+00:00",
           "chuva_mm": 0,
@@ -3878,6 +8069,11 @@
           "medido_em": "2026-10-17T22:30:21.196000+00:00",
           "chuva_mm": 0,
           "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:40:35.266000+00:00",
+          "chuva_mm": 0,
+          "qualidade": null
         }
       ]
     },
@@ -3894,28 +8090,28 @@
       "chuva_24_h_mm": 0.2,
       "chuva_48_h_mm": 13.2,
       "qualidade": "atualizado",
-      "medido_em": "2026-10-17T22:30:10.925000+00:00",
+      "medido_em": "2026-10-17T22:40:04.793000+00:00",
       "atualizacao_esperada_segundos": 600,
       "qualidade_fonte": {
         "chuva_10_min_mm": {
           "estado": "atual",
-          "medido_em": "2026-10-17T22:30:10.925000+00:00"
+          "medido_em": "2026-10-17T22:40:04.793000+00:00"
         },
         "chuva_1_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-10-17T22:30:10.925000+00:00"
+          "medido_em": "2026-10-17T22:40:04.793000+00:00"
         },
         "chuva_12_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-10-17T22:30:10.925000+00:00"
+          "medido_em": "2026-10-17T22:40:04.793000+00:00"
         },
         "chuva_24_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-10-17T22:30:10.925000+00:00"
+          "medido_em": "2026-10-17T22:40:04.793000+00:00"
         },
         "chuva_48_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-10-17T22:30:10.925000+00:00"
+          "medido_em": "2026-10-17T22:40:04.793000+00:00"
         }
       },
       "serie_12h": [
@@ -4278,6 +8474,11 @@
           "medido_em": "2026-10-17T22:30:10.925000+00:00",
           "chuva_mm": 0,
           "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:40:04.793000+00:00",
+          "chuva_mm": 0,
+          "qualidade": null
         }
       ]
     },
@@ -4294,36 +8495,31 @@
       "chuva_24_h_mm": 3.4,
       "chuva_48_h_mm": 15,
       "qualidade": "atualizado",
-      "medido_em": "2026-10-17T22:30:12.046000+00:00",
+      "medido_em": "2026-10-17T22:40:07.248000+00:00",
       "atualizacao_esperada_segundos": 600,
       "qualidade_fonte": {
         "chuva_10_min_mm": {
           "estado": "atual",
-          "medido_em": "2026-10-17T22:30:12.046000+00:00"
+          "medido_em": "2026-10-17T22:40:07.248000+00:00"
         },
         "chuva_1_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-10-17T22:30:12.046000+00:00"
+          "medido_em": "2026-10-17T22:40:07.248000+00:00"
         },
         "chuva_12_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-10-17T22:30:12.046000+00:00"
+          "medido_em": "2026-10-17T22:40:07.248000+00:00"
         },
         "chuva_24_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-10-17T22:30:12.046000+00:00"
+          "medido_em": "2026-10-17T22:40:07.248000+00:00"
         },
         "chuva_48_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-10-17T22:30:12.046000+00:00"
+          "medido_em": "2026-10-17T22:40:07.248000+00:00"
         }
       },
       "serie_12h": [
-        {
-          "medido_em": "2026-10-17T10:30:14.724000+00:00",
-          "chuva_mm": 0,
-          "qualidade": null
-        },
         {
           "medido_em": "2026-10-17T10:40:19.360000+00:00",
           "chuva_mm": 0,
@@ -4683,6 +8879,11 @@
           "medido_em": "2026-10-17T22:30:12.046000+00:00",
           "chuva_mm": 0,
           "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:40:07.248000+00:00",
+          "chuva_mm": 0,
+          "qualidade": null
         }
       ]
     },
@@ -4699,36 +8900,31 @@
       "chuva_24_h_mm": 0,
       "chuva_48_h_mm": 15.2,
       "qualidade": "atualizado",
-      "medido_em": "2026-10-17T22:30:11.714000+00:00",
+      "medido_em": "2026-10-17T22:40:06.032000+00:00",
       "atualizacao_esperada_segundos": 600,
       "qualidade_fonte": {
         "chuva_10_min_mm": {
           "estado": "atual",
-          "medido_em": "2026-10-17T22:30:11.714000+00:00"
+          "medido_em": "2026-10-17T22:40:06.032000+00:00"
         },
         "chuva_1_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-10-17T22:30:11.714000+00:00"
+          "medido_em": "2026-10-17T22:40:06.032000+00:00"
         },
         "chuva_12_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-10-17T22:30:11.714000+00:00"
+          "medido_em": "2026-10-17T22:40:06.032000+00:00"
         },
         "chuva_24_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-10-17T22:30:11.714000+00:00"
+          "medido_em": "2026-10-17T22:40:06.032000+00:00"
         },
         "chuva_48_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-10-17T22:30:11.714000+00:00"
+          "medido_em": "2026-10-17T22:40:06.032000+00:00"
         }
       },
       "serie_12h": [
-        {
-          "medido_em": "2026-10-17T10:30:14.393000+00:00",
-          "chuva_mm": 0,
-          "qualidade": null
-        },
         {
           "medido_em": "2026-10-17T10:40:10.923000+00:00",
           "chuva_mm": 0,
@@ -5088,6 +9284,11 @@
           "medido_em": "2026-10-17T22:30:11.714000+00:00",
           "chuva_mm": 0,
           "qualidade": null
+        },
+        {
+          "medido_em": "2026-10-17T22:40:06.032000+00:00",
+          "chuva_mm": 0,
+          "qualidade": null
         }
       ]
     }
@@ -5428,7 +9629,7 @@
     "uf": null,
     "regiao": null,
     "atualizado_em": null,
-    "coletado_em": "2026-10-17T22:32:20.884Z",
+    "coletado_em": "2026-10-17T22:42:17.116Z",
     "disponibilidade": "disponivel",
     "dias": [
       {
@@ -5541,7 +9742,7 @@
   "blumenau": {
     "nivel_m": 2.76,
     "medido_em": "2026-10-17T19:00:00-03:00",
-    "coletado_em": "2026-10-17T22:32:16.531Z",
+    "coletado_em": "2026-10-17T22:42:13.909Z",
     "classificacao_original": "Normalidade",
     "nivel": "normalidade",
     "tendencia": "descendo",
@@ -5553,24 +9754,24 @@
     "estado": "parcialmente_degradado",
     "problemas": [
       "situacao_atual: Situação oficial não informa qualidade ou validade temporal.",
-      "rios: https://monitoramento.defesacivil.itajai.sc.gov.br/monitoramento/rios?municipio_id=1: fetch failed",
+      "rios: Séries sem qualidade explícita mantêm qualidade null; validade não inferida.",
       "chuvas: Campos de chuva ausentes ficam null; acumulados e séries não são recalculados.",
       "barragens/Barragem Ituporanga: qualidade atrasado.",
       "barragens/Barragem Taió: qualidade atrasado.",
       "barragens/Barragem José Boiteux: qualidade atrasado.",
       "epagri: Produto municipal JSON oficial não identifica modelo nem timestamp de emissão; campos mantidos null.",
       "epagri: UF não informada no payload observado; município validado por nome e código oficial 4208203 de Itajaí/SC.",
-      "DC01: Estação ausente na coleta.",
-      "DC02: Estação ausente na coleta.",
-      "DC03: Estação ausente na coleta.",
-      "DC04: Estação ausente na coleta.",
-      "DC05: Estação ausente na coleta.",
-      "DC06: Estação ausente na coleta.",
-      "DC07: Estação ausente na coleta.",
-      "DC08: Estação ausente na coleta.",
-      "DC09: Estação ausente na coleta.",
-      "DC10: Estação ausente na coleta.",
-      "DC11: Estação ausente na coleta."
+      "DC01: Lacuna temporal interrompeu a sequência.",
+      "DC02: Lacuna temporal interrompeu a sequência.",
+      "DC03: Lacuna temporal interrompeu a sequência.",
+      "DC04: Lacuna temporal interrompeu a sequência.",
+      "DC05: Lacuna temporal interrompeu a sequência.",
+      "DC06: Lacuna temporal interrompeu a sequência.",
+      "DC07: Lacuna temporal interrompeu a sequência.",
+      "DC08: Lacuna temporal interrompeu a sequência.",
+      "DC09: Lacuna temporal interrompeu a sequência.",
+      "DC10: Lacuna temporal interrompeu a sequência.",
+      "DC11: Lacuna temporal interrompeu a sequência."
     ]
   },
   "fontes": {
@@ -5580,7 +9781,7 @@
       "qualidade": null,
       "atualizado_em": "2026-10-17T06:00:09-03:00",
       "atualizacao_esperada_segundos": null,
-      "coletado_em": "2026-10-17T22:32:16.550Z",
+      "coletado_em": "2026-10-17T22:42:13.925Z",
       "resultado": "sucesso",
       "motivo": null,
       "avisos": [
@@ -5589,7 +9790,7 @@
       "requisicoes": [
         {
           "url": "https://monitoramento.defesacivil.itajai.sc.gov.br/api/v1/situacao-atual",
-          "coletado_em": "2026-10-17T22:32:16.550Z",
+          "coletado_em": "2026-10-17T22:42:13.925Z",
           "http_status": 200,
           "erro": null,
           "resposta_erro": null
@@ -5602,14 +9803,14 @@
       "qualidade": null,
       "atualizado_em": null,
       "atualizacao_esperada_segundos": null,
-      "coletado_em": "2026-10-17T22:32:16.579Z",
+      "coletado_em": "2026-10-17T22:42:13.944Z",
       "resultado": "sucesso",
       "motivo": null,
       "avisos": [],
       "requisicoes": [
         {
           "url": "https://monitoramento.defesacivil.itajai.sc.gov.br/api/v1/alertas/ativo",
-          "coletado_em": "2026-10-17T22:32:16.579Z",
+          "coletado_em": "2026-10-17T22:42:13.944Z",
           "http_status": 200,
           "erro": null,
           "resposta_erro": null
@@ -5619,19 +9820,21 @@
     "rios": {
       "nome": "Defesa Civil de Itajaí",
       "url": "https://monitoramento.defesacivil.itajai.sc.gov.br/monitoramento/rios?municipio_id=1",
-      "qualidade": "indisponivel",
+      "qualidade": "atualizado",
       "atualizado_em": null,
       "atualizacao_esperada_segundos": null,
-      "coletado_em": "2026-10-17T22:32:16.580Z",
-      "resultado": "falha",
-      "motivo": "https://monitoramento.defesacivil.itajai.sc.gov.br/monitoramento/rios?municipio_id=1: fetch failed",
-      "avisos": [],
+      "coletado_em": "2026-10-17T22:42:13.945Z",
+      "resultado": "sucesso",
+      "motivo": null,
+      "avisos": [
+        "Séries sem qualidade explícita mantêm qualidade null; validade não inferida."
+      ],
       "requisicoes": [
         {
           "url": "https://monitoramento.defesacivil.itajai.sc.gov.br/monitoramento/rios?municipio_id=1",
-          "coletado_em": "2026-10-17T22:32:16.580Z",
-          "http_status": null,
-          "erro": "fetch failed",
+          "coletado_em": "2026-10-17T22:42:13.945Z",
+          "http_status": 200,
+          "erro": null,
           "resposta_erro": null
         }
       ]
@@ -5642,7 +9845,7 @@
       "qualidade": "atualizado",
       "atualizado_em": null,
       "atualizacao_esperada_segundos": null,
-      "coletado_em": "2026-10-17T22:32:16.582Z",
+      "coletado_em": "2026-10-17T22:42:13.946Z",
       "resultado": "sucesso",
       "motivo": null,
       "avisos": [
@@ -5651,7 +9854,7 @@
       "requisicoes": [
         {
           "url": "https://monitoramento.defesacivil.itajai.sc.gov.br/monitoramento/chuvas?municipio_id=1",
-          "coletado_em": "2026-10-17T22:32:16.582Z",
+          "coletado_em": "2026-10-17T22:42:13.946Z",
           "http_status": 200,
           "erro": null,
           "resposta_erro": null
@@ -5664,14 +9867,14 @@
       "qualidade": "atrasado",
       "atualizado_em": null,
       "atualizacao_esperada_segundos": null,
-      "coletado_em": "2026-10-17T22:32:16.583Z",
+      "coletado_em": "2026-10-17T22:42:13.947Z",
       "resultado": "sucesso",
       "motivo": null,
       "avisos": [],
       "requisicoes": [
         {
           "url": "https://monitoramento.defesacivil.itajai.sc.gov.br/monitoramento/barragens?municipio_id=1",
-          "coletado_em": "2026-10-17T22:32:16.583Z",
+          "coletado_em": "2026-10-17T22:42:13.947Z",
           "http_status": 200,
           "erro": null,
           "resposta_erro": null
@@ -5684,7 +9887,7 @@
       "qualidade": null,
       "atualizado_em": null,
       "atualizacao_esperada_segundos": null,
-      "coletado_em": "2026-10-17T22:32:16.584Z",
+      "coletado_em": "2026-10-17T22:42:13.948Z",
       "resultado": "sucesso",
       "motivo": null,
       "avisos": [
@@ -5694,14 +9897,14 @@
       "requisicoes": [
         {
           "url": "https://ciram.epagri.sc.gov.br/api/prevmuni-server/resources/listaJson/muni",
-          "coletado_em": "2026-10-17T22:32:16.584Z",
+          "coletado_em": "2026-10-17T22:42:13.948Z",
           "http_status": 200,
           "erro": null,
           "resposta_erro": null
         },
         {
           "url": "https://ciram.epagri.sc.gov.br/api/prevmuni-server/resources/listaJson/prevMuniDia?cdCidade=4208203",
-          "coletado_em": "2026-10-17T22:32:20.884Z",
+          "coletado_em": "2026-10-17T22:42:17.116Z",
           "http_status": 200,
           "erro": null,
           "resposta_erro": null
