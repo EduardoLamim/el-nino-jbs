@@ -1,0 +1,1803 @@
+{
+  "baseline": "f398d948a0929034c063a608722ad88101c3ac37",
+  "hml": "b435bfd0d94d385a531cba78edb993d884d96031",
+  "prd_before": "1ebb24c8f326cd12a9c8042b56347ec82eba6130",
+  "homologated_commits": [
+    "2be79e07",
+    "d7bb2420"
+  ],
+  "differences": [
+    {
+      "path": ".env.example",
+      "decision": "preservado: adaptacao PRD, isolamento, configuracao ou teste de ambiente"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "decision": "preservado: adaptacao PRD, isolamento, configuracao ou teste de ambiente"
+    },
+    {
+      "path": ".github/workflows/deploy-pages.yml",
+      "decision": "preservado: adaptacao PRD, isolamento, configuracao ou teste de ambiente"
+    },
+    {
+      "path": ".github/workflows/teams-hml.yml",
+      "decision": "preservado: adaptacao PRD, isolamento, configuracao ou teste de ambiente"
+    },
+    {
+      "path": ".gitignore",
+      "decision": "preservado: adaptacao PRD, isolamento, configuracao ou teste de ambiente"
+    },
+    {
+      "path": "README.md",
+      "decision": "preservado: adaptacao PRD, isolamento, configuracao ou teste de ambiente"
+    },
+    {
+      "path": "docs/adaptacoes-baseline.diff",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/baseline-export.json",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/d1-inventario.json",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/d1-prontidao.md",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-02.md",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-03.md",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-04-1-mobilidade-atual-descoberta.md",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-04-comparacao-bases.json",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-04-descoberta-tecnica.md",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-04.md",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-05.md",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-06-integridade.json",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-06.md",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-07-1-browser.json",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-07-1-discovery.md",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-07-1-evidencias.json",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-07-1-implementacao.md",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-07-1-integridade.json",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-07-integridade.json",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-07.md",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-08-browser.json",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-08-implementacao.md",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-08-integridade.json",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-09-browser.json",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-09-evidencias.json",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-09-homologacao.md",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-09-integridade.json",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-atualizacao/actions-antes.json",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-atualizacao/actions-ultimo-anterior.json",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-atualizacao/browser-hml.json",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-atualizacao/browser-local.json",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-atualizacao/ci.json",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-atualizacao/coletor.json",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-atualizacao/comparacao-antes.json",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-atualizacao/comparacao-depois.json",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-atualizacao/comparacao-schedule.json",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-atualizacao/deploy.json",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-atualizacao/fonte-rios.json",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-atualizacao/frontend-antes.json",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-atualizacao/frontend-depois.json",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-atualizacao/git-pages-schedule.json",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-atualizacao/git-pages.json",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-atualizacao/integridade.json",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-atualizacao/nomes-hml.json",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-atualizacao/nomes-local.json",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-atualizacao/portal.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-atualizacao/refresh-browser.json",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-atualizacao/schedule-jobs.json",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-atualizacao/schedule.json",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-atualizacao/supabase.json",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-browser-hml.json",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-browser-local.json",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-ci.json",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-correcoes-finais-hml.md",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-correcoes-visuais/desktop-claro.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-correcoes-visuais/desktop-escuro.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-correcoes-visuais/mobile-claro.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-correcoes-visuais/mobile-escuro.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-cron-evidencias/browser-hml.json",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-cron-evidencias/browser-local.json",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-cron-evidencias/ci.json",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-cron-evidencias/ciclos.md",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-cron-evidencias/cron.json",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-cron-evidencias/cycles.json",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-cron-evidencias/database-permissions.json",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-cron-evidencias/integrity.json",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-cron-evidencias/nomes-hml.json",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-cron-evidencias/nomes-local.json",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-cron-evidencias/security.json",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-cron-evidencias/supabase-readonly.json",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-deploy.json",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-fechamento-funcional.md",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-finalizacao.md",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-header-hml/desktop-claro.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-header-hml/desktop-escuro.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-header-hml/mobile-claro.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-header-hml/mobile-escuro.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-homologacao-v1-hml.md",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-integridade.json",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-investigacao-atualizacao.md",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-performance.json",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-smoke-hml.json",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-smoke-local.json",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-supabase-cron.md",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-supabase.json",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-hml/base-1440.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-hml/base-320.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-hml/base-390.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-hml/base-768.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-hml/checks.json",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-hml/chuva-1440.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-hml/chuva-320.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-hml/chuva-390.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-hml/chuva-768.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-hml/dashboard-1440.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-hml/dashboard-320.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-hml/dashboard-390.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-hml/dashboard-768.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-hml/defesa-civil-1440.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-hml/defesa-civil-320.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-hml/defesa-civil-390.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-hml/defesa-civil-768.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-hml/mapa-1440.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-hml/mapa-320.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-hml/mapa-390.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-hml/mapa-768.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-hml/monitoramento-barragens-1440.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-hml/monitoramento-barragens-320.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-hml/monitoramento-barragens-390.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-hml/monitoramento-barragens-768.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-hml/monitoramento-chuva-1440.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-hml/monitoramento-chuva-320.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-hml/monitoramento-chuva-390.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-hml/monitoramento-chuva-768.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-hml/monitoramento-previsao-1440.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-hml/monitoramento-previsao-320.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-hml/monitoramento-previsao-390.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-hml/monitoramento-previsao-768.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-hml/monitoramento-rios-1440.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-hml/monitoramento-rios-320.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-hml/monitoramento-rios-390.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-hml/monitoramento-rios-768.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-hml/plano-de-acao-1440.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-hml/plano-de-acao-320.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-hml/plano-de-acao-390.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-hml/plano-de-acao-768.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-hml/previsao-1440.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-hml/previsao-320.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-hml/previsao-390.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-hml/previsao-768.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-hml/rio-serie-1440.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-hml/rio-serie-320.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-hml/rio-serie-390.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-hml/rio-serie-768.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-hml/territorio-1440.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-hml/territorio-320.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-hml/territorio-390.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-hml/territorio-768.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-local/base-1440.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-local/base-320.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-local/base-390.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-local/base-768.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-local/checks.json",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-local/chuva-1440.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-local/chuva-320.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-local/chuva-390.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-local/chuva-768.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-local/dashboard-1440.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-local/dashboard-320.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-local/dashboard-390.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-local/dashboard-768.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-local/defesa-civil-1440.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-local/defesa-civil-320.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-local/defesa-civil-390.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-local/defesa-civil-768.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-local/mapa-1440.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-local/mapa-320.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-local/mapa-390.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-local/mapa-768.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-local/monitoramento-barragens-1440.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-local/monitoramento-barragens-320.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-local/monitoramento-barragens-390.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-local/monitoramento-barragens-768.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-local/monitoramento-chuva-1440.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-local/monitoramento-chuva-320.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-local/monitoramento-chuva-390.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-local/monitoramento-chuva-768.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-local/monitoramento-previsao-1440.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-local/monitoramento-previsao-320.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-local/monitoramento-previsao-390.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-local/monitoramento-previsao-768.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-local/monitoramento-rios-1440.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-local/monitoramento-rios-320.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-local/monitoramento-rios-390.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-local/monitoramento-rios-768.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-local/plano-de-acao-1440.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-local/plano-de-acao-320.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-local/plano-de-acao-390.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-local/plano-de-acao-768.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-local/previsao-1440.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-local/previsao-320.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-local/previsao-390.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-local/previsao-768.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-local/rio-serie-1440.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-local/rio-serie-320.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-local/rio-serie-390.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-local/rio-serie-768.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-local/territorio-1440.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-local/territorio-320.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-local/territorio-390.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/ajustes-local/territorio-768.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/antes/checks.json",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/antes/dashboard-1440.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/antes/dashboard-320.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/antes/dashboard-390.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/antes/dashboard-768.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/antes/mapa-1440.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/antes/mapa-320.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/antes/mapa-390.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/antes/mapa-768.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/antes/monitoramento-rios-1440.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/antes/monitoramento-rios-320.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/antes/monitoramento-rios-390.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/antes/monitoramento-rios-768.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/antes/plano-de-acao-1440.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/antes/plano-de-acao-320.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/antes/plano-de-acao-390.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/antes/plano-de-acao-768.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/depois/checks.json",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/depois/dashboard-1440.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/depois/dashboard-320.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/depois/dashboard-390.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/depois/dashboard-768.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/depois/mapa-1440.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/depois/mapa-320.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/depois/mapa-390.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/depois/mapa-768.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/depois/monitoramento-rios-1440.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/depois/monitoramento-rios-320.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/depois/monitoramento-rios-390.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/depois/monitoramento-rios-768.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/depois/plano-de-acao-1440.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/depois/plano-de-acao-320.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/depois/plano-de-acao-390.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/depois/plano-de-acao-768.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-hml/base-1440.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-hml/base-320.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-hml/base-390.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-hml/base-768.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-hml/checks.json",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-hml/chuva-1440.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-hml/chuva-320.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-hml/chuva-390.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-hml/chuva-768.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-hml/dashboard-1440.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-hml/dashboard-320.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-hml/dashboard-390.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-hml/dashboard-768.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-hml/defesa-civil-1440.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-hml/defesa-civil-320.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-hml/defesa-civil-390.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-hml/defesa-civil-768.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-hml/mapa-1440.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-hml/mapa-320.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-hml/mapa-390.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-hml/mapa-768.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-hml/monitoramento-barragens-1440.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-hml/monitoramento-barragens-320.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-hml/monitoramento-barragens-390.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-hml/monitoramento-barragens-768.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-hml/monitoramento-chuva-1440.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-hml/monitoramento-chuva-320.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-hml/monitoramento-chuva-390.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-hml/monitoramento-chuva-768.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-hml/monitoramento-previsao-1440.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-hml/monitoramento-previsao-320.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-hml/monitoramento-previsao-390.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-hml/monitoramento-previsao-768.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-hml/monitoramento-rios-1440.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-hml/monitoramento-rios-320.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-hml/monitoramento-rios-390.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-hml/monitoramento-rios-768.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-hml/plano-de-acao-1440.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-hml/plano-de-acao-320.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-hml/plano-de-acao-390.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-hml/plano-de-acao-768.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-hml/previsao-1440.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-hml/previsao-320.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-hml/previsao-390.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-hml/previsao-768.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-hml/rio-serie-1440.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-hml/rio-serie-320.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-hml/rio-serie-390.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-hml/rio-serie-768.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-hml/territorio-1440.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-hml/territorio-320.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-hml/territorio-390.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-hml/territorio-768.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-local/base-1440.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-local/base-320.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-local/base-390.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-local/base-768.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-local/checks.json",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-local/chuva-1440.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-local/chuva-320.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-local/chuva-390.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-local/chuva-768.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-local/dashboard-1440.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-local/dashboard-320.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-local/dashboard-390.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-local/dashboard-768.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-local/defesa-civil-1440.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-local/defesa-civil-320.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-local/defesa-civil-390.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-local/defesa-civil-768.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-local/mapa-1440.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-local/mapa-320.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-local/mapa-390.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-local/mapa-768.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-local/monitoramento-barragens-1440.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-local/monitoramento-barragens-320.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-local/monitoramento-barragens-390.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-local/monitoramento-barragens-768.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-local/monitoramento-chuva-1440.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-local/monitoramento-chuva-320.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-local/monitoramento-chuva-390.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-local/monitoramento-chuva-768.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-local/monitoramento-previsao-1440.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-local/monitoramento-previsao-320.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-local/monitoramento-previsao-390.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-local/monitoramento-previsao-768.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-local/monitoramento-rios-1440.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-local/monitoramento-rios-320.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-local/monitoramento-rios-390.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-local/monitoramento-rios-768.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-local/plano-de-acao-1440.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-local/plano-de-acao-320.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-local/plano-de-acao-390.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-local/plano-de-acao-768.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-local/previsao-1440.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-local/previsao-320.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-local/previsao-390.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-local/previsao-768.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-local/rio-serie-1440.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-local/rio-serie-320.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-local/rio-serie-390.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-local/rio-serie-768.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-local/territorio-1440.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-local/territorio-320.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-local/territorio-390.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/fechamento-local/territorio-768.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/hml/checks.json",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/hml/dashboard-1440.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/hml/dashboard-320.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/hml/dashboard-390.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/hml/dashboard-768.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/hml/mapa-1440.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/hml/mapa-320.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/hml/mapa-390.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/hml/mapa-768.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/hml/monitoramento-rios-1440.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/hml/monitoramento-rios-320.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/hml/monitoramento-rios-390.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/hml/monitoramento-rios-768.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/hml/plano-de-acao-1440.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/hml/plano-de-acao-320.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/hml/plano-de-acao-390.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/hml/plano-de-acao-768.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/nomes/impacto-fixture.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/nomes/nomes-320.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/nomes/nomes-390.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/nomes/nomes-768.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "\"docs/fase-10-visual/nomes/nomes-A\\303\\251rea.png\"",
+      "decision": "preservado: adaptacao PRD, isolamento, configuracao ou teste de ambiente"
+    },
+    {
+      "path": "\"docs/fase-10-visual/nomes/nomes-Cartogr\\303\\241fica.png\"",
+      "decision": "preservado: adaptacao PRD, isolamento, configuracao ou teste de ambiente"
+    },
+    {
+      "path": "docs/fase-10-visual/nomes/nomes-Simplificada.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/fase-10-visual/nomes/nomes-proximo.png",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/hml-simulacao-alertas.md",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/integracao-teams-cards-hml.md",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/integracao-teams-implementacao-hml.md",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/integracao-teams-inspecao-hml.md",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/integracao-teams-layout-definitivo-hml.md",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/integracao-teams-matriz-eventos.md",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/integracao-teams-operacional-hml.md",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/integracao-teams-revisao-provisionamento.md",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/local-review.json",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/manutencao-v1-contatos-emergencia.md",
+      "decision": "promovido: commits homologados"
+    },
+    {
+      "path": "docs/operacao.md",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/prd-runbook.md",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/refinamento-central-planos-2026-10-26.md",
+      "decision": "promovido: commits homologados"
+    },
+    {
+      "path": "docs/v1-alertas-mapa-decisoes.md",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "docs/validacao-etapa-c.md",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "eslint.config.js",
+      "decision": "preservado: adaptacao PRD, isolamento, configuracao ou teste de ambiente"
+    },
+    {
+      "path": "package.json",
+      "decision": "preservado: adaptacao PRD, isolamento, configuracao ou teste de ambiente"
+    },
+    {
+      "path": "public/data/status.json",
+      "decision": "preservado: snapshot PRD, nao copiar dados HML"
+    },
+    {
+      "path": "scripts/automation/activate-hml-cron.sql",
+      "decision": "preservado: adaptacao PRD, isolamento, configuracao ou teste de ambiente"
+    },
+    {
+      "path": "scripts/automation/activate-prd-cron.sql",
+      "decision": "preservado: adaptacao PRD, isolamento, configuracao ou teste de ambiente"
+    },
+    {
+      "path": "scripts/automation/inspect-hml-cron.sql",
+      "decision": "preservado: adaptacao PRD, isolamento, configuracao ou teste de ambiente"
+    },
+    {
+      "path": "scripts/automation/pages-config.ts",
+      "decision": "preservado: adaptacao PRD, isolamento, configuracao ou teste de ambiente"
+    },
+    {
+      "path": "scripts/prd/baseline-payload.ts",
+      "decision": "preservado: adaptacao PRD, isolamento, configuracao ou teste de ambiente"
+    },
+    {
+      "path": "scripts/prd/bootstrap.ts",
+      "decision": "preservado: adaptacao PRD, isolamento, configuracao ou teste de ambiente"
+    },
+    {
+      "path": "scripts/prd/configure-core.ts",
+      "decision": "preservado: adaptacao PRD, isolamento, configuracao ou teste de ambiente"
+    },
+    {
+      "path": "scripts/prd/configure-prd.ps1",
+      "decision": "preservado: adaptacao PRD, isolamento, configuracao ou teste de ambiente"
+    },
+    {
+      "path": "scripts/prd/configure.ts",
+      "decision": "preservado: adaptacao PRD, isolamento, configuracao ou teste de ambiente"
+    },
+    {
+      "path": "scripts/prd/cron-prd.ps1",
+      "decision": "preservado: adaptacao PRD, isolamento, configuracao ou teste de ambiente"
+    },
+    {
+      "path": "scripts/prd/fixture.ts",
+      "decision": "preservado: adaptacao PRD, isolamento, configuracao ou teste de ambiente"
+    },
+    {
+      "path": "scripts/prd/provision-prd.ps1",
+      "decision": "preservado: adaptacao PRD, isolamento, configuracao ou teste de ambiente"
+    },
+    {
+      "path": "scripts/prd/verify-local.ts",
+      "decision": "preservado: adaptacao PRD, isolamento, configuracao ou teste de ambiente"
+    },
+    {
+      "path": "scripts/qa/blumenau-diagnostic.ts",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "scripts/qa/header-audio-smoke.ts",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "scripts/qa/phase10-adjustments-smoke.ts",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "scripts/qa/phase10-smoke.ts",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "scripts/qa/plan-table-smoke.ts",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "scripts/qa/v1-closure-smoke.ts",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "scripts/qa/validate-cron-evidence.ts",
+      "decision": "nao promovido: evidencia e ferramentas historicas HML"
+    },
+    {
+      "path": "scripts/teams/admin-hml.ps1",
+      "decision": "preservado: adaptacao PRD, isolamento, configuracao ou teste de ambiente"
+    },
+    {
+      "path": "scripts/teams/provision-hml.ps1",
+      "decision": "preservado: adaptacao PRD, isolamento, configuracao ou teste de ambiente"
+    },
+    {
+      "path": "scripts/teams/provision-safety.ts",
+      "decision": "preservado: adaptacao PRD, isolamento, configuracao ou teste de ambiente"
+    },
+    {
+      "path": "scripts/teams/provision.ts",
+      "decision": "preservado: adaptacao PRD, isolamento, configuracao ou teste de ambiente"
+    },
+    {
+      "path": "scripts/teams/reconcile.ts",
+      "decision": "preservado: adaptacao PRD, isolamento, configuracao ou teste de ambiente"
+    },
+    {
+      "path": "src/components/ActivationHierarchy.tsx",
+      "decision": "promovido: commits homologados"
+    },
+    {
+      "path": "src/components/DecisionMap.tsx",
+      "decision": "promovido: commits homologados"
+    },
+    {
+      "path": "src/components/EmergencyContacts.tsx",
+      "decision": "promovido: commits homologados"
+    },
+    {
+      "path": "src/components/ThemeToggle.tsx",
+      "decision": "preservado: adaptacao PRD, isolamento, configuracao ou teste de ambiente"
+    },
+    {
+      "path": "src/config/environment.ts",
+      "decision": "preservado: adaptacao PRD, isolamento, configuracao ou teste de ambiente"
+    },
+    {
+      "path": "src/content/action-plans.ts",
+      "decision": "promovido: commits homologados"
+    },
+    {
+      "path": "src/content/activation-hierarchy.ts",
+      "decision": "promovido: commits homologados"
+    },
+    {
+      "path": "src/content/area-plans.ts",
+      "decision": "promovido: commits homologados"
+    },
+    {
+      "path": "src/content/emergency-contacts.ts",
+      "decision": "promovido: commits homologados"
+    },
+    {
+      "path": "src/env.d.ts",
+      "decision": "preservado: adaptacao PRD, isolamento, configuracao ou teste de ambiente"
+    },
+    {
+      "path": "src/pages/ActionPlan.tsx",
+      "decision": "promovido: commits homologados"
+    },
+    {
+      "path": "src/pages/PlansCenter.tsx",
+      "decision": "promovido: commits homologados"
+    },
+    {
+      "path": "src/services/impact.ts",
+      "decision": "preservado: adaptacao PRD, isolamento, configuracao ou teste de ambiente"
+    },
+    {
+      "path": "src/styles.css",
+      "decision": "promovido: commits homologados"
+    },
+    {
+      "path": "supabase/config.toml",
+      "decision": "preservado: adaptacao PRD, isolamento, configuracao ou teste de ambiente"
+    },
+    {
+      "path": "supabase/functions/_shared/environment.ts",
+      "decision": "preservado: adaptacao PRD, isolamento, configuracao ou teste de ambiente"
+    },
+    {
+      "path": "supabase/functions/impacto-jbs/index.ts",
+      "decision": "preservado: adaptacao PRD, isolamento, configuracao ou teste de ambiente"
+    },
+    {
+      "path": "supabase/functions/teams-notifications/handler.ts",
+      "decision": "preservado: adaptacao PRD, isolamento, configuracao ou teste de ambiente"
+    },
+    {
+      "path": "supabase/functions/teams-notifications/index.ts",
+      "decision": "preservado: adaptacao PRD, isolamento, configuracao ou teste de ambiente"
+    },
+    {
+      "path": "supabase/functions/trigger-monitoramento/handler.ts",
+      "decision": "preservado: adaptacao PRD, isolamento, configuracao ou teste de ambiente"
+    },
+    {
+      "path": "supabase/functions/trigger-monitoramento/index.ts",
+      "decision": "preservado: adaptacao PRD, isolamento, configuracao ou teste de ambiente"
+    },
+    {
+      "path": "supabase/migrations/202610050001_monitoramento_cron.sql",
+      "decision": "preservado: adaptacao PRD, isolamento, configuracao ou teste de ambiente"
+    },
+    {
+      "path": "supabase/migrations/202610130001_teams_notifications.sql",
+      "decision": "preservado: adaptacao PRD, isolamento, configuracao ou teste de ambiente"
+    },
+    {
+      "path": "supabase/migrations/202610140001_teams_operational.sql",
+      "decision": "preservado: adaptacao PRD, isolamento, configuracao ou teste de ambiente"
+    },
+    {
+      "path": "tests/contracts.test.ts",
+      "decision": "preservado: adaptacao PRD, isolamento, configuracao ou teste de ambiente"
+    },
+    {
+      "path": "tests/emergency-contacts.test.tsx",
+      "decision": "promovido: commits homologados"
+    },
+    {
+      "path": "tests/fixtures/status-operacional.json",
+      "decision": "preservado: adaptacao PRD, isolamento, configuracao ou teste de ambiente"
+    },
+    {
+      "path": "tests/phase07.test.tsx",
+      "decision": "preservado: adaptacao PRD, isolamento, configuracao ou teste de ambiente"
+    },
+    {
+      "path": "tests/phase08.test.ts",
+      "decision": "preservado: adaptacao PRD, isolamento, configuracao ou teste de ambiente"
+    },
+    {
+      "path": "tests/phase10-cadence.test.ts",
+      "decision": "preservado: adaptacao PRD, isolamento, configuracao ou teste de ambiente"
+    },
+    {
+      "path": "tests/phase10-cron.test.ts",
+      "decision": "preservado: adaptacao PRD, isolamento, configuracao ou teste de ambiente"
+    },
+    {
+      "path": "tests/prd-build-isolation.test.ts",
+      "decision": "preservado: adaptacao PRD, isolamento, configuracao ou teste de ambiente"
+    },
+    {
+      "path": "tests/prd-configuration.test.ts",
+      "decision": "preservado: adaptacao PRD, isolamento, configuracao ou teste de ambiente"
+    },
+    {
+      "path": "tests/prd-cron.test.ts",
+      "decision": "preservado: adaptacao PRD, isolamento, configuracao ou teste de ambiente"
+    },
+    {
+      "path": "tests/prd-environment.test.ts",
+      "decision": "preservado: adaptacao PRD, isolamento, configuracao ou teste de ambiente"
+    },
+    {
+      "path": "tests/teams-db.test.ts",
+      "decision": "preservado: adaptacao PRD, isolamento, configuracao ou teste de ambiente"
+    },
+    {
+      "path": "tests/teams-operational-admin.test.ts",
+      "decision": "preservado: adaptacao PRD, isolamento, configuracao ou teste de ambiente"
+    },
+    {
+      "path": "tests/teams-provision.test.ts",
+      "decision": "preservado: adaptacao PRD, isolamento, configuracao ou teste de ambiente"
+    },
+    {
+      "path": "tests/teams-worker.test.ts",
+      "decision": "preservado: adaptacao PRD, isolamento, configuracao ou teste de ambiente"
+    },
+    {
+      "path": "tests/territory.test.ts",
+      "decision": "preservado: adaptacao PRD, isolamento, configuracao ou teste de ambiente"
+    },
+    {
+      "path": "tests/v1-alert-map.test.tsx",
+      "decision": "promovido: commits homologados"
+    },
+    {
+      "path": "tests/v1-closure.test.tsx",
+      "decision": "promovido: commits homologados"
+    },
+    {
+      "path": "vite.config.ts",
+      "decision": "preservado: adaptacao PRD, isolamento, configuracao ou teste de ambiente"
+    }
+  ]
+}

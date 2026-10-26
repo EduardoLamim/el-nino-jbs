@@ -1,12 +1,14 @@
-param(
+﻿param(
   [string]$ProjectRef,
   [ValidateSet('report','resolve','replay','disable','enable-operational','baseline')][string]$Action = 'report',
   [string]$DeliveryId,
   [ValidateSet('confirmed','dismissed','blocked')][string]$Status = 'confirmed',
   [string]$Reason,
-  [string]$ExpectedCommit
+  [string]$ExpectedCommit,
+  [switch]$DirectConnection
 )
 $ErrorActionPreference = 'Stop'
+. (Join-Path $PSScriptRoot 'admin-http.ps1')
 if ($ProjectRef -cnotmatch '^[a-z]{20}$' -or $ProjectRef -eq 'ufeahglxwygvlugfsopi' -or $ProjectRef -eq 'pppppppppppppppppppp') { throw 'Projeto PRD real obrigatório; HML e fixture recusados' }
 $payload = @{}
 $rpcAction = $Action
@@ -29,7 +31,7 @@ if ($Action -eq 'baseline') {
   if ((Read-Host 'Digite INICIALIZAR BASELINE PRD para confirmar baseline silenciosa') -cne 'INICIALIZAR BASELINE PRD') { throw 'Não confirmado' }
   $json = & node --import tsx (Join-Path $PSScriptRoot '../prd/baseline-payload.ts')
   if ($LASTEXITCODE -ne 0) { throw 'Baseline local rejeitada; nenhum acesso remoto iniciado' }
-  $payload = $json | ConvertFrom-Json -AsHashtable
+  $payload = $json | ConvertFrom-Json
   $rpcAction = 'bootstrap'
 }
 $secureToken = Read-Host 'PAT administrativo Supabase PRD (entrada oculta)' -AsSecureString
@@ -44,12 +46,15 @@ try {
     $body = @{ query = $query } | ConvertTo-Json -Depth 8
   } else { $body = @{ query = $query; parameters = @($rpcAction, ($payload | ConvertTo-Json -Compress)) } | ConvertTo-Json -Depth 8 }
   try {
-    $result = Invoke-RestMethod -Uri "https://api.supabase.com/v1/projects/$ProjectRef/database/query" -Method Post -Headers $headers -ContentType 'application/json' -Body $body -TimeoutSec 30
+    $result = Invoke-TeamsAdminHttp -DirectConnection:$DirectConnection -Uri "https://api.supabase.com/v1/projects/$ProjectRef/database/query" -Headers $headers -Body $body
     $directory = Join-Path $PSScriptRoot '..\..\.codex_work'
     New-Item -ItemType Directory -Force -Path $directory | Out-Null
     $result | ConvertTo-Json -Depth 12 | Set-Content -LiteralPath (Join-Path $directory 'teams-prd-admin-result.json') -Encoding UTF8
     Write-Output 'Operação administrativa concluída. Evidência sanitizada em .codex_work/teams-prd-admin-result.json.'
-  } catch { throw 'Consulta administrativa PRD falhou. Nenhum header, token ou corpo remoto foi exibido; não faça replay sem verificar.' }
+  } catch {
+    $failure = Get-TeamsAdminHttpFailure -Exception $_.Exception
+    throw "Consulta administrativa PRD falhou: categoria=$($failure.Category); HTTP=$($failure.HttpStatus). Nenhum token ou corpo remoto foi exibido. Verifique o estado antes de repetir."
+  }
 } finally {
   $headers = $null
   [Runtime.InteropServices.Marshal]::ZeroFreeBSTR($pointer)
