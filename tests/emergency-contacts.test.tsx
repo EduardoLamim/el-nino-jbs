@@ -37,11 +37,13 @@ it('compartilha o cartão com internos sem campos externos', () => {
   expect(container.querySelector('.contact-card')).toBeTruthy();
   expect(container.querySelectorAll('a,button,dl')).toHaveLength(0);
 });
-it('hierarquia vazia sem responsáveis inventados, fecha e retorna o foco', () => {
+it('hierarquia oficial com zoom, fecha e retorna o foco', () => {
   expect(activationHierarchy).toEqual([]);render(<ActivationHierarchy />);
   const trigger=screen.getByRole('button',{name:'Hierarquia de Acionamento'});fireEvent.click(trigger);
   expect(screen.getByRole('dialog',{name:'Hierarquia de Acionamento'})).toBeTruthy();
-  expect(screen.getByText('Hierarquia de acionamento ainda não cadastrada.')).toBeTruthy();
+  const image=screen.getByAltText('Fluxo de Acionamento El Niño — imagem oficial');
+  fireEvent.load(image); fireEvent.click(screen.getByRole('button',{name:'Ampliar zoom'})); expect(image.style.width).toBe('150%');
+  fireEvent.click(screen.getByRole('button',{name:'Ajustar à largura'})); expect(image.style.width).toBe('100%');
   fireEvent.click(screen.getByRole('button',{name:'Fechar hierarquia de acionamento'}));
   expect(screen.queryByRole('dialog')).toBeNull();expect(document.activeElement).toBe(trigger);
 });
