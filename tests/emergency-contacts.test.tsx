@@ -14,9 +14,11 @@ beforeEach(() => {
 afterEach(() => { cleanup(); vi.restoreAllMocks(); });
 it('preserva exatamente os sete contatos e tempos fornecidos pelo plano', () => {
   expect(externalContacts.map(c => [c.name,c.phone,c.travelMinutes])).toEqual([
-    ['Polícia Militar','190',10],['SAMU','192',10],['Corpo de Bombeiros','193',10],['Defesa Civil','199',16],['CODETRAN','153',8],['Hospital Mat. Marieta','3349-9400',5],['Base da Ambulância','0800 488 488',20],
+    ['Polícia Militar','190',10],['SAMU','192',10],['Corpo de Bombeiros','193',10],['Defesa Civil','199',16],['CODETRAN','153',8],['Hospital Mat. Marieta','3349-9400',5],['Base da Ambulância','Canal de rádio 9',20],
   ]);
-  expect(internalContacts).toEqual([{id:'cccom',category:'internal',name:'CCCOM',phone:'(47)9970-91600'}]);
+  expect(internalContacts.map(c=>[c.name,c.phone])).toEqual([
+    ['CCOS','(47)9970-91600'],['Airton de Araujo','(47) 99116-0195'],['Daiani Woloszyn','(47) 99288-5022'],['Jefferson Pampuch','(47) 99258-2898'],['Thiago Alexi','(47) 98456-4734'],['Carlos Ferreira','(47) 99123-0734'],['Fabio Reitz','(41) 9933-8540'],
+  ]);
 });
 it('modal oferece contatos legíveis sem links, cópia, endereço ou rotas', () => {
   render(<EmergencyContacts />);
@@ -27,7 +29,7 @@ it('modal oferece contatos legíveis sem links, cópia, endereço ou rotas', () 
   expect(screen.queryByText(/Endereço|Google Maps|Rota indisponível/)).toBeNull();
   expect(screen.getAllByText('10 minutos')).toHaveLength(3);
   fireEvent.keyDown(screen.getByRole('tab',{name:'Órgãos externos'}),{key:'ArrowRight'});
-  expect(screen.getByText('CCCOM')).toBeTruthy();expect(screen.getByText('(47)9970-91600')).toBeTruthy();
+  expect(screen.getByText('CCOS')).toBeTruthy();expect(screen.getByText('(47)9970-91600')).toBeTruthy();
   expect(screen.queryByText('Tempo de deslocamento até o terminal')).toBeNull();
   fireEvent.click(screen.getByRole('button',{name:'Fechar contatos de emergência'}));
   expect(screen.queryByRole('dialog')).toBeNull();expect(document.activeElement).toBe(trigger);
