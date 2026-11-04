@@ -1,6 +1,6 @@
 {
   "versao": 1,
-  "atualizado_em": "2026-11-04T17:51:02.531Z",
+  "atualizado_em": "2026-11-04T17:53:24.625Z",
   "nivel_jbs": {
     "nivel": "alerta",
     "desde": "2026-11-04T15:50:21.444000+00:00",
@@ -11,8 +11,8 @@
         "severidade": "alerta",
         "descricao": "Situação oficial da Defesa Civil de Itajaí em Alerta.",
         "atualizado_em": "2026-11-04T14:17:17-03:00",
-        "stale": true,
-        "motivo": "Situação oficial ausente, inválida, atrasada ou anterior à última conhecida."
+        "stale": false,
+        "motivo": null
       },
       {
         "tipo": "estacao_hidrologica",
@@ -86,12 +86,12 @@
   },
   "motor": {
     "versao": 1,
-    "avaliado_em": "2026-11-04T17:51:02.531Z",
+    "avaliado_em": "2026-11-04T17:53:24.625Z",
     "situacao_oficial": {
       "nivel": "alerta",
       "desde": "2026-11-04T13:47:22-03:00",
-      "stale": true,
-      "motivo": "Situação oficial ausente, inválida, atrasada ou anterior à última conhecida.",
+      "stale": false,
+      "motivo": null,
       "ultima_valida": {
         "flag": "Alerta",
         "conteudo": "Centro de baixa pressão aumenta as condições para a ocorrência de tempestades, descargas elétricas, queda pontual de granizo, enxurradas, alagamentos e vendavais, que podem causar danos no Litoral Norte de SC até a manhã desta quinta-feira (05).\r\nEmergência, ligue 199 ou 193.\r\n\r\nSala de Monitoramento e Alerta/Univali",
@@ -377,7 +377,12 @@
       }
     }
   },
-  "situacao_oficial": null,
+  "situacao_oficial": {
+    "flag": "Alerta",
+    "conteudo": "Centro de baixa pressão aumenta as condições para a ocorrência de tempestades, descargas elétricas, queda pontual de granizo, enxurradas, alagamentos e vendavais, que podem causar danos no Litoral Norte de SC até a manhã desta quinta-feira (05).\r\nEmergência, ligue 199 ou 193.\r\n\r\nSala de Monitoramento e Alerta/Univali",
+    "atualizado_em": "2026-11-04T14:17:17-03:00",
+    "qualidade": null
+  },
   "alertas_oficiais": null,
   "rios": {
     "DC01": {
@@ -9634,7 +9639,7 @@
     "uf": null,
     "regiao": null,
     "atualizado_em": null,
-    "coletado_em": "2026-11-04T17:51:02.389Z",
+    "coletado_em": "2026-11-04T17:53:24.443Z",
     "disponibilidade": "disponivel",
     "dias": [
       {
@@ -9747,7 +9752,7 @@
   "blumenau": {
     "nivel_m": 3.72,
     "medido_em": "2026-11-04T14:00:00-03:00",
-    "coletado_em": "2026-11-04T17:51:01.130Z",
+    "coletado_em": "2026-11-04T17:53:21.831Z",
     "classificacao_original": "Observação",
     "nivel": "atencao",
     "tendencia": "subindo",
@@ -9758,56 +9763,60 @@
   "qualidade_monitoramento": {
     "estado": "parcialmente_degradado",
     "problemas": [
-      "situacao_atual: https://monitoramento.defesacivil.itajai.sc.gov.br/api/v1/situacao-atual: HTTP 429 Too Many Requests",
-      "alertas_ativo: https://monitoramento.defesacivil.itajai.sc.gov.br/api/v1/alertas/ativo: HTTP 429 Too Many Requests",
+      "situacao_atual: Situação oficial não informa qualidade ou validade temporal.",
+      "alertas_ativo: Alerta complementar não nulo preservado; schema ainda não conhecido.",
       "rios: Séries sem qualidade explícita mantêm qualidade null; validade não inferida.",
       "chuvas: Campos de chuva ausentes ficam null; acumulados e séries não são recalculados.",
       "barragens/Barragem Ituporanga: qualidade atrasado.",
       "barragens/Barragem Taió: qualidade atrasado.",
       "barragens/Barragem José Boiteux: qualidade atrasado.",
       "epagri: Produto municipal JSON oficial não identifica modelo nem timestamp de emissão; campos mantidos null.",
-      "epagri: UF não informada no payload observado; município validado por nome e código oficial 4208203 de Itajaí/SC.",
-      "Situação oficial: Situação oficial ausente, inválida, atrasada ou anterior à última conhecida."
+      "epagri: UF não informada no payload observado; município validado por nome e código oficial 4208203 de Itajaí/SC."
     ]
   },
   "fontes": {
     "situacao_atual": {
       "nome": "Defesa Civil de Itajaí",
       "url": "https://monitoramento.defesacivil.itajai.sc.gov.br/api/v1/situacao-atual",
-      "qualidade": "indisponivel",
-      "atualizado_em": null,
+      "qualidade": null,
+      "atualizado_em": "2026-11-04T14:17:17-03:00",
       "atualizacao_esperada_segundos": null,
-      "coletado_em": "2026-11-04T17:51:01.151Z",
-      "resultado": "falha",
-      "motivo": "https://monitoramento.defesacivil.itajai.sc.gov.br/api/v1/situacao-atual: HTTP 429 Too Many Requests",
-      "avisos": [],
+      "coletado_em": "2026-11-04T17:53:21.851Z",
+      "resultado": "sucesso",
+      "motivo": null,
+      "avisos": [
+        "Situação oficial não informa qualidade ou validade temporal."
+      ],
       "requisicoes": [
         {
           "url": "https://monitoramento.defesacivil.itajai.sc.gov.br/api/v1/situacao-atual",
-          "coletado_em": "2026-11-04T17:51:01.151Z",
-          "http_status": 429,
-          "erro": "HTTP 429 Too Many Requests",
-          "resposta_erro": "{\"message\":\"Limite de requisi\\u00e7\\u00f5es atingido. Aguarde antes de tentar novamente.\"}"
+          "coletado_em": "2026-11-04T17:53:21.851Z",
+          "http_status": 200,
+          "erro": null,
+          "resposta_erro": null
         }
       ]
     },
     "alertas_ativo": {
       "nome": "Defesa Civil de Itajaí",
       "url": "https://monitoramento.defesacivil.itajai.sc.gov.br/api/v1/alertas/ativo",
-      "qualidade": "indisponivel",
+      "qualidade": null,
       "atualizado_em": null,
       "atualizacao_esperada_segundos": null,
-      "coletado_em": "2026-11-04T17:51:01.181Z",
-      "resultado": "falha",
-      "motivo": "https://monitoramento.defesacivil.itajai.sc.gov.br/api/v1/alertas/ativo: HTTP 429 Too Many Requests",
-      "avisos": [],
+      "coletado_em": "2026-11-04T17:53:21.880Z",
+      "resultado": "sucesso",
+      "motivo": null,
+      "avisos": [
+        "Alerta complementar não nulo preservado; schema ainda não conhecido."
+      ],
+      "payload_nao_normalizado_json": "{\"id\":24,\"titulo\":\"Alerta ..\",\"conteudo_html\":\"\",\"link\":\"https://itajai.sc.gov.br/noticias/37999/defesa-civil-orienta-atencao-a-tempestades-em-itajai-ate-a-manha-de-quinta-5\",\"inicio_em\":\"2026-11-04T07:59:00-03:00\",\"fim_em\":\"2026-11-05T06:58:00-03:00\",\"imagem\":{\"url\":\"https://monitoramento.defesacivil.itajai.sc.gov.br/api/v1/alertas/24/imagem?v=bfb9ea17f530\",\"mime_type\":\"image/jpeg\",\"tamanho\":91809},\"atualizado_em\":\"2026-11-04T13:04:10-03:00\"}",
       "requisicoes": [
         {
           "url": "https://monitoramento.defesacivil.itajai.sc.gov.br/api/v1/alertas/ativo",
-          "coletado_em": "2026-11-04T17:51:01.181Z",
-          "http_status": 429,
-          "erro": "HTTP 429 Too Many Requests",
-          "resposta_erro": "{\"message\":\"Limite de requisi\\u00e7\\u00f5es atingido. Aguarde antes de tentar novamente.\"}"
+          "coletado_em": "2026-11-04T17:53:21.880Z",
+          "http_status": 200,
+          "erro": null,
+          "resposta_erro": null
         }
       ]
     },
@@ -9817,7 +9826,7 @@
       "qualidade": "atualizado",
       "atualizado_em": null,
       "atualizacao_esperada_segundos": null,
-      "coletado_em": "2026-11-04T17:51:01.182Z",
+      "coletado_em": "2026-11-04T17:53:21.882Z",
       "resultado": "sucesso",
       "motivo": null,
       "avisos": [
@@ -9826,7 +9835,7 @@
       "requisicoes": [
         {
           "url": "https://monitoramento.defesacivil.itajai.sc.gov.br/monitoramento/rios?municipio_id=1",
-          "coletado_em": "2026-11-04T17:51:01.182Z",
+          "coletado_em": "2026-11-04T17:53:21.882Z",
           "http_status": 200,
           "erro": null,
           "resposta_erro": null
@@ -9839,7 +9848,7 @@
       "qualidade": "atualizado",
       "atualizado_em": null,
       "atualizacao_esperada_segundos": null,
-      "coletado_em": "2026-11-04T17:51:01.183Z",
+      "coletado_em": "2026-11-04T17:53:21.883Z",
       "resultado": "sucesso",
       "motivo": null,
       "avisos": [
@@ -9848,7 +9857,7 @@
       "requisicoes": [
         {
           "url": "https://monitoramento.defesacivil.itajai.sc.gov.br/monitoramento/chuvas?municipio_id=1",
-          "coletado_em": "2026-11-04T17:51:01.183Z",
+          "coletado_em": "2026-11-04T17:53:21.883Z",
           "http_status": 200,
           "erro": null,
           "resposta_erro": null
@@ -9861,14 +9870,14 @@
       "qualidade": "atrasado",
       "atualizado_em": null,
       "atualizacao_esperada_segundos": null,
-      "coletado_em": "2026-11-04T17:51:01.184Z",
+      "coletado_em": "2026-11-04T17:53:21.884Z",
       "resultado": "sucesso",
       "motivo": null,
       "avisos": [],
       "requisicoes": [
         {
           "url": "https://monitoramento.defesacivil.itajai.sc.gov.br/monitoramento/barragens?municipio_id=1",
-          "coletado_em": "2026-11-04T17:51:01.184Z",
+          "coletado_em": "2026-11-04T17:53:21.884Z",
           "http_status": 200,
           "erro": null,
           "resposta_erro": null
@@ -9881,7 +9890,7 @@
       "qualidade": null,
       "atualizado_em": null,
       "atualizacao_esperada_segundos": null,
-      "coletado_em": "2026-11-04T17:51:01.186Z",
+      "coletado_em": "2026-11-04T17:53:21.885Z",
       "resultado": "sucesso",
       "motivo": null,
       "avisos": [
@@ -9891,14 +9900,14 @@
       "requisicoes": [
         {
           "url": "https://ciram.epagri.sc.gov.br/api/prevmuni-server/resources/listaJson/muni",
-          "coletado_em": "2026-11-04T17:51:01.186Z",
+          "coletado_em": "2026-11-04T17:53:21.885Z",
           "http_status": 200,
           "erro": null,
           "resposta_erro": null
         },
         {
           "url": "https://ciram.epagri.sc.gov.br/api/prevmuni-server/resources/listaJson/prevMuniDia?cdCidade=4208203",
-          "coletado_em": "2026-11-04T17:51:02.389Z",
+          "coletado_em": "2026-11-04T17:53:24.443Z",
           "http_status": 200,
           "erro": null,
           "resposta_erro": null
