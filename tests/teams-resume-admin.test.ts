@@ -8,6 +8,7 @@ it.skipIf(process.platform !== 'win32').each(['cancel','changed','uncertain','su
     $b=[Text.Encoding]::UTF8.GetString($Body) | ConvertFrom-Json;
     if($Uri -like '*ufeahglxwygvlugfsopi*'){if($b.query -ne 'select mode,live_until from jbs_notifications.settings where id=true'){throw 'HML_WRITE'}; return @{mode='disabled';live_until=$null}}
     if($b.query -like '*to_regprocedure*'){return @{installed=$true;recorded=$true}}
+    if($b.query -like '*202611060001*'){return @{recorded=$true}}
     if($b.query -like '*old_unresolved*'){return @{old_unresolved=0;old_eligible=0}}
     if($b.query -like '*resume_operational*'){$global:resumes++; if('${scenario}' -eq 'uncertain'){throw (New-Object Net.WebException('do-not-log', [Net.WebExceptionStatus]::Timeout))}; return @{result=@{mode='operational';dismissed=51}}}
     if($b.query -like '*execute*report*'){$global:reports++; $sha='${'a'.repeat(40)}'; if('${scenario}' -eq 'changed' -and $global:reports -gt 1){$sha='${'b'.repeat(40)}'}; return @{result=@{mode='operational';checkpoint=$sha;operational_since='2026-10-19T18:07:47Z';queue_summary=@{in_flight=0;uncertain=0;eligible_pending=37}}}}

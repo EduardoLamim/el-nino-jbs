@@ -1,9 +1,12 @@
-﻿param([switch]$DirectConnection)
+﻿param([switch]$DirectConnection,
+  [ValidateSet('Retomada operacional após ativação do fluxo Power Automate; notificações históricas não reenviadas para evitar alertas desatualizados.','Retomada operacional após atualização do webhook Power Automate PRD; notificações anteriores não reenviadas para evitar alertas desatualizados.','Retomada operacional após recuperação do reconciliador e correção da validação de origem dos snapshots; notificações anteriores não reenviadas para evitar alertas desatualizados.')][string]$Reason='Retomada operacional após ativação do fluxo Power Automate; notificações históricas não reenviadas para evitar alertas desatualizados.'
+)
 $ErrorActionPreference = 'Stop'
 . (Join-Path $PSScriptRoot 'admin-http.ps1')
 $project = 'gqbqqconxrjcarvynwvl'
 $hml = 'ufeahglxwygvlugfsopi'
-$reason = 'Retomada operacional após ativação do fluxo Power Automate; notificações históricas não reenviadas para evitar alertas desatualizados.'
+$recoveryReason = 'Retomada operacional após recuperação do reconciliador e correção da validação de origem dos snapshots; notificações anteriores não reenviadas para evitar alertas desatualizados.'
+$expectedMode = if ($Reason -ceq $recoveryReason) { 'disabled' } else { 'operational' }
 $evidence = [ordered]@{ project=$project; started_at=[DateTime]::UtcNow.ToString('o'); stage='read_preflight' }
 $secureToken = Read-Host 'PAT administrativo Supabase com acesso ao PRD e leitura HML (entrada oculta)' -AsSecureString
 $pointer = [Runtime.InteropServices.Marshal]::SecureStringToBSTR($secureToken)
@@ -20,7 +23,7 @@ try {
   if ($hmlState.mode -ne 'disabled') { throw 'HML is not disabled; stop without changes' }
   $before = @(Query $project "select jbs_notifications.execute('report') as result")[0].result
   $evidence.before=$before
-  if ($before.mode -ne 'operational' -or $before.queue_summary.in_flight -ne 0 -or $before.queue_summary.uncertain -ne 0) { throw 'Unsafe operational state; no changes' }
+  if ($before.mode -ne $expectedMode -or $before.queue_summary.in_flight -ne 0 -or $before.queue_summary.uncertain -ne 0) { throw 'Unsafe operational state; no changes' }
   if ($before.checkpoint -cnotmatch '^[a-f0-9]{40}$' -or !$before.operational_since) { throw 'Missing checkpoint or cutoff' }
   Write-Output ('Checkpoint conferido: '+$before.checkpoint)
   Write-Output ('Pendencias elegiveis: '+$before.queue_summary.eligible_pending)
@@ -35,9 +38,16 @@ try {
     $sql = $sql.Replace('commit;', "insert into supabase_migrations.schema_migrations(version,name,statements) values('202610260001','teams_resume',ARRAY[]::text[]);`ncommit;")
     Query $project $sql | Out-Null
   }
+  $extension = @(Query $project "select exists(select 1 from supabase_migrations.schema_migrations where version='202611060001') as recorded")[0]
+  if (!$extension.recorded) {
+    $evidence.stage='migration_application'
+    $sql = [IO.File]::ReadAllText((Join-Path $PSScriptRoot '../../supabase/migrations/202611060001_teams_resume_provenance.sql'))
+    $sql = $sql.Replace('commit;', "insert into supabase_migrations.schema_migrations(version,name,statements) values('202611060001','teams_resume_provenance',ARRAY[]::text[]);`ncommit;")
+    Query $project $sql | Out-Null
+  }
   # Compare the original report again. Never silently adopt a new checkpoint.
   $current = @(Query $project "select jbs_notifications.execute('report') as result")[0].result
-  if ($current.checkpoint -cne $before.checkpoint -or $current.operational_since -cne $before.operational_since) { throw 'Checkpoint or cutoff changed; migration may be installed but no resume was attempted' }
+  if ($current.mode -cne $expectedMode -or $current.queue_summary.in_flight -ne 0 -or $current.queue_summary.uncertain -ne 0 -or $current.checkpoint -cne $before.checkpoint -or $current.operational_since -cne $before.operational_since) { throw 'Checkpoint or cutoff changed; migration may be installed but no resume was attempted' }
   $evidence.stage='resume_attempt'
   $evidence.resume = @(Query $project 'select jbs_notifications.resume_operational($1,$2::timestamptz,$3) as result' @($before.checkpoint,$before.operational_since,$reason))[0].result
   $evidence.stage='postflight'

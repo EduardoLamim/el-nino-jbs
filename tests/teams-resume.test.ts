@@ -6,7 +6,7 @@ const sha = 'a'.repeat(40);
 const reason = 'Retomada operacional após ativação do fluxo Power Automate; notificações históricas não reenviadas para evitar alertas desatualizados.';
 beforeAll(async () => {
   db = new PGlite(); await db.exec('create role anon; create role authenticated;');
-  for (const name of ['202610020001_impactos_jbs','202610130001_teams_notifications','202610140001_teams_operational','202610260001_teams_resume']) {
+  for (const name of ['202610020001_impactos_jbs','202610130001_teams_notifications','202610140001_teams_operational','202610260001_teams_resume','202611060001_teams_resume_provenance']) {
     await db.exec(readFileSync(`supabase/migrations/${name}.sql`,'utf8'));
   }
 },30000);
@@ -55,4 +55,19 @@ it('rollback integral se auditoria falhar',async()=>{
     expect((await db.query<Record<string, unknown>>("select count(*)::int n from jbs_notifications.outbox where status='dismissed'")).rows[0]!.n).toBe(0);
     expect(await state()).toContain('2026-10-19');
   } finally { await db.exec('drop trigger fail_audit on jbs_notifications.audit'); }
+});
+
+it('recupera disabled atomicamente sem enviar histórico e rejeita motivo arbitrário',async()=>{
+ await db.exec("update jbs_notifications.settings set mode='disabled'");
+ await expect(resume()).rejects.toThrow('checkpoint changed');
+ await expect(db.query('select jbs_notifications.resume_operational($1,$2::timestamptz,$3)',[sha,'2026-10-19T18:07:47Z','arbitrário'])).rejects.toThrow();
+ const before=await db.query('select * from jbs_notifications.attempts');
+ const r=await db.query<Record<string,unknown>>('select jbs_notifications.resume_operational($1,$2::timestamptz,$3) r',[sha,'2026-10-19T18:07:47Z','Retomada operacional após recuperação do reconciliador e correção da validação de origem dos snapshots; notificações anteriores não reenviadas para evitar alertas desatualizados.']);
+ expect(r.rows[0]!.r).toMatchObject({mode:'operational',dismissed:51});
+ expect(await db.query('select * from jbs_notifications.attempts')).toEqual(before);
+ expect((await db.query<Record<string,unknown>>("select jbs_notifications.execute('claim') r")).rows[0]!.r).toBeNull();
+});
+it('preserva justificativa aprovada da atualização do webhook',async()=>{
+ const r=await db.query<Record<string,unknown>>('select jbs_notifications.resume_operational($1,$2::timestamptz,$3) r',[sha,'2026-10-19T18:07:47Z','Retomada operacional após atualização do webhook Power Automate PRD; notificações anteriores não reenviadas para evitar alertas desatualizados.']);
+ expect(r.rows[0]!.r).toMatchObject({dismissed:51});
 });

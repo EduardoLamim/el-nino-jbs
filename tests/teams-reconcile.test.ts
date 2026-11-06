@@ -22,3 +22,15 @@ describe('Teams — reconciliação independente', () => {
     expect(trustedSnapshotCommit(bot,'Atualizar snapshot operacional validado',['public/data/status.json','src/motor.ts'])).toBe(false);
   });
 });
+it('retoma lote pelo último checkpoint persistido sem reprocessar histórico',async()=>{
+ const a='a'.repeat(40),b='b'.repeat(40),c='c'.repeat(40); let cursor=a;
+ const call=vi.fn(async(action:string,p?:Record<string,unknown>)=>{
+  if(action==='checkpoint')return {commit:cursor};
+  if(action==='snapshot'){expect(p!.previous_commit).toBe(cursor);cursor=p!.commit as string;return {};}
+  return action==='impacts'?{reconciled:0}:{status:'idle'};
+ });
+ const snapshot=vi.fn(async()=>({collected_at:'2026-11-01T08:03:09Z',level:'atencao',since:null,reasons:[]}));
+ const deps={call,snapshot,commits:(s:string)=>s===a?[b,c]:[c],maxSnapshots:1};
+ expect((await reconcile(deps)).snapshots).toBe('partial'); expect(cursor).toBe(b);
+ expect((await reconcile(deps)).snapshots).toBe('ok'); expect(cursor).toBe(c);expect(snapshot).toHaveBeenCalledTimes(2);
+});
