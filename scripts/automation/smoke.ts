@@ -27,9 +27,9 @@ function observe(page: Page) {
 try {
   const page = await browser.newPage({ viewport: { width: 1280, height: 900 } }); observe(page);
   const requests: string[] = []; page.on('request', r => requests.push(r.url()));
-  await page.goto(url + '#/dashboard'); await page.getByRole('button', { name: 'Acionar Impacto JBS' }).waitFor();
+  await page.goto(url + '#/dashboard'); await page.getByRole('button', { name: 'Acionar Impacto Operacional' }).waitFor();
   assert(!requests.some(u => /TerritoryMap|data\/historico\//.test(u)));
-  await page.getByRole('button', { name: 'Acionar Impacto JBS' }).click(); await page.getByLabel('PIN', { exact: true }).waitFor(); await page.getByRole('button', { name: 'Cancelar', exact: true }).click();
+  await page.getByRole('button', { name: 'Acionar Impacto Operacional' }).click(); await page.getByLabel('PIN', { exact: true }).waitFor(); await page.getByRole('button', { name: 'Cancelar', exact: true }).click();
   for (const name of ['Monitoramento', 'Mapa', 'Central de Planos', 'Dashboard']) { await page.getByRole('link', { name, exact: true }).click(); await page.waitForTimeout(150); }
   report.checks.push('Navegação pelas quatro páginas; formulário Impacto acessível sem enviar comando; Dashboard sem chunks do mapa.');
   for (const route of ['dashboard', 'monitoramento/rios', 'monitoramento/chuva', 'monitoramento/barragens', 'monitoramento/previsao', 'mapa', 'plano-de-acao']) {
@@ -37,7 +37,7 @@ try {
     if (route === 'mapa') await page.getByLabel('Consultar estação').waitFor();
     else if (route === 'plano-de-acao') await page.getByRole('heading', { name: /^Plano de Ação/ }).waitFor();
     else if (route.startsWith('monitoramento')) await page.getByRole('heading', { name: 'Monitoramento', exact: true }).waitFor();
-    else await page.getByRole('heading', { name: 'Exposição Territorial JBS' }).waitFor();
+    else await page.getByRole('heading', { name: 'Exposição Territorial' }).waitFor();
     assert.equal(await page.getByText('Página não encontrada', { exact: true }).count(), 0);
   }
   report.checks.push('Acesso direto e refresh em rotas hash, incluindo seções de Monitoramento.');
