@@ -1,6 +1,6 @@
 {
   "versao": 1,
-  "atualizado_em": "2026-11-07T10:42:24.423Z",
+  "atualizado_em": "2026-11-07T10:52:20.165Z",
   "nivel_jbs": {
     "nivel": "emergencia",
     "desde": "2026-11-07T10:15:46.054000+00:00",
@@ -8,9 +8,9 @@
       {
         "tipo": "situacao_oficial",
         "origem": "Defesa Civil de Itajaí",
-        "severidade": "atencao",
-        "descricao": "Situação oficial da Defesa Civil de Itajaí em Atenção.",
-        "atualizado_em": "2026-11-07T07:42:00-03:00",
+        "severidade": "alerta",
+        "descricao": "Situação oficial da Defesa Civil de Itajaí em Alerta.",
+        "atualizado_em": "2026-11-07T07:50:09-03:00",
         "stale": false,
         "motivo": null
       },
@@ -86,16 +86,16 @@
   },
   "motor": {
     "versao": 1,
-    "avaliado_em": "2026-11-07T10:42:24.423Z",
+    "avaliado_em": "2026-11-07T10:52:20.165Z",
     "situacao_oficial": {
-      "nivel": "atencao",
-      "desde": "2026-11-05T13:05:49-03:00",
+      "nivel": "alerta",
+      "desde": "2026-11-07T07:50:09-03:00",
       "stale": false,
       "motivo": null,
       "ultima_valida": {
-        "flag": "Atenção",
-        "conteudo": "Nas próximas horas, mantém-se a condição para pancadas de chuva e temporais. Segue o risco de enxurradas, deslizamentos e alagamentos pontuais.\r\n\r\nAtenção: há risco de ventos fortes.\r\n\r\nAtenção: há risco de ventos fortes neste fim de semana no Litoral.\r\n\r\nFiquem atentos aos avisos e Alertas.\r\n\r\nEmergência, ligue 199 ou 193.\r\n\r\nSala Monitoramento e Alerta/",
-        "atualizado_em": "2026-11-07T07:42:00-03:00",
+        "flag": "Alerta",
+        "conteudo": "Nas próximas horas, mantém-se a condição para pancadas \r\n de chuva e temporais. Segue o risco de enxurradas, deslizamentos e alagamentos e queda de granizo.\r\n\r\nAtenção: há risco de ventos fortes.\r\n\r\nAtenção: há risco de ventos fortes neste fim de semana no Litoral.\r\n\r\nFiquem atentos aos avisos e Alertas.\r\n\r\nEmergência, ligue 199 ou 193.\r\n\r\nSala Monitoramento e Alerta/",
+        "atualizado_em": "2026-11-07T07:50:09-03:00",
         "qualidade": null
       }
     },
@@ -378,9 +378,9 @@
     }
   },
   "situacao_oficial": {
-    "flag": "Atenção",
-    "conteudo": "Nas próximas horas, mantém-se a condição para pancadas de chuva e temporais. Segue o risco de enxurradas, deslizamentos e alagamentos pontuais.\r\n\r\nAtenção: há risco de ventos fortes.\r\n\r\nAtenção: há risco de ventos fortes neste fim de semana no Litoral.\r\n\r\nFiquem atentos aos avisos e Alertas.\r\n\r\nEmergência, ligue 199 ou 193.\r\n\r\nSala Monitoramento e Alerta/",
-    "atualizado_em": "2026-11-07T07:42:00-03:00",
+    "flag": "Alerta",
+    "conteudo": "Nas próximas horas, mantém-se a condição para pancadas \r\n de chuva e temporais. Segue o risco de enxurradas, deslizamentos e alagamentos e queda de granizo.\r\n\r\nAtenção: há risco de ventos fortes.\r\n\r\nAtenção: há risco de ventos fortes neste fim de semana no Litoral.\r\n\r\nFiquem atentos aos avisos e Alertas.\r\n\r\nEmergência, ligue 199 ou 193.\r\n\r\nSala Monitoramento e Alerta/",
+    "atualizado_em": "2026-11-07T07:50:09-03:00",
     "qualidade": null
   },
   "alertas_oficiais": null,
@@ -10019,7 +10019,7 @@
     "uf": null,
     "regiao": null,
     "atualizado_em": null,
-    "coletado_em": "2026-11-07T10:42:24.139Z",
+    "coletado_em": "2026-11-07T10:52:19.999Z",
     "disponibilidade": "disponivel",
     "dias": [
       {
@@ -10132,7 +10132,7 @@
   "blumenau": {
     "nivel_m": 4.15,
     "medido_em": "2026-11-07T07:00:00-03:00",
-    "coletado_em": "2026-11-07T10:42:22.043Z",
+    "coletado_em": "2026-11-07T10:52:17.779Z",
     "classificacao_original": "Atenção",
     "nivel": "atencao",
     "tendencia": "subindo",
@@ -10158,9 +10158,9 @@
       "nome": "Defesa Civil de Itajaí",
       "url": "https://monitoramento.defesacivil.itajai.sc.gov.br/api/v1/situacao-atual",
       "qualidade": null,
-      "atualizado_em": "2026-11-07T07:42:00-03:00",
+      "atualizado_em": "2026-11-07T07:50:09-03:00",
       "atualizacao_esperada_segundos": null,
-      "coletado_em": "2026-11-07T10:42:22.066Z",
+      "coletado_em": "2026-11-07T10:52:17.795Z",
       "resultado": "sucesso",
       "motivo": null,
       "avisos": [
@@ -10169,7 +10169,7 @@
       "requisicoes": [
         {
           "url": "https://monitoramento.defesacivil.itajai.sc.gov.br/api/v1/situacao-atual",
-          "coletado_em": "2026-11-07T10:42:22.066Z",
+          "coletado_em": "2026-11-07T10:52:17.795Z",
           "http_status": 200,
           "erro": null,
           "resposta_erro": null
@@ -10182,14 +10182,14 @@
       "qualidade": null,
       "atualizado_em": null,
       "atualizacao_esperada_segundos": null,
-      "coletado_em": "2026-11-07T10:42:22.098Z",
+      "coletado_em": "2026-11-07T10:52:17.817Z",
       "resultado": "sucesso",
       "motivo": null,
       "avisos": [],
       "requisicoes": [
         {
           "url": "https://monitoramento.defesacivil.itajai.sc.gov.br/api/v1/alertas/ativo",
-          "coletado_em": "2026-11-07T10:42:22.098Z",
+          "coletado_em": "2026-11-07T10:52:17.817Z",
           "http_status": 200,
           "erro": null,
           "resposta_erro": null
@@ -10202,7 +10202,7 @@
       "qualidade": "atualizado",
       "atualizado_em": null,
       "atualizacao_esperada_segundos": null,
-      "coletado_em": "2026-11-07T10:42:22.099Z",
+      "coletado_em": "2026-11-07T10:52:17.818Z",
       "resultado": "sucesso",
       "motivo": null,
       "avisos": [
@@ -10211,7 +10211,7 @@
       "requisicoes": [
         {
           "url": "https://monitoramento.defesacivil.itajai.sc.gov.br/monitoramento/rios?municipio_id=1",
-          "coletado_em": "2026-11-07T10:42:22.099Z",
+          "coletado_em": "2026-11-07T10:52:17.818Z",
           "http_status": 200,
           "erro": null,
           "resposta_erro": null
@@ -10224,7 +10224,7 @@
       "qualidade": "atualizado",
       "atualizado_em": null,
       "atualizacao_esperada_segundos": null,
-      "coletado_em": "2026-11-07T10:42:22.100Z",
+      "coletado_em": "2026-11-07T10:52:17.819Z",
       "resultado": "sucesso",
       "motivo": null,
       "avisos": [
@@ -10233,7 +10233,7 @@
       "requisicoes": [
         {
           "url": "https://monitoramento.defesacivil.itajai.sc.gov.br/monitoramento/chuvas?municipio_id=1",
-          "coletado_em": "2026-11-07T10:42:22.100Z",
+          "coletado_em": "2026-11-07T10:52:17.819Z",
           "http_status": 200,
           "erro": null,
           "resposta_erro": null
@@ -10246,14 +10246,14 @@
       "qualidade": "atrasado",
       "atualizado_em": null,
       "atualizacao_esperada_segundos": null,
-      "coletado_em": "2026-11-07T10:42:22.101Z",
+      "coletado_em": "2026-11-07T10:52:17.820Z",
       "resultado": "sucesso",
       "motivo": null,
       "avisos": [],
       "requisicoes": [
         {
           "url": "https://monitoramento.defesacivil.itajai.sc.gov.br/monitoramento/barragens?municipio_id=1",
-          "coletado_em": "2026-11-07T10:42:22.101Z",
+          "coletado_em": "2026-11-07T10:52:17.820Z",
           "http_status": 200,
           "erro": null,
           "resposta_erro": null
@@ -10266,7 +10266,7 @@
       "qualidade": null,
       "atualizado_em": null,
       "atualizacao_esperada_segundos": null,
-      "coletado_em": "2026-11-07T10:42:22.102Z",
+      "coletado_em": "2026-11-07T10:52:17.821Z",
       "resultado": "sucesso",
       "motivo": null,
       "avisos": [
@@ -10276,14 +10276,14 @@
       "requisicoes": [
         {
           "url": "https://ciram.epagri.sc.gov.br/api/prevmuni-server/resources/listaJson/muni",
-          "coletado_em": "2026-11-07T10:42:22.102Z",
+          "coletado_em": "2026-11-07T10:52:17.821Z",
           "http_status": 200,
           "erro": null,
           "resposta_erro": null
         },
         {
           "url": "https://ciram.epagri.sc.gov.br/api/prevmuni-server/resources/listaJson/prevMuniDia?cdCidade=4208203",
-          "coletado_em": "2026-11-07T10:42:24.139Z",
+          "coletado_em": "2026-11-07T10:52:19.999Z",
           "http_status": 200,
           "erro": null,
           "resposta_erro": null
