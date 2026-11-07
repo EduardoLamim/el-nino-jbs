@@ -1,6 +1,6 @@
 {
   "versao": 1,
-  "atualizado_em": "2026-11-07T12:42:18.846Z",
+  "atualizado_em": "2026-11-07T12:52:23.667Z",
   "nivel_jbs": {
     "nivel": "alerta",
     "desde": "2026-11-07T11:50:35.577000+00:00",
@@ -19,13 +19,13 @@
         "origem": "DC05",
         "severidade": "atencao",
         "descricao": "DC05 — Rio Itajaí-Mirim (curso antigo) - Propriedade privada: estado hidrológico Atenção.",
-        "atualizado_em": "2026-11-07T12:31:06.781000+00:00",
+        "atualizado_em": "2026-11-07T12:41:06.915000+00:00",
         "stale": false,
         "motivo": null,
         "nome": "Rio Itajaí-Mirim (curso antigo) - Propriedade privada",
-        "nivel_observado_m": 1.73,
+        "nivel_observado_m": 1.75,
         "limite_responsavel_m": 1.6,
-        "tendencia": "estavel",
+        "tendencia": "subindo",
         "normalizacao": {
           "leituras_abaixo": 0,
           "necessarias": 3
@@ -34,17 +34,17 @@
       {
         "tipo": "estacao_hidrologica",
         "origem": "DC07",
-        "severidade": "alerta",
-        "descricao": "DC07 — Ribeirão da Murta - Portal: estado hidrológico Alerta.",
-        "atualizado_em": "2026-11-07T12:30:35.411000+00:00",
+        "severidade": "atencao",
+        "descricao": "DC07 — Ribeirão da Murta - Portal: estado hidrológico Atenção.",
+        "atualizado_em": "2026-11-07T12:40:35.721000+00:00",
         "stale": false,
         "motivo": null,
         "nome": "Ribeirão da Murta - Portal",
-        "nivel_observado_m": 1.33,
-        "limite_responsavel_m": 1.4,
+        "nivel_observado_m": 1.29,
+        "limite_responsavel_m": 1,
         "tendencia": "descendo",
         "normalizacao": {
-          "leituras_abaixo": 2,
+          "leituras_abaixo": 0,
           "necessarias": 3
         }
       },
@@ -53,11 +53,11 @@
         "origem": "DC08",
         "severidade": "alerta",
         "descricao": "DC08 — Ribeirão Canhanduba - Rua Benjamin Dagnoni: estado hidrológico Alerta.",
-        "atualizado_em": "2026-11-07T12:30:21.480000+00:00",
+        "atualizado_em": "2026-11-07T12:40:21.591000+00:00",
         "stale": false,
         "motivo": null,
         "nome": "Ribeirão Canhanduba - Rua Benjamin Dagnoni",
-        "nivel_observado_m": 2.5,
+        "nivel_observado_m": 2.54,
         "limite_responsavel_m": 2.3,
         "tendencia": "subindo",
         "normalizacao": {
@@ -70,13 +70,13 @@
         "origem": "DC09",
         "severidade": "atencao",
         "descricao": "DC09 — Ribeirão da Murta - Ponte da Rua Lidia Puel Peixer: estado hidrológico Atenção.",
-        "atualizado_em": "2026-11-07T12:30:05.297000+00:00",
+        "atualizado_em": "2026-11-07T12:40:14.805000+00:00",
         "stale": false,
         "motivo": null,
         "nome": "Ribeirão da Murta - Ponte da Rua Lidia Puel Peixer",
         "nivel_observado_m": 1.35,
         "limite_responsavel_m": 1.22,
-        "tendencia": "descendo",
+        "tendencia": "estavel",
         "normalizacao": {
           "leituras_abaixo": 0,
           "necessarias": 3
@@ -86,7 +86,7 @@
   },
   "motor": {
     "versao": 1,
-    "avaliado_em": "2026-11-07T12:42:18.846Z",
+    "avaliado_em": "2026-11-07T12:52:23.667Z",
     "situacao_oficial": {
       "nivel": "alerta",
       "desde": "2026-11-07T07:50:09-03:00",
@@ -108,8 +108,8 @@
         "stale": false,
         "motivo": null,
         "ultima_valida": {
-          "nivel_m": 0.98,
-          "medido_em": "2026-11-07T12:31:36.045000+00:00",
+          "nivel_m": 1.19,
+          "medido_em": "2026-11-07T12:41:36.612000+00:00",
           "limites": {
             "atencao_m": 1.21,
             "alerta_m": 1.61,
@@ -117,7 +117,7 @@
           },
           "tendencia": "subindo"
         },
-        "ultima_amostra_em": "2026-11-07T12:31:36.045000+00:00",
+        "ultima_amostra_em": "2026-11-07T12:41:36.612000+00:00",
         "normalizacao": {
           "leituras_abaixo": 0,
           "necessarias": 3,
@@ -134,7 +134,7 @@
         "motivo": null,
         "ultima_valida": {
           "nivel_m": 0.97,
-          "medido_em": "2026-11-07T12:31:22.624000+00:00",
+          "medido_em": "2026-11-07T12:41:22.721000+00:00",
           "limites": {
             "atencao_m": 1.6,
             "alerta_m": 2,
@@ -142,7 +142,7 @@
           },
           "tendencia": "estavel"
         },
-        "ultima_amostra_em": "2026-11-07T12:31:22.624000+00:00",
+        "ultima_amostra_em": "2026-11-07T12:41:22.721000+00:00",
         "normalizacao": {
           "leituras_abaixo": 0,
           "necessarias": 3,
@@ -158,8 +158,8 @@
         "stale": false,
         "motivo": null,
         "ultima_valida": {
-          "nivel_m": 0.98,
-          "medido_em": "2026-11-07T12:30:06.885000+00:00",
+          "nivel_m": 1.06,
+          "medido_em": "2026-11-07T12:40:10.574000+00:00",
           "limites": {
             "atencao_m": 1.48,
             "alerta_m": 1.85,
@@ -167,7 +167,7 @@
           },
           "tendencia": "subindo"
         },
-        "ultima_amostra_em": "2026-11-07T12:30:06.885000+00:00",
+        "ultima_amostra_em": "2026-11-07T12:40:10.574000+00:00",
         "normalizacao": {
           "leituras_abaixo": 0,
           "necessarias": 3,
@@ -183,8 +183,8 @@
         "stale": false,
         "motivo": null,
         "ultima_valida": {
-          "nivel_m": 1.06,
-          "medido_em": "2026-11-07T12:31:13.635000+00:00",
+          "nivel_m": 1.09,
+          "medido_em": "2026-11-07T12:41:13.801000+00:00",
           "limites": {
             "atencao_m": 1.5,
             "alerta_m": 1.85,
@@ -192,7 +192,7 @@
           },
           "tendencia": "subindo"
         },
-        "ultima_amostra_em": "2026-11-07T12:31:13.635000+00:00",
+        "ultima_amostra_em": "2026-11-07T12:41:13.801000+00:00",
         "normalizacao": {
           "leituras_abaixo": 0,
           "necessarias": 3,
@@ -208,16 +208,16 @@
         "stale": false,
         "motivo": null,
         "ultima_valida": {
-          "nivel_m": 1.73,
-          "medido_em": "2026-11-07T12:31:06.781000+00:00",
+          "nivel_m": 1.75,
+          "medido_em": "2026-11-07T12:41:06.915000+00:00",
           "limites": {
             "atencao_m": 1.6,
             "alerta_m": 2.2,
             "emergencia_m": 3
           },
-          "tendencia": "estavel"
+          "tendencia": "subindo"
         },
-        "ultima_amostra_em": "2026-11-07T12:31:06.781000+00:00",
+        "ultima_amostra_em": "2026-11-07T12:41:06.915000+00:00",
         "normalizacao": {
           "leituras_abaixo": 0,
           "necessarias": 3,
@@ -233,16 +233,16 @@
         "stale": false,
         "motivo": null,
         "ultima_valida": {
-          "nivel_m": 0.69,
-          "medido_em": "2026-11-07T12:30:56.460000+00:00",
+          "nivel_m": 0.66,
+          "medido_em": "2026-11-07T12:40:56.602000+00:00",
           "limites": {
             "atencao_m": 1.5,
             "alerta_m": 1.85,
             "emergencia_m": 2.55
           },
-          "tendencia": "subindo"
+          "tendencia": "descendo"
         },
-        "ultima_amostra_em": "2026-11-07T12:30:56.460000+00:00",
+        "ultima_amostra_em": "2026-11-07T12:40:56.602000+00:00",
         "normalizacao": {
           "leituras_abaixo": 0,
           "necessarias": 3,
@@ -253,13 +253,13 @@
       "DC07": {
         "codigo": "DC07",
         "nome": "Ribeirão da Murta - Portal",
-        "nivel": "alerta",
-        "desde": "2026-11-07T11:50:35.577000+00:00",
+        "nivel": "atencao",
+        "desde": "2026-11-07T12:40:35.721000+00:00",
         "stale": false,
         "motivo": null,
         "ultima_valida": {
-          "nivel_m": 1.33,
-          "medido_em": "2026-11-07T12:30:35.411000+00:00",
+          "nivel_m": 1.29,
+          "medido_em": "2026-11-07T12:40:35.721000+00:00",
           "limites": {
             "atencao_m": 1,
             "alerta_m": 1.4,
@@ -267,12 +267,12 @@
           },
           "tendencia": "descendo"
         },
-        "ultima_amostra_em": "2026-11-07T12:30:35.411000+00:00",
+        "ultima_amostra_em": "2026-11-07T12:40:35.721000+00:00",
         "normalizacao": {
-          "leituras_abaixo": 2,
+          "leituras_abaixo": 0,
           "necessarias": 3,
-          "limite_m": 1.4,
-          "ultima_leitura_em": "2026-11-07T12:30:35.411000+00:00"
+          "limite_m": 1,
+          "ultima_leitura_em": null
         }
       },
       "DC08": {
@@ -283,8 +283,8 @@
         "stale": false,
         "motivo": null,
         "ultima_valida": {
-          "nivel_m": 2.5,
-          "medido_em": "2026-11-07T12:30:21.480000+00:00",
+          "nivel_m": 2.54,
+          "medido_em": "2026-11-07T12:40:21.591000+00:00",
           "limites": {
             "atencao_m": 1.7,
             "alerta_m": 2.3,
@@ -292,7 +292,7 @@
           },
           "tendencia": "subindo"
         },
-        "ultima_amostra_em": "2026-11-07T12:30:21.480000+00:00",
+        "ultima_amostra_em": "2026-11-07T12:40:21.591000+00:00",
         "normalizacao": {
           "leituras_abaixo": 0,
           "necessarias": 3,
@@ -309,15 +309,15 @@
         "motivo": null,
         "ultima_valida": {
           "nivel_m": 1.35,
-          "medido_em": "2026-11-07T12:30:05.297000+00:00",
+          "medido_em": "2026-11-07T12:40:14.805000+00:00",
           "limites": {
             "atencao_m": 1.22,
             "alerta_m": 1.42,
             "emergencia_m": 1.62
           },
-          "tendencia": "descendo"
+          "tendencia": "estavel"
         },
-        "ultima_amostra_em": "2026-11-07T12:30:05.297000+00:00",
+        "ultima_amostra_em": "2026-11-07T12:40:14.805000+00:00",
         "normalizacao": {
           "leituras_abaixo": 0,
           "necessarias": 3,
@@ -333,8 +333,8 @@
         "stale": false,
         "motivo": null,
         "ultima_valida": {
-          "nivel_m": 7.73,
-          "medido_em": "2026-11-07T12:30:08.020000+00:00",
+          "nivel_m": 7.78,
+          "medido_em": "2026-11-07T12:40:02.198000+00:00",
           "limites": {
             "atencao_m": 8,
             "alerta_m": 9,
@@ -342,7 +342,7 @@
           },
           "tendencia": "subindo"
         },
-        "ultima_amostra_em": "2026-11-07T12:30:08.020000+00:00",
+        "ultima_amostra_em": "2026-11-07T12:40:02.198000+00:00",
         "normalizacao": {
           "leituras_abaixo": 0,
           "necessarias": 3,
@@ -358,8 +358,8 @@
         "stale": false,
         "motivo": null,
         "ultima_valida": {
-          "nivel_m": 2.75,
-          "medido_em": "2026-11-07T12:30:14.861000+00:00",
+          "nivel_m": 2.78,
+          "medido_em": "2026-11-07T12:40:08.979000+00:00",
           "limites": {
             "atencao_m": 3,
             "alerta_m": 4,
@@ -367,7 +367,7 @@
           },
           "tendencia": "subindo"
         },
-        "ultima_amostra_em": "2026-11-07T12:30:14.861000+00:00",
+        "ultima_amostra_em": "2026-11-07T12:40:08.979000+00:00",
         "normalizacao": {
           "leituras_abaixo": 0,
           "necessarias": 3,
@@ -385,7 +385,7 @@
       "nome": "Rio Itajaí-Açu - ICMBio/CEPSUL",
       "latitude": -26.90923,
       "longitude": -48.6516,
-      "nivel_m": 0.98,
+      "nivel_m": 1.19,
       "tendencia": "subindo",
       "limites": {
         "atencao_m": 1.21,
@@ -393,14 +393,9 @@
         "emergencia_m": 1.75
       },
       "qualidade": "atualizado",
-      "medido_em": "2026-11-07T12:31:36.045000+00:00",
+      "medido_em": "2026-11-07T12:41:36.612000+00:00",
       "atualizacao_esperada_segundos": 600,
       "serie_12h": [
-        {
-          "medido_em": "2026-11-07T00:41:35.475000+00:00",
-          "nivel_m": 1.12,
-          "qualidade": null
-        },
         {
           "medido_em": "2026-11-07T00:51:35.358000+00:00",
           "nivel_m": 1.13,
@@ -750,12 +745,17 @@
           "medido_em": "2026-11-07T12:31:36.045000+00:00",
           "nivel_m": 0.98,
           "qualidade": null
+        },
+        {
+          "medido_em": "2026-11-07T12:41:36.612000+00:00",
+          "nivel_m": 1.19,
+          "qualidade": null
         }
       ],
       "qualidade_fonte": {
         "nivel_rio_m": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:31:36.045000+00:00"
+          "medido_em": "2026-11-07T12:41:36.612000+00:00"
         }
       },
       "situacao_fonte": "monitoramento"
@@ -773,14 +773,9 @@
         "emergencia_m": 2.5
       },
       "qualidade": "atualizado",
-      "medido_em": "2026-11-07T12:31:22.624000+00:00",
+      "medido_em": "2026-11-07T12:41:22.721000+00:00",
       "atualizacao_esperada_segundos": 600,
       "serie_12h": [
-        {
-          "medido_em": "2026-11-07T00:41:21.848000+00:00",
-          "nivel_m": 0.97,
-          "qualidade": null
-        },
         {
           "medido_em": "2026-11-07T00:51:21.567000+00:00",
           "nivel_m": 0.97,
@@ -1130,12 +1125,17 @@
           "medido_em": "2026-11-07T12:31:22.624000+00:00",
           "nivel_m": 0.97,
           "qualidade": null
+        },
+        {
+          "medido_em": "2026-11-07T12:41:22.721000+00:00",
+          "nivel_m": 0.97,
+          "qualidade": null
         }
       ],
       "qualidade_fonte": {
         "nivel_rio_m": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:31:22.624000+00:00"
+          "medido_em": "2026-11-07T12:41:22.721000+00:00"
         }
       },
       "situacao_fonte": "monitoramento"
@@ -1145,7 +1145,7 @@
       "nome": "Rio Itajaí-Mirim (canal retificado) - Captação SEMASA",
       "latitude": -26.91182,
       "longitude": -48.71922,
-      "nivel_m": 0.98,
+      "nivel_m": 1.06,
       "tendencia": "subindo",
       "limites": {
         "atencao_m": 1.48,
@@ -1153,19 +1153,9 @@
         "emergencia_m": 2.5
       },
       "qualidade": "atualizado",
-      "medido_em": "2026-11-07T12:30:06.885000+00:00",
+      "medido_em": "2026-11-07T12:40:10.574000+00:00",
       "atualizacao_esperada_segundos": 600,
       "serie_12h": [
-        {
-          "medido_em": "2026-11-07T00:30:12.680000+00:00",
-          "nivel_m": 0.42,
-          "qualidade": null
-        },
-        {
-          "medido_em": "2026-11-07T00:40:07.416000+00:00",
-          "nivel_m": 0.44,
-          "qualidade": null
-        },
         {
           "medido_em": "2026-11-07T00:50:01.918000+00:00",
           "nivel_m": 0.43,
@@ -1520,12 +1510,17 @@
           "medido_em": "2026-11-07T12:30:06.885000+00:00",
           "nivel_m": 0.98,
           "qualidade": null
+        },
+        {
+          "medido_em": "2026-11-07T12:40:10.574000+00:00",
+          "nivel_m": 1.06,
+          "qualidade": null
         }
       ],
       "qualidade_fonte": {
         "nivel_rio_m": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:30:06.885000+00:00"
+          "medido_em": "2026-11-07T12:40:10.574000+00:00"
         }
       },
       "situacao_fonte": "monitoramento"
@@ -1535,7 +1530,7 @@
       "nome": "Rio Itajaí-Mirim (canal retificado e curso antigo) - Vitalmar Pescados",
       "latitude": -26.8941,
       "longitude": -48.68838,
-      "nivel_m": 1.06,
+      "nivel_m": 1.09,
       "tendencia": "subindo",
       "limites": {
         "atencao_m": 1.5,
@@ -1543,14 +1538,9 @@
         "emergencia_m": 2.25
       },
       "qualidade": "atualizado",
-      "medido_em": "2026-11-07T12:31:13.635000+00:00",
+      "medido_em": "2026-11-07T12:41:13.801000+00:00",
       "atualizacao_esperada_segundos": 600,
       "serie_12h": [
-        {
-          "medido_em": "2026-11-07T00:41:13.151000+00:00",
-          "nivel_m": 0.96,
-          "qualidade": null
-        },
         {
           "medido_em": "2026-11-07T00:51:12.857000+00:00",
           "nivel_m": 0.99,
@@ -1900,12 +1890,17 @@
           "medido_em": "2026-11-07T12:31:13.635000+00:00",
           "nivel_m": 1.06,
           "qualidade": null
+        },
+        {
+          "medido_em": "2026-11-07T12:41:13.801000+00:00",
+          "nivel_m": 1.09,
+          "qualidade": null
         }
       ],
       "qualidade_fonte": {
         "nivel_rio_m": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:31:13.635000+00:00"
+          "medido_em": "2026-11-07T12:41:13.801000+00:00"
         }
       },
       "situacao_fonte": "monitoramento"
@@ -1915,22 +1910,17 @@
       "nome": "Rio Itajaí-Mirim (curso antigo) - Propriedade privada",
       "latitude": -26.93336,
       "longitude": -48.74776,
-      "nivel_m": 1.73,
-      "tendencia": "estavel",
+      "nivel_m": 1.75,
+      "tendencia": "subindo",
       "limites": {
         "atencao_m": 1.6,
         "alerta_m": 2.2,
         "emergencia_m": 3
       },
       "qualidade": "atualizado",
-      "medido_em": "2026-11-07T12:31:06.781000+00:00",
+      "medido_em": "2026-11-07T12:41:06.915000+00:00",
       "atualizacao_esperada_segundos": 600,
       "serie_12h": [
-        {
-          "medido_em": "2026-11-07T00:41:06.273000+00:00",
-          "nivel_m": 1.2,
-          "qualidade": null
-        },
         {
           "medido_em": "2026-11-07T00:51:05.877000+00:00",
           "nivel_m": 1.2,
@@ -2280,12 +2270,17 @@
           "medido_em": "2026-11-07T12:31:06.781000+00:00",
           "nivel_m": 1.73,
           "qualidade": null
+        },
+        {
+          "medido_em": "2026-11-07T12:41:06.915000+00:00",
+          "nivel_m": 1.75,
+          "qualidade": null
         }
       ],
       "qualidade_fonte": {
         "nivel_rio_m": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:31:06.781000+00:00"
+          "medido_em": "2026-11-07T12:41:06.915000+00:00"
         }
       },
       "situacao_fonte": "atencao"
@@ -2295,22 +2290,17 @@
       "nome": "Rio Itajaí-Mirim (curso antigo) - Itamirim Clube de Campo",
       "latitude": -26.92442,
       "longitude": -48.68576,
-      "nivel_m": 0.69,
-      "tendencia": "subindo",
+      "nivel_m": 0.66,
+      "tendencia": "descendo",
       "limites": {
         "atencao_m": 1.5,
         "alerta_m": 1.85,
         "emergencia_m": 2.55
       },
       "qualidade": "atualizado",
-      "medido_em": "2026-11-07T12:30:56.460000+00:00",
+      "medido_em": "2026-11-07T12:40:56.602000+00:00",
       "atualizacao_esperada_segundos": 600,
       "serie_12h": [
-        {
-          "medido_em": "2026-11-07T00:40:55.993000+00:00",
-          "nivel_m": 0.51,
-          "qualidade": null
-        },
         {
           "medido_em": "2026-11-07T00:50:55.583000+00:00",
           "nivel_m": 0.56,
@@ -2660,12 +2650,17 @@
           "medido_em": "2026-11-07T12:30:56.460000+00:00",
           "nivel_m": 0.69,
           "qualidade": null
+        },
+        {
+          "medido_em": "2026-11-07T12:40:56.602000+00:00",
+          "nivel_m": 0.66,
+          "qualidade": null
         }
       ],
       "qualidade_fonte": {
         "nivel_rio_m": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:30:56.460000+00:00"
+          "medido_em": "2026-11-07T12:40:56.602000+00:00"
         }
       },
       "situacao_fonte": "monitoramento"
@@ -2675,7 +2670,7 @@
       "nome": "Ribeirão da Murta - Portal",
       "latitude": -26.892699,
       "longitude": -48.735573,
-      "nivel_m": 1.33,
+      "nivel_m": 1.29,
       "tendencia": "descendo",
       "limites": {
         "atencao_m": 1,
@@ -2683,14 +2678,9 @@
         "emergencia_m": 1.5
       },
       "qualidade": "atualizado",
-      "medido_em": "2026-11-07T12:30:35.411000+00:00",
+      "medido_em": "2026-11-07T12:40:35.721000+00:00",
       "atualizacao_esperada_segundos": 600,
       "serie_12h": [
-        {
-          "medido_em": "2026-11-07T00:40:34.950000+00:00",
-          "nivel_m": 0.15,
-          "qualidade": null
-        },
         {
           "medido_em": "2026-11-07T00:50:34.825000+00:00",
           "nivel_m": 0.16,
@@ -3065,12 +3055,17 @@
           "medido_em": "2026-11-07T12:30:35.411000+00:00",
           "nivel_m": 1.33,
           "qualidade": null
+        },
+        {
+          "medido_em": "2026-11-07T12:40:35.721000+00:00",
+          "nivel_m": 1.29,
+          "qualidade": null
         }
       ],
       "qualidade_fonte": {
         "nivel_rio_m": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:30:35.411000+00:00"
+          "medido_em": "2026-11-07T12:40:35.721000+00:00"
         }
       },
       "situacao_fonte": "atencao"
@@ -3080,7 +3075,7 @@
       "nome": "Ribeirão Canhanduba - Rua Benjamin Dagnoni",
       "latitude": -26.979694,
       "longitude": -48.711948,
-      "nivel_m": 2.5,
+      "nivel_m": 2.54,
       "tendencia": "subindo",
       "limites": {
         "atencao_m": 1.7,
@@ -3088,14 +3083,9 @@
         "emergencia_m": 2.89
       },
       "qualidade": "atualizado",
-      "medido_em": "2026-11-07T12:30:21.480000+00:00",
+      "medido_em": "2026-11-07T12:40:21.591000+00:00",
       "atualizacao_esperada_segundos": 600,
       "serie_12h": [
-        {
-          "medido_em": "2026-11-07T00:40:20.999000+00:00",
-          "nivel_m": 1,
-          "qualidade": null
-        },
         {
           "medido_em": "2026-11-07T00:50:21.174000+00:00",
           "nivel_m": 1,
@@ -3445,12 +3435,17 @@
           "medido_em": "2026-11-07T12:30:21.480000+00:00",
           "nivel_m": 2.5,
           "qualidade": null
+        },
+        {
+          "medido_em": "2026-11-07T12:40:21.591000+00:00",
+          "nivel_m": 2.54,
+          "qualidade": null
         }
       ],
       "qualidade_fonte": {
         "nivel_rio_m": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:30:21.480000+00:00"
+          "medido_em": "2026-11-07T12:40:21.591000+00:00"
         }
       },
       "situacao_fonte": "alerta"
@@ -3461,26 +3456,16 @@
       "latitude": -26.879777,
       "longitude": -48.700308,
       "nivel_m": 1.35,
-      "tendencia": "descendo",
+      "tendencia": "estavel",
       "limites": {
         "atencao_m": 1.22,
         "alerta_m": 1.42,
         "emergencia_m": 1.62
       },
       "qualidade": "atualizado",
-      "medido_em": "2026-11-07T12:30:05.297000+00:00",
+      "medido_em": "2026-11-07T12:40:14.805000+00:00",
       "atualizacao_esperada_segundos": 600,
       "serie_12h": [
-        {
-          "medido_em": "2026-11-07T00:30:12.023000+00:00",
-          "nivel_m": 0.77,
-          "qualidade": null
-        },
-        {
-          "medido_em": "2026-11-07T00:40:07.093000+00:00",
-          "nivel_m": 0.79,
-          "qualidade": null
-        },
         {
           "medido_em": "2026-11-07T00:50:01.249000+00:00",
           "nivel_m": 0.81,
@@ -3835,12 +3820,17 @@
           "medido_em": "2026-11-07T12:30:05.297000+00:00",
           "nivel_m": 1.35,
           "qualidade": null
+        },
+        {
+          "medido_em": "2026-11-07T12:40:14.805000+00:00",
+          "nivel_m": 1.35,
+          "qualidade": null
         }
       ],
       "qualidade_fonte": {
         "nivel_rio_m": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:30:05.297000+00:00"
+          "medido_em": "2026-11-07T12:40:14.805000+00:00"
         }
       },
       "situacao_fonte": "atencao"
@@ -3850,7 +3840,7 @@
       "nome": "Rio Itajaí-Mirim – Bairro Limoeiro",
       "latitude": -27.03353,
       "longitude": -48.861419,
-      "nivel_m": 7.73,
+      "nivel_m": 7.78,
       "tendencia": "subindo",
       "limites": {
         "atencao_m": 8,
@@ -3858,14 +3848,9 @@
         "emergencia_m": 10
       },
       "qualidade": "atualizado",
-      "medido_em": "2026-11-07T12:30:08.020000+00:00",
+      "medido_em": "2026-11-07T12:40:02.198000+00:00",
       "atualizacao_esperada_segundos": 600,
       "serie_12h": [
-        {
-          "medido_em": "2026-11-07T00:30:13.349000+00:00",
-          "nivel_m": 4.07,
-          "qualidade": null
-        },
         {
           "medido_em": "2026-11-07T00:40:07.647000+00:00",
           "nivel_m": 4.06,
@@ -4225,12 +4210,17 @@
           "medido_em": "2026-11-07T12:30:08.020000+00:00",
           "nivel_m": 7.73,
           "qualidade": null
+        },
+        {
+          "medido_em": "2026-11-07T12:40:02.198000+00:00",
+          "nivel_m": 7.78,
+          "qualidade": null
         }
       ],
       "qualidade_fonte": {
         "nivel_rio_m": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:30:08.020000+00:00"
+          "medido_em": "2026-11-07T12:40:02.198000+00:00"
         }
       },
       "situacao_fonte": "monitoramento"
@@ -4240,7 +4230,7 @@
       "nome": "Rio Itajaí-Açú – Santa Regina (Volta de Cima)",
       "latitude": -26.879641,
       "longitude": -48.761549,
-      "nivel_m": 2.75,
+      "nivel_m": 2.78,
       "tendencia": "subindo",
       "limites": {
         "atencao_m": 3,
@@ -4248,7 +4238,7 @@
         "emergencia_m": 5
       },
       "qualidade": "atualizado",
-      "medido_em": "2026-11-07T12:30:14.861000+00:00",
+      "medido_em": "2026-11-07T12:40:08.979000+00:00",
       "atualizacao_esperada_segundos": 600,
       "serie_12h": [
         {
@@ -4610,12 +4600,17 @@
           "medido_em": "2026-11-07T12:30:14.861000+00:00",
           "nivel_m": 2.75,
           "qualidade": null
+        },
+        {
+          "medido_em": "2026-11-07T12:40:08.979000+00:00",
+          "nivel_m": 2.78,
+          "qualidade": null
         }
       ],
       "qualidade_fonte": {
         "nivel_rio_m": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:30:14.861000+00:00"
+          "medido_em": "2026-11-07T12:40:08.979000+00:00"
         }
       },
       "situacao_fonte": "monitoramento"
@@ -4627,36 +4622,36 @@
       "nome": "Defesa Civil de Itajaí",
       "latitude": -26.9165821,
       "longitude": -48.7016231,
-      "chuva_10_min_mm": 1.4,
+      "chuva_10_min_mm": 1.8,
       "chuva_mm_h": null,
-      "chuva_1_h_mm": 1.6,
+      "chuva_1_h_mm": 3.4,
       "chuva_6_h_mm": null,
-      "chuva_12_h_mm": 48.8,
-      "chuva_24_h_mm": 49.2,
-      "chuva_48_h_mm": 49.2,
+      "chuva_12_h_mm": 50.6,
+      "chuva_24_h_mm": 51,
+      "chuva_48_h_mm": 51,
       "qualidade": "atualizado",
-      "medido_em": "2026-11-07T12:30:51.174000+00:00",
+      "medido_em": "2026-11-07T12:40:07.158000+00:00",
       "atualizacao_esperada_segundos": 600,
       "qualidade_fonte": {
         "chuva_10_min_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:30:51.174000+00:00"
+          "medido_em": "2026-11-07T12:40:07.158000+00:00"
         },
         "chuva_1_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:30:51.174000+00:00"
+          "medido_em": "2026-11-07T12:40:07.158000+00:00"
         },
         "chuva_12_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:30:51.174000+00:00"
+          "medido_em": "2026-11-07T12:40:07.158000+00:00"
         },
         "chuva_24_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:30:51.174000+00:00"
+          "medido_em": "2026-11-07T12:40:07.158000+00:00"
         },
         "chuva_48_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:30:51.174000+00:00"
+          "medido_em": "2026-11-07T12:40:07.158000+00:00"
         }
       },
       "serie_12h": [
@@ -5019,6 +5014,11 @@
           "medido_em": "2026-11-07T12:30:51.174000+00:00",
           "chuva_mm": 1.4,
           "qualidade": null
+        },
+        {
+          "medido_em": "2026-11-07T12:40:07.158000+00:00",
+          "chuva_mm": 1.8,
+          "qualidade": null
         }
       ]
     },
@@ -5027,44 +5027,39 @@
       "nome": "Rio Itajaí-Açu - ICMBio/CEPSUL",
       "latitude": -26.90923,
       "longitude": -48.6516,
-      "chuva_10_min_mm": 1,
+      "chuva_10_min_mm": 1.6,
       "chuva_mm_h": null,
-      "chuva_1_h_mm": 1.2,
+      "chuva_1_h_mm": 2.8,
       "chuva_6_h_mm": null,
-      "chuva_12_h_mm": 37.8,
-      "chuva_24_h_mm": 38,
-      "chuva_48_h_mm": 38,
+      "chuva_12_h_mm": 39.4,
+      "chuva_24_h_mm": 39.6,
+      "chuva_48_h_mm": 39.6,
       "qualidade": "atualizado",
-      "medido_em": "2026-11-07T12:31:36.045000+00:00",
+      "medido_em": "2026-11-07T12:41:36.612000+00:00",
       "atualizacao_esperada_segundos": 600,
       "qualidade_fonte": {
         "chuva_10_min_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:31:36.045000+00:00"
+          "medido_em": "2026-11-07T12:41:36.612000+00:00"
         },
         "chuva_1_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:31:36.045000+00:00"
+          "medido_em": "2026-11-07T12:41:36.612000+00:00"
         },
         "chuva_12_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:31:36.045000+00:00"
+          "medido_em": "2026-11-07T12:41:36.612000+00:00"
         },
         "chuva_24_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:31:36.045000+00:00"
+          "medido_em": "2026-11-07T12:41:36.612000+00:00"
         },
         "chuva_48_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:31:36.045000+00:00"
+          "medido_em": "2026-11-07T12:41:36.612000+00:00"
         }
       },
       "serie_12h": [
-        {
-          "medido_em": "2026-11-07T00:41:35.475000+00:00",
-          "chuva_mm": 0,
-          "qualidade": null
-        },
         {
           "medido_em": "2026-11-07T00:51:35.358000+00:00",
           "chuva_mm": 0,
@@ -5414,6 +5409,11 @@
           "medido_em": "2026-11-07T12:31:36.045000+00:00",
           "chuva_mm": 1,
           "qualidade": null
+        },
+        {
+          "medido_em": "2026-11-07T12:41:36.612000+00:00",
+          "chuva_mm": 1.6,
+          "qualidade": null
         }
       ]
     },
@@ -5422,44 +5422,39 @@
       "nome": "Rio Itajaí-Açu - Praça Celso Pereira da Silva",
       "latitude": -26.875683,
       "longitude": -48.710217,
-      "chuva_10_min_mm": 0.8,
+      "chuva_10_min_mm": 1.2,
       "chuva_mm_h": null,
-      "chuva_1_h_mm": 1.2,
+      "chuva_1_h_mm": 2.2,
       "chuva_6_h_mm": null,
-      "chuva_12_h_mm": 47.4,
-      "chuva_24_h_mm": 47.6,
-      "chuva_48_h_mm": 47.6,
+      "chuva_12_h_mm": 48.6,
+      "chuva_24_h_mm": 48.8,
+      "chuva_48_h_mm": 48.8,
       "qualidade": "atualizado",
-      "medido_em": "2026-11-07T12:31:22.624000+00:00",
+      "medido_em": "2026-11-07T12:41:22.721000+00:00",
       "atualizacao_esperada_segundos": 600,
       "qualidade_fonte": {
         "chuva_10_min_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:31:22.624000+00:00"
+          "medido_em": "2026-11-07T12:41:22.721000+00:00"
         },
         "chuva_1_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:31:22.624000+00:00"
+          "medido_em": "2026-11-07T12:41:22.721000+00:00"
         },
         "chuva_12_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:31:22.624000+00:00"
+          "medido_em": "2026-11-07T12:41:22.721000+00:00"
         },
         "chuva_24_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:31:22.624000+00:00"
+          "medido_em": "2026-11-07T12:41:22.721000+00:00"
         },
         "chuva_48_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:31:22.624000+00:00"
+          "medido_em": "2026-11-07T12:41:22.721000+00:00"
         }
       },
       "serie_12h": [
-        {
-          "medido_em": "2026-11-07T00:41:21.848000+00:00",
-          "chuva_mm": 0,
-          "qualidade": null
-        },
         {
           "medido_em": "2026-11-07T00:51:21.567000+00:00",
           "chuva_mm": 0.2,
@@ -5809,6 +5804,11 @@
           "medido_em": "2026-11-07T12:31:22.624000+00:00",
           "chuva_mm": 0.8,
           "qualidade": null
+        },
+        {
+          "medido_em": "2026-11-07T12:41:22.721000+00:00",
+          "chuva_mm": 1.2,
+          "qualidade": null
         }
       ]
     },
@@ -5817,49 +5817,39 @@
       "nome": "Rio Itajaí-Mirim (canal retificado) - Captação SEMASA",
       "latitude": -26.91182,
       "longitude": -48.71922,
-      "chuva_10_min_mm": 1.4,
+      "chuva_10_min_mm": 1.8,
       "chuva_mm_h": null,
-      "chuva_1_h_mm": 1.8,
+      "chuva_1_h_mm": 3.4,
       "chuva_6_h_mm": null,
-      "chuva_12_h_mm": 51.2,
-      "chuva_24_h_mm": 51.4,
-      "chuva_48_h_mm": 51.4,
+      "chuva_12_h_mm": 52.8,
+      "chuva_24_h_mm": 53.2,
+      "chuva_48_h_mm": 53.2,
       "qualidade": "atualizado",
-      "medido_em": "2026-11-07T12:30:06.885000+00:00",
+      "medido_em": "2026-11-07T12:40:10.574000+00:00",
       "atualizacao_esperada_segundos": 600,
       "qualidade_fonte": {
         "chuva_10_min_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:30:06.885000+00:00"
+          "medido_em": "2026-11-07T12:40:10.574000+00:00"
         },
         "chuva_1_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:30:06.885000+00:00"
+          "medido_em": "2026-11-07T12:40:10.574000+00:00"
         },
         "chuva_12_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:30:06.885000+00:00"
+          "medido_em": "2026-11-07T12:40:10.574000+00:00"
         },
         "chuva_24_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:30:06.885000+00:00"
+          "medido_em": "2026-11-07T12:40:10.574000+00:00"
         },
         "chuva_48_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:30:06.885000+00:00"
+          "medido_em": "2026-11-07T12:40:10.574000+00:00"
         }
       },
       "serie_12h": [
-        {
-          "medido_em": "2026-11-07T00:30:12.680000+00:00",
-          "chuva_mm": 0.2,
-          "qualidade": null
-        },
-        {
-          "medido_em": "2026-11-07T00:40:07.416000+00:00",
-          "chuva_mm": 0,
-          "qualidade": null
-        },
         {
           "medido_em": "2026-11-07T00:50:01.918000+00:00",
           "chuva_mm": 0,
@@ -6214,6 +6204,11 @@
           "medido_em": "2026-11-07T12:30:06.885000+00:00",
           "chuva_mm": 1.4,
           "qualidade": null
+        },
+        {
+          "medido_em": "2026-11-07T12:40:10.574000+00:00",
+          "chuva_mm": 1.8,
+          "qualidade": null
         }
       ]
     },
@@ -6222,44 +6217,39 @@
       "nome": "Rio Itajaí-Mirim (canal retificado e curso antigo) - Vitalmar Pescados",
       "latitude": -26.8941,
       "longitude": -48.68838,
-      "chuva_10_min_mm": 1,
+      "chuva_10_min_mm": 1.4,
       "chuva_mm_h": null,
-      "chuva_1_h_mm": 1.2,
+      "chuva_1_h_mm": 2.6,
       "chuva_6_h_mm": null,
-      "chuva_12_h_mm": 43.8,
-      "chuva_24_h_mm": 44,
-      "chuva_48_h_mm": 44,
+      "chuva_12_h_mm": 45.2,
+      "chuva_24_h_mm": 45.4,
+      "chuva_48_h_mm": 45.4,
       "qualidade": "atualizado",
-      "medido_em": "2026-11-07T12:31:13.635000+00:00",
+      "medido_em": "2026-11-07T12:41:13.801000+00:00",
       "atualizacao_esperada_segundos": 600,
       "qualidade_fonte": {
         "chuva_10_min_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:31:13.635000+00:00"
+          "medido_em": "2026-11-07T12:41:13.801000+00:00"
         },
         "chuva_1_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:31:13.635000+00:00"
+          "medido_em": "2026-11-07T12:41:13.801000+00:00"
         },
         "chuva_12_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:31:13.635000+00:00"
+          "medido_em": "2026-11-07T12:41:13.801000+00:00"
         },
         "chuva_24_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:31:13.635000+00:00"
+          "medido_em": "2026-11-07T12:41:13.801000+00:00"
         },
         "chuva_48_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:31:13.635000+00:00"
+          "medido_em": "2026-11-07T12:41:13.801000+00:00"
         }
       },
       "serie_12h": [
-        {
-          "medido_em": "2026-11-07T00:41:13.151000+00:00",
-          "chuva_mm": 0,
-          "qualidade": null
-        },
         {
           "medido_em": "2026-11-07T00:51:12.857000+00:00",
           "chuva_mm": 0,
@@ -6609,6 +6599,11 @@
           "medido_em": "2026-11-07T12:31:13.635000+00:00",
           "chuva_mm": 1,
           "qualidade": null
+        },
+        {
+          "medido_em": "2026-11-07T12:41:13.801000+00:00",
+          "chuva_mm": 1.4,
+          "qualidade": null
         }
       ]
     },
@@ -6617,44 +6612,39 @@
       "nome": "Rio Itajaí-Mirim (curso antigo) - Propriedade privada",
       "latitude": -26.93336,
       "longitude": -48.74776,
-      "chuva_10_min_mm": 2,
+      "chuva_10_min_mm": 1.8,
       "chuva_mm_h": null,
-      "chuva_1_h_mm": 2.6,
+      "chuva_1_h_mm": 4.4,
       "chuva_6_h_mm": null,
-      "chuva_12_h_mm": 52.8,
-      "chuva_24_h_mm": 53.2,
-      "chuva_48_h_mm": 53.2,
+      "chuva_12_h_mm": 54.6,
+      "chuva_24_h_mm": 55,
+      "chuva_48_h_mm": 55,
       "qualidade": "atualizado",
-      "medido_em": "2026-11-07T12:31:06.781000+00:00",
+      "medido_em": "2026-11-07T12:41:06.915000+00:00",
       "atualizacao_esperada_segundos": 600,
       "qualidade_fonte": {
         "chuva_10_min_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:31:06.781000+00:00"
+          "medido_em": "2026-11-07T12:41:06.915000+00:00"
         },
         "chuva_1_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:31:06.781000+00:00"
+          "medido_em": "2026-11-07T12:41:06.915000+00:00"
         },
         "chuva_12_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:31:06.781000+00:00"
+          "medido_em": "2026-11-07T12:41:06.915000+00:00"
         },
         "chuva_24_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:31:06.781000+00:00"
+          "medido_em": "2026-11-07T12:41:06.915000+00:00"
         },
         "chuva_48_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:31:06.781000+00:00"
+          "medido_em": "2026-11-07T12:41:06.915000+00:00"
         }
       },
       "serie_12h": [
-        {
-          "medido_em": "2026-11-07T00:41:06.273000+00:00",
-          "chuva_mm": 0,
-          "qualidade": null
-        },
         {
           "medido_em": "2026-11-07T00:51:05.877000+00:00",
           "chuva_mm": 0,
@@ -7004,6 +6994,11 @@
           "medido_em": "2026-11-07T12:31:06.781000+00:00",
           "chuva_mm": 2,
           "qualidade": null
+        },
+        {
+          "medido_em": "2026-11-07T12:41:06.915000+00:00",
+          "chuva_mm": 1.8,
+          "qualidade": null
         }
       ]
     },
@@ -7012,44 +7007,39 @@
       "nome": "Rio Itajaí-Mirim (curso antigo) - Itamirim Clube de Campo",
       "latitude": -26.92442,
       "longitude": -48.68576,
-      "chuva_10_min_mm": 1,
+      "chuva_10_min_mm": 2,
       "chuva_mm_h": null,
-      "chuva_1_h_mm": 1.4,
+      "chuva_1_h_mm": 3.2,
       "chuva_6_h_mm": null,
-      "chuva_12_h_mm": 43.8,
-      "chuva_24_h_mm": 44,
-      "chuva_48_h_mm": 44,
+      "chuva_12_h_mm": 45.6,
+      "chuva_24_h_mm": 46,
+      "chuva_48_h_mm": 46,
       "qualidade": "atualizado",
-      "medido_em": "2026-11-07T12:30:56.460000+00:00",
+      "medido_em": "2026-11-07T12:40:56.602000+00:00",
       "atualizacao_esperada_segundos": 600,
       "qualidade_fonte": {
         "chuva_10_min_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:30:56.460000+00:00"
+          "medido_em": "2026-11-07T12:40:56.602000+00:00"
         },
         "chuva_1_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:30:56.460000+00:00"
+          "medido_em": "2026-11-07T12:40:56.602000+00:00"
         },
         "chuva_12_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:30:56.460000+00:00"
+          "medido_em": "2026-11-07T12:40:56.602000+00:00"
         },
         "chuva_24_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:30:56.460000+00:00"
+          "medido_em": "2026-11-07T12:40:56.602000+00:00"
         },
         "chuva_48_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:30:56.460000+00:00"
+          "medido_em": "2026-11-07T12:40:56.602000+00:00"
         }
       },
       "serie_12h": [
-        {
-          "medido_em": "2026-11-07T00:40:55.993000+00:00",
-          "chuva_mm": 0,
-          "qualidade": null
-        },
         {
           "medido_em": "2026-11-07T00:50:55.583000+00:00",
           "chuva_mm": 0,
@@ -7399,6 +7389,11 @@
           "medido_em": "2026-11-07T12:30:56.460000+00:00",
           "chuva_mm": 1,
           "qualidade": null
+        },
+        {
+          "medido_em": "2026-11-07T12:40:56.602000+00:00",
+          "chuva_mm": 2,
+          "qualidade": null
         }
       ]
     },
@@ -7407,44 +7402,39 @@
       "nome": "Ribeirão da Murta - Portal",
       "latitude": -26.892699,
       "longitude": -48.735573,
-      "chuva_10_min_mm": 1,
+      "chuva_10_min_mm": 2,
       "chuva_mm_h": null,
-      "chuva_1_h_mm": 1.4,
+      "chuva_1_h_mm": 3.2,
       "chuva_6_h_mm": null,
-      "chuva_12_h_mm": 46.8,
-      "chuva_24_h_mm": 47,
-      "chuva_48_h_mm": 47,
+      "chuva_12_h_mm": 48.8,
+      "chuva_24_h_mm": 49,
+      "chuva_48_h_mm": 49,
       "qualidade": "atualizado",
-      "medido_em": "2026-11-07T12:30:35.411000+00:00",
+      "medido_em": "2026-11-07T12:40:35.721000+00:00",
       "atualizacao_esperada_segundos": 600,
       "qualidade_fonte": {
         "chuva_10_min_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:30:35.411000+00:00"
+          "medido_em": "2026-11-07T12:40:35.721000+00:00"
         },
         "chuva_1_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:30:35.411000+00:00"
+          "medido_em": "2026-11-07T12:40:35.721000+00:00"
         },
         "chuva_12_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:30:35.411000+00:00"
+          "medido_em": "2026-11-07T12:40:35.721000+00:00"
         },
         "chuva_24_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:30:35.411000+00:00"
+          "medido_em": "2026-11-07T12:40:35.721000+00:00"
         },
         "chuva_48_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:30:35.411000+00:00"
+          "medido_em": "2026-11-07T12:40:35.721000+00:00"
         }
       },
       "serie_12h": [
-        {
-          "medido_em": "2026-11-07T00:40:34.950000+00:00",
-          "chuva_mm": 0,
-          "qualidade": null
-        },
         {
           "medido_em": "2026-11-07T00:50:34.825000+00:00",
           "chuva_mm": 0,
@@ -7819,6 +7809,11 @@
           "medido_em": "2026-11-07T12:30:35.411000+00:00",
           "chuva_mm": 1,
           "qualidade": null
+        },
+        {
+          "medido_em": "2026-11-07T12:40:35.721000+00:00",
+          "chuva_mm": 2,
+          "qualidade": null
         }
       ]
     },
@@ -7827,44 +7822,39 @@
       "nome": "Ribeirão Canhanduba - Rua Benjamin Dagnoni",
       "latitude": -26.979694,
       "longitude": -48.711948,
-      "chuva_10_min_mm": 1.6,
+      "chuva_10_min_mm": 1.4,
       "chuva_mm_h": null,
-      "chuva_1_h_mm": 2,
+      "chuva_1_h_mm": 3.4,
       "chuva_6_h_mm": null,
-      "chuva_12_h_mm": 48.2,
-      "chuva_24_h_mm": 48.2,
-      "chuva_48_h_mm": 48.2,
+      "chuva_12_h_mm": 49.6,
+      "chuva_24_h_mm": 49.6,
+      "chuva_48_h_mm": 49.6,
       "qualidade": "atualizado",
-      "medido_em": "2026-11-07T12:30:21.480000+00:00",
+      "medido_em": "2026-11-07T12:40:21.591000+00:00",
       "atualizacao_esperada_segundos": 600,
       "qualidade_fonte": {
         "chuva_10_min_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:30:21.480000+00:00"
+          "medido_em": "2026-11-07T12:40:21.591000+00:00"
         },
         "chuva_1_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:30:21.480000+00:00"
+          "medido_em": "2026-11-07T12:40:21.591000+00:00"
         },
         "chuva_12_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:30:21.480000+00:00"
+          "medido_em": "2026-11-07T12:40:21.591000+00:00"
         },
         "chuva_24_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:30:21.480000+00:00"
+          "medido_em": "2026-11-07T12:40:21.591000+00:00"
         },
         "chuva_48_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:30:21.480000+00:00"
+          "medido_em": "2026-11-07T12:40:21.591000+00:00"
         }
       },
       "serie_12h": [
-        {
-          "medido_em": "2026-11-07T00:40:20.999000+00:00",
-          "chuva_mm": 0.2,
-          "qualidade": null
-        },
         {
           "medido_em": "2026-11-07T00:50:21.174000+00:00",
           "chuva_mm": 0,
@@ -8214,6 +8204,11 @@
           "medido_em": "2026-11-07T12:30:21.480000+00:00",
           "chuva_mm": 1.6,
           "qualidade": null
+        },
+        {
+          "medido_em": "2026-11-07T12:40:21.591000+00:00",
+          "chuva_mm": 1.4,
+          "qualidade": null
         }
       ]
     },
@@ -8222,49 +8217,39 @@
       "nome": "Ribeirão da Murta - Ponte da Rua Lidia Puel Peixer",
       "latitude": -26.879777,
       "longitude": -48.700308,
-      "chuva_10_min_mm": 0.6,
+      "chuva_10_min_mm": 1,
       "chuva_mm_h": null,
-      "chuva_1_h_mm": 1,
+      "chuva_1_h_mm": 1.8,
       "chuva_6_h_mm": null,
-      "chuva_12_h_mm": 42.8,
-      "chuva_24_h_mm": 42.8,
-      "chuva_48_h_mm": 42.8,
+      "chuva_12_h_mm": 43.8,
+      "chuva_24_h_mm": 43.8,
+      "chuva_48_h_mm": 43.8,
       "qualidade": "atualizado",
-      "medido_em": "2026-11-07T12:30:05.297000+00:00",
+      "medido_em": "2026-11-07T12:40:14.805000+00:00",
       "atualizacao_esperada_segundos": 600,
       "qualidade_fonte": {
         "chuva_10_min_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:30:05.297000+00:00"
+          "medido_em": "2026-11-07T12:40:14.805000+00:00"
         },
         "chuva_1_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:30:05.297000+00:00"
+          "medido_em": "2026-11-07T12:40:14.805000+00:00"
         },
         "chuva_12_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:30:05.297000+00:00"
+          "medido_em": "2026-11-07T12:40:14.805000+00:00"
         },
         "chuva_24_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:30:05.297000+00:00"
+          "medido_em": "2026-11-07T12:40:14.805000+00:00"
         },
         "chuva_48_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:30:05.297000+00:00"
+          "medido_em": "2026-11-07T12:40:14.805000+00:00"
         }
       },
       "serie_12h": [
-        {
-          "medido_em": "2026-11-07T00:30:12.023000+00:00",
-          "chuva_mm": 0,
-          "qualidade": null
-        },
-        {
-          "medido_em": "2026-11-07T00:40:07.093000+00:00",
-          "chuva_mm": 0,
-          "qualidade": null
-        },
         {
           "medido_em": "2026-11-07T00:50:01.249000+00:00",
           "chuva_mm": 0,
@@ -8619,6 +8604,11 @@
           "medido_em": "2026-11-07T12:30:05.297000+00:00",
           "chuva_mm": 0.6,
           "qualidade": null
+        },
+        {
+          "medido_em": "2026-11-07T12:40:14.805000+00:00",
+          "chuva_mm": 1,
+          "qualidade": null
         }
       ]
     },
@@ -8629,42 +8619,37 @@
       "longitude": -48.861419,
       "chuva_10_min_mm": 1.8,
       "chuva_mm_h": null,
-      "chuva_1_h_mm": 5.4,
+      "chuva_1_h_mm": 7.2,
       "chuva_6_h_mm": null,
-      "chuva_12_h_mm": 80.2,
-      "chuva_24_h_mm": 80.4,
-      "chuva_48_h_mm": 80.4,
+      "chuva_12_h_mm": 82,
+      "chuva_24_h_mm": 82.2,
+      "chuva_48_h_mm": 82.2,
       "qualidade": "atualizado",
-      "medido_em": "2026-11-07T12:30:08.020000+00:00",
+      "medido_em": "2026-11-07T12:40:02.198000+00:00",
       "atualizacao_esperada_segundos": 600,
       "qualidade_fonte": {
         "chuva_10_min_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:30:08.020000+00:00"
+          "medido_em": "2026-11-07T12:40:02.198000+00:00"
         },
         "chuva_1_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:30:08.020000+00:00"
+          "medido_em": "2026-11-07T12:40:02.198000+00:00"
         },
         "chuva_12_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:30:08.020000+00:00"
+          "medido_em": "2026-11-07T12:40:02.198000+00:00"
         },
         "chuva_24_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:30:08.020000+00:00"
+          "medido_em": "2026-11-07T12:40:02.198000+00:00"
         },
         "chuva_48_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:30:08.020000+00:00"
+          "medido_em": "2026-11-07T12:40:02.198000+00:00"
         }
       },
       "serie_12h": [
-        {
-          "medido_em": "2026-11-07T00:30:13.349000+00:00",
-          "chuva_mm": 0,
-          "qualidade": null
-        },
         {
           "medido_em": "2026-11-07T00:40:07.647000+00:00",
           "chuva_mm": 0,
@@ -9024,6 +9009,11 @@
           "medido_em": "2026-11-07T12:30:08.020000+00:00",
           "chuva_mm": 1.8,
           "qualidade": null
+        },
+        {
+          "medido_em": "2026-11-07T12:40:02.198000+00:00",
+          "chuva_mm": 1.8,
+          "qualidade": null
         }
       ]
     },
@@ -9032,36 +9022,36 @@
       "nome": "Rio Itajaí-Açú – Santa Regina (Volta de Cima)",
       "latitude": -26.879641,
       "longitude": -48.761549,
-      "chuva_10_min_mm": 1,
+      "chuva_10_min_mm": 1.6,
       "chuva_mm_h": null,
-      "chuva_1_h_mm": 1.4,
+      "chuva_1_h_mm": 2.8,
       "chuva_6_h_mm": null,
-      "chuva_12_h_mm": 46.6,
-      "chuva_24_h_mm": 46.8,
-      "chuva_48_h_mm": 47,
+      "chuva_12_h_mm": 48.2,
+      "chuva_24_h_mm": 48.4,
+      "chuva_48_h_mm": 48.6,
       "qualidade": "atualizado",
-      "medido_em": "2026-11-07T12:30:14.861000+00:00",
+      "medido_em": "2026-11-07T12:40:08.979000+00:00",
       "atualizacao_esperada_segundos": 600,
       "qualidade_fonte": {
         "chuva_10_min_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:30:14.861000+00:00"
+          "medido_em": "2026-11-07T12:40:08.979000+00:00"
         },
         "chuva_1_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:30:14.861000+00:00"
+          "medido_em": "2026-11-07T12:40:08.979000+00:00"
         },
         "chuva_12_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:30:14.861000+00:00"
+          "medido_em": "2026-11-07T12:40:08.979000+00:00"
         },
         "chuva_24_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:30:14.861000+00:00"
+          "medido_em": "2026-11-07T12:40:08.979000+00:00"
         },
         "chuva_48_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-07T12:30:14.861000+00:00"
+          "medido_em": "2026-11-07T12:40:08.979000+00:00"
         }
       },
       "serie_12h": [
@@ -9423,6 +9413,11 @@
         {
           "medido_em": "2026-11-07T12:30:14.861000+00:00",
           "chuva_mm": 1,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-11-07T12:40:08.979000+00:00",
+          "chuva_mm": 1.6,
           "qualidade": null
         }
       ]
@@ -10024,7 +10019,7 @@
     "uf": null,
     "regiao": null,
     "atualizado_em": null,
-    "coletado_em": "2026-11-07T12:42:18.605Z",
+    "coletado_em": "2026-11-07T12:52:23.523Z",
     "disponibilidade": "disponivel",
     "dias": [
       {
@@ -10137,7 +10132,7 @@
   "blumenau": {
     "nivel_m": 4.85,
     "medido_em": "2026-11-07T09:00:00-03:00",
-    "coletado_em": "2026-11-07T12:42:13.855Z",
+    "coletado_em": "2026-11-07T12:52:21.584Z",
     "classificacao_original": "Atenção",
     "nivel": "atencao",
     "tendencia": "subindo",
@@ -10167,14 +10162,14 @@
       "qualidade": "indisponivel",
       "atualizado_em": null,
       "atualizacao_esperada_segundos": null,
-      "coletado_em": "2026-11-07T12:42:13.867Z",
+      "coletado_em": "2026-11-07T12:52:21.616Z",
       "resultado": "falha",
       "motivo": "https://monitoramento.defesacivil.itajai.sc.gov.br/api/v1/situacao-atual: HTTP 429 Too Many Requests",
       "avisos": [],
       "requisicoes": [
         {
           "url": "https://monitoramento.defesacivil.itajai.sc.gov.br/api/v1/situacao-atual",
-          "coletado_em": "2026-11-07T12:42:13.867Z",
+          "coletado_em": "2026-11-07T12:52:21.616Z",
           "http_status": 429,
           "erro": "HTTP 429 Too Many Requests",
           "resposta_erro": "{\"message\":\"Limite de requisi\\u00e7\\u00f5es atingido. Aguarde antes de tentar novamente.\"}"
@@ -10187,14 +10182,14 @@
       "qualidade": "indisponivel",
       "atualizado_em": null,
       "atualizacao_esperada_segundos": null,
-      "coletado_em": "2026-11-07T12:42:13.886Z",
+      "coletado_em": "2026-11-07T12:52:21.654Z",
       "resultado": "falha",
       "motivo": "https://monitoramento.defesacivil.itajai.sc.gov.br/api/v1/alertas/ativo: HTTP 429 Too Many Requests",
       "avisos": [],
       "requisicoes": [
         {
           "url": "https://monitoramento.defesacivil.itajai.sc.gov.br/api/v1/alertas/ativo",
-          "coletado_em": "2026-11-07T12:42:13.886Z",
+          "coletado_em": "2026-11-07T12:52:21.654Z",
           "http_status": 429,
           "erro": "HTTP 429 Too Many Requests",
           "resposta_erro": "{\"message\":\"Limite de requisi\\u00e7\\u00f5es atingido. Aguarde antes de tentar novamente.\"}"
@@ -10207,7 +10202,7 @@
       "qualidade": "atualizado",
       "atualizado_em": null,
       "atualizacao_esperada_segundos": null,
-      "coletado_em": "2026-11-07T12:42:13.887Z",
+      "coletado_em": "2026-11-07T12:52:21.656Z",
       "resultado": "sucesso",
       "motivo": null,
       "avisos": [
@@ -10216,7 +10211,7 @@
       "requisicoes": [
         {
           "url": "https://monitoramento.defesacivil.itajai.sc.gov.br/monitoramento/rios?municipio_id=1",
-          "coletado_em": "2026-11-07T12:42:13.887Z",
+          "coletado_em": "2026-11-07T12:52:21.656Z",
           "http_status": 200,
           "erro": null,
           "resposta_erro": null
@@ -10229,7 +10224,7 @@
       "qualidade": "atualizado",
       "atualizado_em": null,
       "atualizacao_esperada_segundos": null,
-      "coletado_em": "2026-11-07T12:42:13.888Z",
+      "coletado_em": "2026-11-07T12:52:21.657Z",
       "resultado": "sucesso",
       "motivo": null,
       "avisos": [
@@ -10238,7 +10233,7 @@
       "requisicoes": [
         {
           "url": "https://monitoramento.defesacivil.itajai.sc.gov.br/monitoramento/chuvas?municipio_id=1",
-          "coletado_em": "2026-11-07T12:42:13.888Z",
+          "coletado_em": "2026-11-07T12:52:21.657Z",
           "http_status": 200,
           "erro": null,
           "resposta_erro": null
@@ -10251,14 +10246,14 @@
       "qualidade": "atrasado",
       "atualizado_em": null,
       "atualizacao_esperada_segundos": null,
-      "coletado_em": "2026-11-07T12:42:13.889Z",
+      "coletado_em": "2026-11-07T12:52:21.658Z",
       "resultado": "sucesso",
       "motivo": null,
       "avisos": [],
       "requisicoes": [
         {
           "url": "https://monitoramento.defesacivil.itajai.sc.gov.br/monitoramento/barragens?municipio_id=1",
-          "coletado_em": "2026-11-07T12:42:13.889Z",
+          "coletado_em": "2026-11-07T12:52:21.658Z",
           "http_status": 200,
           "erro": null,
           "resposta_erro": null
@@ -10271,7 +10266,7 @@
       "qualidade": null,
       "atualizado_em": null,
       "atualizacao_esperada_segundos": null,
-      "coletado_em": "2026-11-07T12:42:13.889Z",
+      "coletado_em": "2026-11-07T12:52:21.660Z",
       "resultado": "sucesso",
       "motivo": null,
       "avisos": [
@@ -10281,14 +10276,14 @@
       "requisicoes": [
         {
           "url": "https://ciram.epagri.sc.gov.br/api/prevmuni-server/resources/listaJson/muni",
-          "coletado_em": "2026-11-07T12:42:13.889Z",
+          "coletado_em": "2026-11-07T12:52:21.660Z",
           "http_status": 200,
           "erro": null,
           "resposta_erro": null
         },
         {
           "url": "https://ciram.epagri.sc.gov.br/api/prevmuni-server/resources/listaJson/prevMuniDia?cdCidade=4208203",
-          "coletado_em": "2026-11-07T12:42:18.605Z",
+          "coletado_em": "2026-11-07T12:52:23.523Z",
           "http_status": 200,
           "erro": null,
           "resposta_erro": null
