@@ -1,6 +1,6 @@
 {
   "versao": 1,
-  "atualizado_em": "2026-11-07T18:02:18.754Z",
+  "atualizado_em": "2026-11-07T18:12:23.523Z",
   "nivel_jbs": {
     "nivel": "alerta",
     "desde": "2026-11-07T14:50:35.205000+00:00",
@@ -171,7 +171,7 @@
   },
   "motor": {
     "versao": 1,
-    "avaliado_em": "2026-11-07T18:02:18.754Z",
+    "avaliado_em": "2026-11-07T18:12:23.523Z",
     "situacao_oficial": {
       "nivel": "alerta",
       "desde": "2026-11-07T07:50:09-03:00",
@@ -10119,7 +10119,7 @@
     "uf": null,
     "regiao": null,
     "atualizado_em": null,
-    "coletado_em": "2026-11-07T18:02:18.539Z",
+    "coletado_em": "2026-11-07T18:12:23.310Z",
     "disponibilidade": "disponivel",
     "dias": [
       {
@@ -10230,9 +10230,9 @@
     ]
   },
   "blumenau": {
-    "nivel_m": 6.78,
-    "medido_em": "2026-11-07T14:00:00-03:00",
-    "coletado_em": "2026-11-07T18:02:16.630Z",
+    "nivel_m": 7.06,
+    "medido_em": "2026-11-07T15:00:00-03:00",
+    "coletado_em": "2026-11-07T18:12:20.924Z",
     "classificacao_original": "Alerta",
     "nivel": "alerta",
     "tendencia": "subindo",
@@ -10262,14 +10262,14 @@
       "qualidade": "indisponivel",
       "atualizado_em": null,
       "atualizacao_esperada_segundos": null,
-      "coletado_em": "2026-11-07T18:02:16.646Z",
+      "coletado_em": "2026-11-07T18:12:20.940Z",
       "resultado": "falha",
       "motivo": "https://monitoramento.defesacivil.itajai.sc.gov.br/api/v1/situacao-atual: HTTP 429 Too Many Requests",
       "avisos": [],
       "requisicoes": [
         {
           "url": "https://monitoramento.defesacivil.itajai.sc.gov.br/api/v1/situacao-atual",
-          "coletado_em": "2026-11-07T18:02:16.646Z",
+          "coletado_em": "2026-11-07T18:12:20.940Z",
           "http_status": 429,
           "erro": "HTTP 429 Too Many Requests",
           "resposta_erro": "{\"message\":\"Limite de requisi\\u00e7\\u00f5es atingido. Aguarde antes de tentar novamente.\"}"
@@ -10282,14 +10282,14 @@
       "qualidade": "indisponivel",
       "atualizado_em": null,
       "atualizacao_esperada_segundos": null,
-      "coletado_em": "2026-11-07T18:02:16.801Z",
+      "coletado_em": "2026-11-07T18:12:20.961Z",
       "resultado": "falha",
       "motivo": "https://monitoramento.defesacivil.itajai.sc.gov.br/api/v1/alertas/ativo: HTTP 429 Too Many Requests",
       "avisos": [],
       "requisicoes": [
         {
           "url": "https://monitoramento.defesacivil.itajai.sc.gov.br/api/v1/alertas/ativo",
-          "coletado_em": "2026-11-07T18:02:16.801Z",
+          "coletado_em": "2026-11-07T18:12:20.961Z",
           "http_status": 429,
           "erro": "HTTP 429 Too Many Requests",
           "resposta_erro": "{\"message\":\"Limite de requisi\\u00e7\\u00f5es atingido. Aguarde antes de tentar novamente.\"}"
@@ -10302,7 +10302,7 @@
       "qualidade": "atualizado",
       "atualizado_em": null,
       "atualizacao_esperada_segundos": null,
-      "coletado_em": "2026-11-07T18:02:16.802Z",
+      "coletado_em": "2026-11-07T18:12:20.962Z",
       "resultado": "sucesso",
       "motivo": null,
       "avisos": [
@@ -10311,7 +10311,7 @@
       "requisicoes": [
         {
           "url": "https://monitoramento.defesacivil.itajai.sc.gov.br/monitoramento/rios?municipio_id=1",
-          "coletado_em": "2026-11-07T18:02:16.802Z",
+          "coletado_em": "2026-11-07T18:12:20.962Z",
           "http_status": 200,
           "erro": null,
           "resposta_erro": null
@@ -10324,7 +10324,7 @@
       "qualidade": "atualizado",
       "atualizado_em": null,
       "atualizacao_esperada_segundos": null,
-      "coletado_em": "2026-11-07T18:02:16.803Z",
+      "coletado_em": "2026-11-07T18:12:20.963Z",
       "resultado": "sucesso",
       "motivo": null,
       "avisos": [
@@ -10333,7 +10333,7 @@
       "requisicoes": [
         {
           "url": "https://monitoramento.defesacivil.itajai.sc.gov.br/monitoramento/chuvas?municipio_id=1",
-          "coletado_em": "2026-11-07T18:02:16.803Z",
+          "coletado_em": "2026-11-07T18:12:20.963Z",
           "http_status": 200,
           "erro": null,
           "resposta_erro": null
@@ -10346,14 +10346,14 @@
       "qualidade": "atrasado",
       "atualizado_em": null,
       "atualizacao_esperada_segundos": null,
-      "coletado_em": "2026-11-07T18:02:16.804Z",
+      "coletado_em": "2026-11-07T18:12:20.964Z",
       "resultado": "sucesso",
       "motivo": null,
       "avisos": [],
       "requisicoes": [
         {
           "url": "https://monitoramento.defesacivil.itajai.sc.gov.br/monitoramento/barragens?municipio_id=1",
-          "coletado_em": "2026-11-07T18:02:16.804Z",
+          "coletado_em": "2026-11-07T18:12:20.964Z",
           "http_status": 200,
           "erro": null,
           "resposta_erro": null
@@ -10366,7 +10366,7 @@
       "qualidade": null,
       "atualizado_em": null,
       "atualizacao_esperada_segundos": null,
-      "coletado_em": "2026-11-07T18:02:16.804Z",
+      "coletado_em": "2026-11-07T18:12:20.965Z",
       "resultado": "sucesso",
       "motivo": null,
       "avisos": [
@@ -10376,14 +10376,14 @@
       "requisicoes": [
         {
           "url": "https://ciram.epagri.sc.gov.br/api/prevmuni-server/resources/listaJson/muni",
-          "coletado_em": "2026-11-07T18:02:16.804Z",
+          "coletado_em": "2026-11-07T18:12:20.965Z",
           "http_status": 200,
           "erro": null,
           "resposta_erro": null
         },
         {
           "url": "https://ciram.epagri.sc.gov.br/api/prevmuni-server/resources/listaJson/prevMuniDia?cdCidade=4208203",
-          "coletado_em": "2026-11-07T18:02:18.539Z",
+          "coletado_em": "2026-11-07T18:12:23.310Z",
           "http_status": 200,
           "erro": null,
           "resposta_erro": null
