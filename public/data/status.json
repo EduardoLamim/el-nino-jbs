@@ -1,6 +1,6 @@
 {
   "versao": 1,
-  "atualizado_em": "2026-11-08T03:12:18.921Z",
+  "atualizado_em": "2026-11-08T03:22:22.351Z",
   "nivel_jbs": {
     "nivel": "emergencia",
     "desde": "2026-11-08T02:10:13.087000+00:00",
@@ -11,8 +11,8 @@
         "severidade": "alerta",
         "descricao": "Situação oficial da Defesa Civil de Itajaí em Alerta.",
         "atualizado_em": "2026-11-07T19:22:22-03:00",
-        "stale": true,
-        "motivo": "Situação oficial ausente, inválida, atrasada ou anterior à última conhecida."
+        "stale": false,
+        "motivo": null
       },
       {
         "tipo": "estacao_hidrologica",
@@ -171,12 +171,12 @@
   },
   "motor": {
     "versao": 1,
-    "avaliado_em": "2026-11-08T03:12:18.921Z",
+    "avaliado_em": "2026-11-08T03:22:22.351Z",
     "situacao_oficial": {
       "nivel": "alerta",
       "desde": "2026-11-07T07:50:09-03:00",
-      "stale": true,
-      "motivo": "Situação oficial ausente, inválida, atrasada ou anterior à última conhecida.",
+      "stale": false,
+      "motivo": null,
       "ultima_valida": {
         "flag": "Alerta",
         "conteudo": "Defesa Civil prevê chegada de grande volume de água dos rios Itajaí-Açu e Itajaí-Mirim neste domingo (8), com possibilidade de inundações em áreas ribeirinhas e pontos baixos de Itajaí. O novo prognóstico considera o volume de chuva registrado nos últimos dias em toda a região, especialmente em Blumenau. A população pode consultar o mapa disponibilizado pelo Município, que identifica as ruas com possibilidade de alagamento, e acompanhar os alertas oficiais.\r\nClique no link abaixo e observe os pontos pintados em azul no mapa:[Projeção de Vias Inundáveis](https://defesacivil.itajai.sc.gov.br/vias-suscetiveis-inundacoes)",
@@ -462,7 +462,12 @@
       }
     }
   },
-  "situacao_oficial": null,
+  "situacao_oficial": {
+    "flag": "Alerta",
+    "conteudo": "Defesa Civil prevê chegada de grande volume de água dos rios Itajaí-Açu e Itajaí-Mirim neste domingo (8), com possibilidade de inundações em áreas ribeirinhas e pontos baixos de Itajaí. O novo prognóstico considera o volume de chuva registrado nos últimos dias em toda a região, especialmente em Blumenau. A população pode consultar o mapa disponibilizado pelo Município, que identifica as ruas com possibilidade de alagamento, e acompanhar os alertas oficiais.\r\nClique no link abaixo e observe os pontos pintados em azul no mapa:[Projeção de Vias Inundáveis](https://defesacivil.itajai.sc.gov.br/vias-suscetiveis-inundacoes)",
+    "atualizado_em": "2026-11-07T19:22:22-03:00",
+    "qualidade": null
+  },
   "alertas_oficiais": null,
   "rios": {
     "DC01": {
@@ -10199,7 +10204,7 @@
     "uf": null,
     "regiao": null,
     "atualizado_em": null,
-    "coletado_em": "2026-11-08T03:12:18.752Z",
+    "coletado_em": "2026-11-08T03:22:22.103Z",
     "disponibilidade": "disponivel",
     "dias": [
       {
@@ -10291,7 +10296,7 @@
   "blumenau": {
     "nivel_m": 8.18,
     "medido_em": "2026-11-08T00:00:00-03:00",
-    "coletado_em": "2026-11-08T03:12:17.072Z",
+    "coletado_em": "2026-11-08T03:22:19.676Z",
     "classificacao_original": "Alerta Máximo",
     "nivel": "emergencia",
     "tendencia": "subindo",
@@ -10302,56 +10307,60 @@
   "qualidade_monitoramento": {
     "estado": "parcialmente_degradado",
     "problemas": [
-      "situacao_atual: https://monitoramento.defesacivil.itajai.sc.gov.br/api/v1/situacao-atual: HTTP 429 Too Many Requests",
-      "alertas_ativo: https://monitoramento.defesacivil.itajai.sc.gov.br/api/v1/alertas/ativo: HTTP 429 Too Many Requests",
+      "situacao_atual: Situação oficial não informa qualidade ou validade temporal.",
+      "alertas_ativo: Alerta complementar não nulo preservado; schema ainda não conhecido.",
       "rios: Séries sem qualidade explícita mantêm qualidade null; validade não inferida.",
       "chuvas: Campos de chuva ausentes ficam null; acumulados e séries não são recalculados.",
       "barragens/Barragem Ituporanga: qualidade atrasado.",
       "barragens/Barragem Taió: qualidade atrasado.",
       "barragens/Barragem José Boiteux: qualidade atrasado.",
       "epagri: Produto municipal JSON oficial não identifica modelo nem timestamp de emissão; campos mantidos null.",
-      "epagri: UF não informada no payload observado; município validado por nome e código oficial 4208203 de Itajaí/SC.",
-      "Situação oficial: Situação oficial ausente, inválida, atrasada ou anterior à última conhecida."
+      "epagri: UF não informada no payload observado; município validado por nome e código oficial 4208203 de Itajaí/SC."
     ]
   },
   "fontes": {
     "situacao_atual": {
       "nome": "Defesa Civil de Itajaí",
       "url": "https://monitoramento.defesacivil.itajai.sc.gov.br/api/v1/situacao-atual",
-      "qualidade": "indisponivel",
-      "atualizado_em": null,
+      "qualidade": null,
+      "atualizado_em": "2026-11-07T19:22:22-03:00",
       "atualizacao_esperada_segundos": null,
-      "coletado_em": "2026-11-08T03:12:17.087Z",
-      "resultado": "falha",
-      "motivo": "https://monitoramento.defesacivil.itajai.sc.gov.br/api/v1/situacao-atual: HTTP 429 Too Many Requests",
-      "avisos": [],
+      "coletado_em": "2026-11-08T03:22:19.690Z",
+      "resultado": "sucesso",
+      "motivo": null,
+      "avisos": [
+        "Situação oficial não informa qualidade ou validade temporal."
+      ],
       "requisicoes": [
         {
           "url": "https://monitoramento.defesacivil.itajai.sc.gov.br/api/v1/situacao-atual",
-          "coletado_em": "2026-11-08T03:12:17.087Z",
-          "http_status": 429,
-          "erro": "HTTP 429 Too Many Requests",
-          "resposta_erro": "{\"message\":\"Limite de requisi\\u00e7\\u00f5es atingido. Aguarde antes de tentar novamente.\"}"
+          "coletado_em": "2026-11-08T03:22:19.690Z",
+          "http_status": 200,
+          "erro": null,
+          "resposta_erro": null
         }
       ]
     },
     "alertas_ativo": {
       "nome": "Defesa Civil de Itajaí",
       "url": "https://monitoramento.defesacivil.itajai.sc.gov.br/api/v1/alertas/ativo",
-      "qualidade": "indisponivel",
+      "qualidade": null,
       "atualizado_em": null,
       "atualizacao_esperada_segundos": null,
-      "coletado_em": "2026-11-08T03:12:17.145Z",
-      "resultado": "falha",
-      "motivo": "https://monitoramento.defesacivil.itajai.sc.gov.br/api/v1/alertas/ativo: HTTP 429 Too Many Requests",
-      "avisos": [],
+      "coletado_em": "2026-11-08T03:22:19.708Z",
+      "resultado": "sucesso",
+      "motivo": null,
+      "avisos": [
+        "Alerta complementar não nulo preservado; schema ainda não conhecido."
+      ],
+      "payload_nao_normalizado_json": "{\"id\":15,\"titulo\":\"ALERTA\",\"conteudo_html\":\"\",\"link\":null,\"inicio_em\":\"2026-11-07T11:00:00-03:00\",\"fim_em\":\"2026-11-08T11:00:00-03:00\",\"imagem\":{\"url\":\"https://monitoramento.defesacivil.itajai.sc.gov.br/api/v1/alertas/15/imagem?v=c53db98b50a5\",\"mime_type\":\"image/jpeg\",\"tamanho\":109831},\"atualizado_em\":\"2026-11-07T11:39:02-03:00\"}",
       "requisicoes": [
         {
           "url": "https://monitoramento.defesacivil.itajai.sc.gov.br/api/v1/alertas/ativo",
-          "coletado_em": "2026-11-08T03:12:17.145Z",
-          "http_status": 429,
-          "erro": "HTTP 429 Too Many Requests",
-          "resposta_erro": "{\"message\":\"Limite de requisi\\u00e7\\u00f5es atingido. Aguarde antes de tentar novamente.\"}"
+          "coletado_em": "2026-11-08T03:22:19.708Z",
+          "http_status": 200,
+          "erro": null,
+          "resposta_erro": null
         }
       ]
     },
@@ -10361,7 +10370,7 @@
       "qualidade": "atualizado",
       "atualizado_em": null,
       "atualizacao_esperada_segundos": null,
-      "coletado_em": "2026-11-08T03:12:17.146Z",
+      "coletado_em": "2026-11-08T03:22:19.709Z",
       "resultado": "sucesso",
       "motivo": null,
       "avisos": [
@@ -10370,7 +10379,7 @@
       "requisicoes": [
         {
           "url": "https://monitoramento.defesacivil.itajai.sc.gov.br/monitoramento/rios?municipio_id=1",
-          "coletado_em": "2026-11-08T03:12:17.146Z",
+          "coletado_em": "2026-11-08T03:22:19.709Z",
           "http_status": 200,
           "erro": null,
           "resposta_erro": null
@@ -10383,7 +10392,7 @@
       "qualidade": "atualizado",
       "atualizado_em": null,
       "atualizacao_esperada_segundos": null,
-      "coletado_em": "2026-11-08T03:12:17.146Z",
+      "coletado_em": "2026-11-08T03:22:19.710Z",
       "resultado": "sucesso",
       "motivo": null,
       "avisos": [
@@ -10392,7 +10401,7 @@
       "requisicoes": [
         {
           "url": "https://monitoramento.defesacivil.itajai.sc.gov.br/monitoramento/chuvas?municipio_id=1",
-          "coletado_em": "2026-11-08T03:12:17.146Z",
+          "coletado_em": "2026-11-08T03:22:19.710Z",
           "http_status": 200,
           "erro": null,
           "resposta_erro": null
@@ -10405,14 +10414,14 @@
       "qualidade": "atrasado",
       "atualizado_em": null,
       "atualizacao_esperada_segundos": null,
-      "coletado_em": "2026-11-08T03:12:17.147Z",
+      "coletado_em": "2026-11-08T03:22:19.710Z",
       "resultado": "sucesso",
       "motivo": null,
       "avisos": [],
       "requisicoes": [
         {
           "url": "https://monitoramento.defesacivil.itajai.sc.gov.br/monitoramento/barragens?municipio_id=1",
-          "coletado_em": "2026-11-08T03:12:17.147Z",
+          "coletado_em": "2026-11-08T03:22:19.710Z",
           "http_status": 200,
           "erro": null,
           "resposta_erro": null
@@ -10425,7 +10434,7 @@
       "qualidade": null,
       "atualizado_em": null,
       "atualizacao_esperada_segundos": null,
-      "coletado_em": "2026-11-08T03:12:17.147Z",
+      "coletado_em": "2026-11-08T03:22:19.711Z",
       "resultado": "sucesso",
       "motivo": null,
       "avisos": [
@@ -10435,14 +10444,14 @@
       "requisicoes": [
         {
           "url": "https://ciram.epagri.sc.gov.br/api/prevmuni-server/resources/listaJson/muni",
-          "coletado_em": "2026-11-08T03:12:17.147Z",
+          "coletado_em": "2026-11-08T03:22:19.711Z",
           "http_status": 200,
           "erro": null,
           "resposta_erro": null
         },
         {
           "url": "https://ciram.epagri.sc.gov.br/api/prevmuni-server/resources/listaJson/prevMuniDia?cdCidade=4208203",
-          "coletado_em": "2026-11-08T03:12:18.752Z",
+          "coletado_em": "2026-11-08T03:22:22.103Z",
           "http_status": 200,
           "erro": null,
           "resposta_erro": null
