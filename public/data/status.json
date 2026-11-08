@@ -1,6 +1,6 @@
 {
   "versao": 1,
-  "atualizado_em": "2026-11-08T00:32:22.039Z",
+  "atualizado_em": "2026-11-08T00:42:28.219Z",
   "nivel_jbs": {
     "nivel": "alerta",
     "desde": "2026-11-07T14:50:35.205000+00:00",
@@ -19,7 +19,7 @@
         "origem": "DC03",
         "severidade": "alerta",
         "descricao": "DC03 — Rio Itajaí-Mirim (canal retificado) - Captação SEMASA: estado hidrológico Alerta.",
-        "atualizado_em": "2026-11-08T00:20:08.749000+00:00",
+        "atualizado_em": "2026-11-08T00:30:02.611000+00:00",
         "stale": false,
         "motivo": null,
         "nome": "Rio Itajaí-Mirim (canal retificado) - Captação SEMASA",
@@ -36,13 +36,13 @@
         "origem": "DC04",
         "severidade": "atencao",
         "descricao": "DC04 — Rio Itajaí-Mirim (canal retificado e curso antigo) - Vitalmar Pescados: estado hidrológico Atenção.",
-        "atualizado_em": "2026-11-08T00:21:13.160000+00:00",
+        "atualizado_em": "2026-11-08T00:31:12.797000+00:00",
         "stale": false,
         "motivo": null,
         "nome": "Rio Itajaí-Mirim (canal retificado e curso antigo) - Vitalmar Pescados",
-        "nivel_observado_m": 1.51,
+        "nivel_observado_m": 1.57,
         "limite_responsavel_m": 1.5,
-        "tendencia": "descendo",
+        "tendencia": "subindo",
         "normalizacao": {
           "leituras_abaixo": 0,
           "necessarias": 3
@@ -53,13 +53,13 @@
         "origem": "DC05",
         "severidade": "alerta",
         "descricao": "DC05 — Rio Itajaí-Mirim (curso antigo) - Propriedade privada: estado hidrológico Alerta.",
-        "atualizado_em": "2026-11-08T00:21:06.248000+00:00",
+        "atualizado_em": "2026-11-08T00:31:05.835000+00:00",
         "stale": false,
         "motivo": null,
         "nome": "Rio Itajaí-Mirim (curso antigo) - Propriedade privada",
-        "nivel_observado_m": 2.51,
+        "nivel_observado_m": 2.52,
         "limite_responsavel_m": 2.2,
-        "tendencia": "estavel",
+        "tendencia": "subindo",
         "normalizacao": {
           "leituras_abaixo": 0,
           "necessarias": 3
@@ -70,11 +70,11 @@
         "origem": "DC08",
         "severidade": "atencao",
         "descricao": "DC08 — Ribeirão Canhanduba - Rua Benjamin Dagnoni: estado hidrológico Atenção.",
-        "atualizado_em": "2026-11-08T00:20:21.069000+00:00",
+        "atualizado_em": "2026-11-08T00:30:20.739000+00:00",
         "stale": false,
         "motivo": null,
         "nome": "Ribeirão Canhanduba - Rua Benjamin Dagnoni",
-        "nivel_observado_m": 1.92,
+        "nivel_observado_m": 1.88,
         "limite_responsavel_m": 1.7,
         "tendencia": "descendo",
         "normalizacao": {
@@ -87,13 +87,13 @@
         "origem": "DC09",
         "severidade": "alerta",
         "descricao": "DC09 — Ribeirão da Murta - Ponte da Rua Lidia Puel Peixer: estado hidrológico Alerta.",
-        "atualizado_em": "2026-11-08T00:20:15.882000+00:00",
+        "atualizado_em": "2026-11-08T00:30:11.021000+00:00",
         "stale": false,
         "motivo": null,
         "nome": "Ribeirão da Murta - Ponte da Rua Lidia Puel Peixer",
-        "nivel_observado_m": 1.43,
+        "nivel_observado_m": 1.42,
         "limite_responsavel_m": 1.42,
-        "tendencia": "estavel",
+        "tendencia": "descendo",
         "normalizacao": {
           "leituras_abaixo": 0,
           "necessarias": 3
@@ -104,11 +104,11 @@
         "origem": "DC10",
         "severidade": "alerta",
         "descricao": "DC10 — Rio Itajaí-Mirim – Bairro Limoeiro: estado hidrológico Alerta.",
-        "atualizado_em": "2026-11-08T00:20:05.546000+00:00",
+        "atualizado_em": "2026-11-08T00:30:14.649000+00:00",
         "stale": false,
         "motivo": null,
         "nome": "Rio Itajaí-Mirim – Bairro Limoeiro",
-        "nivel_observado_m": 9.21,
+        "nivel_observado_m": 9.23,
         "limite_responsavel_m": 9,
         "tendencia": "subindo",
         "normalizacao": {
@@ -121,13 +121,13 @@
         "origem": "DC11",
         "severidade": "alerta",
         "descricao": "DC11 — Rio Itajaí-Açú – Santa Regina (Volta de Cima): estado hidrológico Alerta.",
-        "atualizado_em": "2026-11-08T00:20:01.166000+00:00",
+        "atualizado_em": "2026-11-08T00:30:11.367000+00:00",
         "stale": false,
         "motivo": null,
         "nome": "Rio Itajaí-Açú – Santa Regina (Volta de Cima)",
-        "nivel_observado_m": 4.1,
+        "nivel_observado_m": 4.12,
         "limite_responsavel_m": 4,
-        "tendencia": "descendo",
+        "tendencia": "subindo",
         "normalizacao": {
           "leituras_abaixo": 0,
           "necessarias": 3
@@ -137,7 +137,7 @@
   },
   "motor": {
     "versao": 1,
-    "avaliado_em": "2026-11-08T00:32:22.039Z",
+    "avaliado_em": "2026-11-08T00:42:28.219Z",
     "situacao_oficial": {
       "nivel": "alerta",
       "desde": "2026-11-07T07:50:09-03:00",
@@ -159,16 +159,16 @@
         "stale": false,
         "motivo": null,
         "ultima_valida": {
-          "nivel_m": 1.17,
-          "medido_em": "2026-11-08T00:21:35.737000+00:00",
+          "nivel_m": 1.08,
+          "medido_em": "2026-11-08T00:31:35.419000+00:00",
           "limites": {
             "atencao_m": 1.21,
             "alerta_m": 1.61,
             "emergencia_m": 1.75
           },
-          "tendencia": "subindo"
+          "tendencia": "descendo"
         },
-        "ultima_amostra_em": "2026-11-08T00:21:35.737000+00:00",
+        "ultima_amostra_em": "2026-11-08T00:31:35.419000+00:00",
         "normalizacao": {
           "leituras_abaixo": 0,
           "necessarias": 3,
@@ -184,8 +184,8 @@
         "stale": false,
         "motivo": null,
         "ultima_valida": {
-          "nivel_m": 1.26,
-          "medido_em": "2026-11-08T00:21:21.910000+00:00",
+          "nivel_m": 1.27,
+          "medido_em": "2026-11-08T00:31:21.540000+00:00",
           "limites": {
             "atencao_m": 1.6,
             "alerta_m": 2,
@@ -193,7 +193,7 @@
           },
           "tendencia": "subindo"
         },
-        "ultima_amostra_em": "2026-11-08T00:21:21.910000+00:00",
+        "ultima_amostra_em": "2026-11-08T00:31:21.540000+00:00",
         "normalizacao": {
           "leituras_abaixo": 0,
           "necessarias": 3,
@@ -210,7 +210,7 @@
         "motivo": null,
         "ultima_valida": {
           "nivel_m": 1.92,
-          "medido_em": "2026-11-08T00:20:08.749000+00:00",
+          "medido_em": "2026-11-08T00:30:02.611000+00:00",
           "limites": {
             "atencao_m": 1.48,
             "alerta_m": 1.85,
@@ -218,7 +218,7 @@
           },
           "tendencia": "estavel"
         },
-        "ultima_amostra_em": "2026-11-08T00:20:08.749000+00:00",
+        "ultima_amostra_em": "2026-11-08T00:30:02.611000+00:00",
         "normalizacao": {
           "leituras_abaixo": 0,
           "necessarias": 3,
@@ -234,16 +234,16 @@
         "stale": false,
         "motivo": null,
         "ultima_valida": {
-          "nivel_m": 1.51,
-          "medido_em": "2026-11-08T00:21:13.160000+00:00",
+          "nivel_m": 1.57,
+          "medido_em": "2026-11-08T00:31:12.797000+00:00",
           "limites": {
             "atencao_m": 1.5,
             "alerta_m": 1.85,
             "emergencia_m": 2.25
           },
-          "tendencia": "descendo"
+          "tendencia": "subindo"
         },
-        "ultima_amostra_em": "2026-11-08T00:21:13.160000+00:00",
+        "ultima_amostra_em": "2026-11-08T00:31:12.797000+00:00",
         "normalizacao": {
           "leituras_abaixo": 0,
           "necessarias": 3,
@@ -259,16 +259,16 @@
         "stale": false,
         "motivo": null,
         "ultima_valida": {
-          "nivel_m": 2.51,
-          "medido_em": "2026-11-08T00:21:06.248000+00:00",
+          "nivel_m": 2.52,
+          "medido_em": "2026-11-08T00:31:05.835000+00:00",
           "limites": {
             "atencao_m": 1.6,
             "alerta_m": 2.2,
             "emergencia_m": 3
           },
-          "tendencia": "estavel"
+          "tendencia": "subindo"
         },
-        "ultima_amostra_em": "2026-11-08T00:21:06.248000+00:00",
+        "ultima_amostra_em": "2026-11-08T00:31:05.835000+00:00",
         "normalizacao": {
           "leituras_abaixo": 0,
           "necessarias": 3,
@@ -284,16 +284,16 @@
         "stale": false,
         "motivo": null,
         "ultima_valida": {
-          "nivel_m": 1.14,
-          "medido_em": "2026-11-08T00:20:55.863000+00:00",
+          "nivel_m": 1.1,
+          "medido_em": "2026-11-08T00:30:55.616000+00:00",
           "limites": {
             "atencao_m": 1.5,
             "alerta_m": 1.85,
             "emergencia_m": 2.55
           },
-          "tendencia": "subindo"
+          "tendencia": "descendo"
         },
-        "ultima_amostra_em": "2026-11-08T00:20:55.863000+00:00",
+        "ultima_amostra_em": "2026-11-08T00:30:55.616000+00:00",
         "normalizacao": {
           "leituras_abaixo": 0,
           "necessarias": 3,
@@ -309,8 +309,8 @@
         "stale": false,
         "motivo": null,
         "ultima_valida": {
-          "nivel_m": 0.54,
-          "medido_em": "2026-11-08T00:20:35.113000+00:00",
+          "nivel_m": 0.51,
+          "medido_em": "2026-11-08T00:30:34.715000+00:00",
           "limites": {
             "atencao_m": 1,
             "alerta_m": 1.4,
@@ -318,7 +318,7 @@
           },
           "tendencia": "descendo"
         },
-        "ultima_amostra_em": "2026-11-08T00:20:35.113000+00:00",
+        "ultima_amostra_em": "2026-11-08T00:30:34.715000+00:00",
         "normalizacao": {
           "leituras_abaixo": 0,
           "necessarias": 3,
@@ -334,8 +334,8 @@
         "stale": false,
         "motivo": null,
         "ultima_valida": {
-          "nivel_m": 1.92,
-          "medido_em": "2026-11-08T00:20:21.069000+00:00",
+          "nivel_m": 1.88,
+          "medido_em": "2026-11-08T00:30:20.739000+00:00",
           "limites": {
             "atencao_m": 1.7,
             "alerta_m": 2.3,
@@ -343,7 +343,7 @@
           },
           "tendencia": "descendo"
         },
-        "ultima_amostra_em": "2026-11-08T00:20:21.069000+00:00",
+        "ultima_amostra_em": "2026-11-08T00:30:20.739000+00:00",
         "normalizacao": {
           "leituras_abaixo": 0,
           "necessarias": 3,
@@ -359,16 +359,16 @@
         "stale": false,
         "motivo": null,
         "ultima_valida": {
-          "nivel_m": 1.43,
-          "medido_em": "2026-11-08T00:20:15.882000+00:00",
+          "nivel_m": 1.42,
+          "medido_em": "2026-11-08T00:30:11.021000+00:00",
           "limites": {
             "atencao_m": 1.22,
             "alerta_m": 1.42,
             "emergencia_m": 1.62
           },
-          "tendencia": "estavel"
+          "tendencia": "descendo"
         },
-        "ultima_amostra_em": "2026-11-08T00:20:15.882000+00:00",
+        "ultima_amostra_em": "2026-11-08T00:30:11.021000+00:00",
         "normalizacao": {
           "leituras_abaixo": 0,
           "necessarias": 3,
@@ -384,8 +384,8 @@
         "stale": false,
         "motivo": null,
         "ultima_valida": {
-          "nivel_m": 9.21,
-          "medido_em": "2026-11-08T00:20:05.546000+00:00",
+          "nivel_m": 9.23,
+          "medido_em": "2026-11-08T00:30:14.649000+00:00",
           "limites": {
             "atencao_m": 8,
             "alerta_m": 9,
@@ -393,7 +393,7 @@
           },
           "tendencia": "subindo"
         },
-        "ultima_amostra_em": "2026-11-08T00:20:05.546000+00:00",
+        "ultima_amostra_em": "2026-11-08T00:30:14.649000+00:00",
         "normalizacao": {
           "leituras_abaixo": 0,
           "necessarias": 3,
@@ -409,16 +409,16 @@
         "stale": false,
         "motivo": null,
         "ultima_valida": {
-          "nivel_m": 4.1,
-          "medido_em": "2026-11-08T00:20:01.166000+00:00",
+          "nivel_m": 4.12,
+          "medido_em": "2026-11-08T00:30:11.367000+00:00",
           "limites": {
             "atencao_m": 3,
             "alerta_m": 4,
             "emergencia_m": 5
           },
-          "tendencia": "descendo"
+          "tendencia": "subindo"
         },
-        "ultima_amostra_em": "2026-11-08T00:20:01.166000+00:00",
+        "ultima_amostra_em": "2026-11-08T00:30:11.367000+00:00",
         "normalizacao": {
           "leituras_abaixo": 0,
           "necessarias": 3,
@@ -436,22 +436,17 @@
       "nome": "Rio Itajaí-Açu - ICMBio/CEPSUL",
       "latitude": -26.90923,
       "longitude": -48.6516,
-      "nivel_m": 1.17,
-      "tendencia": "subindo",
+      "nivel_m": 1.08,
+      "tendencia": "descendo",
       "limites": {
         "atencao_m": 1.21,
         "alerta_m": 1.61,
         "emergencia_m": 1.75
       },
       "qualidade": "atualizado",
-      "medido_em": "2026-11-08T00:21:35.737000+00:00",
+      "medido_em": "2026-11-08T00:31:35.419000+00:00",
       "atualizacao_esperada_segundos": 600,
       "serie_12h": [
-        {
-          "medido_em": "2026-11-07T12:21:35.817000+00:00",
-          "nivel_m": 0.91,
-          "qualidade": null
-        },
         {
           "medido_em": "2026-11-07T12:31:36.045000+00:00",
           "nivel_m": 0.98,
@@ -806,12 +801,17 @@
           "medido_em": "2026-11-08T00:21:35.737000+00:00",
           "nivel_m": 1.17,
           "qualidade": null
+        },
+        {
+          "medido_em": "2026-11-08T00:31:35.419000+00:00",
+          "nivel_m": 1.08,
+          "qualidade": null
         }
       ],
       "qualidade_fonte": {
         "nivel_rio_m": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:21:35.737000+00:00"
+          "medido_em": "2026-11-08T00:31:35.419000+00:00"
         }
       },
       "situacao_fonte": "monitoramento"
@@ -821,7 +821,7 @@
       "nome": "Rio Itajaí-Açu - Praça Celso Pereira da Silva",
       "latitude": -26.875683,
       "longitude": -48.710217,
-      "nivel_m": 1.26,
+      "nivel_m": 1.27,
       "tendencia": "subindo",
       "limites": {
         "atencao_m": 1.6,
@@ -829,7 +829,7 @@
         "emergencia_m": 2.5
       },
       "qualidade": "atualizado",
-      "medido_em": "2026-11-08T00:21:21.910000+00:00",
+      "medido_em": "2026-11-08T00:31:21.540000+00:00",
       "atualizacao_esperada_segundos": 600,
       "serie_12h": [
         {
@@ -1191,12 +1191,17 @@
           "medido_em": "2026-11-08T00:21:21.910000+00:00",
           "nivel_m": 1.26,
           "qualidade": null
+        },
+        {
+          "medido_em": "2026-11-08T00:31:21.540000+00:00",
+          "nivel_m": 1.27,
+          "qualidade": null
         }
       ],
       "qualidade_fonte": {
         "nivel_rio_m": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:21:21.910000+00:00"
+          "medido_em": "2026-11-08T00:31:21.540000+00:00"
         }
       },
       "situacao_fonte": "monitoramento"
@@ -1214,14 +1219,9 @@
         "emergencia_m": 2.5
       },
       "qualidade": "atualizado",
-      "medido_em": "2026-11-08T00:20:08.749000+00:00",
+      "medido_em": "2026-11-08T00:30:02.611000+00:00",
       "atualizacao_esperada_segundos": 600,
       "serie_12h": [
-        {
-          "medido_em": "2026-11-07T12:20:42.347000+00:00",
-          "nivel_m": 0.97,
-          "qualidade": null
-        },
         {
           "medido_em": "2026-11-07T12:30:06.885000+00:00",
           "nivel_m": 0.98,
@@ -1581,12 +1581,17 @@
           "medido_em": "2026-11-08T00:20:08.749000+00:00",
           "nivel_m": 1.92,
           "qualidade": null
+        },
+        {
+          "medido_em": "2026-11-08T00:30:02.611000+00:00",
+          "nivel_m": 1.92,
+          "qualidade": null
         }
       ],
       "qualidade_fonte": {
         "nivel_rio_m": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:20:08.749000+00:00"
+          "medido_em": "2026-11-08T00:30:02.611000+00:00"
         }
       },
       "situacao_fonte": "alerta"
@@ -1596,15 +1601,15 @@
       "nome": "Rio Itajaí-Mirim (canal retificado e curso antigo) - Vitalmar Pescados",
       "latitude": -26.8941,
       "longitude": -48.68838,
-      "nivel_m": 1.51,
-      "tendencia": "descendo",
+      "nivel_m": 1.57,
+      "tendencia": "subindo",
       "limites": {
         "atencao_m": 1.5,
         "alerta_m": 1.85,
         "emergencia_m": 2.25
       },
       "qualidade": "atualizado",
-      "medido_em": "2026-11-08T00:21:13.160000+00:00",
+      "medido_em": "2026-11-08T00:31:12.797000+00:00",
       "atualizacao_esperada_segundos": 600,
       "serie_12h": [
         {
@@ -1966,12 +1971,17 @@
           "medido_em": "2026-11-08T00:21:13.160000+00:00",
           "nivel_m": 1.51,
           "qualidade": null
+        },
+        {
+          "medido_em": "2026-11-08T00:31:12.797000+00:00",
+          "nivel_m": 1.57,
+          "qualidade": null
         }
       ],
       "qualidade_fonte": {
         "nivel_rio_m": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:21:13.160000+00:00"
+          "medido_em": "2026-11-08T00:31:12.797000+00:00"
         }
       },
       "situacao_fonte": "atencao"
@@ -1981,15 +1991,15 @@
       "nome": "Rio Itajaí-Mirim (curso antigo) - Propriedade privada",
       "latitude": -26.93336,
       "longitude": -48.74776,
-      "nivel_m": 2.51,
-      "tendencia": "estavel",
+      "nivel_m": 2.52,
+      "tendencia": "subindo",
       "limites": {
         "atencao_m": 1.6,
         "alerta_m": 2.2,
         "emergencia_m": 3
       },
       "qualidade": "atualizado",
-      "medido_em": "2026-11-08T00:21:06.248000+00:00",
+      "medido_em": "2026-11-08T00:31:05.835000+00:00",
       "atualizacao_esperada_segundos": 600,
       "serie_12h": [
         {
@@ -2351,12 +2361,17 @@
           "medido_em": "2026-11-08T00:21:06.248000+00:00",
           "nivel_m": 2.51,
           "qualidade": null
+        },
+        {
+          "medido_em": "2026-11-08T00:31:05.835000+00:00",
+          "nivel_m": 2.52,
+          "qualidade": null
         }
       ],
       "qualidade_fonte": {
         "nivel_rio_m": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:21:06.248000+00:00"
+          "medido_em": "2026-11-08T00:31:05.835000+00:00"
         }
       },
       "situacao_fonte": "alerta"
@@ -2366,22 +2381,17 @@
       "nome": "Rio Itajaí-Mirim (curso antigo) - Itamirim Clube de Campo",
       "latitude": -26.92442,
       "longitude": -48.68576,
-      "nivel_m": 1.14,
-      "tendencia": "subindo",
+      "nivel_m": 1.1,
+      "tendencia": "descendo",
       "limites": {
         "atencao_m": 1.5,
         "alerta_m": 1.85,
         "emergencia_m": 2.55
       },
       "qualidade": "atualizado",
-      "medido_em": "2026-11-08T00:20:55.863000+00:00",
+      "medido_em": "2026-11-08T00:30:55.616000+00:00",
       "atualizacao_esperada_segundos": 600,
       "serie_12h": [
-        {
-          "medido_em": "2026-11-07T12:20:55.932000+00:00",
-          "nivel_m": 0.66,
-          "qualidade": null
-        },
         {
           "medido_em": "2026-11-07T12:30:56.460000+00:00",
           "nivel_m": 0.69,
@@ -2741,12 +2751,17 @@
           "medido_em": "2026-11-08T00:20:55.863000+00:00",
           "nivel_m": 1.14,
           "qualidade": null
+        },
+        {
+          "medido_em": "2026-11-08T00:30:55.616000+00:00",
+          "nivel_m": 1.1,
+          "qualidade": null
         }
       ],
       "qualidade_fonte": {
         "nivel_rio_m": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:20:55.863000+00:00"
+          "medido_em": "2026-11-08T00:30:55.616000+00:00"
         }
       },
       "situacao_fonte": "monitoramento"
@@ -2756,7 +2771,7 @@
       "nome": "Ribeirão da Murta - Portal",
       "latitude": -26.892699,
       "longitude": -48.735573,
-      "nivel_m": 0.54,
+      "nivel_m": 0.51,
       "tendencia": "descendo",
       "limites": {
         "atencao_m": 1,
@@ -2764,14 +2779,9 @@
         "emergencia_m": 1.5
       },
       "qualidade": "atualizado",
-      "medido_em": "2026-11-08T00:20:35.113000+00:00",
+      "medido_em": "2026-11-08T00:30:34.715000+00:00",
       "atualizacao_esperada_segundos": 600,
       "serie_12h": [
-        {
-          "medido_em": "2026-11-07T12:20:35.381000+00:00",
-          "nivel_m": 1.37,
-          "qualidade": null
-        },
         {
           "medido_em": "2026-11-07T12:30:35.411000+00:00",
           "nivel_m": 1.33,
@@ -3131,12 +3141,17 @@
           "medido_em": "2026-11-08T00:20:35.113000+00:00",
           "nivel_m": 0.54,
           "qualidade": null
+        },
+        {
+          "medido_em": "2026-11-08T00:30:34.715000+00:00",
+          "nivel_m": 0.51,
+          "qualidade": null
         }
       ],
       "qualidade_fonte": {
         "nivel_rio_m": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:20:35.113000+00:00"
+          "medido_em": "2026-11-08T00:30:34.715000+00:00"
         }
       },
       "situacao_fonte": "monitoramento"
@@ -3146,7 +3161,7 @@
       "nome": "Ribeirão Canhanduba - Rua Benjamin Dagnoni",
       "latitude": -26.979694,
       "longitude": -48.711948,
-      "nivel_m": 1.92,
+      "nivel_m": 1.88,
       "tendencia": "descendo",
       "limites": {
         "atencao_m": 1.7,
@@ -3154,14 +3169,9 @@
         "emergencia_m": 2.89
       },
       "qualidade": "atualizado",
-      "medido_em": "2026-11-08T00:20:21.069000+00:00",
+      "medido_em": "2026-11-08T00:30:20.739000+00:00",
       "atualizacao_esperada_segundos": 600,
       "serie_12h": [
-        {
-          "medido_em": "2026-11-07T12:20:21.376000+00:00",
-          "nivel_m": 2.49,
-          "qualidade": null
-        },
         {
           "medido_em": "2026-11-07T12:30:21.480000+00:00",
           "nivel_m": 2.5,
@@ -3521,12 +3531,17 @@
           "medido_em": "2026-11-08T00:20:21.069000+00:00",
           "nivel_m": 1.92,
           "qualidade": null
+        },
+        {
+          "medido_em": "2026-11-08T00:30:20.739000+00:00",
+          "nivel_m": 1.88,
+          "qualidade": null
         }
       ],
       "qualidade_fonte": {
         "nivel_rio_m": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:20:21.069000+00:00"
+          "medido_em": "2026-11-08T00:30:20.739000+00:00"
         }
       },
       "situacao_fonte": "atencao"
@@ -3536,22 +3551,17 @@
       "nome": "Ribeirão da Murta - Ponte da Rua Lidia Puel Peixer",
       "latitude": -26.879777,
       "longitude": -48.700308,
-      "nivel_m": 1.43,
-      "tendencia": "estavel",
+      "nivel_m": 1.42,
+      "tendencia": "descendo",
       "limites": {
         "atencao_m": 1.22,
         "alerta_m": 1.42,
         "emergencia_m": 1.62
       },
       "qualidade": "atualizado",
-      "medido_em": "2026-11-08T00:20:15.882000+00:00",
+      "medido_em": "2026-11-08T00:30:11.021000+00:00",
       "atualizacao_esperada_segundos": 600,
       "serie_12h": [
-        {
-          "medido_em": "2026-11-07T12:30:05.297000+00:00",
-          "nivel_m": 1.35,
-          "qualidade": null
-        },
         {
           "medido_em": "2026-11-07T12:40:14.805000+00:00",
           "nivel_m": 1.35,
@@ -3906,12 +3916,17 @@
           "medido_em": "2026-11-08T00:20:15.882000+00:00",
           "nivel_m": 1.43,
           "qualidade": null
+        },
+        {
+          "medido_em": "2026-11-08T00:30:11.021000+00:00",
+          "nivel_m": 1.42,
+          "qualidade": null
         }
       ],
       "qualidade_fonte": {
         "nivel_rio_m": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:20:15.882000+00:00"
+          "medido_em": "2026-11-08T00:30:11.021000+00:00"
         }
       },
       "situacao_fonte": "alerta"
@@ -3921,7 +3936,7 @@
       "nome": "Rio Itajaí-Mirim – Bairro Limoeiro",
       "latitude": -27.03353,
       "longitude": -48.861419,
-      "nivel_m": 9.21,
+      "nivel_m": 9.23,
       "tendencia": "subindo",
       "limites": {
         "atencao_m": 8,
@@ -3929,19 +3944,9 @@
         "emergencia_m": 10
       },
       "qualidade": "atualizado",
-      "medido_em": "2026-11-08T00:20:05.546000+00:00",
+      "medido_em": "2026-11-08T00:30:14.649000+00:00",
       "atualizacao_esperada_segundos": 600,
       "serie_12h": [
-        {
-          "medido_em": "2026-11-07T12:20:13.277000+00:00",
-          "nivel_m": 7.63,
-          "qualidade": null
-        },
-        {
-          "medido_em": "2026-11-07T12:30:08.020000+00:00",
-          "nivel_m": 7.73,
-          "qualidade": null
-        },
         {
           "medido_em": "2026-11-07T12:40:02.198000+00:00",
           "nivel_m": 7.78,
@@ -4296,12 +4301,17 @@
           "medido_em": "2026-11-08T00:20:05.546000+00:00",
           "nivel_m": 9.21,
           "qualidade": null
+        },
+        {
+          "medido_em": "2026-11-08T00:30:14.649000+00:00",
+          "nivel_m": 9.23,
+          "qualidade": null
         }
       ],
       "qualidade_fonte": {
         "nivel_rio_m": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:20:05.546000+00:00"
+          "medido_em": "2026-11-08T00:30:14.649000+00:00"
         }
       },
       "situacao_fonte": "alerta"
@@ -4311,22 +4321,17 @@
       "nome": "Rio Itajaí-Açú – Santa Regina (Volta de Cima)",
       "latitude": -26.879641,
       "longitude": -48.761549,
-      "nivel_m": 4.1,
-      "tendencia": "descendo",
+      "nivel_m": 4.12,
+      "tendencia": "subindo",
       "limites": {
         "atencao_m": 3,
         "alerta_m": 4,
         "emergencia_m": 5
       },
       "qualidade": "atualizado",
-      "medido_em": "2026-11-08T00:20:01.166000+00:00",
+      "medido_em": "2026-11-08T00:30:11.367000+00:00",
       "atualizacao_esperada_segundos": 600,
       "serie_12h": [
-        {
-          "medido_em": "2026-11-07T12:20:04.657000+00:00",
-          "nivel_m": 2.73,
-          "qualidade": null
-        },
         {
           "medido_em": "2026-11-07T12:30:14.861000+00:00",
           "nivel_m": 2.75,
@@ -4686,12 +4691,17 @@
           "medido_em": "2026-11-08T00:20:01.166000+00:00",
           "nivel_m": 4.1,
           "qualidade": null
+        },
+        {
+          "medido_em": "2026-11-08T00:30:11.367000+00:00",
+          "nivel_m": 4.12,
+          "qualidade": null
         }
       ],
       "qualidade_fonte": {
         "nivel_rio_m": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:20:01.166000+00:00"
+          "medido_em": "2026-11-08T00:30:11.367000+00:00"
         }
       },
       "situacao_fonte": "alerta"
@@ -4708,39 +4718,34 @@
       "chuva_1_h_mm": 0,
       "chuva_6_h_mm": null,
       "chuva_12_h_mm": 18,
-      "chuva_24_h_mm": 65.8,
+      "chuva_24_h_mm": 65.4,
       "chuva_48_h_mm": 65.8,
       "qualidade": "atualizado",
-      "medido_em": "2026-11-08T00:20:12.266000+00:00",
+      "medido_em": "2026-11-08T00:30:18.482000+00:00",
       "atualizacao_esperada_segundos": 600,
       "qualidade_fonte": {
         "chuva_10_min_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:20:12.266000+00:00"
+          "medido_em": "2026-11-08T00:30:18.482000+00:00"
         },
         "chuva_1_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:20:12.266000+00:00"
+          "medido_em": "2026-11-08T00:30:18.482000+00:00"
         },
         "chuva_12_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:20:12.266000+00:00"
+          "medido_em": "2026-11-08T00:30:18.482000+00:00"
         },
         "chuva_24_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:20:12.266000+00:00"
+          "medido_em": "2026-11-08T00:30:18.482000+00:00"
         },
         "chuva_48_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:20:12.266000+00:00"
+          "medido_em": "2026-11-08T00:30:18.482000+00:00"
         }
       },
       "serie_12h": [
-        {
-          "medido_em": "2026-11-07T12:20:43.954000+00:00",
-          "chuva_mm": 0,
-          "qualidade": null
-        },
         {
           "medido_em": "2026-11-07T12:30:51.174000+00:00",
           "chuva_mm": 1.4,
@@ -5100,6 +5105,11 @@
           "medido_em": "2026-11-08T00:20:12.266000+00:00",
           "chuva_mm": 0,
           "qualidade": null
+        },
+        {
+          "medido_em": "2026-11-08T00:30:18.482000+00:00",
+          "chuva_mm": 0,
+          "qualidade": null
         }
       ]
     },
@@ -5113,39 +5123,34 @@
       "chuva_1_h_mm": 0,
       "chuva_6_h_mm": null,
       "chuva_12_h_mm": 15.2,
-      "chuva_24_h_mm": 52.2,
+      "chuva_24_h_mm": 52,
       "chuva_48_h_mm": 52.2,
       "qualidade": "atualizado",
-      "medido_em": "2026-11-08T00:21:35.737000+00:00",
+      "medido_em": "2026-11-08T00:31:35.419000+00:00",
       "atualizacao_esperada_segundos": 600,
       "qualidade_fonte": {
         "chuva_10_min_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:21:35.737000+00:00"
+          "medido_em": "2026-11-08T00:31:35.419000+00:00"
         },
         "chuva_1_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:21:35.737000+00:00"
+          "medido_em": "2026-11-08T00:31:35.419000+00:00"
         },
         "chuva_12_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:21:35.737000+00:00"
+          "medido_em": "2026-11-08T00:31:35.419000+00:00"
         },
         "chuva_24_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:21:35.737000+00:00"
+          "medido_em": "2026-11-08T00:31:35.419000+00:00"
         },
         "chuva_48_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:21:35.737000+00:00"
+          "medido_em": "2026-11-08T00:31:35.419000+00:00"
         }
       },
       "serie_12h": [
-        {
-          "medido_em": "2026-11-07T12:21:35.817000+00:00",
-          "chuva_mm": 0,
-          "qualidade": null
-        },
         {
           "medido_em": "2026-11-07T12:31:36.045000+00:00",
           "chuva_mm": 1,
@@ -5500,6 +5505,11 @@
           "medido_em": "2026-11-08T00:21:35.737000+00:00",
           "chuva_mm": 0,
           "qualidade": null
+        },
+        {
+          "medido_em": "2026-11-08T00:31:35.419000+00:00",
+          "chuva_mm": 0,
+          "qualidade": null
         }
       ]
     },
@@ -5512,32 +5522,32 @@
       "chuva_mm_h": null,
       "chuva_1_h_mm": 0,
       "chuva_6_h_mm": null,
-      "chuva_12_h_mm": 14.4,
-      "chuva_24_h_mm": 61,
+      "chuva_12_h_mm": 14.2,
+      "chuva_24_h_mm": 60.8,
       "chuva_48_h_mm": 61,
       "qualidade": "atualizado",
-      "medido_em": "2026-11-08T00:21:21.910000+00:00",
+      "medido_em": "2026-11-08T00:31:21.540000+00:00",
       "atualizacao_esperada_segundos": 600,
       "qualidade_fonte": {
         "chuva_10_min_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:21:21.910000+00:00"
+          "medido_em": "2026-11-08T00:31:21.540000+00:00"
         },
         "chuva_1_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:21:21.910000+00:00"
+          "medido_em": "2026-11-08T00:31:21.540000+00:00"
         },
         "chuva_12_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:21:21.910000+00:00"
+          "medido_em": "2026-11-08T00:31:21.540000+00:00"
         },
         "chuva_24_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:21:21.910000+00:00"
+          "medido_em": "2026-11-08T00:31:21.540000+00:00"
         },
         "chuva_48_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:21:21.910000+00:00"
+          "medido_em": "2026-11-08T00:31:21.540000+00:00"
         }
       },
       "serie_12h": [
@@ -5900,6 +5910,11 @@
           "medido_em": "2026-11-08T00:21:21.910000+00:00",
           "chuva_mm": 0,
           "qualidade": null
+        },
+        {
+          "medido_em": "2026-11-08T00:31:21.540000+00:00",
+          "chuva_mm": 0,
+          "qualidade": null
         }
       ]
     },
@@ -5912,40 +5927,35 @@
       "chuva_mm_h": null,
       "chuva_1_h_mm": 0,
       "chuva_6_h_mm": null,
-      "chuva_12_h_mm": 17.8,
-      "chuva_24_h_mm": 67.6,
+      "chuva_12_h_mm": 17.6,
+      "chuva_24_h_mm": 67.4,
       "chuva_48_h_mm": 67.6,
       "qualidade": "atualizado",
-      "medido_em": "2026-11-08T00:20:08.749000+00:00",
+      "medido_em": "2026-11-08T00:30:02.611000+00:00",
       "atualizacao_esperada_segundos": 600,
       "qualidade_fonte": {
         "chuva_10_min_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:20:08.749000+00:00"
+          "medido_em": "2026-11-08T00:30:02.611000+00:00"
         },
         "chuva_1_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:20:08.749000+00:00"
+          "medido_em": "2026-11-08T00:30:02.611000+00:00"
         },
         "chuva_12_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:20:08.749000+00:00"
+          "medido_em": "2026-11-08T00:30:02.611000+00:00"
         },
         "chuva_24_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:20:08.749000+00:00"
+          "medido_em": "2026-11-08T00:30:02.611000+00:00"
         },
         "chuva_48_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:20:08.749000+00:00"
+          "medido_em": "2026-11-08T00:30:02.611000+00:00"
         }
       },
       "serie_12h": [
-        {
-          "medido_em": "2026-11-07T12:20:42.347000+00:00",
-          "chuva_mm": 0.2,
-          "qualidade": null
-        },
         {
           "medido_em": "2026-11-07T12:30:06.885000+00:00",
           "chuva_mm": 1.4,
@@ -6305,6 +6315,11 @@
           "medido_em": "2026-11-08T00:20:08.749000+00:00",
           "chuva_mm": 0,
           "qualidade": null
+        },
+        {
+          "medido_em": "2026-11-08T00:30:02.611000+00:00",
+          "chuva_mm": 0,
+          "qualidade": null
         }
       ]
     },
@@ -6318,31 +6333,31 @@
       "chuva_1_h_mm": 0,
       "chuva_6_h_mm": null,
       "chuva_12_h_mm": 18,
-      "chuva_24_h_mm": 61,
+      "chuva_24_h_mm": 60.8,
       "chuva_48_h_mm": 61,
       "qualidade": "atualizado",
-      "medido_em": "2026-11-08T00:21:13.160000+00:00",
+      "medido_em": "2026-11-08T00:31:12.797000+00:00",
       "atualizacao_esperada_segundos": 600,
       "qualidade_fonte": {
         "chuva_10_min_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:21:13.160000+00:00"
+          "medido_em": "2026-11-08T00:31:12.797000+00:00"
         },
         "chuva_1_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:21:13.160000+00:00"
+          "medido_em": "2026-11-08T00:31:12.797000+00:00"
         },
         "chuva_12_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:21:13.160000+00:00"
+          "medido_em": "2026-11-08T00:31:12.797000+00:00"
         },
         "chuva_24_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:21:13.160000+00:00"
+          "medido_em": "2026-11-08T00:31:12.797000+00:00"
         },
         "chuva_48_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:21:13.160000+00:00"
+          "medido_em": "2026-11-08T00:31:12.797000+00:00"
         }
       },
       "serie_12h": [
@@ -6705,6 +6720,11 @@
           "medido_em": "2026-11-08T00:21:13.160000+00:00",
           "chuva_mm": 0,
           "qualidade": null
+        },
+        {
+          "medido_em": "2026-11-08T00:31:12.797000+00:00",
+          "chuva_mm": 0,
+          "qualidade": null
         }
       ]
     },
@@ -6713,36 +6733,36 @@
       "nome": "Rio Itajaí-Mirim (curso antigo) - Propriedade privada",
       "latitude": -26.93336,
       "longitude": -48.74776,
-      "chuva_10_min_mm": 0,
+      "chuva_10_min_mm": 0.2,
       "chuva_mm_h": null,
-      "chuva_1_h_mm": 0,
+      "chuva_1_h_mm": 0.2,
       "chuva_6_h_mm": null,
-      "chuva_12_h_mm": 16.2,
+      "chuva_12_h_mm": 16,
       "chuva_24_h_mm": 66.8,
-      "chuva_48_h_mm": 67,
+      "chuva_48_h_mm": 67.2,
       "qualidade": "atualizado",
-      "medido_em": "2026-11-08T00:21:06.248000+00:00",
+      "medido_em": "2026-11-08T00:31:05.835000+00:00",
       "atualizacao_esperada_segundos": 600,
       "qualidade_fonte": {
         "chuva_10_min_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:21:06.248000+00:00"
+          "medido_em": "2026-11-08T00:31:05.835000+00:00"
         },
         "chuva_1_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:21:06.248000+00:00"
+          "medido_em": "2026-11-08T00:31:05.835000+00:00"
         },
         "chuva_12_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:21:06.248000+00:00"
+          "medido_em": "2026-11-08T00:31:05.835000+00:00"
         },
         "chuva_24_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:21:06.248000+00:00"
+          "medido_em": "2026-11-08T00:31:05.835000+00:00"
         },
         "chuva_48_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:21:06.248000+00:00"
+          "medido_em": "2026-11-08T00:31:05.835000+00:00"
         }
       },
       "serie_12h": [
@@ -7105,6 +7125,11 @@
           "medido_em": "2026-11-08T00:21:06.248000+00:00",
           "chuva_mm": 0,
           "qualidade": null
+        },
+        {
+          "medido_em": "2026-11-08T00:31:05.835000+00:00",
+          "chuva_mm": 0.2,
+          "qualidade": null
         }
       ]
     },
@@ -7115,42 +7140,37 @@
       "longitude": -48.68576,
       "chuva_10_min_mm": 0,
       "chuva_mm_h": null,
-      "chuva_1_h_mm": 0.2,
+      "chuva_1_h_mm": 0,
       "chuva_6_h_mm": null,
       "chuva_12_h_mm": 16.8,
       "chuva_24_h_mm": 59.6,
       "chuva_48_h_mm": 59.8,
       "qualidade": "atualizado",
-      "medido_em": "2026-11-08T00:20:55.863000+00:00",
+      "medido_em": "2026-11-08T00:30:55.616000+00:00",
       "atualizacao_esperada_segundos": 600,
       "qualidade_fonte": {
         "chuva_10_min_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:20:55.863000+00:00"
+          "medido_em": "2026-11-08T00:30:55.616000+00:00"
         },
         "chuva_1_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:20:55.863000+00:00"
+          "medido_em": "2026-11-08T00:30:55.616000+00:00"
         },
         "chuva_12_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:20:55.863000+00:00"
+          "medido_em": "2026-11-08T00:30:55.616000+00:00"
         },
         "chuva_24_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:20:55.863000+00:00"
+          "medido_em": "2026-11-08T00:30:55.616000+00:00"
         },
         "chuva_48_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:20:55.863000+00:00"
+          "medido_em": "2026-11-08T00:30:55.616000+00:00"
         }
       },
       "serie_12h": [
-        {
-          "medido_em": "2026-11-07T12:20:55.932000+00:00",
-          "chuva_mm": 0,
-          "qualidade": null
-        },
         {
           "medido_em": "2026-11-07T12:30:56.460000+00:00",
           "chuva_mm": 1,
@@ -7510,6 +7530,11 @@
           "medido_em": "2026-11-08T00:20:55.863000+00:00",
           "chuva_mm": 0,
           "qualidade": null
+        },
+        {
+          "medido_em": "2026-11-08T00:30:55.616000+00:00",
+          "chuva_mm": 0,
+          "qualidade": null
         }
       ]
     },
@@ -7522,40 +7547,35 @@
       "chuva_mm_h": null,
       "chuva_1_h_mm": 0,
       "chuva_6_h_mm": null,
-      "chuva_12_h_mm": 19,
-      "chuva_24_h_mm": 64.8,
+      "chuva_12_h_mm": 18.8,
+      "chuva_24_h_mm": 64.6,
       "chuva_48_h_mm": 64.8,
       "qualidade": "atualizado",
-      "medido_em": "2026-11-08T00:20:35.113000+00:00",
+      "medido_em": "2026-11-08T00:30:34.715000+00:00",
       "atualizacao_esperada_segundos": 600,
       "qualidade_fonte": {
         "chuva_10_min_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:20:35.113000+00:00"
+          "medido_em": "2026-11-08T00:30:34.715000+00:00"
         },
         "chuva_1_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:20:35.113000+00:00"
+          "medido_em": "2026-11-08T00:30:34.715000+00:00"
         },
         "chuva_12_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:20:35.113000+00:00"
+          "medido_em": "2026-11-08T00:30:34.715000+00:00"
         },
         "chuva_24_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:20:35.113000+00:00"
+          "medido_em": "2026-11-08T00:30:34.715000+00:00"
         },
         "chuva_48_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:20:35.113000+00:00"
+          "medido_em": "2026-11-08T00:30:34.715000+00:00"
         }
       },
       "serie_12h": [
-        {
-          "medido_em": "2026-11-07T12:20:35.381000+00:00",
-          "chuva_mm": 0.2,
-          "qualidade": null
-        },
         {
           "medido_em": "2026-11-07T12:30:35.411000+00:00",
           "chuva_mm": 1,
@@ -7915,6 +7935,11 @@
           "medido_em": "2026-11-08T00:20:35.113000+00:00",
           "chuva_mm": 0,
           "qualidade": null
+        },
+        {
+          "medido_em": "2026-11-08T00:30:34.715000+00:00",
+          "chuva_mm": 0,
+          "qualidade": null
         }
       ]
     },
@@ -7927,40 +7952,35 @@
       "chuva_mm_h": null,
       "chuva_1_h_mm": 0,
       "chuva_6_h_mm": null,
-      "chuva_12_h_mm": 12.6,
+      "chuva_12_h_mm": 12.4,
       "chuva_24_h_mm": 59,
       "chuva_48_h_mm": 59,
       "qualidade": "atualizado",
-      "medido_em": "2026-11-08T00:20:21.069000+00:00",
+      "medido_em": "2026-11-08T00:30:20.739000+00:00",
       "atualizacao_esperada_segundos": 600,
       "qualidade_fonte": {
         "chuva_10_min_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:20:21.069000+00:00"
+          "medido_em": "2026-11-08T00:30:20.739000+00:00"
         },
         "chuva_1_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:20:21.069000+00:00"
+          "medido_em": "2026-11-08T00:30:20.739000+00:00"
         },
         "chuva_12_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:20:21.069000+00:00"
+          "medido_em": "2026-11-08T00:30:20.739000+00:00"
         },
         "chuva_24_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:20:21.069000+00:00"
+          "medido_em": "2026-11-08T00:30:20.739000+00:00"
         },
         "chuva_48_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:20:21.069000+00:00"
+          "medido_em": "2026-11-08T00:30:20.739000+00:00"
         }
       },
       "serie_12h": [
-        {
-          "medido_em": "2026-11-07T12:20:21.376000+00:00",
-          "chuva_mm": 0.2,
-          "qualidade": null
-        },
         {
           "medido_em": "2026-11-07T12:30:21.480000+00:00",
           "chuva_mm": 1.6,
@@ -8320,6 +8340,11 @@
           "medido_em": "2026-11-08T00:20:21.069000+00:00",
           "chuva_mm": 0,
           "qualidade": null
+        },
+        {
+          "medido_em": "2026-11-08T00:30:20.739000+00:00",
+          "chuva_mm": 0,
+          "qualidade": null
         }
       ]
     },
@@ -8336,36 +8361,31 @@
       "chuva_24_h_mm": 55,
       "chuva_48_h_mm": 55,
       "qualidade": "atualizado",
-      "medido_em": "2026-11-08T00:20:15.882000+00:00",
+      "medido_em": "2026-11-08T00:30:11.021000+00:00",
       "atualizacao_esperada_segundos": 600,
       "qualidade_fonte": {
         "chuva_10_min_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:20:15.882000+00:00"
+          "medido_em": "2026-11-08T00:30:11.021000+00:00"
         },
         "chuva_1_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:20:15.882000+00:00"
+          "medido_em": "2026-11-08T00:30:11.021000+00:00"
         },
         "chuva_12_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:20:15.882000+00:00"
+          "medido_em": "2026-11-08T00:30:11.021000+00:00"
         },
         "chuva_24_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:20:15.882000+00:00"
+          "medido_em": "2026-11-08T00:30:11.021000+00:00"
         },
         "chuva_48_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:20:15.882000+00:00"
+          "medido_em": "2026-11-08T00:30:11.021000+00:00"
         }
       },
       "serie_12h": [
-        {
-          "medido_em": "2026-11-07T12:30:05.297000+00:00",
-          "chuva_mm": 0.6,
-          "qualidade": null
-        },
         {
           "medido_em": "2026-11-07T12:40:14.805000+00:00",
           "chuva_mm": 1,
@@ -8720,6 +8740,11 @@
           "medido_em": "2026-11-08T00:20:15.882000+00:00",
           "chuva_mm": 0,
           "qualidade": null
+        },
+        {
+          "medido_em": "2026-11-08T00:30:11.021000+00:00",
+          "chuva_mm": 0,
+          "qualidade": null
         }
       ]
     },
@@ -8732,45 +8757,35 @@
       "chuva_mm_h": null,
       "chuva_1_h_mm": 0,
       "chuva_6_h_mm": null,
-      "chuva_12_h_mm": 13.4,
-      "chuva_24_h_mm": 89.4,
+      "chuva_12_h_mm": 10.8,
+      "chuva_24_h_mm": 89.2,
       "chuva_48_h_mm": 89.4,
       "qualidade": "atualizado",
-      "medido_em": "2026-11-08T00:20:05.546000+00:00",
+      "medido_em": "2026-11-08T00:30:14.649000+00:00",
       "atualizacao_esperada_segundos": 600,
       "qualidade_fonte": {
         "chuva_10_min_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:20:05.546000+00:00"
+          "medido_em": "2026-11-08T00:30:14.649000+00:00"
         },
         "chuva_1_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:20:05.546000+00:00"
+          "medido_em": "2026-11-08T00:30:14.649000+00:00"
         },
         "chuva_12_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:20:05.546000+00:00"
+          "medido_em": "2026-11-08T00:30:14.649000+00:00"
         },
         "chuva_24_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:20:05.546000+00:00"
+          "medido_em": "2026-11-08T00:30:14.649000+00:00"
         },
         "chuva_48_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:20:05.546000+00:00"
+          "medido_em": "2026-11-08T00:30:14.649000+00:00"
         }
       },
       "serie_12h": [
-        {
-          "medido_em": "2026-11-07T12:20:13.277000+00:00",
-          "chuva_mm": 2.6,
-          "qualidade": null
-        },
-        {
-          "medido_em": "2026-11-07T12:30:08.020000+00:00",
-          "chuva_mm": 1.8,
-          "qualidade": null
-        },
         {
           "medido_em": "2026-11-07T12:40:02.198000+00:00",
           "chuva_mm": 1.8,
@@ -9125,6 +9140,11 @@
           "medido_em": "2026-11-08T00:20:05.546000+00:00",
           "chuva_mm": 0,
           "qualidade": null
+        },
+        {
+          "medido_em": "2026-11-08T00:30:14.649000+00:00",
+          "chuva_mm": 0,
+          "qualidade": null
         }
       ]
     },
@@ -9137,40 +9157,35 @@
       "chuva_mm_h": null,
       "chuva_1_h_mm": 0,
       "chuva_6_h_mm": null,
-      "chuva_12_h_mm": 18.4,
-      "chuva_24_h_mm": 64,
+      "chuva_12_h_mm": 18.2,
+      "chuva_24_h_mm": 63.8,
       "chuva_48_h_mm": 64.2,
       "qualidade": "atualizado",
-      "medido_em": "2026-11-08T00:20:01.166000+00:00",
+      "medido_em": "2026-11-08T00:30:11.367000+00:00",
       "atualizacao_esperada_segundos": 600,
       "qualidade_fonte": {
         "chuva_10_min_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:20:01.166000+00:00"
+          "medido_em": "2026-11-08T00:30:11.367000+00:00"
         },
         "chuva_1_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:20:01.166000+00:00"
+          "medido_em": "2026-11-08T00:30:11.367000+00:00"
         },
         "chuva_12_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:20:01.166000+00:00"
+          "medido_em": "2026-11-08T00:30:11.367000+00:00"
         },
         "chuva_24_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:20:01.166000+00:00"
+          "medido_em": "2026-11-08T00:30:11.367000+00:00"
         },
         "chuva_48_h_mm": {
           "estado": "atual",
-          "medido_em": "2026-11-08T00:20:01.166000+00:00"
+          "medido_em": "2026-11-08T00:30:11.367000+00:00"
         }
       },
       "serie_12h": [
-        {
-          "medido_em": "2026-11-07T12:20:04.657000+00:00",
-          "chuva_mm": 0.2,
-          "qualidade": null
-        },
         {
           "medido_em": "2026-11-07T12:30:14.861000+00:00",
           "chuva_mm": 1,
@@ -9528,6 +9543,11 @@
         },
         {
           "medido_em": "2026-11-08T00:20:01.166000+00:00",
+          "chuva_mm": 0,
+          "qualidade": null
+        },
+        {
+          "medido_em": "2026-11-08T00:30:11.367000+00:00",
           "chuva_mm": 0,
           "qualidade": null
         }
@@ -10120,7 +10140,7 @@
     "uf": null,
     "regiao": null,
     "atualizado_em": null,
-    "coletado_em": "2026-11-08T00:32:21.894Z",
+    "coletado_em": "2026-11-08T00:42:27.962Z",
     "disponibilidade": "disponivel",
     "dias": [
       {
@@ -10233,7 +10253,7 @@
   "blumenau": {
     "nivel_m": 8.06,
     "medido_em": "2026-11-07T21:00:00-03:00",
-    "coletado_em": "2026-11-08T00:32:19.971Z",
+    "coletado_em": "2026-11-08T00:42:24.604Z",
     "classificacao_original": "Alerta Máximo",
     "nivel": "emergencia",
     "tendencia": "subindo",
@@ -10263,14 +10283,14 @@
       "qualidade": "indisponivel",
       "atualizado_em": null,
       "atualizacao_esperada_segundos": null,
-      "coletado_em": "2026-11-08T00:32:19.992Z",
+      "coletado_em": "2026-11-08T00:42:24.619Z",
       "resultado": "falha",
       "motivo": "https://monitoramento.defesacivil.itajai.sc.gov.br/api/v1/situacao-atual: HTTP 429 Too Many Requests",
       "avisos": [],
       "requisicoes": [
         {
           "url": "https://monitoramento.defesacivil.itajai.sc.gov.br/api/v1/situacao-atual",
-          "coletado_em": "2026-11-08T00:32:19.992Z",
+          "coletado_em": "2026-11-08T00:42:24.619Z",
           "http_status": 429,
           "erro": "HTTP 429 Too Many Requests",
           "resposta_erro": "{\"message\":\"Limite de requisi\\u00e7\\u00f5es atingido. Aguarde antes de tentar novamente.\"}"
@@ -10283,14 +10303,14 @@
       "qualidade": "indisponivel",
       "atualizado_em": null,
       "atualizacao_esperada_segundos": null,
-      "coletado_em": "2026-11-08T00:32:20.022Z",
+      "coletado_em": "2026-11-08T00:42:24.687Z",
       "resultado": "falha",
       "motivo": "https://monitoramento.defesacivil.itajai.sc.gov.br/api/v1/alertas/ativo: HTTP 429 Too Many Requests",
       "avisos": [],
       "requisicoes": [
         {
           "url": "https://monitoramento.defesacivil.itajai.sc.gov.br/api/v1/alertas/ativo",
-          "coletado_em": "2026-11-08T00:32:20.022Z",
+          "coletado_em": "2026-11-08T00:42:24.687Z",
           "http_status": 429,
           "erro": "HTTP 429 Too Many Requests",
           "resposta_erro": "{\"message\":\"Limite de requisi\\u00e7\\u00f5es atingido. Aguarde antes de tentar novamente.\"}"
@@ -10303,7 +10323,7 @@
       "qualidade": "atualizado",
       "atualizado_em": null,
       "atualizacao_esperada_segundos": null,
-      "coletado_em": "2026-11-08T00:32:20.023Z",
+      "coletado_em": "2026-11-08T00:42:24.688Z",
       "resultado": "sucesso",
       "motivo": null,
       "avisos": [
@@ -10312,7 +10332,7 @@
       "requisicoes": [
         {
           "url": "https://monitoramento.defesacivil.itajai.sc.gov.br/monitoramento/rios?municipio_id=1",
-          "coletado_em": "2026-11-08T00:32:20.023Z",
+          "coletado_em": "2026-11-08T00:42:24.688Z",
           "http_status": 200,
           "erro": null,
           "resposta_erro": null
@@ -10325,7 +10345,7 @@
       "qualidade": "atualizado",
       "atualizado_em": null,
       "atualizacao_esperada_segundos": null,
-      "coletado_em": "2026-11-08T00:32:20.025Z",
+      "coletado_em": "2026-11-08T00:42:24.688Z",
       "resultado": "sucesso",
       "motivo": null,
       "avisos": [
@@ -10334,7 +10354,7 @@
       "requisicoes": [
         {
           "url": "https://monitoramento.defesacivil.itajai.sc.gov.br/monitoramento/chuvas?municipio_id=1",
-          "coletado_em": "2026-11-08T00:32:20.025Z",
+          "coletado_em": "2026-11-08T00:42:24.688Z",
           "http_status": 200,
           "erro": null,
           "resposta_erro": null
@@ -10347,14 +10367,14 @@
       "qualidade": "atrasado",
       "atualizado_em": null,
       "atualizacao_esperada_segundos": null,
-      "coletado_em": "2026-11-08T00:32:20.026Z",
+      "coletado_em": "2026-11-08T00:42:24.689Z",
       "resultado": "sucesso",
       "motivo": null,
       "avisos": [],
       "requisicoes": [
         {
           "url": "https://monitoramento.defesacivil.itajai.sc.gov.br/monitoramento/barragens?municipio_id=1",
-          "coletado_em": "2026-11-08T00:32:20.026Z",
+          "coletado_em": "2026-11-08T00:42:24.689Z",
           "http_status": 200,
           "erro": null,
           "resposta_erro": null
@@ -10367,7 +10387,7 @@
       "qualidade": null,
       "atualizado_em": null,
       "atualizacao_esperada_segundos": null,
-      "coletado_em": "2026-11-08T00:32:20.027Z",
+      "coletado_em": "2026-11-08T00:42:24.690Z",
       "resultado": "sucesso",
       "motivo": null,
       "avisos": [
@@ -10377,14 +10397,14 @@
       "requisicoes": [
         {
           "url": "https://ciram.epagri.sc.gov.br/api/prevmuni-server/resources/listaJson/muni",
-          "coletado_em": "2026-11-08T00:32:20.027Z",
+          "coletado_em": "2026-11-08T00:42:24.690Z",
           "http_status": 200,
           "erro": null,
           "resposta_erro": null
         },
         {
           "url": "https://ciram.epagri.sc.gov.br/api/prevmuni-server/resources/listaJson/prevMuniDia?cdCidade=4208203",
-          "coletado_em": "2026-11-08T00:32:21.894Z",
+          "coletado_em": "2026-11-08T00:42:27.962Z",
           "http_status": 200,
           "erro": null,
           "resposta_erro": null
