@@ -89,3 +89,14 @@ describe('Teams — transporte operacional com destino mock', () => {
   });
 });
 
+it('preserva cartão já congelado mesmo após neutralização do renderer', async () => {
+  const persisted = adaptiveCard({ ...event, is_test: false });
+  const heading = persisted.attachments[0]!.content.body[0]!;
+  if (!('text' in heading)) throw new Error('Missing card heading');
+  heading.text = 'Monitoramento El Niño — JBS Terminais';
+  const before = JSON.stringify(persisted);
+  const { rpc, fetcher } = setup({ ...claim, mode: 'operational', event: { ...event, is_test: false }, payload: persisted });
+  expect(await drainOne(rpc, { webhook, liveEnabled: false, fetcher })).toEqual({ status: 'accepted', http_status: 202 });
+  expect(fetcher.mock.calls[0]![1]!.body).toBe(before);
+  expect(JSON.stringify(persisted)).toBe(before);
+});

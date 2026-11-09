@@ -13,7 +13,7 @@ describe('Teams renderer — apresentação', () => {
     expect(value).toContain('→'); expect(value).toContain('[HML — TESTE]'); expect(value).toContain('SIMULAÇÃO');
   });
   it.each([['impact_open','Attention','confirmado'],['impact_close','Good','encerrado']] as const)('ação manual %s', (kind,color,label) => {
-    const value=JSON.stringify(card({...base,kind})); expect(value).toContain(`Impacto JBS ${label}`);
+    const value=JSON.stringify(card({...base,kind})); expect(value).toContain(`Impacto Operacional ${label}`);
     expect(value).toContain(`"color":"${color}"`); expect(value).toContain('manual autorizad');
   });
   it('formata data local, não expõe auditoria e não altera evento', () => {
@@ -67,4 +67,22 @@ describe('Teams renderer — apresentação', () => {
     expect(JSON.stringify(value)).toContain('CONDIÇÃO DO TERMINAL');
     expect(JSON.stringify(value)).not.toContain('ALTERAÇÃO DE NÍVEL');
   });
+});
+
+// Presentation-only compatibility: persisted reasons and identifiers are immutable.
+it.each(['level','impact_open','impact_close'] as const)('neutraliza somente textos visíveis: %s', kind => {
+  const event: Event = { ...base, kind, is_test: false, body: { ...base.body, reasons: ['Nível de Alerta JBS: Impacto JBS; Coleta JBS.'] } };
+  const original = JSON.stringify(event);
+  const rendered = card(event);
+  const texts: string[] = [];
+  const visit = (node: unknown) => { if (!node || typeof node !== 'object') return;
+    const value = node as Record<string, unknown>;
+    if (value.type === 'TextBlock') texts.push(String(value.text));
+    Object.values(value).forEach(v => Array.isArray(v) ? v.forEach(visit) : visit(v));
+  };
+  visit(rendered);
+  expect(texts.join(' ')).not.toMatch(/\bJBS\b/);
+  expect(texts).toContain('Monitoramento El Niño');
+  expect(rendered.actions[0]!.url).toBe('https://eduardolamim.github.io/el-nino-jbs/');
+  expect(JSON.stringify(event)).toBe(original);
 });
