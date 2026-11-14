@@ -1,6 +1,6 @@
 {
   "versao": 1,
-  "atualizado_em": "2026-11-14T07:32:46.644Z",
+  "atualizado_em": "2026-11-14T07:43:04.897Z",
   "nivel_jbs": {
     "nivel": "atencao",
     "desde": "2026-11-14T05:51:35.741000+00:00",
@@ -26,7 +26,7 @@
   },
   "motor": {
     "versao": 1,
-    "avaliado_em": "2026-11-14T07:32:46.644Z",
+    "avaliado_em": "2026-11-14T07:43:04.897Z",
     "situacao_oficial": {
       "nivel": "normalidade",
       "desde": "2026-11-09T14:32:16-03:00",
@@ -9872,26 +9872,16 @@
     "barragemSul": {
       "nome": "Barragem Ituporanga",
       "fonte": "Barragens MKS",
-      "ocupacao_percentual": 53.93,
-      "montante_m": 25.51,
-      "ultima_variacao_m": -0.1,
+      "ocupacao_percentual": 53.3,
+      "montante_m": 25.42,
+      "ultima_variacao_m": -0.09,
       "comportas_abertas": 5,
       "comportas_fechadas": 0,
       "extravasor_m": 0,
       "qualidade": "atrasado",
-      "medido_em": "2026-11-14T06:00:00+00:00",
+      "medido_em": "2026-11-14T07:00:00+00:00",
       "atualizacao_esperada_segundos": 600,
       "serie": [
-        {
-          "ocupacao_percentual": null,
-          "montante_m": 27.59,
-          "ultima_variacao_m": null,
-          "comportas_abertas": null,
-          "comportas_fechadas": null,
-          "extravasor_m": null,
-          "medido_em": "2026-11-13T06:00:00+00:00",
-          "qualidade": null
-        },
         {
           "ocupacao_percentual": null,
           "montante_m": 27.52,
@@ -10131,32 +10121,32 @@
           "extravasor_m": null,
           "medido_em": "2026-11-14T06:00:00+00:00",
           "qualidade": null
+        },
+        {
+          "ocupacao_percentual": null,
+          "montante_m": 25.42,
+          "ultima_variacao_m": null,
+          "comportas_abertas": null,
+          "comportas_fechadas": null,
+          "extravasor_m": null,
+          "medido_em": "2026-11-14T07:00:00+00:00",
+          "qualidade": null
         }
       ]
     },
     "barragemOeste": {
       "nome": "Barragem Taió",
       "fonte": "Barragens MKS",
-      "ocupacao_percentual": 43.36,
-      "montante_m": 16.36,
-      "ultima_variacao_m": -0.06,
+      "ocupacao_percentual": 42.85,
+      "montante_m": 16.29,
+      "ultima_variacao_m": -0.07,
       "comportas_abertas": 7,
       "comportas_fechadas": 0,
       "extravasor_m": 0,
       "qualidade": "atrasado",
-      "medido_em": "2026-11-14T06:00:00+00:00",
+      "medido_em": "2026-11-14T07:00:00+00:00",
       "atualizacao_esperada_segundos": 600,
       "serie": [
-        {
-          "ocupacao_percentual": null,
-          "montante_m": 17.9,
-          "ultima_variacao_m": null,
-          "comportas_abertas": null,
-          "comportas_fechadas": null,
-          "extravasor_m": null,
-          "medido_em": "2026-11-13T06:00:00+00:00",
-          "qualidade": null
-        },
         {
           "ocupacao_percentual": null,
           "montante_m": 17.85,
@@ -10396,6 +10386,16 @@
           "extravasor_m": null,
           "medido_em": "2026-11-14T06:00:00+00:00",
           "qualidade": null
+        },
+        {
+          "ocupacao_percentual": null,
+          "montante_m": 16.29,
+          "ultima_variacao_m": null,
+          "comportas_abertas": null,
+          "comportas_fechadas": null,
+          "extravasor_m": null,
+          "medido_em": "2026-11-14T07:00:00+00:00",
+          "qualidade": null
         }
       ]
     },
@@ -10454,7 +10454,7 @@
     "uf": null,
     "regiao": null,
     "atualizado_em": null,
-    "coletado_em": "2026-11-14T07:32:46.481Z",
+    "coletado_em": "2026-11-14T07:43:04.688Z",
     "disponibilidade": "disponivel",
     "dias": [
       {
@@ -10546,7 +10546,7 @@
   "blumenau": {
     "nivel_m": 3.47,
     "medido_em": "2026-11-14T04:00:00-03:00",
-    "coletado_em": "2026-11-14T07:32:43.798Z",
+    "coletado_em": "2026-11-14T07:43:02.585Z",
     "classificacao_original": "Observação",
     "nivel": "atencao",
     "tendencia": "descendo",
@@ -10574,7 +10574,7 @@
       "qualidade": null,
       "atualizado_em": "2026-11-13T11:07:05-03:00",
       "atualizacao_esperada_segundos": null,
-      "coletado_em": "2026-11-14T07:32:43.809Z",
+      "coletado_em": "2026-11-14T07:43:02.607Z",
       "resultado": "sucesso",
       "motivo": null,
       "avisos": [
@@ -10583,7 +10583,7 @@
       "requisicoes": [
         {
           "url": "https://monitoramento.defesacivil.itajai.sc.gov.br/api/v1/situacao-atual",
-          "coletado_em": "2026-11-14T07:32:43.809Z",
+          "coletado_em": "2026-11-14T07:43:02.607Z",
           "http_status": 200,
           "erro": null,
           "resposta_erro": null
@@ -10596,14 +10596,14 @@
       "qualidade": null,
       "atualizado_em": null,
       "atualizacao_esperada_segundos": null,
-      "coletado_em": "2026-11-14T07:32:43.826Z",
+      "coletado_em": "2026-11-14T07:43:02.635Z",
       "resultado": "sucesso",
       "motivo": null,
       "avisos": [],
       "requisicoes": [
         {
           "url": "https://monitoramento.defesacivil.itajai.sc.gov.br/api/v1/alertas/ativo",
-          "coletado_em": "2026-11-14T07:32:43.826Z",
+          "coletado_em": "2026-11-14T07:43:02.635Z",
           "http_status": 200,
           "erro": null,
           "resposta_erro": null
@@ -10616,7 +10616,7 @@
       "qualidade": "atualizado",
       "atualizado_em": null,
       "atualizacao_esperada_segundos": null,
-      "coletado_em": "2026-11-14T07:32:43.827Z",
+      "coletado_em": "2026-11-14T07:43:02.636Z",
       "resultado": "sucesso",
       "motivo": null,
       "avisos": [
@@ -10625,7 +10625,7 @@
       "requisicoes": [
         {
           "url": "https://monitoramento.defesacivil.itajai.sc.gov.br/monitoramento/rios?municipio_id=1",
-          "coletado_em": "2026-11-14T07:32:43.827Z",
+          "coletado_em": "2026-11-14T07:43:02.636Z",
           "http_status": 200,
           "erro": null,
           "resposta_erro": null
@@ -10638,7 +10638,7 @@
       "qualidade": "atualizado",
       "atualizado_em": null,
       "atualizacao_esperada_segundos": null,
-      "coletado_em": "2026-11-14T07:32:43.828Z",
+      "coletado_em": "2026-11-14T07:43:02.637Z",
       "resultado": "sucesso",
       "motivo": null,
       "avisos": [
@@ -10647,7 +10647,7 @@
       "requisicoes": [
         {
           "url": "https://monitoramento.defesacivil.itajai.sc.gov.br/monitoramento/chuvas?municipio_id=1",
-          "coletado_em": "2026-11-14T07:32:43.828Z",
+          "coletado_em": "2026-11-14T07:43:02.637Z",
           "http_status": 200,
           "erro": null,
           "resposta_erro": null
@@ -10660,14 +10660,14 @@
       "qualidade": "atrasado",
       "atualizado_em": null,
       "atualizacao_esperada_segundos": null,
-      "coletado_em": "2026-11-14T07:32:43.828Z",
+      "coletado_em": "2026-11-14T07:43:02.638Z",
       "resultado": "sucesso",
       "motivo": null,
       "avisos": [],
       "requisicoes": [
         {
           "url": "https://monitoramento.defesacivil.itajai.sc.gov.br/monitoramento/barragens?municipio_id=1",
-          "coletado_em": "2026-11-14T07:32:43.828Z",
+          "coletado_em": "2026-11-14T07:43:02.638Z",
           "http_status": 200,
           "erro": null,
           "resposta_erro": null
@@ -10680,7 +10680,7 @@
       "qualidade": null,
       "atualizado_em": null,
       "atualizacao_esperada_segundos": null,
-      "coletado_em": "2026-11-14T07:32:43.829Z",
+      "coletado_em": "2026-11-14T07:43:02.640Z",
       "resultado": "sucesso",
       "motivo": null,
       "avisos": [
@@ -10690,14 +10690,14 @@
       "requisicoes": [
         {
           "url": "https://ciram.epagri.sc.gov.br/api/prevmuni-server/resources/listaJson/muni",
-          "coletado_em": "2026-11-14T07:32:43.829Z",
+          "coletado_em": "2026-11-14T07:43:02.640Z",
           "http_status": 200,
           "erro": null,
           "resposta_erro": null
         },
         {
           "url": "https://ciram.epagri.sc.gov.br/api/prevmuni-server/resources/listaJson/prevMuniDia?cdCidade=4208203",
-          "coletado_em": "2026-11-14T07:32:46.481Z",
+          "coletado_em": "2026-11-14T07:43:04.688Z",
           "http_status": 200,
           "erro": null,
           "resposta_erro": null
